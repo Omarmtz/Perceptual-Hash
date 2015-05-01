@@ -20,6 +20,7 @@ namespace LocalSearchEngine.DataAccess
         public string PixelFormat { get; set; }
         public byte[] PFingerPrint { get; set; }
         public System.Guid FileId { get; set; }
+        public bool IsWithinFile { get; set; }
     
         public virtual DocumentFile File { get; set; }
     }

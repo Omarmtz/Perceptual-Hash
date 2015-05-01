@@ -15,16 +15,21 @@ namespace LocalSearchEngine.FileManager
 {
     public class FileAgent
     {
+        #region Extension Types
         public static string[] SupportedDocuments =
         {
             "*.bmp", "*.gif", "*.jpg", "*.png", "*.jpeg", "*.tif", "*.tiff", "*.jif", "*.jfif", "*.jp2", "*.jpx", "*.j2k", "*.j2c" ,
             "*.doc", "*.docx", "*.txt", "*.rtf", "*.odt"
         };
+
         public static string[] DocTypes = { ".doc", ".docx", ".txt", ".rtf", ".odt" };
+        #endregion
 
-        public string Directory;
+        #region Variables
+        private string Directory;
 
-        [PermissionSet(SecurityAction.Demand, Name = "FullTrust")]
+        #endregion
+        
         public FileAgent(string initialDirectory)
         {
             this.Directory = initialDirectory;
@@ -34,11 +39,71 @@ namespace LocalSearchEngine.FileManager
         {
             var fileList = GetFilesFromDirectory(this.Directory, SupportedDocuments);
 
-            //fileList.ForEach(e => IndexFile(new FileInfo(e)));
-            fileList.AsParallel().ForAll(e => IndexFile(new FileInfo(e)));
+            fileList.ForEach(e => IndexFile(new FileInfo(e)));
+            //fileList.AsParallel().ForAll(e => IndexFile(new FileInfo(e)));
         }
 
+        #region File Management
+        
+        private static void IndexFile(FileInfo info)
+        {
+            var file = new DocumentFile()
+            {
+                Id = Guid.NewGuid(),
+                CreatedDate = info.CreationTime,
+                ModifiedDate = info.LastWriteTime,
+                FolderPath = info.DirectoryName,
+                Name = info.Name,
+                ItemType = info.Extension,
+                Size = info.Length
+            };
+
+
+            if (DocTypes.Contains(file.ItemType))
+            {
+                //Search Inside Document
+                //DocxImageExtractor.ExtractImages(GetFullName(file));
+                //FOR DEMO ONLY
+            }
+            else
+            {
+                //File itself is an Image
+                AttachImageFile(file);
+            }
+
+            DataBaseManager.SaveFile(file);
+        }
+
+        private static void AttachImageFile(DocumentFile file)
+        {
+            try
+            {
+                var img = Image.FromFile(GetDocumentFullPathName(file));
+
+                var docImg = new DocumentImage()
+                {
+                    Id = Guid.NewGuid(),
+                    PixelFormat = img.PixelFormat.ToString(),
+                    Width = img.Width,
+                    Height = img.Height,
+                };
+                file.Images.Add(docImg);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message + file.Name);
+            }
+        }
+
+        public static string GetDocumentFullPathName(DocumentFile file)
+        {
+            return Path.Combine(file.FolderPath, file.Name);
+        }
+
+        #endregion
+
         #region I/O File Management
+
         private static List<string> GetFilesFromDirectory(string path, string[] filePattern)
         {
             var queue = new Queue<string>();
@@ -73,61 +138,6 @@ namespace LocalSearchEngine.FileManager
                 }
             }
             return files;
-        }
-
-        private static void IndexFile(FileInfo info)
-        {
-            var file = new DocumentFile()
-            {
-                Id = Guid.NewGuid(),
-                CreatedDate = info.CreationTime,
-                ModifiedDate = info.LastWriteTime,
-                FolderPath = info.DirectoryName,
-                Name = info.Name,
-                ItemType = info.Extension,
-                Size = info.Length
-            };
-
-
-            if (DocTypes.Contains(file.ItemType))
-            {
-                //Search Inside Document
-
-
-            }
-            else
-            {
-                //File itself is an Image
-                CreateImageFromFile(file);
-            }
-
-            DataBaseManager.SaveFile(file);
-        }
-
-        private static void CreateImageFromFile(DocumentFile file)
-        {
-            try
-            {
-                var img = Image.FromFile(GetFullName(file));
-
-                var docImg = new DocumentImage()
-                {
-                    Id = Guid.NewGuid(),
-                    PixelFormat = img.PixelFormat.ToString(),
-                    Width = img.Width,
-                    Height = img.Height,
-                };
-                file.Images.Add(docImg);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message + file.Name);
-            }
-        }
-
-        public static string GetFullName(DocumentFile file)
-        {
-            return Path.Combine(file.FolderPath, file.Name);
         }
 
         #endregion

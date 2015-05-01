@@ -41,7 +41,6 @@ namespace LocalSearchEngine.FileManager
                 //TODO LOG EXCEPTION DETAILS 
             }
         }
-
        
     }
 }
