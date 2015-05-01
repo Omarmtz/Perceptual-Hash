@@ -9,13 +9,13 @@ namespace LocalSearchEngine.FileManager
 {
     public static class DataBaseManager
     {
-        public static File GetFile(Guid fileId)
+        public static DocumentFile GetFile(Guid fileId)
         {
             try
             {
                 using (var context = new FileManagementDBContainer())
                 {
-                    return context.Files.First(file => file.Id == fileId);
+                    return context.DocumentFiles.First(file => file.Id == fileId);
                 }
             }
             catch (Exception)
@@ -25,5 +25,23 @@ namespace LocalSearchEngine.FileManager
             }
             
         }
+
+        public static void SaveFile(DocumentFile file)
+        {
+            try
+            {
+                using (var context = new FileManagementDBContainer())
+                {
+                    context.DocumentFiles.Add(file);
+                    context.SaveChanges();
+                }
+            }
+            catch (Exception)
+            {
+                //TODO LOG EXCEPTION DETAILS 
+            }
+        }
+
+       
     }
 }

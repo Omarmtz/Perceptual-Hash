@@ -68,6 +68,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
@@ -77,7 +78,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataAccess\File.cs">
+    <Compile Include="DataAccess\DocumentFile.cs">
+      <DependentUpon>FileManagementDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\DocumentImage.cs">
       <DependentUpon>FileManagementDB.tt</DependentUpon>
     </Compile>
     <Compile Include="DataAccess\FileManagementDB.Context.cs">
@@ -95,16 +99,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FileManagementDB.edmx</DependentUpon>
     </Compile>
-    <Compile Include="DataAccess\Image.cs">
-      <DependentUpon>FileManagementDB.tt</DependentUpon>
-    </Compile>
     <Compile Include="FileManager\DataBaseManager.cs" />
+    <Compile Include="FileManager\DocxImageExtractor.cs" />
     <Compile Include="FileManager\FileAgent.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <EntityDeploy Include="DataAccess\FileManagementDB.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>FileManagementDB.Designer.cs</LastGenOutput>

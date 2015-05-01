@@ -6,14 +6,14 @@
     <edmx:StorageModels>
     <Schema Namespace="FileManagementDB.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityContainer Name="FileManagementDBStoreContainer">
-    <EntitySet Name="Files" EntityType="FileManagementDB.Store.Files" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="Images" EntityType="FileManagementDB.Store.Images" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DocumentFiles" EntityType="FileManagementDB.Store.DocumentFiles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DocumentImages" EntityType="FileManagementDB.Store.DocumentImages" store:Type="Tables" Schema="dbo" />
     <AssociationSet Name="FileImage" Association="FileManagementDB.Store.FileImage">
-      <End Role="File" EntitySet="Files" />
-      <End Role="Image" EntitySet="Images" />
+      <End Role="File" EntitySet="DocumentFiles" />
+      <End Role="Image" EntitySet="DocumentImages" />
     </AssociationSet>
   </EntityContainer>
-  <EntityType Name="Files">
+  <EntityType Name="DocumentFiles">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
@@ -23,22 +23,22 @@
     <Property Name="FolderPath" Type="nvarchar(max)" Nullable="false" />
     <Property Name="CreatedDate" Type="datetime" Nullable="false" />
     <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
-    <Property Name="Size" Type="int" Nullable="false" />
+    <Property Name="Size" Type="bigint" Nullable="false" />
   </EntityType>
-  <EntityType Name="Images">
+  <EntityType Name="DocumentImages">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
     <Property Name="Width" Type="int" Nullable="false" />
     <Property Name="Height" Type="int" Nullable="false" />
-    <Property Name="Bpp" Type="smallint" Nullable="false" />
-    <Property Name="PFingerPrint" Type="varbinary(max)" Nullable="false" />
+    <Property Name="PixelFormat" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PFingerPrint" Type="varbinary(max)" Nullable="true" />
     <Property Name="FileId" Type="uniqueidentifier" Nullable="false" />
   </EntityType>
   <Association Name="FileImage">
-    <End Role="File" Type="FileManagementDB.Store.Files" Multiplicity="1" />
-    <End Role="Image" Type="FileManagementDB.Store.Images" Multiplicity="*" />
+    <End Role="File" Type="FileManagementDB.Store.DocumentFiles" Multiplicity="1" />
+    <End Role="Image" Type="FileManagementDB.Store.DocumentImages" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="File">
         <PropertyRef Name="Id" />
@@ -53,14 +53,14 @@
     <edmx:ConceptualModels>
       <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="FileManagementDB" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
         <EntityContainer Name="FileManagementDBContainer" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Files" EntityType="FileManagementDB.File" />
-          <EntitySet Name="Images" EntityType="FileManagementDB.Image" />
+          <EntitySet Name="DocumentFiles" EntityType="FileManagementDB.DocumentFile" />
+          <EntitySet Name="DocumentImages" EntityType="FileManagementDB.DocumentImage" />
           <AssociationSet Name="FileImage" Association="FileManagementDB.FileImage">
-            <End Role="File" EntitySet="Files" />
-            <End Role="Image" EntitySet="Images" />
+            <End Role="File" EntitySet="DocumentFiles" />
+            <End Role="Image" EntitySet="DocumentImages" />
           </AssociationSet>
         </EntityContainer>
-        <EntityType Name="File">
+        <EntityType Name="DocumentFile">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
@@ -70,24 +70,24 @@
           <Property Name="FolderPath" Type="String" Nullable="false" />
           <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
           <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
-          <Property Name="Size" Type="Int32" Nullable="false" />
+          <Property Name="Size" Type="Int64" Nullable="false" />
           <NavigationProperty Name="Images" Relationship="FileManagementDB.FileImage" FromRole="File" ToRole="Image" />
         </EntityType>
-        <EntityType Name="Image">
+        <EntityType Name="DocumentImage">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
           <Property Name="Width" Type="Int32" Nullable="false" />
           <Property Name="Height" Type="Int32" Nullable="false" />
-          <Property Name="Bpp" Type="Int16" Nullable="false" />
-          <Property Name="PFingerPrint" Type="Binary" Nullable="false" />
+          <Property Name="PixelFormat" Type="String" Nullable="false" />
+          <Property Name="PFingerPrint" Type="Binary" Nullable="true" />
           <NavigationProperty Name="File" Relationship="FileManagementDB.FileImage" FromRole="Image" ToRole="File" />
           <Property Name="FileId" Type="Guid" Nullable="false" />
         </EntityType>
         <Association Name="FileImage">
-          <End Type="FileManagementDB.File" Role="File" Multiplicity="1" />
-          <End Type="FileManagementDB.Image" Role="Image" Multiplicity="*" />
+          <End Type="FileManagementDB.DocumentFile" Role="File" Multiplicity="1" />
+          <End Type="FileManagementDB.DocumentImage" Role="Image" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="File">
               <PropertyRef Name="Id" />
@@ -103,9 +103,9 @@
     <edmx:Mappings>
     <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="FileManagementDBStoreContainer" CdmEntityContainer="FileManagementDBContainer">
-    <EntitySetMapping Name="Files">
-      <EntityTypeMapping TypeName="IsTypeOf(FileManagementDB.File)">
-        <MappingFragment StoreEntitySet="Files">
+    <EntitySetMapping Name="DocumentFiles">
+      <EntityTypeMapping TypeName="IsTypeOf(FileManagementDB.DocumentFile)">
+        <MappingFragment StoreEntitySet="DocumentFiles">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="ItemType" ColumnName="ItemType" />
@@ -116,13 +116,13 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Images">
-      <EntityTypeMapping TypeName="IsTypeOf(FileManagementDB.Image)">
-        <MappingFragment StoreEntitySet="Images">
+    <EntitySetMapping Name="DocumentImages">
+      <EntityTypeMapping TypeName="IsTypeOf(FileManagementDB.DocumentImage)">
+        <MappingFragment StoreEntitySet="DocumentImages">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Width" ColumnName="Width" />
           <ScalarProperty Name="Height" ColumnName="Height" />
-          <ScalarProperty Name="Bpp" ColumnName="Bpp" />
+          <ScalarProperty Name="PixelFormat" ColumnName="PixelFormat" />
           <ScalarProperty Name="PFingerPrint" ColumnName="PFingerPrint" />
           <ScalarProperty Name="FileId" ColumnName="FileId" />
         </MappingFragment>

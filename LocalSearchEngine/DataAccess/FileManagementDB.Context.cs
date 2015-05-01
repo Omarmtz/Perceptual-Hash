@@ -25,7 +25,7 @@ namespace LocalSearchEngine.DataAccess
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<File> Files { get; set; }
-        public virtual DbSet<Image> Images { get; set; }
+        public virtual DbSet<DocumentFile> DocumentFiles { get; set; }
+        public virtual DbSet<DocumentImage> DocumentImages { get; set; }
     }
 }

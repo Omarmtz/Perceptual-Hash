@@ -12,21 +12,15 @@ namespace LocalSearchEngine.DataAccess
     using System;
     using System.Collections.Generic;
     
-    public partial class File
+    public partial class DocumentImage
     {
-        public File()
-        {
-            this.Images = new HashSet<Image>();
-        }
-    
         public System.Guid Id { get; set; }
-        public string Name { get; set; }
-        public string ItemType { get; set; }
-        public string FolderPath { get; set; }
-        public System.DateTime CreatedDate { get; set; }
-        public System.DateTime ModifiedDate { get; set; }
-        public int Size { get; set; }
+        public int Width { get; set; }
+        public int Height { get; set; }
+        public string PixelFormat { get; set; }
+        public byte[] PFingerPrint { get; set; }
+        public System.Guid FileId { get; set; }
     
-        public virtual ICollection<Image> Images { get; set; }
+        public virtual DocumentFile File { get; set; }
     }
 }
