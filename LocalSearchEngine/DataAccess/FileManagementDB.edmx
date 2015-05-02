@@ -36,6 +36,7 @@
     <Property Name="PFingerPrint" Type="varbinary(max)" Nullable="true" />
     <Property Name="FileId" Type="uniqueidentifier" Nullable="false" />
     <Property Name="IsWithinFile" Type="bit" Nullable="false" />
+    <Property Name="TempKeyName" Type="nvarchar(max)" Nullable="true" />
   </EntityType>
   <Association Name="FileImage">
     <End Role="File" Type="FileManagementDB.Store.DocumentFiles" Multiplicity="1" />
@@ -86,6 +87,7 @@
           <NavigationProperty Name="File" Relationship="FileManagementDB.FileImage" FromRole="Image" ToRole="File" />
           <Property Name="FileId" Type="Guid" Nullable="false" />
           <Property Name="IsWithinFile" Type="Boolean" Nullable="false" />
+          <Property Name="TempKeyName" Type="String" Nullable="true" />
         </EntityType>
         <Association Name="FileImage">
           <End Type="FileManagementDB.DocumentFile" Role="File" Multiplicity="1" />
@@ -128,6 +130,7 @@
           <ScalarProperty Name="PFingerPrint" ColumnName="PFingerPrint" />
           <ScalarProperty Name="FileId" ColumnName="FileId" />
           <ScalarProperty Name="IsWithinFile" ColumnName="IsWithinFile" />
+          <ScalarProperty Name="TempKeyName" ColumnName="TempKeyName" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -102,7 +102,7 @@
       <DependentUpon>FileManagementDB.edmx</DependentUpon>
     </Compile>
     <Compile Include="FileManager\DataBaseManager.cs" />
-    <Compile Include="FileManager\DocxImageExtractor.cs" />
+    <Compile Include="FileManager\ImageFileExtractor.cs" />
     <Compile Include="FileManager\FileAgent.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 05/01/2015 18:02:38
+-- Date Created: 05/02/2015 14:08:09
 -- Generated from EDMX file: E:\User\Documents\Visual Studio 2013\Projects\LocalSearchEngine\LocalSearchEngine\DataAccess\FileManagementDB.edmx
 -- --------------------------------------------------
 
@@ -56,7 +56,8 @@ CREATE TABLE [dbo].[DocumentImages] (
     [PixelFormat] nvarchar(max)  NOT NULL,
     [PFingerPrint] varbinary(max)  NULL,
     [FileId] uniqueidentifier  NOT NULL,
-    [IsWithinFile] bit  NOT NULL
+    [IsWithinFile] bit  NOT NULL,
+    [TempKeyName] nvarchar(max)  NULL
 );
 GO
 
