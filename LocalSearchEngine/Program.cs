@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -13,11 +14,16 @@ namespace LocalSearchEngine
     {
         static void Main()
         {
-            //var agent = new FileAgent(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments));
-            var agent = new FileAgent(@"c:\");
-            agent.InitializeIndexation();
-            //agent.CheckForUpdates();
+            var agent = new FileAgent(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile));
             
+            var watch = Stopwatch.StartNew();
+            
+            agent.InitializeIndexation();
+            //agent.UpdateIndexation();
+            watch.Stop();
+            
+            Console.WriteLine("Elapsed Time : {0}",watch.Elapsed);
+            Console.ReadLine();
         }
 
         

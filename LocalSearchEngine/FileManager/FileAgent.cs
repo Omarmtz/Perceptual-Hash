@@ -48,18 +48,18 @@ namespace LocalSearchEngine.FileManager
         }
 
         //Page size to get list of all indexed files in batches
-        private static int PageDataBaseSize = 1000;
+        private const int PageDataBaseSize = 1000;
 
         #endregion
 
         #region Variables
-        private string Directory;
+        private readonly string _directory;
 
         #endregion
 
         public FileAgent(string initialDirectory)
         {
-            this.Directory = initialDirectory;
+            this._directory = initialDirectory;
             //Create Temp Folder
             System.IO.Directory.CreateDirectory(TempFolder);
         }
@@ -67,8 +67,16 @@ namespace LocalSearchEngine.FileManager
         public void InitializeIndexation()
         {
             //Process Indexation
-            ProcessIndexation(this.Directory, GetSupportedFilesFilter, IndexFile);
+            ProcessIndexation(this._directory, GetSupportedFilesFilter, IndexFile);
         }
+
+        public void UpdateIndexation()
+        {
+            UpdateDataBaseIndexation();
+            ProcessIndexation(this._directory, GetSupportedFilesFilter, TryIndexFile);
+        }
+
+        #region Index Management
 
         private static void ProcessIndexation(string path, string[] filePattern, Action<FileInfo> indexationFunction)
         {
@@ -78,15 +86,14 @@ namespace LocalSearchEngine.FileManager
             while (queue.Count > 0)
             {
                 path = queue.Dequeue();
+                //Discard Temp Folder
+                if (path == TempFolder) continue;
+
                 try
                 {
                     foreach (var subDir in System.IO.Directory.GetDirectories(path))
                     {
-                        //Discard TempFolder
-                        if (subDir != TempFolder)
-                        {
-                            queue.Enqueue(subDir);
-                        }
+                        queue.Enqueue(subDir);
                     }
                 }
                 catch (Exception ex)
@@ -110,24 +117,6 @@ namespace LocalSearchEngine.FileManager
                 }
             }
         }
-
-        public void CheckForUpdates()
-        {
-            var fileList = GetFilesFromDirectory(this.Directory, GetSupportedFiles);
-
-            var totalIndexed = DataBaseManager.GetTotalFilesIndexed();
-
-            var pagesCount = (totalIndexed / PageDataBaseSize);
-
-            if (pagesCount * PageDataBaseSize < totalIndexed) pagesCount++;
-
-            for (int i = 0; i < pagesCount; i++)
-            {
-                var results = DataBaseManager.GetIndexedFilesPaged(i, PageDataBaseSize);
-            }
-        }
-
-        #region File Management
 
         private static void IndexFile(FileInfo info)
         {
@@ -156,6 +145,45 @@ namespace LocalSearchEngine.FileManager
             }
 
             DataBaseManager.SaveFile(file);
+            Console.WriteLine("Indexed : {0}",info.Name);
+        }
+
+        private static void TryIndexFile(FileInfo info)
+        {
+            if (DataBaseManager.IsFileAlreadyIndexed(info))
+                return;
+            IndexFile(info);
+        }
+
+        /// <summary>
+        /// Only Checks if files still exists if no the missing db records are removed
+        /// </summary>
+        private static void UpdateDataBaseIndexation()
+        {
+            //TEST FOR FILES FROM DATABASE
+            var totalIndexed = DataBaseManager.GetTotalFilesIndexed();
+
+            var pagesCount = (totalIndexed / PageDataBaseSize);
+
+            if (pagesCount * PageDataBaseSize < totalIndexed) pagesCount++;
+
+            for (var i = 0; i < pagesCount; i++)
+            {
+                //Get indexed Result
+                var results = DataBaseManager.GetIndexedFilesPaged(i, PageDataBaseSize);
+
+                //Search if file exists
+                foreach (var file in results.Where(file => !File.Exists(GetDocumentFullPathName(file))))
+                {
+                    //Delete Temporal Images if file not found
+                    foreach (var image in DataBaseManager.GetFileInternalImages(file))
+                    {
+                        DeleteTemporalImage(image.TempKeyName);
+                    }
+                    //Delete Image In DB 
+                    DataBaseManager.DeleteDocumentFile(file);
+                }
+            }
         }
 
         private static void AttachImageFile(DocumentFile file)
@@ -180,9 +208,10 @@ namespace LocalSearchEngine.FileManager
             }
             catch (Exception e)
             {
-                Console.WriteLine("[External] File Not supported {0}:{1}", GetDocumentFullPathName(file), e.Message);   
+                Console.WriteLine("[External] File Not supported {0}:{1}", GetDocumentFullPathName(file), e.Message);
             }
         }
+
         #endregion
 
         #region I/O File Management
@@ -227,6 +256,19 @@ namespace LocalSearchEngine.FileManager
         public static string GetDocumentFullPathName(DocumentFile file)
         {
             return Path.Combine(file.FolderPath, file.Name);
+        }
+
+        private static void DeleteTemporalImage(string file)
+        {
+            try
+            {
+                File.Delete(Path.Combine(TempFolder, file));
+            }
+            catch (Exception e)
+            {
+                //TODO LOG INFO
+                Console.WriteLine(e.Message);
+            }
         }
 
         #endregion

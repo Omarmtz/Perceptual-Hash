@@ -22,15 +22,14 @@ namespace LocalSearchEngine.FileManager
                 {
                     foreach (var entry in archive.Entries)
                     {
-                        if (extensions.Any(e => e.Equals(Path.GetExtension(entry.Name))))
-                        {
-                            var attachmentName = Guid.NewGuid() + entry.Name;
-                            var fileAttachmentPath = Path.Combine(destinationDirectory, attachmentName);
-                            entry.ExtractToFile(fileAttachmentPath);
-
-                            results.Add(GetImageInformation(fileAttachmentPath));
-                            Console.WriteLine("Extracting {0} to {1} ", attachmentName, destinationDirectory);
-                        }
+                        if (!extensions.Any(e => e.Equals(Path.GetExtension(entry.Name)))) continue;
+                        
+                        var attachmentName = Guid.NewGuid() + entry.Name;
+                        var fileAttachmentPath = Path.Combine(destinationDirectory, attachmentName);
+                        entry.ExtractToFile(fileAttachmentPath);
+                        results.Add(GetImageInformation(fileAttachmentPath));
+                        
+                        Console.WriteLine("Extracting {0} to {1} ", attachmentName, destinationDirectory);
                     }
                 }
                 return results;
