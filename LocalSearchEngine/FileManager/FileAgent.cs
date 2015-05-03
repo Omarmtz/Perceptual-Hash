@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
@@ -17,13 +18,13 @@ namespace LocalSearchEngine.FileManager
     {
         #region Extension Types
 
-        public static string[] ExtensionImagesFile = { ".bmp", ".gif", ".jpg", ".png", ".jpeg", ".tif", ".tiff", ".jif", ".jfif", ".jp2", ".jpx", ".j2k", ".j2c" };
+        public static string[] ExtensionImagesFile = { ".bmp", ".jpg", ".png", ".jpeg", ".tif", ".tiff", ".jif", ".jfif", ".jp2", ".jpx", ".j2k", ".j2c" };
 
         public static string[] ExtensionImagesContentFile = { ".docx", ".odt", ".pptx" };
 
         public static string[] ExtensionOnlyTextFile = { ".txt", ".rtf", ".htm" };
 
-        public static string TempFolder = Path.Combine(Path.GetTempPath(),"ImageSearchingTempFiles");
+        public static string TempFolder = Path.Combine(Path.GetTempPath(), "ImageSearchingTempFiles");
         public string[] GetSupportedFiles
         {
             get
@@ -34,6 +35,20 @@ namespace LocalSearchEngine.FileManager
                 return z;
             }
         }
+
+        public string[] GetSupportedFilesFilter
+        {
+            get
+            {
+                var z = new string[ExtensionImagesFile.Length + ExtensionImagesContentFile.Length];
+                ExtensionImagesFile.Select(e => "*" + e).ToArray().CopyTo(z, 0);
+                ExtensionImagesContentFile.Select(e => "*" + e).ToArray().CopyTo(z, ExtensionImagesFile.Length);
+                return z;
+            }
+        }
+
+        //Page size to get list of all indexed files in batches
+        private static int PageDataBaseSize = 1000;
 
         #endregion
 
@@ -51,10 +66,65 @@ namespace LocalSearchEngine.FileManager
 
         public void InitializeIndexation()
         {
+            //Process Indexation
+            ProcessIndexation(this.Directory, GetSupportedFilesFilter, IndexFile);
+        }
+
+        private static void ProcessIndexation(string path, string[] filePattern, Action<FileInfo> indexationFunction)
+        {
+            var queue = new Queue<string>();
+            queue.Enqueue(path);
+
+            while (queue.Count > 0)
+            {
+                path = queue.Dequeue();
+                try
+                {
+                    foreach (var subDir in System.IO.Directory.GetDirectories(path))
+                    {
+                        //Discard TempFolder
+                        if (subDir != TempFolder)
+                        {
+                            queue.Enqueue(subDir);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.Error.WriteLine(ex);
+                }
+
+                try
+                {
+                    //Process Files
+                    foreach (var fileType in filePattern)
+                    {
+                        //Execute Function for Indexation
+                        System.IO.Directory.GetFiles(path, fileType).AsParallel().ForAll(e => indexationFunction.Invoke(new FileInfo(e)));
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    Console.Error.WriteLine(ex);
+                }
+            }
+        }
+
+        public void CheckForUpdates()
+        {
             var fileList = GetFilesFromDirectory(this.Directory, GetSupportedFiles);
-            
-            //Process Parallel.
-            fileList.AsParallel().ForAll(e => IndexFile(new FileInfo(e)));
+
+            var totalIndexed = DataBaseManager.GetTotalFilesIndexed();
+
+            var pagesCount = (totalIndexed / PageDataBaseSize);
+
+            if (pagesCount * PageDataBaseSize < totalIndexed) pagesCount++;
+
+            for (int i = 0; i < pagesCount; i++)
+            {
+                var results = DataBaseManager.GetIndexedFilesPaged(i, PageDataBaseSize);
+            }
         }
 
         #region File Management
@@ -92,33 +162,27 @@ namespace LocalSearchEngine.FileManager
         {
             try
             {
-                var img = Image.FromFile(GetDocumentFullPathName(file));
-
-                var docImg = new DocumentImage()
+                using (var fs = new FileStream(GetDocumentFullPathName(file), FileMode.Open, FileAccess.Read))
                 {
-                    Id = Guid.NewGuid(),
-                    PixelFormat = img.PixelFormat.ToString(),
-                    Width = img.Width,
-                    Height = img.Height,
-                    IsWithinFile = false
-                };
-                file.Images.Add(docImg);
-            }
-            catch (OutOfMemoryException outmemException)
-            {
-                Console.WriteLine("File Not supported {0}:{1}", file.Name, outmemException.Message);
+                    using (var img = Image.FromStream(fs, true, false))
+                    {
+                        var docImg = new DocumentImage()
+                        {
+                            Id = Guid.NewGuid(),
+                            PixelFormat = img.PixelFormat.ToString(),
+                            Width = img.Width,
+                            Height = img.Height,
+                            IsWithinFile = false
+                        };
+                        file.Images.Add(docImg);
+                    }
+                }
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message + file.Name);
+                Console.WriteLine("[External] File Not supported {0}:{1}", GetDocumentFullPathName(file), e.Message);   
             }
         }
-
-        public static string GetDocumentFullPathName(DocumentFile file)
-        {
-            return Path.Combine(file.FolderPath, file.Name);
-        }
-
         #endregion
 
         #region I/O File Management
@@ -158,6 +222,11 @@ namespace LocalSearchEngine.FileManager
                 }
             }
             return files;
+        }
+
+        public static string GetDocumentFullPathName(DocumentFile file)
+        {
+            return Path.Combine(file.FolderPath, file.Name);
         }
 
         #endregion

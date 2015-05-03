@@ -47,30 +47,28 @@ namespace LocalSearchEngine.FileManager
         {
             try
             {
-                using (var img = Image.FromFile(filePath))
+               using (var fs = new FileStream(filePath, FileMode.Open, FileAccess.Read))
                 {
-                    var docImg = new DocumentImage()
+                    using (var img = Image.FromStream(fs, true, false))
                     {
-                        Id = Guid.NewGuid(),
-                        PixelFormat = img.PixelFormat.ToString(),
-                        Width = img.Width,
-                        Height = img.Height,
-                        IsWithinFile = true,
-                        TempKeyName = Path.GetFileName(filePath)
+                        var docImg = new DocumentImage()
+                        {
+                            Id = Guid.NewGuid(),
+                            PixelFormat = img.PixelFormat.ToString(),
+                            Width = img.Width,
+                            Height = img.Height,
+                            IsWithinFile = true,
+                            TempKeyName = Path.GetFileName(filePath)
 
-                    };
-                    return docImg;
+                        };
+                        return docImg;
+                    }
                 }
-            }
-            catch (OutOfMemoryException outmemException)
-            {
-                //TODO EXCEPTION LOGIN
-                Console.WriteLine("[Internal] File Not supported {0}:{1}", filePath, outmemException.Message);
             }
             catch (Exception e)
             {
                 //TODO EXCEPTION LOGIN
-                Console.WriteLine(e.Message + filePath);
+                Console.WriteLine("[Internal] File Not supported {0}:{1}", filePath, e.Message);
             }
             return null;
         }

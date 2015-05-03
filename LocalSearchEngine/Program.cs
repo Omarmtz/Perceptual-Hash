@@ -13,9 +13,10 @@ namespace LocalSearchEngine
     {
         static void Main()
         {
-            var agent = new FileAgent(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments));
+            //var agent = new FileAgent(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments));
+            var agent = new FileAgent(@"c:\");
             agent.InitializeIndexation();
-
+            //agent.CheckForUpdates();
             
         }
 

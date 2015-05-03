@@ -23,7 +23,7 @@ namespace LocalSearchEngine.FileManager
                 //TODO LOG EXCEPTION DETAILS 
                 return null;
             }
-            
+
         }
 
         public static void SaveFile(DocumentFile file)
@@ -41,6 +41,40 @@ namespace LocalSearchEngine.FileManager
                 //TODO LOG EXCEPTION DETAILS 
             }
         }
-       
+
+        public static int GetTotalFilesIndexed()
+        {
+            try
+            {
+                using (var context = new FileManagementDBContainer())
+                {
+                    return (from p in context.DocumentFiles select p).Count();
+                }
+            }
+            catch (Exception)
+            {
+                //TODO LOG EXCEPTION DETAILS 
+                return -1;
+            }
+        }
+
+        public static List<DocumentFile> GetIndexedFilesPaged(int page, int pagesize)
+        {
+            try
+            {
+                using (var context = new FileManagementDBContainer())
+                {
+                    return (from p in context.DocumentFiles
+                                       orderby p.CreatedDate
+                                       select p).Skip(page * pagesize).Take(pagesize).ToList();
+                }
+            }
+            catch (Exception)
+            {
+                //TODO LOG EXCEPTION DETAILS 
+                return null;
+            }
+        }
+
     }
 }
