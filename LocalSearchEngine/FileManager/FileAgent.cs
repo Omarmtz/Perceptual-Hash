@@ -52,7 +52,8 @@ namespace LocalSearchEngine.FileManager
         public void InitializeIndexation()
         {
             var fileList = GetFilesFromDirectory(this.Directory, GetSupportedFiles);
-            //CHECK FOR PARALLEL PROCESSING
+            
+            //Process Parallel.
             fileList.AsParallel().ForAll(e => IndexFile(new FileInfo(e)));
         }
 

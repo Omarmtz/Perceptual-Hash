@@ -11,7 +11,7 @@ using LocalSearchEngine.DataAccess;
 
 namespace LocalSearchEngine.FileManager
 {
-    class ImageFileExtractor
+    public class ImageFileExtractor
     {
         public static List<DocumentImage> ExtractImagesFromFile(string path, string destinationDirectory, string[] extensions)
         {

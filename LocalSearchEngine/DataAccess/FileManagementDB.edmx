@@ -39,7 +39,9 @@
     <Property Name="TempKeyName" Type="nvarchar(max)" Nullable="true" />
   </EntityType>
   <Association Name="FileImage">
-    <End Role="File" Type="FileManagementDB.Store.DocumentFiles" Multiplicity="1" />
+    <End Role="File" Type="FileManagementDB.Store.DocumentFiles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
     <End Role="Image" Type="FileManagementDB.Store.DocumentImages" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="File">
@@ -90,7 +92,9 @@
           <Property Name="TempKeyName" Type="String" Nullable="true" />
         </EntityType>
         <Association Name="FileImage">
-          <End Type="FileManagementDB.DocumentFile" Role="File" Multiplicity="1" />
+          <End Type="FileManagementDB.DocumentFile" Role="File" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
           <End Type="FileManagementDB.DocumentImage" Role="Image" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="File">

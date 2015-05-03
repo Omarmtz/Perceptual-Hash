@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 05/02/2015 14:08:09
+-- Date Created: 05/02/2015 21:47:46
 -- Generated from EDMX file: E:\User\Documents\Visual Studio 2013\Projects\LocalSearchEngine\LocalSearchEngine\DataAccess\FileManagementDB.edmx
 -- --------------------------------------------------
 
@@ -87,7 +87,7 @@ ADD CONSTRAINT [FK_FileImage]
     FOREIGN KEY ([FileId])
     REFERENCES [dbo].[DocumentFiles]
         ([Id])
-    ON DELETE NO ACTION ON UPDATE NO ACTION;
+    ON DELETE CASCADE ON UPDATE NO ACTION;
 
 -- Creating non-clustered index for FOREIGN KEY 'FK_FileImage'
 CREATE INDEX [IX_FK_FileImage]
