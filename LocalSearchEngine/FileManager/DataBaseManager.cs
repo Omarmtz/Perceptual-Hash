@@ -34,13 +34,48 @@ namespace LocalSearchEngine.FileManager
             {
                 using (var context = new FileManagementDBContainer())
                 {
-                    return context.DocumentFiles.FirstOrDefault(e => e.Name == file.Name)!=null;
+                    return context.DocumentFiles.FirstOrDefault(e => e.FolderPath + "\\" + e.Name == file.FullName) != null;
                 }
             }
             catch (Exception)
             {
                 //TODO LOG EXCEPTION DETAILS 
                 return false;
+            }
+        }
+
+        public static DocumentFile GetFileByFullName(string fullName)
+        {
+            try
+            {
+                using (var context = new FileManagementDBContainer())
+                {
+                    return context.DocumentFiles.FirstOrDefault(e => e.FolderPath + "\\" + e.Name == fullName);
+                }
+            }
+            catch (Exception)
+            {
+                //TODO LOG EXCEPTION DETAILS 
+                return null;
+            }
+        }
+
+        public static void UpdateFile(DocumentFile file)
+        {
+            try
+            {
+                using (var context = new FileManagementDBContainer())
+                {
+                    var result = context.DocumentFiles.First(e => e.Id == file.Id);
+                    result.Name = file.Name;
+                    result.FolderPath = file.FolderPath;
+                    context.SaveChanges();
+                }
+            }
+            catch (Exception)
+            {
+                //TODO LOG EXCEPTION DETAILS 
+                return;
             }
         }
 

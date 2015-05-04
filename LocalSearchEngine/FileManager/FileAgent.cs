@@ -25,7 +25,7 @@ namespace LocalSearchEngine.FileManager
         public static string[] ExtensionOnlyTextFile = { ".txt", ".rtf", ".htm" };
 
         public static string TempFolder = Path.Combine(Path.GetTempPath(), "ImageSearchingTempFiles");
-        public string[] GetSupportedFiles
+        public static string[] GetSupportedFiles
         {
             get
             {
@@ -36,7 +36,7 @@ namespace LocalSearchEngine.FileManager
             }
         }
 
-        public string[] GetSupportedFilesFilter
+        public static string[] GetSupportedFilesFilter
         {
             get
             {
@@ -47,21 +47,26 @@ namespace LocalSearchEngine.FileManager
             }
         }
 
-        //Page size to get list of all indexed files in batches
-        private const int PageDataBaseSize = 1000;
-
         #endregion
 
         #region Variables
         private readonly string _directory;
 
+        //Page size to get list of all indexed files in batches
+        private const int PageDataBaseSize = 1000;
+
+        public Task WatchFileSystemTask;
         #endregion
 
         public FileAgent(string initialDirectory)
         {
             this._directory = initialDirectory;
             //Create Temp Folder
-            System.IO.Directory.CreateDirectory(TempFolder);
+            Directory.CreateDirectory(TempFolder);
+
+            WatchFileSystemTask = Task.Factory.StartNew(() => RunWatcher(_directory)
+                , TaskCreationOptions.LongRunning);
+
         }
 
         public void InitializeIndexation()
@@ -75,6 +80,93 @@ namespace LocalSearchEngine.FileManager
             UpdateDataBaseIndexation();
             ProcessIndexation(this._directory, GetSupportedFilesFilter, TryIndexFile);
         }
+
+        #region File Watcher Control
+
+        [PermissionSet(SecurityAction.Demand, Name = "FullTrust")]
+        public static void RunWatcher(string directory)
+        {
+            var fileSystemWatcher = new FileSystemWatcher
+            {
+                Filter = "*.*",
+                NotifyFilter = NotifyFilters.LastAccess | NotifyFilters.LastWrite | NotifyFilters.FileName | NotifyFilters.DirectoryName,
+                Path = directory,
+                IncludeSubdirectories = true
+            };
+            // Add event handlers.
+            //fileSystemWatcher.Changed += OnFileChanged;
+            fileSystemWatcher.Created += OnFileCreated;
+            fileSystemWatcher.Deleted += OnFileDeleted;
+            fileSystemWatcher.Renamed += OnFileRenamed;
+
+            // Begin watching.
+            fileSystemWatcher.EnableRaisingEvents = true;
+
+            while (true) ;
+        }
+
+        private static void OnFileRenamed(object sender, RenamedEventArgs e)
+        {
+            if (GetSupportedFiles.Any(f => f == Path.GetExtension(e.Name)))
+            {
+                var file = new FileInfo(e.FullPath);
+                var document = DataBaseManager.GetFileByFullName(e.OldFullPath);
+                if (document != null)
+                {
+                    document.Name = file.Name;
+                    document.FolderPath = file.DirectoryName;
+
+                    DataBaseManager.UpdateFile(document);
+                }
+                else
+                {
+                    IndexFile(file);
+                }
+                Console.WriteLine("{0:dd/MM/yy H:mm:ss} [Rename Event] File Record Index Updated {1}", DateTime.Now, file.FullName);
+            }
+
+        }
+
+        private static void OnFileDeleted(object sender, FileSystemEventArgs e)
+        {
+            if (GetSupportedFiles.Any(f => f == Path.GetExtension(e.Name)))
+            {
+                var document = DataBaseManager.GetFileByFullName(e.FullPath);
+                if (document == null) return;
+                DataBaseManager.DeleteDocumentFile(document);
+                Console.WriteLine("{0:dd/MM/yy H:mm:ss} [Delete Event] File Record Index Updated {1}", DateTime.Now, e.FullPath);
+            }
+
+        }
+
+        private static void OnFileCreated(object sender, FileSystemEventArgs e)
+        {
+            if (GetSupportedFiles.Any(f => f == Path.GetExtension(e.Name)))
+            {
+                var file = new FileInfo(e.FullPath);
+                var document = DataBaseManager.GetFileByFullName(e.FullPath);
+                if (document != null) return;
+                IndexFile(file);
+                Console.WriteLine("{0:dd/MM/yy H:mm:ss} [Create Event] File Record Index Updated {1}", DateTime.Now, e.FullPath);
+            }
+
+        }
+
+        private static void OnFileChanged(object sender, FileSystemEventArgs e)
+        {
+            if (GetSupportedFiles.Any(f => f == Path.GetExtension(e.Name)))
+            {
+                var document = DataBaseManager.GetFileByFullName(e.FullPath);
+                if (document != null)
+                {
+                    DataBaseManager.DeleteDocumentFile(document);
+                }
+                IndexFile(new FileInfo(e.FullPath));
+                Console.WriteLine("{0:dd/MM/yy H:mm:ss} [Changed Event] File Record Index Updated {1}", DateTime.Now, e.FullPath);
+            }
+        }
+
+        #endregion
 
         #region Index Management
 
@@ -145,7 +237,7 @@ namespace LocalSearchEngine.FileManager
             }
 
             DataBaseManager.SaveFile(file);
-            Console.WriteLine("Indexed : {0}",info.Name);
+            Console.WriteLine("Indexed : {0}", info.Name);
         }
 
         private static void TryIndexFile(FileInfo info)
@@ -272,5 +364,6 @@ namespace LocalSearchEngine.FileManager
         }
 
         #endregion
+
     }
 }
