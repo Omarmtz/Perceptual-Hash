@@ -175,6 +175,9 @@ namespace LocalSearchEngine.FileManager
                 {
                     context.DocumentFiles.Remove(context.DocumentFiles.First(e => e.Id == file.Id));
                     context.SaveChanges();
+
+
+                    
                 }
             }
             catch (Exception)

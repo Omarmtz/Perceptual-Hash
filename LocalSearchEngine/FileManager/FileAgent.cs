@@ -133,7 +133,14 @@ namespace LocalSearchEngine.FileManager
             {
                 var document = DataBaseManager.GetFileByFullName(e.FullPath);
                 if (document == null) return;
+                
+                foreach (var image in DataBaseManager.GetFileInternalImages(document))
+                {
+                    DeleteTemporalImage(image.TempKeyName);
+                }
+
                 DataBaseManager.DeleteDocumentFile(document);
+
                 Console.WriteLine("{0:dd/MM/yy H:mm:ss} [Delete Event] File Record Index Updated {1}", DateTime.Now, e.FullPath);
             }
 
