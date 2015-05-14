@@ -1,15 +1,16 @@
-﻿using System.Drawing;
+﻿using System.Collections;
+using System.Drawing;
 using System.IO;
 
 namespace PHash
 {
     interface IPerceptualImageHashFunction
     {
-        byte[] GetHash(string imageFile);
+        BitArray GetHash(string imageFile);
 
-        byte[] GetHash(Stream imageFile);
+        BitArray GetHash(Stream imageFile);
 
-        byte[] GetHash(Bitmap imageFile);
+        BitArray GetHash(Bitmap imageFile);
 
     }
 }

@@ -16,6 +16,7 @@ namespace ImageProcessing
     {
         private static void Main(string[] args)
         {
+            
         }
 
         public static void PrintMatrix(ref double[,] matrix)

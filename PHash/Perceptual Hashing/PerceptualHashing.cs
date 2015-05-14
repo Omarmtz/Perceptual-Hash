@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -9,14 +10,12 @@ namespace PHash
 {
     public abstract class PerceptualHashing : IPerceptualHashing<Bitmap>
     {
-        public abstract float GetSimilarity(Bitmap mediaObjectA, Bitmap mediaObjectB, Delegate hashFunc, Delegate compareHashFunc);
+        public abstract float GetSimilarity(Bitmap mediaObjectA, Bitmap mediaObjectB, Func<Bitmap, BitArray> hashFunc,
+            Func<BitArray, BitArray, float> compareHashFunc);
 
-        public abstract float GetSimilarity(string fileObjectA, string fileObjectB, Delegate hashFunc, Delegate compareHashFunc);
+        public abstract float GetSimilarity(Bitmap mediaObject, Func<Bitmap, BitArray> hashFunc,
+            Func<BitArray, BitArray, float> compareHashFunc);
 
-        public abstract float GetSimilarity(Bitmap mediaObject, Delegate hashFunc, Delegate compareHashFunc);
-
-        public abstract float GetSimilarity(string fileObject, Delegate hashFunc, Delegate compareHashFunc);
-
-        public abstract byte[] GetDigest(Bitmap mediaObject, Delegate hashFunc);
+        public abstract BitArray GetDigest(Bitmap mediaObject, Func<Bitmap, BitArray> hashFunc);
     }
 }

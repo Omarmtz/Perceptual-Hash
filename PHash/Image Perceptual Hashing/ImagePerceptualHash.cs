@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,29 +10,23 @@ namespace PHash
 {
     public class ImagePerceptualHash: PerceptualHashing
     {
-        public override float GetSimilarity(System.Drawing.Bitmap mediaObjectA, System.Drawing.Bitmap mediaObjectB, Delegate hashFunc, Delegate compareHashFunc)
+        public override float GetSimilarity(Bitmap mediaObjectA, Bitmap mediaObjectB, Func<Bitmap, BitArray> hashFunc, Func<BitArray, BitArray, float> compareHashFunc)
         {
             throw new NotImplementedException();
         }
 
-        public override float GetSimilarity(string fileObjectA, string fileObjectB, Delegate hashFunc, Delegate compareHashFunc)
+        public override float GetSimilarity(Bitmap mediaObject, Func<Bitmap, BitArray> hashFunc, Func<BitArray, BitArray, float> compareHashFunc)
         {
             throw new NotImplementedException();
         }
 
-        public override float GetSimilarity(System.Drawing.Bitmap mediaObject, Delegate hashFunc, Delegate compareHashFunc)
+        public override BitArray GetDigest(Bitmap mediaObject, Func<Bitmap, BitArray> hashFunc)
         {
-            throw new NotImplementedException();
-        }
+            var tmp = ImageProcessing.Filters.BasicFilters.ResizeBitmap(mediaObject, 32, 32);
+            tmp = (Bitmap)ImageProcessing.Filters.BasicFilters.GrayScale(tmp).Clone();
 
-        public override float GetSimilarity(string fileObject, Delegate hashFunc, Delegate compareHashFunc)
-        {
-            throw new NotImplementedException();
+            return hashFunc(tmp);
         }
-
-        public override byte[] GetDigest(System.Drawing.Bitmap mediaObject, Delegate hashFunc)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }

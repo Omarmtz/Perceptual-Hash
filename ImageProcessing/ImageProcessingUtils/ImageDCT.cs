@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections;
 using System.Drawing;
 using System.Drawing.Imaging;
+using Accord.Imaging.Converters;
 
 namespace ImageProcessing.ImageProcessingUtils
 {
@@ -8,7 +10,10 @@ namespace ImageProcessing.ImageProcessingUtils
     {
         public static double[,] GetDctForwardTransform(Bitmap reference)
         {
-            var referenceMatrix = TransformBitmapToMatrix(reference);
+            // Create the converter to convert the image to a
+            //  matrix containing only values between 0 and 255 
+            var converter = new ImageToMatrix(min: 0, max: 255);
+            double[,] referenceMatrix; converter.Convert(reference, out referenceMatrix);
 
             return GetDctForwardTransform(ref referenceMatrix);
         }
@@ -48,51 +53,6 @@ namespace ImageProcessing.ImageProcessingUtils
                 }
             }
             return sum;
-        }
-
-        private static double[,] TransformBitmapToMatrix(Bitmap image)
-        {
-            using (image)
-            {
-                var originalData = image.LockBits(new Rectangle(0, 0, image.Width, image.Height),
-                                   ImageLockMode.ReadWrite, image.PixelFormat);
-                var result = new double[image.Height, image.Width];
-
-                unsafe
-                {
-                    for (var i = 0; i < image.Height; i++)
-                    {
-                        var irow = (byte*)originalData.Scan0 + (i * originalData.Stride);
-                        for (var j = 0; j < image.Width; j++)
-                        {
-                            result[i, j] = irow[j];
-                        }
-                    }
-                }
-                image.UnlockBits(originalData);
-                return result;
-            }
-        }
-
-        public static double GetFirst8X8BlockMean(ref double[,] matrix)
-        {
-            double value = 0;
-            if (matrix.GetLength(0) != 32 || matrix.GetLength(1) != 32)
-            {
-                throw new Exception("Image must be width=height = 32");
-            }
-
-            for (var i = 0; i < 8; i++)
-            {
-                for (var j = 0; j < 8; j++)
-                {
-                    if (i == 0 && j == 0)
-                        continue;
-                    value += matrix[i, j];
-                }
-            }
-
-            return value / (double)63;
         }
     }
 }
