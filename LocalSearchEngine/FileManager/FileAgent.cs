@@ -107,6 +107,8 @@ namespace LocalSearchEngine.FileManager
 
         private static void OnFileRenamed(object sender, RenamedEventArgs e)
         {
+            if ((Path.GetDirectoryName(e.FullPath) == TempFolder)) return;
+
             if (GetSupportedFiles.Any(f => f == Path.GetExtension(e.Name)))
             {
                 var file = new FileInfo(e.FullPath);
@@ -129,11 +131,13 @@ namespace LocalSearchEngine.FileManager
 
         private static void OnFileDeleted(object sender, FileSystemEventArgs e)
         {
+            if ((Path.GetDirectoryName(e.FullPath) == TempFolder)) return;
+
             if (GetSupportedFiles.Any(f => f == Path.GetExtension(e.Name)))
             {
                 var document = DataBaseManager.GetFileByFullName(e.FullPath);
                 if (document == null) return;
-                
+
                 foreach (var image in DataBaseManager.GetFileInternalImages(document))
                 {
                     DeleteTemporalImage(image.TempKeyName);
@@ -148,6 +152,8 @@ namespace LocalSearchEngine.FileManager
 
         private static void OnFileCreated(object sender, FileSystemEventArgs e)
         {
+            if ((Path.GetDirectoryName(e.FullPath) == TempFolder)) return;
+
             if (GetSupportedFiles.Any(f => f == Path.GetExtension(e.Name)))
             {
                 var file = new FileInfo(e.FullPath);
@@ -161,6 +167,8 @@ namespace LocalSearchEngine.FileManager
 
         private static void OnFileChanged(object sender, FileSystemEventArgs e)
         {
+            if ((Path.GetDirectoryName(e.FullPath) == TempFolder)) return;
+            
             if (GetSupportedFiles.Any(f => f == Path.GetExtension(e.Name)))
             {
                 var document = DataBaseManager.GetFileByFullName(e.FullPath);
@@ -219,6 +227,7 @@ namespace LocalSearchEngine.FileManager
 
         private static void IndexFile(FileInfo info)
         {
+            bool validImage = false;
             var file = new DocumentFile()
             {
                 Id = Guid.NewGuid(),
@@ -236,13 +245,14 @@ namespace LocalSearchEngine.FileManager
                 //Search Inside Document
                 var results = ImageFileExtractor.ExtractImagesFromFile(GetDocumentFullPathName(file), TempFolder, ExtensionImagesFile);
                 results.ForEach(e => file.Images.Add(e));
+                validImage = true;
             }
             else
             {
                 //File itself is an Image
-                AttachImageFile(file);
+                validImage = AttachImageFile(file);
             }
-
+            if (!validImage) return;
             DataBaseManager.SaveFile(file);
             Console.WriteLine("Indexed : {0}", info.Name);
         }
@@ -285,7 +295,7 @@ namespace LocalSearchEngine.FileManager
             }
         }
 
-        private static void AttachImageFile(DocumentFile file)
+        private static bool AttachImageFile(DocumentFile file)
         {
             try
             {
@@ -293,6 +303,8 @@ namespace LocalSearchEngine.FileManager
                 {
                     using (var img = Image.FromStream(fs, true, false))
                     {
+                        if (img.Width < 150 || img.Height < 150) { return false; }
+
                         var docImg = new DocumentImage()
                         {
                             Id = Guid.NewGuid(),
@@ -304,10 +316,12 @@ namespace LocalSearchEngine.FileManager
                         file.Images.Add(docImg);
                     }
                 }
+                return true;
             }
             catch (Exception e)
             {
                 Console.WriteLine("[External] File Not supported {0}:{1}", GetDocumentFullPathName(file), e.Message);
+                return false;
             }
         }
 

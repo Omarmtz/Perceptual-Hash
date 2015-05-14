@@ -21,8 +21,8 @@ namespace PHash
             var normalizedHammingDistance = new NormalizedHammingDistance();
             float distance;
 
-            Bitmap a = new Bitmap(Image.FromFile(@"E:\phash-b.jpg"));
-            Bitmap b = new Bitmap(Image.FromFile(@"E:\brookklyn.jpg"));
+            Bitmap a = new Bitmap(Image.FromFile(@"E:\1.png"));
+            Bitmap b = new Bitmap(Image.FromFile(@"E:\2.png"));
 
             var watch = Stopwatch.StartNew();
             
