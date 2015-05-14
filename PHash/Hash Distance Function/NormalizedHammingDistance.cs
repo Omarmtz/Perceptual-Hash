@@ -23,7 +23,7 @@ namespace PHash.Hash_Distance_Function
                 }
             }
 
-            return distance/(float)distanceBitArray.Length;
+            return 1-(distance/(float)distanceBitArray.Length);
 
         }
 

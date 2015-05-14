@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
@@ -7,34 +8,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using PHash.Hash_Distance_Function;
+
 namespace PHash
 {
     class Program
     {
         static void Main(string[] args)
         {
-            ImagePerceptualHash phash = new ImagePerceptualHash();
-            PerceptualDctHashFunction dtcFunction = new PerceptualDctHashFunction();
-            var a = String.Empty;
+            var phash = new ImagePerceptualHash();
+            var dtcFunction = new PerceptualDctHashFunction();
+            var normalizedHammingDistance = new NormalizedHammingDistance();
+            float distance;
+
+            Bitmap a = new Bitmap(Image.FromFile(@"E:\phash-b.jpg"));
+            Bitmap b = new Bitmap(Image.FromFile(@"E:\brookklyn.jpg"));
+
             var watch = Stopwatch.StartNew();
+            
             // the code that you want to measure comes here
 
-            using (var fs = new FileStream(@"E:\Salzburg_from_Gaisberg_big_version.jpg", FileMode.Open, FileAccess.Read))
-            {
-                using (var img = Bitmap.FromStream(fs, true, false))
-                {
-                    var result = phash.GetDigest(new Bitmap(img), dtcFunction.GetHash);
-                    
-                    for (int i = 0; i < result.Length; i++)
-                    {
-                        a += result[i] ? "1" : "0";
-                    }
-                    
-                }
-            }
-            watch.Stop();
-            Console.WriteLine(a + " "+ watch.Elapsed);
+            distance=phash.GetSimilarity(a, b, dtcFunction.GetHash, normalizedHammingDistance.GetHashDistance);
             
+            watch.Stop();
+
+            Console.WriteLine("{0} {1}", distance, watch.Elapsed);
+
             Console.ReadLine();
         }
     }

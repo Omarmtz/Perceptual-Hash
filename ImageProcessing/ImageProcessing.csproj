@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Filters\BasicFilters.cs" />
     <Compile Include="ImageProcessingUtils\ImageDCT.cs" />
+    <Compile Include="ImageProcessingUtils\BitmapToMatrix.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
