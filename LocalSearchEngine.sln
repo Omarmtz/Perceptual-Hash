@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManager", "LocalSearchEngine\FileManager.csproj", "{1AF9D41F-C857-4C9C-B283-5A24700257F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageProcessing", "ImageProcessing\ImageProcessing.csproj", "{3364787B-DC78-44F5-AD82-8B26C30BE50E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHash", "PHash\PHash.csproj", "{8A2A4552-D880-4D6B-8A8A-21B57A1EF811}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{1AF9D41F-C857-4C9C-B283-5A24700257F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AF9D41F-C857-4C9C-B283-5A24700257F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AF9D41F-C857-4C9C-B283-5A24700257F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3364787B-DC78-44F5-AD82-8B26C30BE50E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3364787B-DC78-44F5-AD82-8B26C30BE50E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3364787B-DC78-44F5-AD82-8B26C30BE50E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3364787B-DC78-44F5-AD82-8B26C30BE50E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A2A4552-D880-4D6B-8A8A-21B57A1EF811}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A2A4552-D880-4D6B-8A8A-21B57A1EF811}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A2A4552-D880-4D6B-8A8A-21B57A1EF811}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A2A4552-D880-4D6B-8A8A-21B57A1EF811}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
