@@ -8,7 +8,7 @@ namespace PHash.Hash_Distance_Function
 {
     interface IPerceptualHashDistanceFunction
     {
-        float GetHashDistance(byte[] hashA, byte hashB);
+        float GetHashDistance(byte[] hashA, byte[] hashB);
 
         float GetHashDistance(ulong hashA, ulong hashB);
     }
