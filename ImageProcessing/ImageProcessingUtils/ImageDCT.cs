@@ -10,12 +10,28 @@ namespace ImageProcessing.ImageProcessingUtils
     {
         public static double[,] GetDctForwardTransform(Bitmap reference)
         {
+            var referenceMatrix = ConvertBitmapToMatrix(reference);
+
+            return GetDctForwardTransform(ref referenceMatrix);
+        }
+
+        private static double[,] ConvertBitmapToMatrix(Bitmap reference)
+        {
             // Create the converter to convert the image to a
             //  matrix containing only values between 0 and 255 
             var converter = new ImageToMatrix(min: 0, max: 255);
-            double[,] referenceMatrix; converter.Convert(reference, out referenceMatrix);
+            double[,] referenceMatrix;
+            converter.Convert(reference, out referenceMatrix);
+            return referenceMatrix;
+        }
 
-            return GetDctForwardTransform(ref referenceMatrix);
+        public static double[,] GetFastDctForwardTransform(Bitmap reference)
+        {
+            var referenceMatrix = ConvertBitmapToMatrix(reference);
+
+            Accord.Math.CosineTransform.DCT(referenceMatrix);
+
+            return referenceMatrix;
         }
 
         public static double[,] GetDctForwardTransform(ref double[,] reference)

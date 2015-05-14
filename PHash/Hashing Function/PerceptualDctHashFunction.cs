@@ -19,8 +19,10 @@ namespace PHash
 
         public BitArray GetHash(Bitmap imageFile)
         {
-            var dtcMatrix =ImageProcessing.ImageProcessingUtils.DctImageTransform.GetDctForwardTransform(imageFile);
-            return CreateDigest(dtcMatrix);
+            //var dctMatrix = ImageProcessing.ImageProcessingUtils.DctImageTransform.GetDctForwardTransform(imageFile);
+            var dctMatrix = ImageProcessing.ImageProcessingUtils.DctImageTransform.GetFastDctForwardTransform(imageFile);
+
+            return CreateDigest(dctMatrix);
         }
 
         private static BitArray CreateDigest(double[,] dctMatrix)
