@@ -8,8 +8,16 @@ using Accord.Imaging.Converters;
 
 namespace ImageProcessing.ImageProcessingUtils
 {
+    /// <summary>
+    /// Converts any bitmap to a float or double Matrix for further image operations
+    /// </summary>
     public static class BitmapToMatrix
     {
+        /// <summary>
+        /// Converts a Bitmap Image to a N*M Double Data Type Values Matrix
+        /// </summary>
+        /// <param name="reference">Image Bitmap Reference</param>
+        /// <returns></returns>
         public static double[,] ConvertBitmapToMatrix(Bitmap reference)
         {
             // Create the converter to convert the image to a
@@ -20,7 +28,11 @@ namespace ImageProcessing.ImageProcessingUtils
             
             return referenceMatrix;
         }
-
+        /// <summary>
+        /// Converts a Bitmap Image to a N*M Float Data Type Values Matrix
+        /// </summary>
+        /// <param name="reference">Image Bitmap Reference</param>
+        /// <returns></returns>
         public static float[,] ConvertBitmapToFloatMatrix(Bitmap reference)
         {
             // Create the converter to convert the image to a
