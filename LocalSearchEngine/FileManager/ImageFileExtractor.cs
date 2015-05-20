@@ -11,15 +11,28 @@ using LocalSearchEngine.DataAccess;
 
 namespace LocalSearchEngine.FileManager
 {
+    /// <summary>
+    /// Class that extracts DOCX, ODT , PPTX 
+    /// Zip Extraction of internal files, without using internal definition structure Xml files
+    /// </summary>
     public class ImageFileExtractor
     {
+        /// <summary>
+        /// This methods tries to extract images from internal files documents 
+        /// </summary>
+        /// <param name="path">Document file path</param>
+        /// <param name="destinationDirectory">Temporal directory to save all extracted images </param>
+        /// <param name="extensions">Definition of supported image extensions</param>
+        /// <returns>List of document images</returns>
         public static List<DocumentImage> ExtractImagesFromFile(string path, string destinationDirectory, string[] extensions)
         {
             var results = new List<DocumentImage>();
             try
             {
+                //open as Zip
                 using (var archive = ZipFile.OpenRead(path))
                 {
+                    //Check every entry to extract supported extension patterns of images
                     foreach (var entry in archive.Entries)
                     {
                         if (!extensions.Any(e => e.Equals(Path.GetExtension(entry.Name)))) continue;
@@ -41,7 +54,11 @@ namespace LocalSearchEngine.FileManager
                 return results;
             }
         }
-
+        /// <summary>
+        /// Get a quick Image information from image file
+        /// </summary>
+        /// <param name="filePath">File Path</param>
+        /// <returns>Document Image</returns>
         private static DocumentImage GetImageInformation(string filePath)
         {
             try
