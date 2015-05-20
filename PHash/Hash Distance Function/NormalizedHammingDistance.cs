@@ -7,14 +7,26 @@ using System.Threading.Tasks;
 
 namespace PHash.Hash_Distance_Function
 {
-    public class NormalizedHammingDistance:IPerceptualHashDistanceFunction
+    /// <summary>
+    /// The Hamming distance between two strings of equal length is the number of positions at which the corresponding symbols are different.
+    /// In another way, it measures the minimum number of substitutions required to change one string into the other,
+    /// or the minimum number of errors that could have transformed one string into the other.
+    /// </summary>
+    public class NormalizedHammingDistance : IPerceptualHashDistanceFunction
     {
-        
+
+        /// <summary>
+        /// Gets the Hash normalized distance [0-1] from two bitarray hashes 
+        /// </summary>
+        /// <param name="hashA">Hash One</param>
+        /// <param name="hashB">Hash Two</param>
+        /// <returns></returns>
         public float GetHashDistance(BitArray hashA, BitArray hashB)
         {
             var distance = 0;
-            var distanceBitArray=hashA.Xor(hashB);
-            
+            var distanceBitArray = hashA.Xor(hashB);
+
+            //Get Differences between hashes
             for (var i = 0; i < distanceBitArray.Length; i++)
             {
                 if (distanceBitArray[i])
@@ -22,11 +34,19 @@ namespace PHash.Hash_Distance_Function
                     distance++;
                 }
             }
-
-            return 1-(distance/(float)distanceBitArray.Length);
+            //Return normalized distance
+            return 1 - (distance / (float)distanceBitArray.Length);
 
         }
 
+        /// <summary>
+        /// This method defines the comparison of distance between two hashes of 64 bit lenght
+        /// It is implemented only for performance reasons
+        /// ONLY 64 Bit perceptual hash.
+        /// </summary>
+        /// <param name="hashA">Hash One</param>
+        /// <param name="hashB">Hash Two</param>
+        /// <returns></returns>
         public float GetHashDistance(ulong hashA, ulong hashB)
         {
             throw new NotImplementedException();
