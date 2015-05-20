@@ -20,7 +20,10 @@ namespace PHash.Hash_Distance_Function
         /// </summary>
         /// <param name="hashA">Hash One</param>
         /// <param name="hashB">Hash Two</param>
-        /// <returns></returns>
+        /// <returns>Float Number between [0...1] That represents the similarity between Media Objects
+        /// 1 is the perceptually exact media object
+        /// 0 is the perceptually distinct media object
+        /// </returns>
         public float GetHashDistance(BitArray hashA, BitArray hashB)
         {
             var distance = 0;
@@ -46,7 +49,10 @@ namespace PHash.Hash_Distance_Function
         /// </summary>
         /// <param name="hashA">Hash One</param>
         /// <param name="hashB">Hash Two</param>
-        /// <returns></returns>
+        /// <returns>Float Number between [0...1] That represents the similarity between Media Objects
+        /// 1 is the perceptually exact media object
+        /// 0 is the perceptually distinct media object
+        /// </returns>
         public float GetHashDistance(ulong hashA, ulong hashB)
         {
             throw new NotImplementedException();
