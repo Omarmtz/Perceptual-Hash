@@ -21,8 +21,23 @@ namespace PHash
             var normalizedHammingDistance = new NormalizedHammingDistance();
             float distance;
 
-            Bitmap a = new Bitmap(Image.FromFile(@"E:\1.png"));
+            Bitmap a = new Bitmap(Image.FromFile(@"E:\DCIM\.thumbnails\1417064109701.jpg"));
             Bitmap b = new Bitmap(Image.FromFile(@"E:\2.png"));
+
+            var array =phash.GetDigest(a, dtcFunction.GetHash);
+            string text = string.Empty;
+
+            foreach (var VARIABLE in array)
+            {
+                if ((bool) VARIABLE == true)
+                {
+                    text += "1";
+                }
+                else
+                {
+                    text += "0";
+                }
+            }
 
             var watch = Stopwatch.StartNew();
             

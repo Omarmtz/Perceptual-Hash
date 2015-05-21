@@ -37,18 +37,7 @@ namespace PHash
             //Calculation of similarity between hashes
             return compareHashFunc(hashA, hashB);
         }
-        /// <summary>
-        /// Get similarity of an image against whole image database records
-        /// </summary>
-        /// <param name="mediaObject">Image</param>
-        /// <param name="hashFunc">Hash Calculation Function</param>
-        /// <param name="compareHashFunc">Hash Distance Calculation Function</param>
-        /// <returns>Most Similar image in whole database</returns>
-        public override float GetSimilarity(Bitmap mediaObject, Func<Bitmap, BitArray> hashFunc, Func<BitArray, BitArray, float> compareHashFunc)
-        {
-            //Access to DB Fast Comparing
-            throw new NotImplementedException();
-        }
+       
         /// <summary>
         /// Get N length Hash based on the HashFunction Process applied to an image
         /// </summary>

@@ -30,21 +30,7 @@ namespace PHash
         /// <returns>Measured similarity between two objects</returns>
         public abstract float GetSimilarity(Bitmap mediaObjectA, Bitmap mediaObjectB, Func<Bitmap, BitArray> hashFunc,
             Func<BitArray, BitArray, float> compareHashFunc);
-        /// <summary>
-        /// Gets the similarity based on two functions that define the similarity between a image against whole system database
-        /// 1) Hash Function 
-        /// 2) Hash Comparision Function 
-        /// </summary>
-        /// <param name="mediaObject">image</param>
-        /// <param name="hashFunc">Delegate Function that represents the process of hash generation
-        /// Returns a N length BitArray representing resulting hash for each image  
-        /// </param>
-        /// <param name="compareHashFunc">Delegate Function that represents the process of hash distance calculation
-        /// Returns a float number representing hash distance between two N length BitArrays
-        /// </param>
-        /// <returns>Measured similarity against whole image database records</returns>
-        public abstract float GetSimilarity(Bitmap mediaObject, Func<Bitmap, BitArray> hashFunc,
-            Func<BitArray, BitArray, float> compareHashFunc);
+        
         /// <summary>
         /// Get N length Hash based on the HashFunction Process applied to an image
         /// </summary>

@@ -88,6 +88,24 @@ namespace FileDataAccess
             }
         }
 
+        public static void UpdateDocumentImage(DocumentImage image)
+        {
+            try
+            {
+                using (var context = new FileDataBaseContainer())
+                {
+                    var result = context.DocumentImages.First(e => e.Id == image.Id);
+                    result.PFingerPrint = image.PFingerPrint;
+                    context.SaveChanges();
+                }
+            }
+            catch (Exception)
+            {
+                //TODO LOG EXCEPTION DETAILS 
+                return;
+            }
+        }
+
         public static void SaveFile(DocumentFile file)
         {
             try
@@ -184,17 +202,49 @@ namespace FileDataAccess
                 {
                     context.DocumentFiles.Remove(context.DocumentFiles.First(e => e.Id == file.Id));
                     context.SaveChanges();
-
-
-
                 }
             }
             catch (Exception)
             {
                 //TODO LOG EXCEPTION DETAILS 
-
             }
         }
+
+        public static int GetTotalImagesWithoutPHash()
+        {
+            try
+            {
+                using (var context = new FileDataBaseContainer())
+                {
+                    return (from p in context.DocumentImages where p.PFingerPrint == null select p).Count();
+                }
+            }
+            catch (Exception e)
+            {
+                //TODO LOG EXCEPTION DETAILS 
+                return -1;
+            }
+        }
+
+        public static List<DocumentImage> GetImagesWithoutPHashPaged(int page, int pagesize)
+        {
+            try
+            {
+                using (var context = new FileDataBaseContainer())
+                {
+                    return (from p in context.DocumentImages
+                            where p.PFingerPrint == null
+                            orderby p.Id
+                            select p).Skip(page * pagesize).Take(pagesize).ToList();
+                }
+            }
+            catch (Exception)
+            {
+                //TODO LOG EXCEPTION DETAILS 
+                return null;
+            }
+        }
+
 
     }
 }
