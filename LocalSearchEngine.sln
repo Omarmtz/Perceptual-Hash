@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManager", "LocalSearchEngine\FileManager.csproj", "{1AF9D41F-C857-4C9C-B283-5A24700257F3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManagerProcessor", "LocalSearchEngine\FileManagerProcessor.csproj", "{1AF9D41F-C857-4C9C-B283-5A24700257F3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageProcessing", "ImageProcessing\ImageProcessing.csproj", "{3364787B-DC78-44F5-AD82-8B26C30BE50E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHash", "PHash\PHash.csproj", "{8A2A4552-D880-4D6B-8A8A-21B57A1EF811}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerceptualHash", "PHash\PerceptualHash.csproj", "{8A2A4552-D880-4D6B-8A8A-21B57A1EF811}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileDataAccess", "FileDataAccess\FileDataAccess.csproj", "{F55955FB-2714-4D97-929E-37506919B770}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "FileDataAccess\DataAccess.csproj", "{F55955FB-2714-4D97-929E-37506919B770}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageFilesProcessor", "ImageFilesProcessor\ImageFilesProcessor.csproj", "{5B1C8DFE-C186-48FD-A2FC-41F45D283E1F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageManagerProcessor", "ImageFilesProcessor\ImageManagerProcessor.csproj", "{5B1C8DFE-C186-48FD-A2FC-41F45D283E1F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

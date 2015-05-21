@@ -113,9 +113,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FileDataAccess\FileDataAccess.csproj">
+    <ProjectReference Include="..\FileDataAccess\DataAccess.csproj">
       <Project>{f55955fb-2714-4d97-929e-37506919b770}</Project>
-      <Name>FileDataAccess</Name>
+      <Name>DataAccess</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -77,7 +77,7 @@ namespace LocalSearchEngine.FileManager
         /// <summary>
         /// Page size to get list of all indexed files in batches
         /// </summary>
-        private const int PageDataBaseSize = 1000;
+        private const int PageDataBaseSize = 10000;
         /// <summary>
         /// File Changes Watcher 
         /// </summary>

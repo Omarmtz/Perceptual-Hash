@@ -19,7 +19,7 @@ namespace ImageFilesProcessor
         /// <summary>
         /// Page size to get list of all indexed files in batches
         /// </summary>
-        private const int PageDataBaseSize = 5000;
+        private const int PageDataBaseSize = 10000;
 
         private readonly ImagePerceptualHash phash;
         private readonly PerceptualDctHashFunction dtcFunction;
