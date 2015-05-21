@@ -10,7 +10,8 @@ using System.Net.Mime;
 using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
-using LocalSearchEngine.DataAccess;
+using FileDataAccess;
+using FileDataAccess.Database;
 
 namespace LocalSearchEngine.FileManager
 {
@@ -244,7 +245,7 @@ namespace LocalSearchEngine.FileManager
             {
                 //Search Inside Document
                 var results = ImageFileExtractor.ExtractImagesFromFile(GetDocumentFullPathName(file), TempFolder, ExtensionImagesFile);
-                results.ForEach(e => file.Images.Add(e));
+                results.ForEach(e => file.DocumentImages.Add(e));
                 validImage = true;
             }
             else
@@ -313,7 +314,7 @@ namespace LocalSearchEngine.FileManager
                             Height = img.Height,
                             IsWithinFile = false
                         };
-                        file.Images.Add(docImg);
+                        file.DocumentImages.Add(docImg);
                     }
                 }
                 return true;

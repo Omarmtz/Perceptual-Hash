@@ -2,12 +2,9 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
-using LocalSearchEngine.DataAccess;
+using FileDataAccess.Database;
 
-namespace LocalSearchEngine.FileManager
+namespace FileDataAccess
 {
     public static class DataBaseManager
     {
@@ -15,7 +12,7 @@ namespace LocalSearchEngine.FileManager
         {
             try
             {
-                using (var context = new FileManagementDBContainer())
+                using (var context = new FileDataBaseContainer())
                 {
                     return context.DocumentFiles.First(file => file.Id == fileId);
                 }
@@ -32,7 +29,7 @@ namespace LocalSearchEngine.FileManager
         {
             try
             {
-                using (var context = new FileManagementDBContainer())
+                using (var context = new FileDataBaseContainer())
                 {
                     return context.DocumentFiles.FirstOrDefault(e => e.FolderPath + "\\" + e.Name == file.FullName) != null;
                 }
@@ -48,7 +45,7 @@ namespace LocalSearchEngine.FileManager
         {
             try
             {
-                using (var context = new FileManagementDBContainer())
+                using (var context = new FileDataBaseContainer())
                 {
                     return context.DocumentFiles.FirstOrDefault(e => e.FolderPath + "\\" + e.Name == fullName);
                 }
@@ -64,7 +61,7 @@ namespace LocalSearchEngine.FileManager
         {
             try
             {
-                using (var context = new FileManagementDBContainer())
+                using (var context = new FileDataBaseContainer())
                 {
                     var result = context.DocumentFiles.First(e => e.Id == file.Id);
                     result.Name = file.Name;
@@ -83,7 +80,7 @@ namespace LocalSearchEngine.FileManager
         {
             try
             {
-                using (var context = new FileManagementDBContainer())
+                using (var context = new FileDataBaseContainer())
                 {
                     context.DocumentFiles.Add(file);
                     context.SaveChanges();
@@ -99,7 +96,7 @@ namespace LocalSearchEngine.FileManager
         {
             try
             {
-                using (var context = new FileManagementDBContainer())
+                using (var context = new FileDataBaseContainer())
                 {
                     return (from p in context.DocumentImages
                             where p.FileId == file.Id
@@ -117,7 +114,7 @@ namespace LocalSearchEngine.FileManager
         {
             try
             {
-                using (var context = new FileManagementDBContainer())
+                using (var context = new FileDataBaseContainer())
                 {
                     return (from p in context.DocumentImages
                             where p.FileId == file.Id &&
@@ -137,7 +134,7 @@ namespace LocalSearchEngine.FileManager
         {
             try
             {
-                using (var context = new FileManagementDBContainer())
+                using (var context = new FileDataBaseContainer())
                 {
                     return (from p in context.DocumentFiles select p).Count();
                 }
@@ -153,7 +150,7 @@ namespace LocalSearchEngine.FileManager
         {
             try
             {
-                using (var context = new FileManagementDBContainer())
+                using (var context = new FileDataBaseContainer())
                 {
                     return (from p in context.DocumentFiles
                             orderby p.CreatedDate
@@ -171,13 +168,13 @@ namespace LocalSearchEngine.FileManager
         {
             try
             {
-                using (var context = new FileManagementDBContainer())
+                using (var context = new FileDataBaseContainer())
                 {
                     context.DocumentFiles.Remove(context.DocumentFiles.First(e => e.Id == file.Id));
                     context.SaveChanges();
 
 
-                    
+
                 }
             }
             catch (Exception)

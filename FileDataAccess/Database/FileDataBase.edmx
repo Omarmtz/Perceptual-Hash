@@ -4,13 +4,13 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="FileManagementDB.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-  <EntityContainer Name="FileManagementDBStoreContainer">
-    <EntitySet Name="DocumentFiles" EntityType="FileManagementDB.Store.DocumentFiles" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="DocumentImages" EntityType="FileManagementDB.Store.DocumentImages" store:Type="Tables" Schema="dbo" />
-    <AssociationSet Name="FileImage" Association="FileManagementDB.Store.FileImage">
-      <End Role="File" EntitySet="DocumentFiles" />
-      <End Role="Image" EntitySet="DocumentImages" />
+    <Schema Namespace="FileDataBase.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="FileDataBaseStoreContainer">
+    <EntitySet Name="DocumentFiles" EntityType="FileDataBase.Store.DocumentFiles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DocumentImages" EntityType="FileDataBase.Store.DocumentImages" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_FileImage" Association="FileDataBase.Store.FK_FileImage">
+      <End Role="DocumentFile" EntitySet="DocumentFiles" />
+      <End Role="DocumentImage" EntitySet="DocumentImages" />
     </AssociationSet>
   </EntityContainer>
   <EntityType Name="DocumentFiles">
@@ -38,16 +38,16 @@
     <Property Name="IsWithinFile" Type="bit" Nullable="false" />
     <Property Name="TempKeyName" Type="nvarchar(max)" Nullable="true" />
   </EntityType>
-  <Association Name="FileImage">
-    <End Role="File" Type="FileManagementDB.Store.DocumentFiles" Multiplicity="1">
+  <Association Name="FK_FileImage">
+    <End Role="DocumentFile" Type="FileDataBase.Store.DocumentFiles" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
-    <End Role="Image" Type="FileManagementDB.Store.DocumentImages" Multiplicity="*" />
+    <End Role="DocumentImage" Type="FileDataBase.Store.DocumentImages" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="File">
+      <Principal Role="DocumentFile">
         <PropertyRef Name="Id" />
       </Principal>
-      <Dependent Role="Image">
+      <Dependent Role="DocumentImage">
         <PropertyRef Name="FileId" />
       </Dependent>
     </ReferentialConstraint>
@@ -55,52 +55,52 @@
 </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="FileManagementDB" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
-        <EntityContainer Name="FileManagementDBContainer" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="DocumentFiles" EntityType="FileManagementDB.DocumentFile" />
-          <EntitySet Name="DocumentImages" EntityType="FileManagementDB.DocumentImage" />
-          <AssociationSet Name="FileImage" Association="FileManagementDB.FileImage">
-            <End Role="File" EntitySet="DocumentFiles" />
-            <End Role="Image" EntitySet="DocumentImages" />
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="FileDataBase" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="FileDataBaseContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="DocumentFiles" EntityType="FileDataBase.DocumentFile" />
+          <EntitySet Name="DocumentImages" EntityType="FileDataBase.DocumentImage" />
+          <AssociationSet Name="FK_FileImage" Association="FileDataBase.FK_FileImage">
+            <End Role="DocumentFile" EntitySet="DocumentFiles" />
+            <End Role="DocumentImage" EntitySet="DocumentImages" />
           </AssociationSet>
         </EntityContainer>
         <EntityType Name="DocumentFile">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
-          <Property Name="Name" Type="String" Nullable="false" />
-          <Property Name="ItemType" Type="String" Nullable="false" />
-          <Property Name="FolderPath" Type="String" Nullable="false" />
-          <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
-          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ItemType" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FolderPath" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="Size" Type="Int64" Nullable="false" />
-          <NavigationProperty Name="Images" Relationship="FileManagementDB.FileImage" FromRole="File" ToRole="Image" />
+          <NavigationProperty Name="DocumentImages" Relationship="FileDataBase.FK_FileImage" FromRole="DocumentFile" ToRole="DocumentImage" />
         </EntityType>
         <EntityType Name="DocumentImage">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Name="Id" Type="Guid" Nullable="false" />
           <Property Name="Width" Type="Int32" Nullable="false" />
           <Property Name="Height" Type="Int32" Nullable="false" />
-          <Property Name="PixelFormat" Type="String" Nullable="false" />
-          <Property Name="PFingerPrint" Type="Binary" Nullable="true" />
-          <NavigationProperty Name="File" Relationship="FileManagementDB.FileImage" FromRole="Image" ToRole="File" />
+          <Property Name="PixelFormat" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PFingerPrint" Type="Binary" MaxLength="Max" FixedLength="false" />
           <Property Name="FileId" Type="Guid" Nullable="false" />
           <Property Name="IsWithinFile" Type="Boolean" Nullable="false" />
-          <Property Name="TempKeyName" Type="String" Nullable="true" />
+          <Property Name="TempKeyName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="DocumentFile" Relationship="FileDataBase.FK_FileImage" FromRole="DocumentImage" ToRole="DocumentFile" />
         </EntityType>
-        <Association Name="FileImage">
-          <End Type="FileManagementDB.DocumentFile" Role="File" Multiplicity="1" >
+        <Association Name="FK_FileImage">
+          <End Type="FileDataBase.DocumentFile" Role="DocumentFile" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Type="FileManagementDB.DocumentImage" Role="Image" Multiplicity="*" />
+          <End Type="FileDataBase.DocumentImage" Role="DocumentImage" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="File">
+            <Principal Role="DocumentFile">
               <PropertyRef Name="Id" />
             </Principal>
-            <Dependent Role="Image">
+            <Dependent Role="DocumentImage">
               <PropertyRef Name="FileId" />
             </Dependent>
           </ReferentialConstraint>
@@ -110,9 +110,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
     <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="FileManagementDBStoreContainer" CdmEntityContainer="FileManagementDBContainer">
+  <EntityContainerMapping StorageEntityContainer="FileDataBaseStoreContainer" CdmEntityContainer="FileDataBaseContainer">
     <EntitySetMapping Name="DocumentFiles">
-      <EntityTypeMapping TypeName="IsTypeOf(FileManagementDB.DocumentFile)">
+      <EntityTypeMapping TypeName="IsTypeOf(FileDataBase.DocumentFile)">
         <MappingFragment StoreEntitySet="DocumentFiles">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -125,7 +125,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="DocumentImages">
-      <EntityTypeMapping TypeName="IsTypeOf(FileManagementDB.DocumentImage)">
+      <EntityTypeMapping TypeName="IsTypeOf(FileDataBase.DocumentImage)">
         <MappingFragment StoreEntitySet="DocumentImages">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Width" ColumnName="Width" />
@@ -153,6 +153,7 @@
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
         <DesignerProperty Name="EnablePluralization" Value="True" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
         <DesignerProperty Name="UseLegacyProvider" Value="False" />
       </DesignerInfoPropertySet>
     </edmx:Options>

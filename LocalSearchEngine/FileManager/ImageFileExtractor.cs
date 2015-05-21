@@ -7,7 +7,8 @@ using System.IO.Compression;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using LocalSearchEngine.DataAccess;
+using FileDataAccess.Database;
+
 
 namespace LocalSearchEngine.FileManager
 {

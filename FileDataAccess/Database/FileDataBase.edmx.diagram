@@ -4,10 +4,10 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="73151ee333a64fa1bcb3f90962536b79" Name="Diagram1" >
-        <EntityTypeShape EntityType="FileManagementDB.DocumentFile" Width="1.5" PointX="7.125" PointY="5" />
-        <EntityTypeShape EntityType="FileManagementDB.DocumentImage" Width="1.5" PointX="9.25" PointY="5" />
-        <AssociationConnector Association="FileManagementDB.FileImage" />
+      <Diagram DiagramId="a5e1c351fcd84487a2915b2636d5c275" Name="Diagram1" >
+        <EntityTypeShape EntityType="FileDataBase.DocumentFile" Width="1.5" PointX="0.75" PointY="1" />
+        <EntityTypeShape EntityType="FileDataBase.DocumentImage" Width="1.5" PointX="3" PointY="1" />
+        <AssociationConnector Association="FileDataBase.FK_FileImage" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
