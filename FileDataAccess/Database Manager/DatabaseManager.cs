@@ -6,8 +6,16 @@ using FileDataAccess.Database;
 
 namespace FileDataAccess
 {
+    /// <summary>
+    /// Database Manager Keep all database operations logic
+    /// </summary>
     public static class DataBaseManager
     {
+        /// <summary>
+        /// Gets the specific file document from a GUID
+        /// </summary>
+        /// <param name="fileId">GUID of Document File</param>
+        /// <returns></returns>
         public static DocumentFile GetFile(Guid fileId)
         {
             try
@@ -24,7 +32,11 @@ namespace FileDataAccess
             }
 
         }
-
+        /// <summary>
+        /// Check if a file is already indexed in Database
+        /// </summary>
+        /// <param name="file">File to verify indexation</param>
+        /// <returns>Is file indexed</returns>
         public static bool IsFileAlreadyIndexed(FileInfo file)
         {
             try

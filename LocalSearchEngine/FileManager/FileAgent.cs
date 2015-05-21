@@ -15,17 +15,33 @@ using FileDataAccess.Database;
 
 namespace LocalSearchEngine.FileManager
 {
+    /// <summary>
+    /// The file agent is responsible for managing the indexing process,
+    /// Keep track of the changes at runtime level in the structure of files within the local search active directory 
+    /// including subdirectories inside.
+    /// </summary>
     public class FileAgent
     {
         #region Extension Types
-
+        /// <summary>
+        /// Defines the supported extension images
+        /// </summary>
         public static string[] ExtensionImagesFile = { ".bmp", ".jpg", ".png", ".jpeg", ".tif", ".tiff", ".jif", ".jfif", ".jp2", ".jpx", ".j2k", ".j2c" };
-
+        /// <summary>
+        /// Defines the supported extension documents that may contain images within
+        /// </summary>
         public static string[] ExtensionImagesContentFile = { ".docx", ".odt", ".pptx" };
-
+        /// <summary>
+        /// Defines the supported extension for pure text documents 
+        /// </summary>
         public static string[] ExtensionOnlyTextFile = { ".txt", ".rtf", ".htm" };
-
+        /// <summary>
+        /// Temporary folder where document embedded images are temporarily saved
+        /// </summary>
         public static string TempFolder = Path.Combine(Path.GetTempPath(), "ImageSearchingTempFiles");
+        /// <summary>
+        /// Get all supported extension files
+        /// </summary>
         public static string[] GetSupportedFiles
         {
             get
@@ -36,7 +52,9 @@ namespace LocalSearchEngine.FileManager
                 return z;
             }
         }
-
+        /// <summary>
+        /// Get all supported extension files [Appending *. Regex for filter methods] 
+        /// </summary>
         public static string[] GetSupportedFilesFilter
         {
             get
@@ -51,14 +69,25 @@ namespace LocalSearchEngine.FileManager
         #endregion
 
         #region Variables
+        /// <summary>
+        /// Working Directory
+        /// </summary>
         private readonly string _directory;
 
-        //Page size to get list of all indexed files in batches
+        /// <summary>
+        /// Page size to get list of all indexed files in batches
+        /// </summary>
         private const int PageDataBaseSize = 1000;
-
+        /// <summary>
+        /// File Changes Watcher 
+        /// </summary>
         public Task WatchFileSystemTask;
         #endregion
 
+        /// <summary>
+        /// File Agent Instace with the working directory
+        /// </summary>
+        /// <param name="initialDirectory">Directory target</param>
         public FileAgent(string initialDirectory)
         {
             this._directory = initialDirectory;
@@ -69,13 +98,21 @@ namespace LocalSearchEngine.FileManager
                 , TaskCreationOptions.LongRunning);
 
         }
-
+        /// <summary>
+        /// Starts the indexation of the working directory
+        /// Adds new files to the DB and extract images from Documents 
+        /// </summary>
         public void InitializeIndexation()
         {
             //Process Indexation
             ProcessIndexation(this._directory, GetSupportedFilesFilter, IndexFile);
         }
-
+        /// <summary>
+        /// Starts the update indexation database records
+        /// * Deletes the missing files
+        /// * Add new files [not indexed]
+        /// [Warning] This method does not support changes of files yet.
+        /// </summary>
         public void UpdateIndexation()
         {
             UpdateDataBaseIndexation();
@@ -83,7 +120,11 @@ namespace LocalSearchEngine.FileManager
         }
 
         #region File Watcher Control
-
+        /// <summary>
+        /// Starts new task [Thread] to watch the directory environment
+        /// Keeps track of Modifications, Deletions, Additions of new supported files
+        /// </summary>
+        /// <param name="directory">Environment Directory</param>
         [PermissionSet(SecurityAction.Demand, Name = "FullTrust")]
         public static void RunWatcher(string directory)
         {
@@ -105,7 +146,11 @@ namespace LocalSearchEngine.FileManager
 
             while (true) ;
         }
-
+        /// <summary>
+        /// Action taked on File Renamed Event
+        /// </summary>
+        /// <param name="sender">Watcher Object</param>
+        /// <param name="e">Event Information Details</param>
         private static void OnFileRenamed(object sender, RenamedEventArgs e)
         {
             if ((Path.GetDirectoryName(e.FullPath) == TempFolder)) return;
@@ -129,7 +174,11 @@ namespace LocalSearchEngine.FileManager
             }
 
         }
-
+        /// <summary>
+        /// Action taked on File Deleted Event
+        /// </summary>
+        /// <param name="sender">Watcher Object</param>
+        /// <param name="e">Event Information Details</param>
         private static void OnFileDeleted(object sender, FileSystemEventArgs e)
         {
             if ((Path.GetDirectoryName(e.FullPath) == TempFolder)) return;
@@ -150,7 +199,11 @@ namespace LocalSearchEngine.FileManager
             }
 
         }
-
+        /// <summary>
+        /// Action taked on File Created Event
+        /// </summary>
+        /// <param name="sender">Watcher Object</param>
+        /// <param name="e">Event Information Details</param>
         private static void OnFileCreated(object sender, FileSystemEventArgs e)
         {
             if ((Path.GetDirectoryName(e.FullPath) == TempFolder)) return;
@@ -165,7 +218,11 @@ namespace LocalSearchEngine.FileManager
             }
 
         }
-
+        /// <summary>
+        /// Action taked on File Changed Event
+        /// </summary>
+        /// <param name="sender">Watcher Object</param>
+        /// <param name="e">Event Information Details</param>
         private static void OnFileChanged(object sender, FileSystemEventArgs e)
         {
             if ((Path.GetDirectoryName(e.FullPath) == TempFolder)) return;
@@ -185,7 +242,14 @@ namespace LocalSearchEngine.FileManager
         #endregion
 
         #region Index Management
-
+        /// <summary>
+        /// Function that starts exploring the files inside working directory 
+        /// * Non Recursive File Retrieve Function
+        /// * Access Denied Exception Support
+        /// </summary>
+        /// <param name="path">Base Directory</param>
+        /// <param name="filePattern">Supported Indexation Files [Extension files to be indexed]</param>
+        /// <param name="indexationFunction">Indexation Action Function</param>
         private static void ProcessIndexation(string path, string[] filePattern, Action<FileInfo> indexationFunction)
         {
             var queue = new Queue<string>();
@@ -225,10 +289,16 @@ namespace LocalSearchEngine.FileManager
                 }
             }
         }
-
+        /// <summary>
+        /// Index file record in database and attach related document images
+        /// </summary>
+        /// <param name="info">File System information</param>
         private static void IndexFile(FileInfo info)
         {
+            //is Valid Image File 
+            //Check if the size of the image is allowed to be indexed, other restrictions can be added in [Restrict] Label.
             bool validImage = false;
+
             var file = new DocumentFile()
             {
                 Id = Guid.NewGuid(),
@@ -240,24 +310,32 @@ namespace LocalSearchEngine.FileManager
                 Size = info.Length
             };
 
-
+            //Check if the file supports embedded image files
             if (ExtensionImagesContentFile.Any(e => e.Equals(Path.GetExtension(file.Name))))
             {
-                //Search Inside Document
+                //Try search inside document images
                 var results = ImageFileExtractor.ExtractImagesFromFile(GetDocumentFullPathName(file), TempFolder, ExtensionImagesFile);
+                //Append all related images
                 results.ForEach(e => file.DocumentImages.Add(e));
+
                 validImage = true;
             }
             else
             {
-                //File itself is an Image
+                //The file itself is an image
                 validImage = AttachImageFile(file);
             }
+
             if (!validImage) return;
+            //Save record on DB
             DataBaseManager.SaveFile(file);
             Console.WriteLine("Indexed : {0}", info.Name);
         }
-
+        /// <summary>
+        /// Function used in Update Database records 
+        /// This function verify if the file is already indexed
+        /// </summary>
+        /// <param name="info">File Information</param>
         private static void TryIndexFile(FileInfo info)
         {
             if (DataBaseManager.IsFileAlreadyIndexed(info))
@@ -295,7 +373,14 @@ namespace LocalSearchEngine.FileManager
                 }
             }
         }
-
+        /// <summary>
+        /// Associate Any image with the related file.
+        /// Two managed cases are :
+        /// 1) File is an image itself
+        /// 2) Image File is contained in a document file
+        /// </summary>
+        /// <param name="file">Realted File</param>
+        /// <returns>Resulting Operation Process</returns>
         private static bool AttachImageFile(DocumentFile file)
         {
             try
@@ -304,6 +389,7 @@ namespace LocalSearchEngine.FileManager
                 {
                     using (var img = Image.FromStream(fs, true, false))
                     {
+                        //Image Restriction Code [Restrict]
                         if (img.Width < 150 || img.Height < 150) { return false; }
 
                         var docImg = new DocumentImage()
@@ -314,6 +400,7 @@ namespace LocalSearchEngine.FileManager
                             Height = img.Height,
                             IsWithinFile = false
                         };
+                        //Attach image to file
                         file.DocumentImages.Add(docImg);
                     }
                 }
@@ -329,7 +416,7 @@ namespace LocalSearchEngine.FileManager
         #endregion
 
         #region I/O File Management
-
+        
         private static List<string> GetFilesFromDirectory(string path, string[] filePattern)
         {
             var queue = new Queue<string>();
@@ -366,12 +453,19 @@ namespace LocalSearchEngine.FileManager
             }
             return files;
         }
-
+        /// <summary>
+        /// Gets the full path of a document
+        /// </summary>
+        /// <param name="file">Document file</param>
+        /// <returns>Full file path</returns>
         public static string GetDocumentFullPathName(DocumentFile file)
         {
             return Path.Combine(file.FolderPath, file.Name);
         }
-
+        /// <summary>
+        /// Delete temporal image file from the TMP System Folder
+        /// </summary>
+        /// <param name="file">File to delete</param>
         private static void DeleteTemporalImage(string file)
         {
             try
