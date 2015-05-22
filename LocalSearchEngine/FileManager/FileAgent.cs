@@ -133,7 +133,8 @@ namespace LocalSearchEngine.FileManager
                 Filter = "*.*",
                 NotifyFilter = NotifyFilters.LastAccess | NotifyFilters.LastWrite | NotifyFilters.FileName | NotifyFilters.DirectoryName,
                 Path = directory,
-                IncludeSubdirectories = true
+                IncludeSubdirectories = true,
+                InternalBufferSize = 262144
             };
             // Add event handlers.
             //fileSystemWatcher.Changed += OnFileChanged;
