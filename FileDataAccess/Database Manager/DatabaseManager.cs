@@ -226,7 +226,23 @@ namespace FileDataAccess
             }
         }
 
-        public static List<DocumentImage> GetImagesWithoutPHashPaged(int page, int pagesize)
+        public static int GetTotalCountImages()
+        {
+            try
+            {
+                using (var context = new FileDataBaseContainer())
+                {
+                    return (from p in context.DocumentImages select p).Count();
+                }
+            }
+            catch (Exception e)
+            {
+                //TODO LOG EXCEPTION DETAILS 
+                return -1;
+            }
+        }
+
+        public static List<DocumentImage> GetImagesWithoutPHash(int batchSize)
         {
             try
             {
@@ -234,6 +250,23 @@ namespace FileDataAccess
                 {
                     return (from p in context.DocumentImages
                             where p.PFingerPrint == null
+                            select p).Take(batchSize).ToList();
+                }
+            }
+            catch (Exception)
+            {
+                //TODO LOG EXCEPTION DETAILS 
+                return null;
+            }
+        }
+
+        public static List<DocumentImage> GetAllImagesPaged(int page, int pagesize)
+        {
+            try
+            {
+                using (var context = new FileDataBaseContainer())
+                {
+                    return (from p in context.DocumentImages
                             orderby p.Id
                             select p).Skip(page * pagesize).Take(pagesize).ToList();
                 }

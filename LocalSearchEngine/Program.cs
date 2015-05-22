@@ -14,8 +14,8 @@ namespace LocalSearchEngine
     {
         static void Main()
         {
-            var agent = new FileAgent(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile));
-            //var agent = new FileAgent(@"E:\DCIM");
+            //var agent = new FileAgent(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile));
+            var agent = new FileAgent(@"E:\DCIM");
             
             var watch = Stopwatch.StartNew();
             

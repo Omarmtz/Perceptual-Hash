@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -19,7 +21,7 @@ namespace ImageFilesProcessor
         /// <summary>
         /// Page size to get list of all indexed files in batches
         /// </summary>
-        private const int PageDataBaseSize = 10000;
+        private const int PageDataBaseSize = 1000;
 
         private readonly ImagePerceptualHash phash;
         private readonly PerceptualDctHashFunction dtcFunction;
@@ -35,18 +37,15 @@ namespace ImageFilesProcessor
         {
             var totalIndexed = DataBaseManager.GetTotalImagesWithoutPHash();
 
-            var pagesCount = (totalIndexed / PageDataBaseSize);
+            var pagesCount = (totalIndexed / PageDataBaseSize) + 1;
 
-            if (pagesCount * PageDataBaseSize < totalIndexed) pagesCount++;
-
-            for (var i = 0; i < pagesCount; i++)
+            for (int i = 0; i < pagesCount; i++)
             {
-                //Get indexed Result
-                var results = DataBaseManager.GetImagesWithoutPHashPaged(i, PageDataBaseSize);
+                var results = DataBaseManager.GetImagesWithoutPHash(PageDataBaseSize);
 
                 results.AsParallel().ForAll((documentImage) =>
                 {
-                    BitArray pHash = null;
+                    BitArray pHash;
 
                     if (documentImage.IsWithinFile)
                     {
@@ -58,16 +57,48 @@ namespace ImageFilesProcessor
                         pHash = GetImageHash(GetDocumentFullPathName(file));
                     }
 
-                    documentImage.PFingerPrint = ToByteArray(pHash);
+                    documentImage.PFingerPrint = Convert64BitArray(pHash);
 
                     DataBaseManager.UpdateDocumentImage(documentImage);
 
                     Console.WriteLine("Image {0} Hashed", documentImage.Id);
                 });
             }
-
         }
 
+        public void GetImageSimilarities(string file, int percentage)
+        {
+            var result1 = GetImageHash(file);
+
+            List<DocumentImage> list = new List<DocumentImage>();
+
+            var totalIndexed = DataBaseManager.GetTotalCountImages();
+
+            var pagesCount = (totalIndexed / PageDataBaseSize);
+
+            if (pagesCount * PageDataBaseSize < totalIndexed) pagesCount++;
+
+            for (var i = 0; i < pagesCount; i++)
+            {
+                //Get indexed Result
+                var results = DataBaseManager.GetAllImagesPaged(i, PageDataBaseSize);
+
+                foreach (var image in results)
+                {
+                    var similarity = normalizedHammingDistance.GetHashDistance(new BitArray(image.PFingerPrint),result1);
+                    if (similarity > (percentage/(float)100))
+                    {
+                        list.Add(image);
+                    }
+                }
+            }
+
+            foreach (var archivo in list)
+            {
+                Process.Start(GetDocumentFullPathName(DataBaseManager.GetFile(archivo.FileId)));
+            }
+
+        }
         /// <summary>
         /// Gets the full path of a document
         /// </summary>
@@ -86,7 +117,7 @@ namespace ImageFilesProcessor
                 {
                     using (var img = Image.FromStream(fs, true, false))
                     {
-                        return phash.GetDigest(new Bitmap(img), dtcFunction.GetHash);
+                        return phash.GetDigest((Bitmap)img, dtcFunction.GetHash);
                     }
                 }
             }
@@ -97,37 +128,16 @@ namespace ImageFilesProcessor
             }
         }
 
-        public static byte[] ToByteArray(BitArray bits)
+        public byte[] Convert64BitArray(BitArray bits)
         {
-            try
+            if (bits == null || bits.Count != 64)
             {
-                int numBytes = bits.Count / 8;
-                if (bits.Count % 8 != 0) numBytes++;
-
-                byte[] bytes = new byte[numBytes];
-                int byteIndex = 0, bitIndex = 0;
-
-                for (int i = 0; i < bits.Count; i++)
-                {
-                    if (bits[i])
-                        bytes[byteIndex] |= (byte)(1 << (7 - bitIndex));
-
-                    bitIndex++;
-                    if (bitIndex == 8)
-                    {
-                        bitIndex = 0;
-                        byteIndex++;
-                    }
-                }
-
-                return bytes;
+                Console.WriteLine("Error getting Bit Array ");
+                return null;
             }
-            catch (Exception)
-            {
-                Console.WriteLine("Hash Counln't be calculated returning Zero Hash");
-                return new byte[1];
-            }
-
+            var newBytes = new byte[8];
+            bits.CopyTo(newBytes, 0);
+            return newBytes;
         }
 
 

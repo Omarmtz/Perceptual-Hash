@@ -26,6 +26,11 @@ namespace PHash.Hash_Distance_Function
         /// </returns>
         public float GetHashDistance(BitArray hashA, BitArray hashB)
         {
+            if (hashA.Count != hashB.Count)
+            {
+                Console.WriteLine("Invalid Distance A - B");
+                return -1;
+            }
             var distance = 0;
             var distanceBitArray = hashA.Xor(hashB);
 

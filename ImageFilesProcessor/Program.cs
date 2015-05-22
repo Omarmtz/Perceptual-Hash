@@ -13,10 +13,12 @@ namespace ImageFilesProcessor
         {
             var imageHasher = new MediaObjectsHasher();
             var watch = Stopwatch.StartNew();
-            imageHasher.ScanDatabaseSystem();
+            //imageHasher.ScanDatabaseSystem();
+            imageHasher.GetImageSimilarities(@"E:\DCIM\PerfectlyClear_Camera\PC_20141101_225708.jpg", 75);
+            //imageHasher.GetImageSimilarities(@"E:\TestFolder\brookklyn.jpg", 1);
             watch.Stop();
             Console.WriteLine("Elapsed {0}",watch.Elapsed);
-            Console.ReadLine();
+            
         }
     }
 }
