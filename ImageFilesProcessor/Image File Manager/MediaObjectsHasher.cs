@@ -66,11 +66,11 @@ namespace ImageFilesProcessor
             }
         }
 
-        public void GetImageSimilarities(string file, int percentage)
+        public void GetImageSimilarities(string imageFile, int similarPercentage)
         {
-            var result1 = GetImageHash(file);
+            var result1 = GetImageHash(imageFile);
 
-            List<DocumentImage> list = new List<DocumentImage>();
+            var list = new List<DocumentImage>();
 
             var totalIndexed = DataBaseManager.GetTotalCountImages();
 
@@ -83,20 +83,29 @@ namespace ImageFilesProcessor
                 //Get indexed Result
                 var results = DataBaseManager.GetAllImagesPaged(i, PageDataBaseSize);
 
-                foreach (var image in results)
+                results.AsParallel().ForAll(image =>
                 {
-                    var similarity = normalizedHammingDistance.GetHashDistance(new BitArray(image.PFingerPrint),result1);
-                    if (similarity > (percentage/(float)100))
+                    if (image.PFingerPrint == null) return;
+                    var similarity = normalizedHammingDistance.GetHashDistance(new BitArray(image.PFingerPrint), result1);
+                    if (similarity > (similarPercentage / (float)100))
                     {
                         list.Add(image);
                     }
-                }
+                });
+
+
             }
 
-            foreach (var archivo in list)
+
+            for (int i = 0; i < list.Count; i++)
             {
-                Process.Start(GetDocumentFullPathName(DataBaseManager.GetFile(archivo.FileId)));
+                if(i>5)break;
+                
+                Process.Start(GetDocumentFullPathName(DataBaseManager.GetFile(list[i].FileId)));
             }
+            
+
+
 
         }
         /// <summary>
