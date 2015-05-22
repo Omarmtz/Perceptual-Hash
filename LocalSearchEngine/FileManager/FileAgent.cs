@@ -390,7 +390,7 @@ namespace LocalSearchEngine.FileManager
                     using (var img = Image.FromStream(fs, true, false))
                     {
                         //Image Restriction Code [Restrict]
-                        if (img.Width < 150 || img.Height < 150) { return false; }
+                        if (img.Width <= 320 || img.Height <= 240) { return false; }
 
                         var docImg = new DocumentImage()
                         {
