@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FileDataAccess;
 
 namespace ImageFilesProcessor
 {
@@ -14,9 +15,16 @@ namespace ImageFilesProcessor
             var imageHasher = new MediaObjectsHasher();
             var watch = Stopwatch.StartNew();
             imageHasher.ScanDatabaseSystem();
-            //imageHasher.GetImageSimilarities(@"E:\DCIM\PerfectlyClear_Camera\PC_20141101_225708.jpg", 75);
+            var results=imageHasher.GetImageSimilarities(@"E:\DCIM\PerfectlyClear_Camera\PC_20141101_225708.jpg", 85);
             //imageHasher.GetImageSimilarities(@"E:\TestFolder\brookklyn.jpg", 1);
             watch.Stop();
+            
+            foreach (var archivo in results)
+            {
+                Process.Start(archivo);
+            }
+
+            
             Console.WriteLine("Elapsed {0}",watch.Elapsed);
             
         }

@@ -72,7 +72,7 @@ namespace LocalSearchEngine.FileManager
         /// <summary>
         /// Working Directory
         /// </summary>
-        private readonly string _directory;
+        private string _directory;
 
         /// <summary>
         /// Page size to get list of all indexed files in batches
@@ -93,10 +93,17 @@ namespace LocalSearchEngine.FileManager
             this._directory = initialDirectory;
             //Create Temp Folder
             Directory.CreateDirectory(TempFolder);
+        }
 
-            WatchFileSystemTask = Task.Factory.StartNew(() => RunWatcher(_directory)
-                , TaskCreationOptions.LongRunning);
+        public FileAgent()
+        {
+            //Create Temp Folder
+            Directory.CreateDirectory(TempFolder);
+        }
 
+        public void SetInitialDirectory(string initialDirectory)
+        {
+            this._directory = initialDirectory;
         }
         /// <summary>
         /// Starts the indexation of the working directory
@@ -106,6 +113,8 @@ namespace LocalSearchEngine.FileManager
         {
             //Process Indexation
             ProcessIndexation(this._directory, GetSupportedFilesFilter, IndexFile);
+            WatchFileSystemTask = Task.Factory.StartNew(() => RunWatcher(_directory)
+                , TaskCreationOptions.LongRunning);
         }
         /// <summary>
         /// Starts the update indexation database records
@@ -117,6 +126,8 @@ namespace LocalSearchEngine.FileManager
         {
             UpdateDataBaseIndexation();
             ProcessIndexation(this._directory, GetSupportedFilesFilter, TryIndexFile);
+            WatchFileSystemTask = Task.Factory.StartNew(() => RunWatcher(_directory)
+                , TaskCreationOptions.LongRunning);
         }
 
         #region File Watcher Control

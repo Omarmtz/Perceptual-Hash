@@ -23,16 +23,21 @@ namespace ImageFilesProcessor
         /// </summary>
         private const int PageDataBaseSize = 1000;
 
-        private readonly ImagePerceptualHash phash;
-        private readonly PerceptualDctHashFunction dtcFunction;
-        private NormalizedHammingDistance normalizedHammingDistance;
-
+        private readonly ImagePerceptualHash _phash;
+        private readonly PerceptualDctHashFunction _dtcFunction;
+        private readonly NormalizedHammingDistance _normalizedHammingDistance;
+        /// <summary>
+        /// 
+        /// </summary>
         public MediaObjectsHasher()
         {
-            phash = new ImagePerceptualHash();
-            dtcFunction = new PerceptualDctHashFunction();
-            normalizedHammingDistance = new NormalizedHammingDistance();
+            _phash = new ImagePerceptualHash();
+            _dtcFunction = new PerceptualDctHashFunction();
+            _normalizedHammingDistance = new NormalizedHammingDistance();
         }
+        /// <summary>
+        /// 
+        /// </summary>
         public void ScanDatabaseSystem()
         {
             var totalIndexed = DataBaseManager.GetTotalImagesWithoutPHash();
@@ -43,7 +48,7 @@ namespace ImageFilesProcessor
             {
                 var results = DataBaseManager.GetImagesWithoutPHash(PageDataBaseSize);
 
-                results.AsParallel().ForAll((documentImage) =>
+                results.ForEach((documentImage) =>
                 {
                     BitArray pHash;
 
@@ -65,12 +70,17 @@ namespace ImageFilesProcessor
                 });
             }
         }
-
-        public void GetImageSimilarities(string file, int percentage)
+        /// <summary>
+        /// TODO
+        /// </summary>
+        /// <param name="file"></param>
+        /// <param name="percentage"></param>
+        /// <returns></returns>
+        public IList<string> GetImageSimilarities(string file, int percentage)
         {
             var result1 = GetImageHash(file);
 
-            List<DocumentImage> list = new List<DocumentImage>();
+            var resultList = new List<string>();
 
             var totalIndexed = DataBaseManager.GetTotalCountImages();
 
@@ -83,21 +93,23 @@ namespace ImageFilesProcessor
                 //Get indexed Result
                 var results = DataBaseManager.GetAllImagesPaged(i, PageDataBaseSize);
 
-                foreach (var image in results)
+                results.AsParallel().ForAll(image =>
                 {
-                    var similarity = normalizedHammingDistance.GetHashDistance(new BitArray(image.PFingerPrint),result1);
-                    if (similarity > (percentage/(float)100))
+                    var similarity = _normalizedHammingDistance.GetHashDistance(new BitArray(image.PFingerPrint), result1);
+                    if (similarity > (percentage / (float)100))
                     {
-                        list.Add(image);
+                        var fileName = GetDocumentFullPathName(DataBaseManager.GetFile(image.FileId));
+                        if (!resultList.Contains(fileName))
+                        {
+                            resultList.Add(fileName);    
+                        }
+                        
                     }
                 }
+                );
             }
-
-            foreach (var archivo in list)
-            {
-                Process.Start(GetDocumentFullPathName(DataBaseManager.GetFile(archivo.FileId)));
-            }
-
+            
+            return resultList;
         }
         /// <summary>
         /// Gets the full path of a document
@@ -108,7 +120,11 @@ namespace ImageFilesProcessor
         {
             return Path.Combine(file.FolderPath, file.Name);
         }
-
+        /// <summary>
+        /// TODO
+        /// </summary>
+        /// <param name="filePath"></param>
+        /// <returns></returns>
         private BitArray GetImageHash(string filePath)
         {
             try
@@ -117,7 +133,7 @@ namespace ImageFilesProcessor
                 {
                     using (var img = Image.FromStream(fs, true, false))
                     {
-                        return phash.GetDigest((Bitmap)img, dtcFunction.GetHash);
+                        return _phash.GetDigest((Bitmap)img, _dtcFunction.GetHash);
                     }
                 }
             }
@@ -127,7 +143,11 @@ namespace ImageFilesProcessor
                 return null;
             }
         }
-
+        /// <summary>
+        /// TODO
+        /// </summary>
+        /// <param name="bits"></param>
+        /// <returns></returns>
         public byte[] Convert64BitArray(BitArray bits)
         {
             if (bits == null || bits.Count != 64)
@@ -139,8 +159,6 @@ namespace ImageFilesProcessor
             bits.CopyTo(newBytes, 0);
             return newBytes;
         }
-
-
     }
 
 
