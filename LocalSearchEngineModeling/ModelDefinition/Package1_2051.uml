@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="8e5ad40c-1698-4da9-a307-28b28d99c02a"
+  name="Filters"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="24571df2-2129-4662-bec1-a806a28f5702"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DImageProcessing.Filters"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="b2d717e5-4420-41d1-980f-b41e3675abf9"
+        name="BasicFilters"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="f75ff315-fd0a-433d-9c9a-e0b057ca9b43"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.Filters Type%3DBasicFilters"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="97855425-11dd-477c-af21-0b90b537dbff"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fb9df3fa-1d67-4c0d-ad36-90549095f51d">
+                <propertyInstance
+                  Id="dae6717c-bc76-479c-87cb-baa150fd56f3"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ca91da42-f3aa-4b69-b2f1-13f84ab5183b">
+                <propertyInstance
+                  Id="4b2772aa-22ff-4824-9051-5ad0103b4c7b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cda70347-2494-4bc4-a533-5b0a9e758112">
+                <propertyInstance
+                  Id="57993ac7-5593-481e-b9c4-74b89d85655c"
+                  name="IsStatic"
+                  value="True" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ffa4a7cd-34ad-4c62-b992-07539eb5f1e9">
+                <propertyInstance
+                  Id="34228c78-3cb3-4d7e-ae47-a4383b9cdf91"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="81103b89-928c-422c-bfd0-658ea2d59e94">
+                <propertyInstance
+                  Id="e814fc87-4afb-4f9a-8c91-c67131a7537a"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="74025a47-0b8f-4383-9ed3-136bb09b7bf6"
+            name="ResizeBitmap"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a3e2bd82-4d46-40d3-b186-e87bea342b3a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.Filters Type%3DBasicFilters Member%3D(Name%3DResizeBitmap OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="bdada316-145d-4534-8559-3da4bbb2411b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="715d9dee-e83c-4a1b-8801-0936daf4fb2a">
+                    <propertyInstance
+                      Id="19f96766-24f8-4eff-9dd9-7ee4186d4387"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="16445339-0c74-418d-a4a6-55a6508346c0">
+                    <propertyInstance
+                      Id="9a45318c-d4bc-48dc-bf5c-ee9fd935972c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5329500a-b43d-4065-a76d-ff3e25d314f2">
+                    <propertyInstance
+                      Id="9834871e-4652-4a0b-8315-093a33d042de"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5787899e-88d4-4cea-abda-5d8b3ec4a531">
+                    <propertyInstance
+                      Id="e80ae6fe-d876-44f4-96cd-6b82e405a50b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="926e0272-7866-4fcf-a293-d40169e0d34c">
+                    <propertyInstance
+                      Id="165f0903-1407-4cc1-9cbc-c2f0e3b06e90"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c2de20e9-f6b4-43d5-9625-4c6ed14f947a">
+                    <propertyInstance
+                      Id="580de8a6-4b0a-4bf5-a08c-a45e9596bd1f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1519cf25-befa-4739-b18a-caa769c9efe7"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="59235654-487a-4777-89ff-723e0e972de0"
+                      LastKnownName="Bitmap"
+                      LastKnownLocation="Package2_2051.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c519552f-bd19-4c35-962a-8c5ecd7e0c89"
+                  name="referenceBitmap"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3c8e4d88-60c1-4d86-a0db-d845c7487737"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.Filters Type%3DBasicFilters Member%3D(Name%3DResizeBitmap OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DreferenceBitmap"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="59235654-487a-4777-89ff-723e0e972de0"
+                      LastKnownName="Bitmap"
+                      LastKnownLocation="Package2_2051.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="646b7538-9613-49cd-98ed-bf9fb678f882"
+                  name="width"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ef8986ba-eb7a-4165-8779-3dbfeaf69da7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.Filters Type%3DBasicFilters Member%3D(Name%3DResizeBitmap OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dwidth"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="LocalSearchEngineModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="81587e58-b15e-46de-bf00-55bf80252a31"
+                  name="height"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f52f0f55-a013-47b1-a5e2-2a04f0d3765a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.Filters Type%3DBasicFilters Member%3D(Name%3DResizeBitmap OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dheight"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="LocalSearchEngineModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="21be02ba-b05e-4910-a9a1-137319360626"
+            name="GrayScale"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="737f7c3d-bd2a-4e66-beef-408be3529f3a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.Filters Type%3DBasicFilters Member%3D(Name%3DGrayScale OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e60c7936-811f-4eae-9848-9f3e4bfe0a45"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0ad17016-904f-4c06-9d87-44b41a450c53">
+                    <propertyInstance
+                      Id="5a6984cb-17db-43f3-97d8-cf303f33c07d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="235e6ddf-d2b5-4b0b-9005-962aa3319a74">
+                    <propertyInstance
+                      Id="793d401a-d637-4507-9e0a-7b052204f579"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="89e09b90-2f27-4cbb-b24d-369db68b5106">
+                    <propertyInstance
+                      Id="5ca58e31-c4ea-4b75-8c3d-6368d4cfa756"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6652ff5c-2b94-44d5-b58d-3e7bb1a6a1fe">
+                    <propertyInstance
+                      Id="87ec4dbb-fa03-4add-addf-90636c880206"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="92256899-ab5b-47cc-8ba3-727faaa47a63">
+                    <propertyInstance
+                      Id="e341d5ea-48cb-4783-a4e7-fb212cbeb794"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a2f6ffa-7f66-45a1-97d6-548ecacfe264">
+                    <propertyInstance
+                      Id="22efa829-c2b6-4922-b9c7-38309bcdf599"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4ccb0e2f-f013-4288-9f6c-2d0d321da08a"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="59235654-487a-4777-89ff-723e0e972de0"
+                      LastKnownName="Bitmap"
+                      LastKnownLocation="Package2_2051.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d970bc60-fbf8-41c7-bd85-483dd2f7c6fb"
+                  name="referenceBitmap"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="95d8b2f6-7492-4799-957e-8d2d3111dea9"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.Filters Type%3DBasicFilters Member%3D(Name%3DGrayScale OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)]) ParameterIdentifier%3DreferenceBitmap"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="59235654-487a-4777-89ff-723e0e972de0"
+                      LastKnownName="Bitmap"
+                      LastKnownLocation="Package2_2051.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

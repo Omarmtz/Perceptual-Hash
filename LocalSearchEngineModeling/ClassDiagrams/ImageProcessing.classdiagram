@@ -1,0 +1,996 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="7db1c4fe-f849-443a-8c8c-4794e45a82c3" name="ImageProcessing" linkedPackageId="1129b3cc-ea3d-4ebd-834a-170d0244a814" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="edbfc042-862d-4a4a-80a5-c79af20d9dcb">
+      <profileInstance Id="162e3959-82f8-4964-8776-051c16804755" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="723720f7-d34e-46de-9d76-fe63e93cbf3d">
+      <profileInstance Id="4574a0c4-1952-466b-b125-8ae7e32f7c4c" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="35f58954-c46e-4b9f-9179-a0f314c5e61f">
+      <profileInstance Id="f82d35f7-e210-4ed4-83e7-1780e7b16ddc" name="CSharpProfile">
+        <elementDefinition Id="b6cc256c-a472-46f0-b767-432e75e83cc1" />
+      </profileInstance>
+      <elementDefinition Id="938c11bd-6d11-4a2c-b934-b15a5e05bf91" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f23c180c-b46d-4d01-924f-b73bb6a9200c" name="BasicFilters" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="7124a90e-be9d-4447-a37e-4667017b06a8" handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.Filters Type%3DBasicFilters" tag="ViewCode">
+            <elementDefinition Id="f75ff315-fd0a-433d-9c9a-e0b057ca9b43" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="4fab7d05-295d-4454-b66d-de2e353878f1" name="class" profile="CSharpProfile">
+            <elementDefinition Id="97855425-11dd-477c-af21-0b90b537dbff" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="2dfae33e-7c99-4742-a1fb-db9f129e553d">
+                <propertyInstance Id="e9b7ae28-3de5-4286-925d-6036da151c35" name="ClrAttributes">
+                  <elementDefinition Id="dae6717c-bc76-479c-87cb-baa150fd56f3" />
+                </propertyInstance>
+                <elementDefinition Id="fb9df3fa-1d67-4c0d-ad36-90549095f51d" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="95d2cd7e-0f01-43eb-be30-b9252675be60">
+                <propertyInstance Id="599fd1b5-e907-4962-a142-5abc36822754" name="IsPartial" value="false">
+                  <elementDefinition Id="4b2772aa-22ff-4824-9051-5ad0103b4c7b" />
+                </propertyInstance>
+                <elementDefinition Id="ca91da42-f3aa-4b69-b2f1-13f84ab5183b" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="e8936a89-5f19-485d-bd9d-a3b5eb75e0ca">
+                <propertyInstance Id="952655d7-b5d0-4f9b-846b-c12469e04786" name="IsStatic" value="True">
+                  <elementDefinition Id="57993ac7-5593-481e-b9c4-74b89d85655c" />
+                </propertyInstance>
+                <elementDefinition Id="cda70347-2494-4bc4-a533-5b0a9e758112" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="755c5aca-6a4f-4d5a-b771-af94c22117b5">
+                <propertyInstance Id="f6ce4e4e-d29b-4411-869a-e1881a55e4b1" name="IsUnsafe" value="false">
+                  <elementDefinition Id="34228c78-3cb3-4d7e-ae47-a4383b9cdf91" />
+                </propertyInstance>
+                <elementDefinition Id="ffa4a7cd-34ad-4c62-b992-07539eb5f1e9" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="fb6ad18f-ec0d-4d81-b4f6-b2f50027ee19">
+                <propertyInstance Id="1e4bb049-e253-4745-9646-3e367c70faae" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="e814fc87-4afb-4f9a-8c91-c67131a7537a" />
+                </propertyInstance>
+                <elementDefinition Id="81103b89-928c-422c-bfd0-658ea2d59e94" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="b2d717e5-4420-41d1-980f-b41e3675abf9" />
+        <ownedOperationsInternal>
+          <operation Id="eea75096-ffaf-4250-9d09-861ba01cc223" name="ResizeBitmap" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="9fd1a943-584b-4fb1-ba8e-817a53b2ae86" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.Filters Type%3DBasicFilters Member%3D(Name%3DResizeBitmap OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])" tag="ViewCode">
+                <elementDefinition Id="a3e2bd82-4d46-40d3-b186-e87bea342b3a" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="373ebaf4-bb78-4936-9270-2b9ce8ceca2d" name="method" profile="CSharpProfile">
+                <elementDefinition Id="bdada316-145d-4534-8559-3da4bbb2411b" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="862b7711-f36a-424f-9868-b596a332a9a6">
+                    <propertyInstance Id="149e117c-1f25-4fac-a2cb-8ba558ee6e14" name="ClrAttributes">
+                      <elementDefinition Id="19f96766-24f8-4eff-9dd9-7ee4186d4387" />
+                    </propertyInstance>
+                    <elementDefinition Id="715d9dee-e83c-4a1b-8801-0936daf4fb2a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c44053b6-dfd0-4f1d-97ed-721195fd3535">
+                    <propertyInstance Id="28df30c6-7afb-433c-acc9-e2cf3adb91af" name="IsPartial" value="false">
+                      <elementDefinition Id="9a45318c-d4bc-48dc-bf5c-ee9fd935972c" />
+                    </propertyInstance>
+                    <elementDefinition Id="16445339-0c74-418d-a4a6-55a6508346c0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2148f28d-90f1-46e9-97bd-daecd9ce215b">
+                    <propertyInstance Id="248079fa-0dc7-47ea-8d68-3fb9dbcdc182" name="IsUnsafe" value="false">
+                      <elementDefinition Id="9834871e-4652-4a0b-8315-093a33d042de" />
+                    </propertyInstance>
+                    <elementDefinition Id="5329500a-b43d-4065-a76d-ff3e25d314f2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8fb4ff69-b8f7-4397-8664-30717a7f235c">
+                    <propertyInstance Id="b8478156-a515-4aa1-822b-17fb21ba775f" name="Inheritance" value="none">
+                      <elementDefinition Id="e80ae6fe-d876-44f4-96cd-6b82e405a50b" />
+                    </propertyInstance>
+                    <elementDefinition Id="5787899e-88d4-4cea-abda-5d8b3ec4a531" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="15e81d52-9064-461b-98d7-372a4861d39f">
+                    <propertyInstance Id="5073b06c-9ecc-4652-9d53-6a1104dc5530" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="165f0903-1407-4cc1-9cbc-c2f0e3b06e90" />
+                    </propertyInstance>
+                    <elementDefinition Id="926e0272-7866-4fcf-a293-d40169e0d34c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="54e616d0-63cd-4924-8b95-9531c79dd5eb">
+                    <propertyInstance Id="9eeb89f8-0054-4266-a92c-3c811371d275" name="params" value="false">
+                      <elementDefinition Id="580de8a6-4b0a-4bf5-a08c-a45e9596bd1f" />
+                    </propertyInstance>
+                    <elementDefinition Id="c2de20e9-f6b4-43d5-9625-4c6ed14f947a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="74025a47-0b8f-4383-9ed3-136bb09b7bf6" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="43056963-b93b-4e14-aaf3-5cf874d1ef5d" direction="Return">
+                  <elementDefinition Id="1519cf25-befa-4739-b18a-caa769c9efe7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a020ca7d-451c-4507-a434-4e41dfd22c5d" LastKnownName="Bitmap" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="103957bc-5de6-41d1-8b1e-ff514967d535" name="referenceBitmap" direction="In">
+                  <referencesInternal>
+                    <reference Id="3230c1dc-75c0-4b70-b91d-c68a11bc16fd" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.Filters Type%3DBasicFilters Member%3D(Name%3DResizeBitmap OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DreferenceBitmap" tag="ViewCode">
+                      <elementDefinition Id="3c8e4d88-60c1-4d86-a0db-d845c7487737" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="c519552f-bd19-4c35-962a-8c5ecd7e0c89" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a020ca7d-451c-4507-a434-4e41dfd22c5d" LastKnownName="Bitmap" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0b84d13e-aa73-4030-9e9a-35f4b8588819" name="width" direction="In">
+                  <referencesInternal>
+                    <reference Id="608bf603-4464-44d1-9e0d-3c76e69594a1" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.Filters Type%3DBasicFilters Member%3D(Name%3DResizeBitmap OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dwidth" tag="ViewCode">
+                      <elementDefinition Id="ef8986ba-eb7a-4165-8779-3dbfeaf69da7" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="646b7538-9613-49cd-98ed-bf9fb678f882" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d9702993-67c3-415e-a324-33364fe22f08" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="92de4d23-4f1d-4f5d-bda4-d88c04b6dc6d" name="height" direction="In">
+                  <referencesInternal>
+                    <reference Id="f60c4214-c495-4ff5-bcb2-064f8afb99bd" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.Filters Type%3DBasicFilters Member%3D(Name%3DResizeBitmap OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dheight" tag="ViewCode">
+                      <elementDefinition Id="f52f0f55-a013-47b1-a5e2-2a04f0d3765a" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="81587e58-b15e-46de-bf00-55bf80252a31" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d9702993-67c3-415e-a324-33364fe22f08" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="da381106-1ee8-4193-96c3-81aee43f6cf1" name="GrayScale" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="24022dc7-b0fa-45fa-a6e2-00bedc542571" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.Filters Type%3DBasicFilters Member%3D(Name%3DGrayScale OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)])" tag="ViewCode">
+                <elementDefinition Id="737f7c3d-bd2a-4e66-beef-408be3529f3a" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="9fb55eb0-d5a3-4488-88d3-57b2b543f283" name="method" profile="CSharpProfile">
+                <elementDefinition Id="e60c7936-811f-4eae-9848-9f3e4bfe0a45" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="245d9bf1-c484-427f-a95a-badbdaa83dc1">
+                    <propertyInstance Id="f382fbe3-826d-4022-a5b8-3375b54bc7e4" name="ClrAttributes">
+                      <elementDefinition Id="5a6984cb-17db-43f3-97d8-cf303f33c07d" />
+                    </propertyInstance>
+                    <elementDefinition Id="0ad17016-904f-4c06-9d87-44b41a450c53" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="89aa77c1-ac2e-4e26-9fef-86d062227d14">
+                    <propertyInstance Id="90edef63-6a60-44a6-b045-cb0c962e1a8c" name="IsPartial" value="false">
+                      <elementDefinition Id="793d401a-d637-4507-9e0a-7b052204f579" />
+                    </propertyInstance>
+                    <elementDefinition Id="235e6ddf-d2b5-4b0b-9005-962aa3319a74" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9d0d81b9-9f95-4e42-96cc-fc268b08ac0f">
+                    <propertyInstance Id="1a80cc58-03d6-45ae-983a-485756b5a380" name="IsUnsafe" value="false">
+                      <elementDefinition Id="5ca58e31-c4ea-4b75-8c3d-6368d4cfa756" />
+                    </propertyInstance>
+                    <elementDefinition Id="89e09b90-2f27-4cbb-b24d-369db68b5106" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ba3d6dcc-2b44-42c5-bed7-3574edf653a0">
+                    <propertyInstance Id="e9f64791-4bac-4b1f-aee5-d9e35d3314fa" name="Inheritance" value="none">
+                      <elementDefinition Id="87ec4dbb-fa03-4add-addf-90636c880206" />
+                    </propertyInstance>
+                    <elementDefinition Id="6652ff5c-2b94-44d5-b58d-3e7bb1a6a1fe" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="75db5afe-7e4e-431a-85cd-5b131511a5cc">
+                    <propertyInstance Id="6d23d541-d2dc-4406-88b1-715c617cc618" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="e341d5ea-48cb-4783-a4e7-fb212cbeb794" />
+                    </propertyInstance>
+                    <elementDefinition Id="92256899-ab5b-47cc-8ba3-727faaa47a63" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="39e5f164-83ef-40d3-88ba-6ee64307234c">
+                    <propertyInstance Id="1d66991e-e617-496a-90dd-deb71d54b326" name="params" value="false">
+                      <elementDefinition Id="22efa829-c2b6-4922-b9c7-38309bcdf599" />
+                    </propertyInstance>
+                    <elementDefinition Id="2a2f6ffa-7f66-45a1-97d6-548ecacfe264" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="21be02ba-b05e-4910-a9a1-137319360626" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d16acb75-1c13-4812-82d5-1ed0f2ddfc91" direction="Return">
+                  <elementDefinition Id="4ccb0e2f-f013-4288-9f6c-2d0d321da08a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a020ca7d-451c-4507-a434-4e41dfd22c5d" LastKnownName="Bitmap" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="594281c7-66ad-4a49-b772-e76931e38dad" name="referenceBitmap" direction="In">
+                  <referencesInternal>
+                    <reference Id="682515eb-8ff5-42c2-9859-52aec42f3c2b" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.Filters Type%3DBasicFilters Member%3D(Name%3DGrayScale OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)]) ParameterIdentifier%3DreferenceBitmap" tag="ViewCode">
+                      <elementDefinition Id="95d8b2f6-7492-4799-957e-8d2d3111dea9" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="d970bc60-fbf8-41c7-bd85-483dd2f7c6fb" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a020ca7d-451c-4507-a434-4e41dfd22c5d" LastKnownName="Bitmap" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="a020ca7d-451c-4507-a434-4e41dfd22c5d" name="Bitmap" isAbstract="false" isLeaf="false" cachedFullName="LocalSearchEngineModeling::System::Drawing::Bitmap">
+        <elementDefinition Id="59235654-487a-4777-89ff-723e0e972de0" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d9702993-67c3-415e-a324-33364fe22f08" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="10241d54-50e9-4db7-83a6-c41057f24aad" name="BitmapToMatrix" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="e89fdfc3-d3ce-4faf-ba29-426105cb8322" handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.ImageProcessingUtils Type%3DBitmapToMatrix" tag="ViewCode">
+            <elementDefinition Id="1b020ba7-a14c-49bd-89f3-bd8918600dcc" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="ab4f5fe1-8000-46e9-b29f-161e887c2774" name="class" profile="CSharpProfile">
+            <elementDefinition Id="5b918722-3c8c-4bec-bf6c-7aadfb219a12" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="17f119ea-3088-47fb-b0c7-a8242c83ba0e">
+                <propertyInstance Id="f8f06726-9722-4461-9511-23236c2f0324" name="ClrAttributes">
+                  <elementDefinition Id="502e6b39-db01-475d-9205-e486b2a05d63" />
+                </propertyInstance>
+                <elementDefinition Id="72aae552-527f-4cd8-9cb9-a25962ae85fd" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="c41d3e67-9284-4eaa-8ef1-ebdb96a46de9">
+                <propertyInstance Id="bea84949-71b1-463b-8d63-d89b156e588a" name="IsPartial" value="false">
+                  <elementDefinition Id="9a894c14-d999-4d47-816d-1e8521d13a16" />
+                </propertyInstance>
+                <elementDefinition Id="d44942db-038d-4f28-bac2-03786917b8fe" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="03fc5bb0-eda5-4213-8499-f6ac4fbea0cb">
+                <propertyInstance Id="999289fc-ae95-4f22-8c2b-194808d977b9" name="IsStatic" value="True">
+                  <elementDefinition Id="447856de-0e31-4c69-bdc4-3a165bbb2e58" />
+                </propertyInstance>
+                <elementDefinition Id="c491d7c8-b551-44b5-b9c1-d6a136ec3293" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="8fb60669-d702-4a77-a343-c8224aa6c8c5">
+                <propertyInstance Id="67cace2c-21de-466e-8753-3b9212b6b3d7" name="IsUnsafe" value="false">
+                  <elementDefinition Id="fc0ccc72-64b3-46ee-930b-3941cc478f06" />
+                </propertyInstance>
+                <elementDefinition Id="be98411e-111e-4c3e-b125-a769772a1807" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="e372dc97-822b-4363-976e-caff75f53a4b">
+                <propertyInstance Id="0337f5bb-9d2f-450e-a55b-00926e79c699" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="56bc5105-1a93-4dfd-bc06-32bf55ccc1be" />
+                </propertyInstance>
+                <elementDefinition Id="b529c83f-fc03-48e8-93e2-e2e1e056bbab" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="929e2c39-d87c-4af7-99d3-bdde07083fe9" />
+        <ownedOperationsInternal>
+          <operation Id="94bad664-7448-4e48-9c48-5001ec08e790" name="ConvertBitmapToMatrix" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="d3530c04-5594-4fe8-85d4-f4232cf5386f" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.ImageProcessingUtils Type%3DBitmapToMatrix Member%3D(Name%3DConvertBitmapToMatrix OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)])" tag="ViewCode">
+                <elementDefinition Id="86adbb0b-2c9f-465e-9910-52af703efbaa" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="6f8c38e4-166f-4adb-85ac-cb53bc707719" name="method" profile="CSharpProfile">
+                <elementDefinition Id="4a2dc7f1-6e90-419b-9926-802b83862f8e" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5377646b-f2b6-48e0-b342-6a2866b3734a">
+                    <propertyInstance Id="9a88b9e1-14c6-4dfd-b1b7-c6b5f882b703" name="ClrAttributes">
+                      <elementDefinition Id="d8e9bd68-5664-40d8-a12a-bc0d211817c5" />
+                    </propertyInstance>
+                    <elementDefinition Id="a8ca58d2-b5e5-4a0d-ae38-fdf3b4e49dbf" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5dc0b117-70fb-469b-88b0-d4cdd78ba13c">
+                    <propertyInstance Id="c04d7fe3-8b43-4d77-aa09-6587e9c2ba6f" name="IsPartial" value="false">
+                      <elementDefinition Id="6973ee17-a585-4aee-979a-d841a184f576" />
+                    </propertyInstance>
+                    <elementDefinition Id="7e3c3d78-be85-498e-ace8-e92df2086380" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d544b212-d64d-470e-b044-2d2cf44f8f3a">
+                    <propertyInstance Id="9d92fffb-69cb-489f-9422-92690ad55109" name="IsUnsafe" value="false">
+                      <elementDefinition Id="23944719-0d0c-4f7d-978e-98821bb1bd11" />
+                    </propertyInstance>
+                    <elementDefinition Id="bb83b5f7-1d8d-4a24-a043-51db18b6ee82" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c16e2be1-7c5e-42c8-9595-50efe0e09451">
+                    <propertyInstance Id="a3e9adfc-75f9-46f9-bdbe-5164d0c60d01" name="Inheritance" value="none">
+                      <elementDefinition Id="768f0a12-a7fd-47c8-b5f1-2b7a0c05daf9" />
+                    </propertyInstance>
+                    <elementDefinition Id="8c7942dd-ec02-48b1-8401-842aecfbcab8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="83f6359e-a065-44dd-87e5-da1fda5fc33f">
+                    <propertyInstance Id="22c35748-df78-46c7-8dd5-fa00ad271eac" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="13504afa-0adc-48bf-82f1-0c0d84cd77ad" />
+                    </propertyInstance>
+                    <elementDefinition Id="981d7cde-cb9a-44c6-b13d-05b400a3913f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8380168d-072d-434a-9df8-8178fb488644">
+                    <propertyInstance Id="94db14b6-7e7b-4e94-a82c-b68f9115dfb5" name="params" value="false">
+                      <elementDefinition Id="55996a71-092d-469c-bdf0-1279232ae0b0" />
+                    </propertyInstance>
+                    <elementDefinition Id="b09d5247-b040-41ec-9292-6d215bfece78" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="00232b63-533b-4acb-8266-946c115e6fb7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3639c8ee-89ee-4c1d-b7e9-d45dbd5ef37a" direction="Return" isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString Id="e7471c27-0dc4-4a15-b8fa-2c88af503af1" name="Lower" value="*">
+                      <elementDefinition Id="abb52ecd-7f32-4e2b-92b2-4caf31b59696" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="92e55976-b827-4edc-99a1-de42fd227084" name="Upper" value="*">
+                      <elementDefinition Id="5dc44e65-e97a-4a2a-b0c8-65ec3d51f4c6" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="4b3ee55d-6350-432b-b545-2aca549c5392" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4093538f-49f3-40db-bd2d-2480d010de17" LastKnownName="Double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f6f99006-2cc0-4ede-982f-3a6eb479cce2" name="reference" direction="In">
+                  <referencesInternal>
+                    <reference Id="792fa4e7-aca2-4bc5-af62-a2e2fe077046" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.ImageProcessingUtils Type%3DBitmapToMatrix Member%3D(Name%3DConvertBitmapToMatrix OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)]) ParameterIdentifier%3Dreference" tag="ViewCode">
+                      <elementDefinition Id="474d8cf3-2581-4826-bd06-eef7751e4d75" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="fa59ab00-27f1-4d33-9f52-e25879e09971" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a020ca7d-451c-4507-a434-4e41dfd22c5d" LastKnownName="Bitmap" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="bc40f14d-b185-43da-b171-6e07e6454074" name="ConvertBitmapToFloatMatrix" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="8d2dee9c-5d0a-473b-8166-d608cbc15f93" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.ImageProcessingUtils Type%3DBitmapToMatrix Member%3D(Name%3DConvertBitmapToFloatMatrix OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)])" tag="ViewCode">
+                <elementDefinition Id="9e8cb6e0-05da-4c39-b243-9d48bd103811" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="7d69c4cf-650d-465f-8501-1809179ac504" name="method" profile="CSharpProfile">
+                <elementDefinition Id="cfdb063d-010b-4b63-bf07-27e2dda8da86" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9fd6f0b6-c66e-48aa-bacf-f46933300677">
+                    <propertyInstance Id="1cf62aeb-b302-4135-be6d-1cf660e08dc7" name="ClrAttributes">
+                      <elementDefinition Id="825fafc8-fa98-4c84-bccc-44a6a5b2ea0b" />
+                    </propertyInstance>
+                    <elementDefinition Id="d354984f-e655-43df-95dd-306b115784db" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b2f0521a-2c2c-4bbc-aa72-d519541ff2bd">
+                    <propertyInstance Id="e58302fe-b969-4f7a-9fa7-dfdbc66af31b" name="IsPartial" value="false">
+                      <elementDefinition Id="1dcedbda-34e7-4be9-b0af-46744c101cc9" />
+                    </propertyInstance>
+                    <elementDefinition Id="0c42d389-55cd-43e6-b200-3046e6fb8abb" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="781914ae-3d40-4ba5-968c-d690c19d01d4">
+                    <propertyInstance Id="fcc6d715-9c47-4da2-80fa-7d5a3f148d3c" name="IsUnsafe" value="false">
+                      <elementDefinition Id="9762cce3-73f2-44ed-8125-b68eaa1b747c" />
+                    </propertyInstance>
+                    <elementDefinition Id="79f1ad29-ea6c-4569-8427-735512fc53fd" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="579fcc28-f2c7-4d5b-afd4-3870d089582e">
+                    <propertyInstance Id="589d00e3-c7b3-4c52-ba3e-638ade3dbd98" name="Inheritance" value="none">
+                      <elementDefinition Id="703e6bfa-79b3-49f2-bde6-945bc1e9816b" />
+                    </propertyInstance>
+                    <elementDefinition Id="c9feb401-5f0d-46cd-84b4-3a2382ef57a4" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a1dcae21-9c27-430d-8512-5ea9c5aa1a76">
+                    <propertyInstance Id="f3fba070-9af9-4676-8f30-d42dea2ff32d" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="6cbcf7df-88e2-4aa4-9521-a200d23e831e" />
+                    </propertyInstance>
+                    <elementDefinition Id="ce17be98-c2ac-4d13-ac47-bbd6305bb655" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0d4259bc-8210-4377-ae95-2b29a46ebb90">
+                    <propertyInstance Id="7a675e9d-2bf2-4607-9f64-19c22d97409f" name="params" value="false">
+                      <elementDefinition Id="4807abf5-8656-416b-8d93-a54c94c422d1" />
+                    </propertyInstance>
+                    <elementDefinition Id="b0ac5660-2ffd-43b4-ba5b-4d5dec8ce372" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="6a82a787-2967-4679-a399-c3811acf0f42" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8eac0c93-dd65-4bdc-b554-34d6b2aae160" direction="Return" isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString Id="e61617de-036e-41fc-bbdd-6c484fa8ead9" name="Lower" value="*">
+                      <elementDefinition Id="71d39fef-5f1a-4eb0-a9c9-992f6121b76b" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="44c76392-1379-4afc-bed7-004dff6be34e" name="Upper" value="*">
+                      <elementDefinition Id="39224493-50db-49f9-906d-50268ff00a45" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="ccf01902-9482-4b4d-aecf-bc4aded18dfa" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9ba196e6-1c13-4e44-a71b-181ed4c2b9e9" LastKnownName="Single" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="cdfb1a22-3211-44e2-b5f9-0a0c67b45435" name="reference" direction="In">
+                  <referencesInternal>
+                    <reference Id="1b4430f6-d99e-479e-85c4-c016bb0882c5" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.ImageProcessingUtils Type%3DBitmapToMatrix Member%3D(Name%3DConvertBitmapToFloatMatrix OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)]) ParameterIdentifier%3Dreference" tag="ViewCode">
+                      <elementDefinition Id="e64a7e33-d32a-411c-b0a9-a0541e0bbcee" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="635fd20b-05ae-4580-ab0a-fa66375c06c9" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a020ca7d-451c-4507-a434-4e41dfd22c5d" LastKnownName="Bitmap" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="4093538f-49f3-40db-bd2d-2480d010de17" name="Double" isAbstract="false" isLeaf="false" cachedFullName="LocalSearchEngineModeling::System::Double">
+        <elementDefinition Id="210fc7ac-8a38-405d-ad20-da18ebff8053" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="9ba196e6-1c13-4e44-a71b-181ed4c2b9e9" name="Single" isAbstract="false" isLeaf="false" cachedFullName="LocalSearchEngineModeling::System::Single">
+        <elementDefinition Id="9564310d-d424-4938-84f5-2ce1649d908c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a584e80b-24f4-46b9-86db-f912b933fe91" name="DctImageTransform" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="47dab452-2086-4e3a-9885-e796e5ac87d8" handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.ImageProcessingUtils Type%3DDctImageTransform" tag="ViewCode">
+            <elementDefinition Id="fe2c6904-129d-4f2d-a32a-9d490a731793" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="77d69a8c-9614-4d9c-963f-e988e8a799a9" name="class" profile="CSharpProfile">
+            <elementDefinition Id="d65ba2db-cfa4-40cc-b881-8941dc967d71" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="f8b0aa77-8dc6-414c-a192-83abf5c99965">
+                <propertyInstance Id="6eff5659-fb5d-413c-9304-eb5e58df0411" name="ClrAttributes">
+                  <elementDefinition Id="eb717a66-cd88-4c62-96f4-1077f69b2f14" />
+                </propertyInstance>
+                <elementDefinition Id="57aa22fc-8849-4546-a6c3-7b95319568b9" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="f95c07e5-7e6b-4af3-8f90-37695295c341">
+                <propertyInstance Id="1faad402-6749-4d28-9a75-6a3cfc60bb79" name="IsPartial" value="false">
+                  <elementDefinition Id="891d934e-19fb-4806-bc09-61876cc6ddda" />
+                </propertyInstance>
+                <elementDefinition Id="4cf464a3-1642-4038-a51c-903a9aa59ac2" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="585ee358-3c20-4d57-ad52-fce6f75e7406">
+                <propertyInstance Id="a179cc3d-2dec-4333-a8d0-20160c8e75d2" name="IsStatic" value="True">
+                  <elementDefinition Id="80ec852b-fd1a-40a0-bd44-d692f00dfdbc" />
+                </propertyInstance>
+                <elementDefinition Id="b118d2df-5b4c-4b16-8136-cad9efaa4314" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="a6d030c3-4503-4a35-bb1a-73947c3d8119">
+                <propertyInstance Id="8ea96d4d-d5e9-4481-9293-82776ab9c565" name="IsUnsafe" value="false">
+                  <elementDefinition Id="fded3919-74b7-41e6-abaf-f3fdff399f08" />
+                </propertyInstance>
+                <elementDefinition Id="047dc1c3-49ae-47cd-a77b-5ea48933df17" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="55aec3ea-9476-4579-af6f-2498d9507bff">
+                <propertyInstance Id="43ca253c-7cad-4415-944c-45429e3c77fb" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="8d94365e-8b72-4968-80b1-2fd7ba3cb074" />
+                </propertyInstance>
+                <elementDefinition Id="2935bd64-9af5-4571-b1c6-638be859f24a" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="0343a891-d6cd-44a4-ac2f-6f08a63c9e11" />
+        <ownedOperationsInternal>
+          <operation Id="e750552c-7c45-41d6-8b3d-b61f2d5ef754" name="GetDctForwardTransform" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="cc2c345f-454f-4722-bd41-9056b957048d" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.ImageProcessingUtils Type%3DDctImageTransform Member%3D(Name%3DGetDctForwardTransform OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)])" tag="ViewCode">
+                <elementDefinition Id="3b9db3ea-593b-404c-917b-54ee466b8150" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="8d5863b9-a708-44f4-ad2f-b95455963a4c" name="method" profile="CSharpProfile">
+                <elementDefinition Id="38284ba0-9bc0-42f4-a684-29ad57f5965d" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f5f20da6-b576-4bc6-a4af-91b8908b69b7">
+                    <propertyInstance Id="9779d0a2-6071-4db2-bc75-08f4c8514283" name="ClrAttributes">
+                      <elementDefinition Id="b5c6dc46-3518-49b2-a042-a8aa82517b58" />
+                    </propertyInstance>
+                    <elementDefinition Id="63e398a7-e94d-4958-9a2e-a6533b4cb782" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="266d6cec-b7d0-4fb7-9a17-685aa972816f">
+                    <propertyInstance Id="67ad3a91-3b24-4f02-97fa-2225337a73be" name="IsPartial" value="false">
+                      <elementDefinition Id="1a9de1c5-f068-471a-87f5-5bb1646be75c" />
+                    </propertyInstance>
+                    <elementDefinition Id="7c5afb29-490f-4d9e-966a-93906ceffa2f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1c048fdf-f2dc-4c01-b0fb-124775adbc1b">
+                    <propertyInstance Id="3c2247ff-687e-4f46-a238-12607b880fc2" name="IsUnsafe" value="false">
+                      <elementDefinition Id="653d12c2-1aa2-4042-8c78-86b9b662e52c" />
+                    </propertyInstance>
+                    <elementDefinition Id="e04cb6fe-bff9-4ccb-8e62-f2c27a7aec6a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="daafb7fc-4a09-4c7e-8473-5890f8145d59">
+                    <propertyInstance Id="fa47cf0a-b234-40d4-a591-9948e6e3fba4" name="Inheritance" value="none">
+                      <elementDefinition Id="c5ebcb35-84b6-4dad-ac70-30d739127d40" />
+                    </propertyInstance>
+                    <elementDefinition Id="9c306c45-f339-4dfd-a51f-c2555db6c1ea" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f278d3d2-7837-4bd7-9c71-7081d2a7f1c7">
+                    <propertyInstance Id="f4757520-d7a5-448b-b446-9345a7d78fb6" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="c8c77db0-a925-4012-8e82-f59bf371a9b6" />
+                    </propertyInstance>
+                    <elementDefinition Id="2a66047f-ef87-4423-bc42-71f09d619977" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="be9af3d4-d817-41a0-a0c3-aca6c313c9a3">
+                    <propertyInstance Id="2396aa25-9e30-4f73-b074-d472cbb41a06" name="params" value="false">
+                      <elementDefinition Id="ee03db69-77ad-4a4d-b341-136aac7d3eb6" />
+                    </propertyInstance>
+                    <elementDefinition Id="28affdb5-7a1b-48fc-aed2-6d6973b8ab8e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="4636a7b8-4b26-4902-9e1f-b02bdd7aeba2" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="648e49dc-da02-432f-bf44-be29e90837d5" direction="Return" isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString Id="4eb267e5-e9da-4b20-8518-1b1ccf5e3fa0" name="Lower" value="*">
+                      <elementDefinition Id="7b4b6e11-815a-4922-9e1f-b8b2ee2db59f" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="469d36ec-d655-4c0a-be50-ab8ab51b1440" name="Upper" value="*">
+                      <elementDefinition Id="1b884ec9-74e9-416a-a78b-a0942a064da0" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="d388da0a-6d73-433f-8ad2-f03d1783d5fc" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4093538f-49f3-40db-bd2d-2480d010de17" LastKnownName="Double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="fd5b2409-2eea-4fa0-b546-1e18d163a69d" name="reference" direction="In">
+                  <referencesInternal>
+                    <reference Id="9afb091c-a6ee-4fa9-8c92-fa334bd3336b" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.ImageProcessingUtils Type%3DDctImageTransform Member%3D(Name%3DGetDctForwardTransform OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)]) ParameterIdentifier%3Dreference" tag="ViewCode">
+                      <elementDefinition Id="a728cd8b-99b5-42a2-b3f7-1eee82385caa" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="20a4cced-2942-499b-8a8b-65da762f3f27" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a020ca7d-451c-4507-a434-4e41dfd22c5d" LastKnownName="Bitmap" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="702381d3-e5c1-49a2-9f6d-2d280f125dd4" name="GetFastDctForwardTransform" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="4f81cca1-a7f7-4246-843d-b2aa0dc72aa0" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.ImageProcessingUtils Type%3DDctImageTransform Member%3D(Name%3DGetFastDctForwardTransform OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)])" tag="ViewCode">
+                <elementDefinition Id="3398a7b3-3d36-485f-b692-68836d5fb37b" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="8b834d61-af4f-41bc-bbdc-d2e7522206b5" name="method" profile="CSharpProfile">
+                <elementDefinition Id="a3a5df97-f954-41f3-ba24-a50995c312e8" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="72ebfad2-5fca-4b7b-acf0-75d3d30d0cbc">
+                    <propertyInstance Id="eabf5d7d-7bf3-46fc-ae1c-077bf126a724" name="ClrAttributes">
+                      <elementDefinition Id="eff6aec9-d5a0-4198-80cd-e14d32d4c0a4" />
+                    </propertyInstance>
+                    <elementDefinition Id="ba9261bf-3ae4-489b-b1b9-6a0d1f3a00e3" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b3aeadc0-345a-4ea9-8341-f5da0f468bef">
+                    <propertyInstance Id="2ec54815-c80c-43d2-bd3a-38e84a6cc0e6" name="IsPartial" value="false">
+                      <elementDefinition Id="b665c1dc-0523-4ba9-ad97-788f35c80ef7" />
+                    </propertyInstance>
+                    <elementDefinition Id="35bada0f-b9cb-43bb-b85f-2b6db2cbe885" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="83361475-b5b4-4a02-b4fe-d8d26a411e9e">
+                    <propertyInstance Id="3c31466d-87cd-4b78-a82f-aab24e31fca5" name="IsUnsafe" value="false">
+                      <elementDefinition Id="e01f8e34-8155-4baf-9c39-f90a46c5aa4e" />
+                    </propertyInstance>
+                    <elementDefinition Id="7c327078-343e-4a4e-8f44-3e7708fabc7f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="59f89690-c0d7-4e76-95b3-24e76a0030d6">
+                    <propertyInstance Id="9151deff-d307-46bf-a5bd-ea79fa72afb2" name="Inheritance" value="none">
+                      <elementDefinition Id="29ac90bc-9636-47e2-a325-ba455d4642c8" />
+                    </propertyInstance>
+                    <elementDefinition Id="5928ac86-eb28-4723-b4a3-ac7fe9a6688a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e0e909e1-8c3e-4184-8dcc-b9ffa4a38fc0">
+                    <propertyInstance Id="3551f14c-6f6c-42de-b110-27764ecb239a" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="9f4c0c5a-f3a8-4dcb-86ce-02454a2c4ef7" />
+                    </propertyInstance>
+                    <elementDefinition Id="ebf92217-2fb6-4c09-b6e0-fafbd5ec7363" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="efe91bbb-7b86-4924-b7e9-7e0a1d1173d4">
+                    <propertyInstance Id="8d822c23-0d3d-4cf2-8c17-6d37f0012e23" name="params" value="false">
+                      <elementDefinition Id="1541a502-1602-43d5-8b6d-f6b93071328e" />
+                    </propertyInstance>
+                    <elementDefinition Id="61a42c12-c596-4559-834f-781fcae13367" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="f75e7d32-6805-4c92-92e1-6a71b868d255" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f2c178c6-3372-477c-8309-b389c8aa40f1" direction="Return" isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString Id="30f94c26-ec0b-4e57-aeac-0d4b1af59ce3" name="Lower" value="*">
+                      <elementDefinition Id="58c4a145-273f-4433-8a6c-9bed1860c740" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="5f92efc4-25ca-43d9-b84b-5ad56be709b7" name="Upper" value="*">
+                      <elementDefinition Id="fe9f2290-81c7-4d24-bb9a-1d2cae9dbcca" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="0478c5b1-5133-418b-8ce2-73c01c519798" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4093538f-49f3-40db-bd2d-2480d010de17" LastKnownName="Double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7a15f9f3-71bf-43cf-84f1-6a123f47826d" name="reference" direction="In">
+                  <referencesInternal>
+                    <reference Id="4aaa33d0-8d07-488f-80ea-e55bdc62e4f3" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.ImageProcessingUtils Type%3DDctImageTransform Member%3D(Name%3DGetFastDctForwardTransform OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)]) ParameterIdentifier%3Dreference" tag="ViewCode">
+                      <elementDefinition Id="df44fe8a-f257-4760-8595-a882328389e4" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="7bf5da20-711e-4d0f-a8f4-0aba441910ca" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a020ca7d-451c-4507-a434-4e41dfd22c5d" LastKnownName="Bitmap" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="e72b0a74-d08d-4b57-95c1-7c18d8b33c19" name="GetDctForwardTransform" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="6ed5a605-d001-441f-9862-baf90548df38" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.ImageProcessingUtils Type%3DDctImageTransform Member%3D(Name%3DGetDctForwardTransform OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D2 ParentType%3DDouble) ParamKind%3DRef)])" tag="ViewCode">
+                <elementDefinition Id="3290e927-4b33-48ff-a56c-3be7739c4538" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="84c86e88-1cd6-4602-b14c-be2b27f89603" name="method" profile="CSharpProfile">
+                <elementDefinition Id="b1119c47-0ea4-4d44-a60e-3cea5530f4e4" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b6f95e95-94c2-46c7-8416-c219985d3571">
+                    <propertyInstance Id="4d21c644-209a-4052-b4c3-04f7a220b955" name="ClrAttributes">
+                      <elementDefinition Id="56afd978-e1ee-42c3-91d1-547a255c58e8" />
+                    </propertyInstance>
+                    <elementDefinition Id="d5fe0246-7088-4307-a4a1-5871e1b732e3" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e011dafc-3b65-441e-8725-1cd5b5a94a09">
+                    <propertyInstance Id="4cb32244-2e56-40d5-a30f-43afc5705f3f" name="IsPartial" value="false">
+                      <elementDefinition Id="56259d65-4698-4d64-be8f-dc9c45c652a1" />
+                    </propertyInstance>
+                    <elementDefinition Id="5f4269ee-7fe5-4be4-a766-279b3331f2c0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cf4da761-ce58-4282-ba77-8a42e75e4640">
+                    <propertyInstance Id="bd5a11a6-8c17-48a1-86a0-a368b7267631" name="IsUnsafe" value="false">
+                      <elementDefinition Id="d8065ec9-f462-4c48-83a0-5cdfb870ffef" />
+                    </propertyInstance>
+                    <elementDefinition Id="7ba1e0a8-0d15-4687-8591-e93b78acaa46" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="94bfa084-3e9d-4ce3-888f-099cfd531a1d">
+                    <propertyInstance Id="78231cf6-3792-4d2d-b6fc-3c2a82ce7866" name="Inheritance" value="none">
+                      <elementDefinition Id="94917aaa-4b10-4b42-a2dc-7875fa823f69" />
+                    </propertyInstance>
+                    <elementDefinition Id="1846e2d8-89e7-4fa7-a767-697a0807fb68" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b584ce60-3bd2-43c5-ba80-18c1c6eed08a">
+                    <propertyInstance Id="91ff43f4-9e37-41dd-ac4e-4bb42be6736a" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="fa7cc40e-40b6-482e-ab03-1d90f03345f7" />
+                    </propertyInstance>
+                    <elementDefinition Id="81031405-cb03-443d-8969-b36bfd30d7cf" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ad09d9fa-faa7-48cb-b2e0-d888c84faebe">
+                    <propertyInstance Id="92d64fa7-7fd3-4400-8328-3653c0392da5" name="params" value="false">
+                      <elementDefinition Id="0bd0081d-c7c2-45d8-8391-19226b011ea1" />
+                    </propertyInstance>
+                    <elementDefinition Id="6271105f-41b6-4163-8750-444b964ca432" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="77b7aee5-58ae-4b2d-ad42-de1cda626878" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="16e9ed70-35a9-402e-a1ec-b121626ce54a" direction="Return" isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString Id="68271f6a-0b59-4285-a84b-886c9253bc12" name="Lower" value="*">
+                      <elementDefinition Id="092b14e0-3c2b-4fd6-88c0-75e6549893e9" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="eef564cd-75f8-4b71-87db-3954fc0c5520" name="Upper" value="*">
+                      <elementDefinition Id="44ca2b7c-51fe-41c6-a5e5-151c2c335649" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="59d78f1a-75e7-4dbd-a995-6d67ff2188aa" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4093538f-49f3-40db-bd2d-2480d010de17" LastKnownName="Double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="81106761-a87e-4606-be39-e6e6e84bb201" name="reference" direction="InOut" isOrdered="true">
+                  <referencesInternal>
+                    <reference Id="3b86aa86-75ab-45ab-af47-9f6a5e4f3e67" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.ImageProcessingUtils Type%3DDctImageTransform Member%3D(Name%3DGetDctForwardTransform OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D2 ParentType%3DDouble) ParamKind%3DRef)]) ParameterIdentifier%3Dreference" tag="ViewCode">
+                      <elementDefinition Id="fe0605ee-968e-425a-9b42-632d47b404ea" />
+                    </reference>
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString Id="7a9dcc8d-05f9-4850-9688-fea1d63d0fd8" name="Lower" value="*">
+                      <elementDefinition Id="327e38ef-fce4-440b-aa23-3bc3fa9bfe74" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="26d9b345-ae83-4d2a-bf4e-c13a5295d785" name="Upper" value="*">
+                      <elementDefinition Id="a534b303-a8d5-44cc-8767-08af01f6d2ad" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="28d7fc8a-6cfe-4ad2-beba-d48a3e169ea4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4093538f-49f3-40db-bd2d-2480d010de17" LastKnownName="Double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="dcc22bba-480b-4020-969e-a3e1ebbd3110" name="GetAlpha" visibility="Private" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="ee1c7ec2-0295-4233-87aa-c5d394899698" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.ImageProcessingUtils Type%3DDctImageTransform Member%3D(Name%3DGetAlpha OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])" tag="ViewCode">
+                <elementDefinition Id="0f915e23-7539-4e11-bd16-45895d49c8eb" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="0ff92b72-a83c-4713-b5c3-fef5d258e9c6" name="method" profile="CSharpProfile">
+                <elementDefinition Id="f8c0f499-2158-460c-9769-0ab6c2cc8dd8" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="63343aac-049f-4d79-a5ea-fc84f8a5677c">
+                    <propertyInstance Id="b65facde-8c86-4511-bc94-937465d96b62" name="ClrAttributes">
+                      <elementDefinition Id="9bb1238e-587d-4d94-ad5d-f97141e6ba54" />
+                    </propertyInstance>
+                    <elementDefinition Id="3737c7e7-f550-4f3b-8605-7c963a0cca21" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b8bdcb96-2ca8-46bb-bc9c-26ed8e75d861">
+                    <propertyInstance Id="320d253a-ef76-498e-aed4-5c4d3be97c88" name="IsPartial" value="false">
+                      <elementDefinition Id="7a69dd4e-4016-4d3d-98fa-2b739dd06bb0" />
+                    </propertyInstance>
+                    <elementDefinition Id="5a032646-8ca1-4726-b350-f374e1f1e5ce" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="00bd1fd5-a945-4f5c-8bf4-9c92702972c0">
+                    <propertyInstance Id="363b91d5-180b-4248-a026-f7f98c3fcb34" name="IsUnsafe" value="false">
+                      <elementDefinition Id="a4e235db-2038-4585-9c02-07bf0f95d0e8" />
+                    </propertyInstance>
+                    <elementDefinition Id="2f6b7853-c49b-42bd-919d-8c6ef3d2986d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0d0ebecb-943c-4308-8e18-4e20811f0d05">
+                    <propertyInstance Id="0402d49a-92b6-4981-aa0c-67d61ba86c7a" name="Inheritance" value="none">
+                      <elementDefinition Id="ec48af43-d96d-497b-bf63-c714a3758048" />
+                    </propertyInstance>
+                    <elementDefinition Id="bca9256c-74dc-4973-b88c-f5f00b5621cc" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="977585ee-3ddd-4a0a-b418-3c5b405bb78d">
+                    <propertyInstance Id="633472a1-f3e9-4b0a-9006-ca0492ae98da" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="d3c546cc-b97a-45f6-8261-92e6faf69767" />
+                    </propertyInstance>
+                    <elementDefinition Id="0eead811-84ee-46d3-a8be-94035c46216a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="49a919d5-d9fa-4253-b2d7-686b7e2dce95">
+                    <propertyInstance Id="50caf483-4ede-4942-9008-bf807d6e3fe8" name="params" value="false">
+                      <elementDefinition Id="24a1475f-579a-4f71-a160-ce2e6ac5f90f" />
+                    </propertyInstance>
+                    <elementDefinition Id="9c2e2b4b-f386-4f65-916c-8851d23291d6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="bcca0a1c-8872-4bdd-88bd-024f053e6000" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="63fc9f1b-0c6c-4fd7-898d-199ce94575df" direction="Return">
+                  <elementDefinition Id="59528c41-e7ca-4a22-804f-13a9e44eaaf0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4093538f-49f3-40db-bd2d-2480d010de17" LastKnownName="Double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c5f2625e-4f46-48b0-9276-658a30218490" name="u" direction="In">
+                  <referencesInternal>
+                    <reference Id="d51a5b4a-8a9d-4d59-8e6f-47d4269eb63a" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.ImageProcessingUtils Type%3DDctImageTransform Member%3D(Name%3DGetAlpha OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Du" tag="ViewCode">
+                      <elementDefinition Id="d6f20b40-a15d-4d27-8f4f-ba5ea0ea96c0" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="301e895f-c743-4ece-aaa0-323588d29e37" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d9702993-67c3-415e-a324-33364fe22f08" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4af79efc-f989-4f1b-b8a8-203cb54612e1" name="n" direction="In">
+                  <referencesInternal>
+                    <reference Id="e653ef29-095d-4b1e-8ced-c6fd3b642c82" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.ImageProcessingUtils Type%3DDctImageTransform Member%3D(Name%3DGetAlpha OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dn" tag="ViewCode">
+                      <elementDefinition Id="34e83413-8bc5-4325-92b8-038debb71774" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="33828866-add0-4108-8443-e069cb4a9b0f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d9702993-67c3-415e-a324-33364fe22f08" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b8ec3a0c-5493-411f-9101-99578b256ccf" name="CosineTransform" visibility="Private" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="b0588f0d-59a7-437e-926c-1a3631b4fdc5" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.ImageProcessingUtils Type%3DDctImageTransform Member%3D(Name%3DCosineTransform OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D2 ParentType%3DDouble) ParamKind%3DRef)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])" tag="ViewCode">
+                <elementDefinition Id="39790f29-5456-4baa-8020-3e3cd4b1b3f8" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="9ab2cb94-0fd0-4a68-ad17-1b57244b06fc" name="method" profile="CSharpProfile">
+                <elementDefinition Id="49077936-34d2-4fef-bba4-f9a905cb5cf2" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3cd5ea2c-07bb-4826-be72-7f0bbcafad52">
+                    <propertyInstance Id="ad37dd78-58f7-42a0-8a6d-aa35b631a6eb" name="ClrAttributes">
+                      <elementDefinition Id="d1d21812-91f0-4f44-9141-c7790f2d4e49" />
+                    </propertyInstance>
+                    <elementDefinition Id="95cb08f3-9a6d-447e-861b-6927e61d9c17" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7d58f432-dd88-4c98-9070-3d603059b35b">
+                    <propertyInstance Id="5652f6bf-44ec-4c4b-95bd-f297d8fc40e5" name="IsPartial" value="false">
+                      <elementDefinition Id="558d7aa1-38ab-4ad9-b864-0fc28ca77c56" />
+                    </propertyInstance>
+                    <elementDefinition Id="14174965-c945-487f-ac3e-7c407a5641c7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="dddc2896-7710-4d27-b0c8-818231bb769e">
+                    <propertyInstance Id="9609c038-731c-4d8e-84cc-bae287613501" name="IsUnsafe" value="false">
+                      <elementDefinition Id="87129d7e-61da-4165-8187-996335686d76" />
+                    </propertyInstance>
+                    <elementDefinition Id="277d260d-5bb3-41e9-8389-e4bce5944bc5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3e39a0eb-6183-4f92-a5a8-9499261aef7f">
+                    <propertyInstance Id="4eae38e5-d512-4a4f-8c81-c5f1f4e9009f" name="Inheritance" value="none">
+                      <elementDefinition Id="9d613ad9-874e-44c8-afd8-abf4255880a8" />
+                    </propertyInstance>
+                    <elementDefinition Id="3b89b21a-27a6-4d48-b01a-e1ccd2f86226" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f60acb6d-b8c5-4ae9-96c6-f71d4e7fadf3">
+                    <propertyInstance Id="e2a99f82-7e1e-4e6f-8b4a-a69853e7fd45" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="e9aada31-df7d-434c-bc15-187028258285" />
+                    </propertyInstance>
+                    <elementDefinition Id="3cf2d64b-0399-48f3-9947-b43bbbce9e50" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="985c03ad-ef40-41ea-914b-e31452460e20">
+                    <propertyInstance Id="b2126da4-1ebf-47cc-8d06-bee3e1fa5793" name="params" value="false">
+                      <elementDefinition Id="03816b43-5e34-4369-9004-7266ddc938a4" />
+                    </propertyInstance>
+                    <elementDefinition Id="560d1f34-8d03-4b85-b394-3f9c997cfb3e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="e8b1f46f-fb47-4eb8-91ec-2d57505e8301" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5811da0b-9d6e-4d23-bbd0-830831183ea6" direction="Return">
+                  <elementDefinition Id="3ad87307-9be6-40c7-a2ac-a33c874c0d47" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4093538f-49f3-40db-bd2d-2480d010de17" LastKnownName="Double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="15a30497-bbb7-48ad-a8d9-b739df67c191" name="reference" direction="InOut" isOrdered="true">
+                  <referencesInternal>
+                    <reference Id="d39663b8-953f-4af8-9921-503bb45dffa9" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.ImageProcessingUtils Type%3DDctImageTransform Member%3D(Name%3DCosineTransform OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D2 ParentType%3DDouble) ParamKind%3DRef)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dreference" tag="ViewCode">
+                      <elementDefinition Id="fe34f566-34a4-4c3b-b303-84fabe79a829" />
+                    </reference>
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString Id="e18d40e5-7114-45d6-854f-b27ae6ddfe12" name="Lower" value="*">
+                      <elementDefinition Id="6c50d8ab-d263-4568-ae58-34c7163d60db" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="95510e40-a7a8-4840-ac34-6fecabf88b32" name="Upper" value="*">
+                      <elementDefinition Id="ad9c284b-4216-498e-8802-7bfb9bb1316c" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="a3824a35-692f-40db-87f4-a34c48af57aa" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4093538f-49f3-40db-bd2d-2480d010de17" LastKnownName="Double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3b5db5ea-def7-4b18-b05f-1b24e378779a" name="u" direction="In">
+                  <referencesInternal>
+                    <reference Id="e1a084ac-541a-4077-a9c5-3bc05c985459" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.ImageProcessingUtils Type%3DDctImageTransform Member%3D(Name%3DCosineTransform OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D2 ParentType%3DDouble) ParamKind%3DRef)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Du" tag="ViewCode">
+                      <elementDefinition Id="45deb9c5-a367-46a1-ab3e-d4c397253cac" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="e5191541-03f6-448e-86ec-a9a3092e20a6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d9702993-67c3-415e-a324-33364fe22f08" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="14947ea6-8a73-4a3c-a477-3f0f8fafc566" name="v" direction="In">
+                  <referencesInternal>
+                    <reference Id="88fa6dea-df1d-4e9b-bd45-6850810b631a" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageProcessing%2Fbin%2FDebug%2FImageProcessing.exe&quot; Namespace%3DImageProcessing.ImageProcessingUtils Type%3DDctImageTransform Member%3D(Name%3DCosineTransform OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D2 ParentType%3DDouble) ParamKind%3DRef)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dv" tag="ViewCode">
+                      <elementDefinition Id="c8f038d6-ba6a-4e5a-823a-3337abed395b" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="cf4d4abd-c268-433f-9f6e-ac6490a6dd50" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d9702993-67c3-415e-a324-33364fe22f08" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="1129b3cc-ea3d-4ebd-834a-170d0244a814" name="LocalSearchEngineModeling">
+    <elementDefinition Id="b61c8710-aaec-4415-8dc5-5f072da9933c" />
+  </package>
+</logicalClassDesignerModel>

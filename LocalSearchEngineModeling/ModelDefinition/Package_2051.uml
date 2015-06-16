@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="e1793f88-f809-4526-934b-88e20b0e44f3"
+  name="ImageProcessing"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="1b68585a-372d-41a4-bb12-e05c823e2b49"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DImageProcessing"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="8e5ad40c-1698-4da9-a307-28b28d99c02a"
+        LastKnownName="Filters"
+        LastKnownLocation="Package1_2051.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="9254f35a-c715-4fd0-8d3e-1a0b8ffc6ea4"
+        LastKnownName="ImageProcessingUtils"
+        LastKnownLocation="Package_2052.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

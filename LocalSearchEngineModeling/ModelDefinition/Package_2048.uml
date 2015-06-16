@@ -1,0 +1,1087 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="d6762dee-5924-49b7-b16f-f554c4e6e0e4"
+  name="ImageFilesProcessor"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="92e7e384-8ea5-4e5d-88c0-532c5aee0c69"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DImageFilesProcessor"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="50ef067d-c17e-4b42-8bb3-268832f65322"
+        name="IMediaObjectsHasher"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="28d18df9-5173-40a8-9d42-275a185ced80"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageFilesProcessor%2Fbin%2FDebug%2FImageFilesProcessor.exe&quot; Namespace%3DImageFilesProcessor Type%3DIMediaObjectsHasher"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="014a01cd-0a72-4b4e-823a-2ca29a7d0a61"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="31984848-68fd-450b-8721-719456a0d131">
+                <propertyInstance
+                  Id="066c998a-d2c3-4efe-a9e5-f8d1e0a4c5b2"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="85a44f6a-a473-4b8e-a39c-f6531e6fa28b">
+                <propertyInstance
+                  Id="1e265c37-ed28-40ca-b1cf-0e288578a869"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7fc2ab36-acdc-4232-a683-080b5a807a6d">
+                <propertyInstance
+                  Id="127f64f2-9518-4877-aec7-1bd54ec95308"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c7b9427e-813d-4aa5-96ac-cd751d2b279e">
+                <propertyInstance
+                  Id="84c584f6-6b0c-4de0-946e-32c984dca6a6"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="065cd304-6ed8-4075-bee3-62244f9f6742"
+            name="ScanDatabaseSystem"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="076620a8-2143-4864-821d-1841859af52d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageFilesProcessor%2Fbin%2FDebug%2FImageFilesProcessor.exe&quot; Namespace%3DImageFilesProcessor Type%3DIMediaObjectsHasher Member%3DScanDatabaseSystem"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1b49328e-3f73-44eb-8bab-5a5d907ffb4f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2eade48b-0484-4e23-b013-2e5bd38bbb82">
+                    <propertyInstance
+                      Id="8c6082a2-a4bc-41ba-b3c7-d0206618057a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2fd346eb-5d54-4bdf-97a8-11bfcb194243">
+                    <propertyInstance
+                      Id="4fcb8fd9-4270-4766-89be-44ae761d3ad1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="37bb3911-e043-487d-8300-ff2960bcca8a">
+                    <propertyInstance
+                      Id="a5d69551-c78b-4eb5-9fdb-66b9bdf0ec1d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4ad85816-1289-457c-9330-42adf8bad735">
+                    <propertyInstance
+                      Id="67ffca85-bb54-4dcd-819c-91d942a1f569"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2614eaa3-930e-4205-b6d7-14dd8fef210e">
+                    <propertyInstance
+                      Id="a58aeccf-d845-4c84-a036-90b7c00d1738"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a77d92f-e02f-4f8b-89e6-a1944a5c7d46">
+                    <propertyInstance
+                      Id="9bc38a87-c2e7-4607-8e0d-fca90a69a724"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="06b4b964-66a6-49e8-ae64-dcc8cd1d8513"
+        name="MediaObjectsHasher"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="3b5d0f6f-3848-47b7-b7d6-373c4f4a3635"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageFilesProcessor%2Fbin%2FDebug%2FImageFilesProcessor.exe&quot; Namespace%3DImageFilesProcessor Type%3DMediaObjectsHasher"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2bc871f1-be0d-4b56-8f0f-ae4dbf8396e1"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7b77945b-1e52-4286-8865-4272bd9a65a6">
+                <propertyInstance
+                  Id="ddd2aa46-f426-4f08-b474-93d68599f59c"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c59120dc-2b12-4a3a-9839-178427bac1d3">
+                <propertyInstance
+                  Id="101063c0-a4ad-4353-9edb-1368189603ee"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="26c3aec5-8838-4560-a9a3-3c3f7d41a73b">
+                <propertyInstance
+                  Id="99d64ddb-c42b-4bb7-ba24-c74fb391abcd"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2397f38b-8ea8-4280-a0f7-bed0f3e82f67">
+                <propertyInstance
+                  Id="55c4d041-8052-4639-acbe-e3158cd748cf"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8d1360ac-4530-452f-82d4-9133af54ae24">
+                <propertyInstance
+                  Id="15a04138-7f84-4d50-ab85-2b3a47b59d1c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="aad8dc9b-cd90-4816-9c55-4a35157b9b03">
+            <interfaceMoniker
+              Id="50ef067d-c17e-4b42-8bb3-268832f65322"
+              LastKnownName="IMediaObjectsHasher"
+              LastKnownLocation="Package_2048.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="4d98a3fc-37a9-423d-96ba-1d60b406aaee"
+            name="PageDataBaseSize"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="aac11100-d34f-415b-9f59-4581d66a3ed8"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageFilesProcessor%2Fbin%2FDebug%2FImageFilesProcessor.exe&quot; Namespace%3DImageFilesProcessor Type%3DMediaObjectsHasher Member%3DPageDataBaseSize"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f4282169-c0c8-4cc0-afdf-3bdc622ef3b0"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="084b77a0-32b9-411d-bf4a-e71ba10f4711">
+                    <propertyInstance
+                      Id="3282f829-ab6b-409b-be06-a7a348ec97c5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2851de9-5662-46f4-90f6-341342232540">
+                    <propertyInstance
+                      Id="485375b2-dbe1-4bd5-8541-47ee7b6d24e3"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="75f98ad1-cab1-4983-a12c-a1b5e4a2cca0">
+                    <propertyInstance
+                      Id="79fcd01d-9c75-473c-8230-81ae5e37fb83"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3f79664c-bb21-4912-9a86-00ea262dc341">
+                    <propertyInstance
+                      Id="8f560d16-15b1-460f-aebf-215f56b10dc4"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f64a631-d66d-4874-ba31-ab90c8e9268a">
+                    <propertyInstance
+                      Id="0bce202c-c4e0-4937-98d0-56a42d4b27a8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+          <property
+            Id="9ba7b885-56f7-468b-b86d-de06ddd83e26"
+            name="TempFolder"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c81946f8-112f-49f0-86b3-68dfe6205efd"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageFilesProcessor%2Fbin%2FDebug%2FImageFilesProcessor.exe&quot; Namespace%3DImageFilesProcessor Type%3DMediaObjectsHasher Member%3DTempFolder"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e3a3e7ec-d677-4f47-8f89-47f2441aa935"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b97ee2e9-fc9e-4866-b19e-19779f80bf25">
+                    <propertyInstance
+                      Id="18488e8a-a20d-4788-abbd-6b5d0ecf2a81"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="41f1125d-230a-4f51-a272-ab767039a008">
+                    <propertyInstance
+                      Id="cd7c3f61-9748-4508-8c7a-e35bf3fede64"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="83447c64-27bd-415a-8931-3f2dc0d69193">
+                    <propertyInstance
+                      Id="7e9b549c-0292-4ccb-81c0-13a62c109706"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb5d049a-c2ed-42b4-a444-8610cb74f5d7">
+                    <propertyInstance
+                      Id="0604965e-f670-47af-836c-6f8bcdcd250e"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="15dc9cce-0e30-411a-a3b7-5fcf150940c7">
+                    <propertyInstance
+                      Id="bd040afe-d4bf-4856-8638-bff763ebdbb0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="LocalSearchEngineModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1bd11394-98b5-4f63-9fdb-0c010f747109"
+            name="_dtcFunction"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="58096c92-9e32-45fd-8062-36309fe35428"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageFilesProcessor%2Fbin%2FDebug%2FImageFilesProcessor.exe&quot; Namespace%3DImageFilesProcessor Type%3DMediaObjectsHasher Member%3D_dtcFunction"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6540b557-68ef-4c24-b29a-d74e573b9bb8"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6560f7c3-6a5e-4913-b366-4ead8eeac120">
+                    <propertyInstance
+                      Id="fef8f0d9-9a08-49c7-837d-26cb17728f05"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c098c678-dfff-47a7-b78e-c2244b2afc0b">
+                    <propertyInstance
+                      Id="22a60306-c9af-47a7-bf35-2b7c9989be37"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf180ac1-f931-4975-b20c-70384081fd3c">
+                    <propertyInstance
+                      Id="520d6e02-e73b-44d8-9656-091f36b55a83"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="13ade3b8-9f57-443f-9f50-ddc16fd11165">
+                    <propertyInstance
+                      Id="3c2d8362-2942-484d-96f7-a738e82eea93"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab020641-c1d4-4a28-86b1-29151f002333">
+                    <propertyInstance
+                      Id="4a0303bb-8d4f-4927-b077-13d664cb87a0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="57aae2f2-33cc-427b-acfd-75ebf2905d36"
+                LastKnownName="PerceptualDctHashFunction"
+                LastKnownLocation="Package1_2048.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1c751ab4-a575-4f7d-88e8-9398e26981fa"
+            name="_normalizedHammingDistance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="bd00f9f8-4b04-4c04-9739-4f0dad87bb44"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageFilesProcessor%2Fbin%2FDebug%2FImageFilesProcessor.exe&quot; Namespace%3DImageFilesProcessor Type%3DMediaObjectsHasher Member%3D_normalizedHammingDistance"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="496e442b-2f2f-4022-9e13-7e543e14ea94"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f08eb37f-7b69-4175-93ca-879de23e8594">
+                    <propertyInstance
+                      Id="5470b4ed-40a6-44fb-ba91-c78cf7058a7c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d83b3579-23f3-4131-bf67-e755d27c7b22">
+                    <propertyInstance
+                      Id="b1b84126-83ba-40d4-bd4d-26fefd7a9449"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0e37f558-a3c4-424c-af65-d49793564266">
+                    <propertyInstance
+                      Id="dafc2744-92fa-4853-a8b5-bd71fcda4eae"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be6660cf-1050-4320-93aa-4c444cf6f81c">
+                    <propertyInstance
+                      Id="bef011e1-0273-4694-bb65-dc2c517d4c40"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4bf59df-dfb0-4c04-9352-f1bb3558f88e">
+                    <propertyInstance
+                      Id="d012fb6c-f1ad-49b5-94a4-b97ef199c8af"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="ec782983-923e-477c-b5cc-ea8b0318cd4f"
+                LastKnownName="NormalizedHammingDistance"
+                LastKnownLocation="Package2_2048.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4184f8be-fbb8-42aa-9faa-70c7ad179cdf"
+            name="_phash"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="6301b1e9-233d-4a9d-b8b4-0a2f0e4092c4"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageFilesProcessor%2Fbin%2FDebug%2FImageFilesProcessor.exe&quot; Namespace%3DImageFilesProcessor Type%3DMediaObjectsHasher Member%3D_phash"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d3824f66-e729-487f-8abc-16bb1fdcee62"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="459cb61a-f287-4fa7-a0b1-6b90001d4e64">
+                    <propertyInstance
+                      Id="740206bc-10a8-4eae-9519-a89d73eca13b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a88f216-b00d-4660-baca-0fa4ade47e2b">
+                    <propertyInstance
+                      Id="704d5209-f277-4929-b44e-d21f338c2c28"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="15d41543-7e55-49b0-ad6c-9c398cbe32fe">
+                    <propertyInstance
+                      Id="74830865-2c8d-471b-b311-1fba48886116"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f178e3d1-3466-4b47-afc8-e712cedc7e76">
+                    <propertyInstance
+                      Id="3e1e33d9-04b1-43c6-9a26-0b878d91f80d"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85ec3bdd-e9fa-4ec3-b8fd-fb2b4b0a448e">
+                    <propertyInstance
+                      Id="b755d5a9-9fd3-4c37-9d4f-bbc4b6768711"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="9f6b206b-77ed-4189-9fb3-ff7c10bb78c3"
+                LastKnownName="ImagePerceptualHash"
+                LastKnownLocation="Package1_2048.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e41559b3-4ba1-40de-941c-2bfe14b3008d"
+            name="Convert64BitArray"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e20cc2d3-f9ca-44ee-bb7d-95b2c793af42"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageFilesProcessor%2Fbin%2FDebug%2FImageFilesProcessor.exe&quot; Namespace%3DImageFilesProcessor Type%3DMediaObjectsHasher Member%3D(Name%3DConvert64BitArray OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9f8537d6-caf9-424d-9793-b7ca1d9b6308"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="21f9b079-5699-4c0c-a66f-169b9dd8bf9d">
+                    <propertyInstance
+                      Id="f95f564c-6cc1-46a5-a01d-a2c6ca5f2e46"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="60608c6c-1915-4613-bbdc-5f411e7a8def">
+                    <propertyInstance
+                      Id="90588ea7-c3fd-416b-8762-16052ecedeaf"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="70974d39-0882-4924-b40a-0255fb52a7c4">
+                    <propertyInstance
+                      Id="70d6202a-2524-480f-96ff-160c384a25ad"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="97d12212-4680-44d6-9d4b-25ba5f036059">
+                    <propertyInstance
+                      Id="3213ada6-7358-49d6-8dc4-2f7b9913534d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b0eb0295-e62a-4480-ae91-b701c49fd828">
+                    <propertyInstance
+                      Id="714ddeac-46ff-4c3d-968a-9e5004587027"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ff0b14a-039b-4c05-9bad-4be0e6b4ff54">
+                    <propertyInstance
+                      Id="c7899d41-a92e-47b6-ada8-2aa7d10f650b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3c9b9c41-2004-4101-8849-d43ec2981f2e"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f1f5b704-8495-4da9-9582-46dcdfcccbf0"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="dfd0686a-9a27-408c-8318-46ff3346fdf8"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="dc74be7f-be67-4f58-ae71-d1a16ef352f1"
+                      LastKnownName="Byte"
+                      LastKnownLocation="Package2_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="06299b48-87e0-4f77-b8fb-8a114ac0558e"
+                  name="bits"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8e95ec8d-504e-438f-842e-34ed0292c845"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageFilesProcessor%2Fbin%2FDebug%2FImageFilesProcessor.exe&quot; Namespace%3DImageFilesProcessor Type%3DMediaObjectsHasher Member%3D(Name%3DConvert64BitArray OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)]) ParameterIdentifier%3Dbits"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="70bfe0c6-64e3-49e0-b632-43a68d2235aa"
+                      LastKnownName="BitArray"
+                      LastKnownLocation="Package4_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4f6d7b82-7153-4c4d-9bdf-0fc479258a72"
+            name="GetDocumentFullPathName"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="01871e9d-928f-4e7f-9b2b-2c7654b3487f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageFilesProcessor%2Fbin%2FDebug%2FImageFilesProcessor.exe&quot; Namespace%3DImageFilesProcessor Type%3DMediaObjectsHasher Member%3D(Name%3DGetDocumentFullPathName OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FFileDataAccess%2Fbin%2FDebug%2FFileDataAccess.exe&quot; Namespace%3DFileDataAccess.Database Type%3DDocumentFile)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2b94b468-6365-42c7-9374-53eb515878fb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="23299681-b1d7-4963-a3ab-f06d4b7c88d3">
+                    <propertyInstance
+                      Id="10acf24d-d70a-4055-8617-3c240bf24d6c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="76ae3eb1-6e8b-47ca-9a6f-4003f75593b0">
+                    <propertyInstance
+                      Id="3772570b-3df1-4aca-826a-88cf5009e5a1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="970044e7-3855-43f4-9bce-4ccc36808a38">
+                    <propertyInstance
+                      Id="ecd6e74d-e5b2-4c31-967f-48e7060b7abc"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="87013e5e-1eb7-40f3-92ad-6513d26de45c">
+                    <propertyInstance
+                      Id="98916a92-163d-4719-be4b-af859158e23e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ad6e2be-c4b2-4ba3-9f90-9aa924d41d08">
+                    <propertyInstance
+                      Id="04f66271-fa82-457f-9c42-8fa14e0b4680"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="38da8afb-7403-419c-8140-241c03038495">
+                    <propertyInstance
+                      Id="c3713c16-2749-4243-b6b2-4279eac00296"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6074baeb-a413-4a3a-b370-1ce32b549899"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="LocalSearchEngineModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3a224459-e478-4bd8-8d13-d16683e11b6b"
+                  name="file"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8081a71f-f2e0-494e-946d-c060f884399c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageFilesProcessor%2Fbin%2FDebug%2FImageFilesProcessor.exe&quot; Namespace%3DImageFilesProcessor Type%3DMediaObjectsHasher Member%3D(Name%3DGetDocumentFullPathName OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FFileDataAccess%2Fbin%2FDebug%2FFileDataAccess.exe&quot; Namespace%3DFileDataAccess.Database Type%3DDocumentFile)]) ParameterIdentifier%3Dfile"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="33fb8d72-69f8-45a3-af76-dc619c9c224f"
+                      LastKnownName="DocumentFile"
+                      LastKnownLocation="Package1_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="56242686-b72f-40b3-8e0b-778064ff7e75"
+            name="GetImageHash"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6c6dd383-3ae4-4046-a7c2-d9212050bdb0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageFilesProcessor%2Fbin%2FDebug%2FImageFilesProcessor.exe&quot; Namespace%3DImageFilesProcessor Type%3DMediaObjectsHasher Member%3D(Name%3DGetImageHash OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="897e2d1b-3c73-4b90-be18-521df248c267"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="72e91e80-a625-480b-933d-d1727f006c9e">
+                    <propertyInstance
+                      Id="0fc117e3-3d58-4629-9c5d-7bf409b2ad12"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="81a74978-65f1-4283-b26e-b2d80aeee96b">
+                    <propertyInstance
+                      Id="45d909ed-bac6-4473-afa9-b281e45a4f5e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="06193e1d-d915-4176-86b6-535efea0daf0">
+                    <propertyInstance
+                      Id="8d078697-5b31-4a77-a7bd-d75eee1d3fd3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d8a9f1b5-8686-409e-9422-af8b67df525b">
+                    <propertyInstance
+                      Id="ac36aa0a-0e06-40f1-8a5e-94c8118a93f9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c54cb7f1-d40f-41a8-bf7e-b6d9c8478cf6">
+                    <propertyInstance
+                      Id="16e885d7-e5aa-4114-bf8f-9d494312fd69"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8f1befd7-9087-4f04-b761-10304104d20f">
+                    <propertyInstance
+                      Id="d2dd91a9-9643-41c6-ac2a-5d035457f5f6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="32330445-2c27-4974-a3f7-01d9af781ab2"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="70bfe0c6-64e3-49e0-b632-43a68d2235aa"
+                      LastKnownName="BitArray"
+                      LastKnownLocation="Package4_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c1a1eb6c-2199-4202-8423-c1208edfb434"
+                  name="filePath"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="34ff0977-d59c-4fef-b86d-13f6944de517"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageFilesProcessor%2Fbin%2FDebug%2FImageFilesProcessor.exe&quot; Namespace%3DImageFilesProcessor Type%3DMediaObjectsHasher Member%3D(Name%3DGetImageHash OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DfilePath"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="LocalSearchEngineModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="42a66489-6128-464f-9184-0dc7696729ec"
+            name="GetImageSimilarities"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1e3f168b-5e52-421c-a588-f0defadea0ae"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageFilesProcessor%2Fbin%2FDebug%2FImageFilesProcessor.exe&quot; Namespace%3DImageFilesProcessor Type%3DMediaObjectsHasher Member%3D(Name%3DGetImageSimilarities OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1ad7bb2d-228a-4b09-b069-821974cc8fc4"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ad9aa5b1-2969-47f9-93e2-9a70d51968b1">
+                    <propertyInstance
+                      Id="10131181-27d3-4bb7-b0e0-7fe48036e98a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8680d354-374c-4870-9b10-7eb276e26f8d">
+                    <propertyInstance
+                      Id="f378c1a3-a35e-41a4-a2e9-a2087d906e1b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b28d939-9e19-4742-86e8-9e1ad03ab815">
+                    <propertyInstance
+                      Id="2dce202c-44eb-4ea7-acef-d9be0e728aa0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9b7161c-9ece-4196-8667-2d626bcb344b">
+                    <propertyInstance
+                      Id="41a2a9c9-cd78-46c9-ab8f-ff72b5661d29"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9f4180ee-67c6-486c-b865-48e8b646e1c0">
+                    <propertyInstance
+                      Id="ee66b40a-9333-4672-8076-d895c9a22a4f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a7725c4b-61dd-4e16-bc3f-2c54e41586e5">
+                    <propertyInstance
+                      Id="12bb17f5-cb9a-422d-93d6-69809ec35f67"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="830b23a9-8d5f-46f6-a143-461b6a90f47e"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="fd10f833-c43d-46ea-9ede-c7b62cb2758a"
+                      LastKnownName="IList&lt;String‎&gt;"
+                      LastKnownLocation="Package5_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f26f9d5f-c739-409f-aa5d-20795912f024"
+                  name="file"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="985ab4ee-30a4-48ff-a3ea-cabf1e78a317"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageFilesProcessor%2Fbin%2FDebug%2FImageFilesProcessor.exe&quot; Namespace%3DImageFilesProcessor Type%3DMediaObjectsHasher Member%3D(Name%3DGetImageSimilarities OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dfile"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="LocalSearchEngineModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7c13c4cc-ce82-4038-840c-d9989ed95e02"
+                  name="percentage"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5c885c41-6ab7-4db4-92a4-540fef9abfc2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageFilesProcessor%2Fbin%2FDebug%2FImageFilesProcessor.exe&quot; Namespace%3DImageFilesProcessor Type%3DMediaObjectsHasher Member%3D(Name%3DGetImageSimilarities OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dpercentage"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="LocalSearchEngineModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="344d4d26-d1eb-432d-8f46-08f1f5becdd2"
+            name="ScanDatabaseSystem"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c33f2f10-ef34-4996-a5e5-bf934baf76e4"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageFilesProcessor%2Fbin%2FDebug%2FImageFilesProcessor.exe&quot; Namespace%3DImageFilesProcessor Type%3DMediaObjectsHasher Member%3DScanDatabaseSystem"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="87bdd7fd-fbe2-4ae0-ac3e-0f72eeccaeda"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10cdfbfc-dd74-4650-8fd1-c1016513f39a">
+                    <propertyInstance
+                      Id="3bd90b0c-d7c8-4d76-af73-7bdade739649"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4d204467-e23d-4881-afea-deff540f0db9">
+                    <propertyInstance
+                      Id="db8a6849-3ff5-4e29-a05d-d96c3f512c1b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6806ae40-9fe6-4d11-8b12-4f3e40d32c59">
+                    <propertyInstance
+                      Id="29995573-6386-4b5a-b8b5-91a5977f7d2e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="52feb212-dad6-4327-bb1f-ad42ef4177a4">
+                    <propertyInstance
+                      Id="e7d1e4ce-3db0-42df-aa97-ce71c80267b6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f535247-68a5-40e9-b953-d70106aa3007">
+                    <propertyInstance
+                      Id="9e6a793d-1e9a-4d3e-a3d5-d4bc655218a9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="220733bc-bbeb-41b3-9322-a8e71ffe1f5f">
+                    <propertyInstance
+                      Id="e17e4fdf-ffcb-4974-b9ba-e21cda2af02c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="ac3e4cc4-d106-4956-a97b-1cd5823512d9"
+            name="MediaObjectsHasher"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="014ca0f3-8cd7-4b0d-b766-031f2a2f9b42"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FImageFilesProcessor%2Fbin%2FDebug%2FImageFilesProcessor.exe&quot; Namespace%3DImageFilesProcessor Type%3DMediaObjectsHasher Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5f4b3902-180d-498a-8919-bc470a662784"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0d1ed39c-f194-4538-b27e-422bf36df6bb">
+                    <propertyInstance
+                      Id="d7ed692a-ccac-48e4-8375-dfc360965401"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04bf2273-6099-4296-99b3-88d3078910c3">
+                    <propertyInstance
+                      Id="8087594f-2cbf-47a8-8f81-92ca73c7170a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2bcfba61-a079-4a0a-850f-e401e55fefe5">
+                    <propertyInstance
+                      Id="d31dc16f-dbb8-4325-9551-f5dfef960756"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ad78655e-0e2c-4ad2-8b75-355976543bcc">
+                    <propertyInstance
+                      Id="9ab8a691-ca60-4365-8523-58e4d0e2265d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3352b497-e715-4415-8ec1-83dba28c1414">
+                    <propertyInstance
+                      Id="278e4f50-1777-4717-9d30-b884187710f9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="daca7a36-9de8-4c9f-a942-3e933cc5f900">
+                    <propertyInstance
+                      Id="df0ef13d-87f3-470f-bdb5-73944db006bd"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

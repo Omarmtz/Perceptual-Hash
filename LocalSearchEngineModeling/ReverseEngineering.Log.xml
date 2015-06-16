@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2015-06-15T20:53:52" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Diagnostic" Text="Element reverse engineered into the UML model: '24669b44-5d07-40af-a1ab-33d1fabdf097' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Diagnostic" Text="Element reverse engineered into the UML model: '3e564452-5040-4a11-8cb2-9c6a3a791e03' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'a7f42a3a-d741-4b3d-a416-3f40bb0f249d' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ab397e33-5b75-4e8e-a7df-0ca4f88c2a4f' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'adb0e046-6fa3-405e-ac48-031e3835903f' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'b5a12a8c-4081-4077-b99b-df7c99a9d629' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'LocalSearchEngineModeling::PHash' -  (Package)" />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'LocalSearchEngineModeling::PHash::IPerceptualHashing' -  (Interface)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'LocalSearchEngineModeling::PHash::IPerceptualHashing&lt;Bitmap‎&gt;' -  (Interface)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Medium" Text="Element reverse engineered into the UML model: 'LocalSearchEngineModeling::PHash::PerceptualHashing' -  (Class)" />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'LocalSearchEngineModeling::PHash::PerceptualHashing::GetDigest' -  (Operation)" />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'LocalSearchEngineModeling::PHash::PerceptualHashing::GetDigest::hashFunc' -  (Parameter)" />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'LocalSearchEngineModeling::PHash::PerceptualHashing::GetDigest::mediaObject' -  (Parameter)" />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'LocalSearchEngineModeling::PHash::PerceptualHashing::GetSimilarity' -  (Operation)" />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'LocalSearchEngineModeling::PHash::PerceptualHashing::GetSimilarity::compareHashFunc' -  (Parameter)" />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'LocalSearchEngineModeling::PHash::PerceptualHashing::GetSimilarity::hashFunc' -  (Parameter)" />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'LocalSearchEngineModeling::PHash::PerceptualHashing::GetSimilarity::mediaObjectA' -  (Parameter)" />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'LocalSearchEngineModeling::PHash::PerceptualHashing::GetSimilarity::mediaObjectB' -  (Parameter)" />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'LocalSearchEngineModeling::PHash::PerceptualHashing::PerceptualHashing' -  (Operation)" />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'LocalSearchEngineModeling::System' -  (Package)" />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'LocalSearchEngineModeling::System::Collections' -  (Package)" />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'LocalSearchEngineModeling::System::Collections::BitArray' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'LocalSearchEngineModeling::System::Drawing' -  (Package)" />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'LocalSearchEngineModeling::System::Drawing::Bitmap' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'LocalSearchEngineModeling::System::Func' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'LocalSearchEngineModeling::System::Func&lt;BitArray‎, BitArray‎, Single‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'LocalSearchEngineModeling::System::Func&lt;Bitmap‎, BitArray‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'LocalSearchEngineModeling::System::Single' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: LocalSearchEngineModeling::PHash::PerceptualHashing to LocalSearchEngineModeling::PHash::IPerceptualHashing&lt;Bitmap‎&gt; (InterfaceRealization)" />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: LocalSearchEngineModeling::PHash::ImagePerceptualHash to LocalSearchEngineModeling::PHash::PerceptualHashing (Generalization)" />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="High" Text="(1) type(s) fully reverse engineered." />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="High" Text="(8) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2015-06-15T20:53:53" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+</Log>

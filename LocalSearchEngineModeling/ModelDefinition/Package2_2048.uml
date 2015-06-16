@@ -1,0 +1,670 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="bd046d01-7797-4648-a26c-c7cc8acd319f"
+  name="Hash_Distance_Function"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="f955f7bd-0ddb-4962-aeb8-8051fccffcdf"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DPHash.Hash_Distance_Function"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="ec782983-923e-477c-b5cc-ea8b0318cd4f"
+        name="NormalizedHammingDistance"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="b91c3f4e-28fe-4deb-b45c-b974081f8d16"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash.Hash_Distance_Function Type%3DNormalizedHammingDistance"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="76454e11-0e06-4786-9eca-67d1980b2891"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8e3b39e6-ea6e-44e9-98d7-21a3c6b5dc0d">
+                <propertyInstance
+                  Id="13bb617e-875b-48d8-b06d-2d9503605ef3"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8c43a160-22e5-4e7f-934a-92e635965e3b">
+                <propertyInstance
+                  Id="d56027aa-fe16-4517-98e3-ff073f6f2d2f"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="79608313-b40f-4913-922d-2c4480f0d748">
+                <propertyInstance
+                  Id="c77b0d45-2f94-49fb-b73c-3a579baadb1b"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f3a398fb-f61c-4b3f-a163-cfda1758d9f9">
+                <propertyInstance
+                  Id="36c6a6a2-77ec-4947-a8fe-b3d960279136"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c011660f-bdb4-4245-abfd-00da649ccf8e">
+                <propertyInstance
+                  Id="a8e12ff6-9991-43c1-9c98-775cb498e042"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="c7b297af-846b-42d4-b40b-3ba4ba7e66a8">
+            <interfaceMoniker
+              Id="f41641d1-f89e-4954-9367-8fc80dc2a194"
+              LastKnownName="IPerceptualHashDistanceFunction"
+              LastKnownLocation="Package2_2048.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="02b4298f-01b2-4c1f-ba3f-951ecdacd710"
+            name="GetHashDistance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="11ee2d70-acff-4bf0-981f-00e1922d79f2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash.Hash_Distance_Function Type%3DNormalizedHammingDistance Member%3D(Name%3DGetHashDistance OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="77efe313-3760-402a-bdea-8c8ec2baef50"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f4f4c1c4-824b-4b0a-9a02-488bbbed3a46">
+                    <propertyInstance
+                      Id="27de9fba-3115-489b-a32e-b17a316dce2a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f389f835-1083-44b8-9819-3ae00ef5dd4b">
+                    <propertyInstance
+                      Id="55f6e3c3-b882-4827-b1f5-6fff5fa343d1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="265d68b8-013c-4f10-b8d3-5e09b99429dc">
+                    <propertyInstance
+                      Id="4f00f314-522f-4736-9e32-8702ba93676f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d9f134fb-e951-47a2-b561-da2848c81622">
+                    <propertyInstance
+                      Id="335b6a6f-0034-4da4-afaf-c1d9cd52113d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae3f91a6-03a0-48d4-bdd0-c9cd1cc2db27">
+                    <propertyInstance
+                      Id="3267a782-015c-4969-b5e9-c31306af9658"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="491f7986-5b46-4f8c-a9f3-1efb4bfbb0f0">
+                    <propertyInstance
+                      Id="691b0b02-4ba4-46c1-b61f-5dc165728738"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a1091a66-5575-4568-9314-950c9eaaf577"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9564310d-d424-4938-84f5-2ce1649d908c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3def86af-505a-4aa9-ac23-665e94e47d1f"
+                  name="hashA"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="18a13514-e0dd-429a-bb1f-e836248041d8"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash.Hash_Distance_Function Type%3DNormalizedHammingDistance Member%3D(Name%3DGetHashDistance OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)]) ParameterIdentifier%3DhashA"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="70bfe0c6-64e3-49e0-b632-43a68d2235aa"
+                      LastKnownName="BitArray"
+                      LastKnownLocation="Package4_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2ee98d96-78a1-4e30-b026-c93a99ac4453"
+                  name="hashB"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8aa65c77-1f51-42f0-8e8a-1d656cd9bb3a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash.Hash_Distance_Function Type%3DNormalizedHammingDistance Member%3D(Name%3DGetHashDistance OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)]) ParameterIdentifier%3DhashB"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="70bfe0c6-64e3-49e0-b632-43a68d2235aa"
+                      LastKnownName="BitArray"
+                      LastKnownLocation="Package4_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="92028f44-d9b2-4c3e-b229-de7c037d616b"
+            name="GetHashDistance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f663121c-7057-45f9-a4f0-1240324307d9"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash.Hash_Distance_Function Type%3DNormalizedHammingDistance Member%3D(Name%3DGetHashDistance OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DUInt64)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DUInt64)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c16e74b5-4976-4fbf-9a93-8aae879b9268"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc66e05a-1857-4c18-8676-805c87e06532">
+                    <propertyInstance
+                      Id="2628e913-e52f-4f7a-b434-d83b6e92acb1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10c2411b-d31d-456f-a05c-503193ca1bc3">
+                    <propertyInstance
+                      Id="e7f5eea1-b3e4-47e7-8058-6f8835204df0"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f5452858-8fc8-4f88-91b8-ed1c73a5ff04">
+                    <propertyInstance
+                      Id="55e7f44d-6ae1-4bcd-bec8-c7f412a714fa"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="95304ff2-fb30-49e3-a125-df0c18a3a63b">
+                    <propertyInstance
+                      Id="a8ff88bd-0a67-43a1-bf6a-10e0b6ddb74d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ef4cbd58-db54-4619-9810-b26480fad74c">
+                    <propertyInstance
+                      Id="d95fc889-e2c5-470a-bd4a-217ce21008e4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3232720-3482-44b4-8ce4-febfa4d186fe">
+                    <propertyInstance
+                      Id="4de4361e-ece5-47a9-9b12-1246931eba5b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ca60f388-a355-4728-9a9b-8b4cf815fc12"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9564310d-d424-4938-84f5-2ce1649d908c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3dfbb2dd-e82c-4b94-8b2a-b9d8bfa9ce3a"
+                  name="hashA"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5b1bb15d-46e7-4b9a-a314-e749a72cd87c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash.Hash_Distance_Function Type%3DNormalizedHammingDistance Member%3D(Name%3DGetHashDistance OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DUInt64)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DUInt64)]) ParameterIdentifier%3DhashA"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f36a4ea5-5227-404e-b88f-1729d8afb30a"
+                      LastKnownName="UInt64"
+                      LastKnownLocation="Package2_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c45efedd-cfaf-45a2-bc1a-4103cc7b0af3"
+                  name="hashB"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a04e456d-cc03-4e83-86b0-c1dfaa1045a4"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash.Hash_Distance_Function Type%3DNormalizedHammingDistance Member%3D(Name%3DGetHashDistance OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DUInt64)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DUInt64)]) ParameterIdentifier%3DhashB"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f36a4ea5-5227-404e-b88f-1729d8afb30a"
+                      LastKnownName="UInt64"
+                      LastKnownLocation="Package2_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7901dc38-4ebd-4c60-b353-bc6647b7279d"
+            name="NormalizedHammingDistance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2359691a-7710-462c-a5b1-8bd616b9590c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash.Hash_Distance_Function Type%3DNormalizedHammingDistance Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="33b0e960-0140-44ef-b7b8-24d6e79af049"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a8704bb9-71da-4c96-b906-7f0ed306a2cf">
+                    <propertyInstance
+                      Id="5141641e-1b7e-44c5-aabe-0b21560e1a8f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="88d33672-a0ff-4246-acc4-a83ab895a781">
+                    <propertyInstance
+                      Id="8d6b656d-790b-4701-a59e-e5af9a244d2e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2bf825d2-c916-466d-a488-82cf9e1d96e2">
+                    <propertyInstance
+                      Id="d73c7ce1-13ee-49b1-8c1a-f88125b82b15"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ce3125c4-166a-4777-9009-e12914bf3117">
+                    <propertyInstance
+                      Id="e7bdfed3-e1e8-49f9-b3f3-8b9943792a67"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2f36a23d-1fe0-44df-86e4-1be417c81f2a">
+                    <propertyInstance
+                      Id="c761612e-3d59-4bb5-9dea-b70f797bdeae"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="02783615-a0b9-49fb-82d7-17f042c6bf34">
+                    <propertyInstance
+                      Id="a0579370-4be6-4367-9949-a0131cfed2d6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="f41641d1-f89e-4954-9367-8fc80dc2a194"
+        name="IPerceptualHashDistanceFunction"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="5f630639-375d-4648-b401-6d5db140719d"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash.Hash_Distance_Function Type%3DIPerceptualHashDistanceFunction"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="9ccec1a6-fa8f-4b4a-a7df-e6bdbd466108"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b3562ad8-3b0c-41a9-abbc-3e5dea7d2a9b">
+                <propertyInstance
+                  Id="bd142545-280d-421a-9f15-7b838800d982"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="48ee28b0-6137-4afd-b72c-d421b6ac7126">
+                <propertyInstance
+                  Id="14eeb4ef-a780-45c7-8689-90e561460297"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="87b4a7ca-edbd-4814-abf0-7b8cd7163f8b">
+                <propertyInstance
+                  Id="8e7162aa-b0ec-46e4-abed-b8bd82df8681"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0375c8f2-e19f-4c50-96c8-caac65cc2024">
+                <propertyInstance
+                  Id="9f45473e-6015-477b-bdd1-2c5d1c4c7d4b"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="035472ea-1b89-4775-a3d7-7bddafc17c49"
+            name="GetHashDistance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6a1141fb-159d-423f-98dd-195008651722"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash.Hash_Distance_Function Type%3DIPerceptualHashDistanceFunction Member%3D(Name%3DGetHashDistance OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="aa14db86-d555-48ae-a4da-fd365067158c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04466d57-0d57-4516-8344-e8d6334d8c4d">
+                    <propertyInstance
+                      Id="42acbb4c-7731-4d7f-8909-3b0c1e053a56"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="22f15ab5-8d89-4925-b911-5651361d99d0">
+                    <propertyInstance
+                      Id="2a422ef6-cb7f-4708-bb96-abf0c9990e46"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0d73c84f-23ad-420e-b1a3-c6b0651e9964">
+                    <propertyInstance
+                      Id="e635e753-a099-4fc6-8e4e-192976162a68"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="331f702f-0173-47b5-befd-6854344fe1f1">
+                    <propertyInstance
+                      Id="73f41601-9a30-41ce-a474-78dfece5c21a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ef23e79-07a5-4383-8780-3cd2536a600b">
+                    <propertyInstance
+                      Id="e390a76d-dc83-4d8c-ab13-ae2552dadef3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="37e58dfe-b8ff-4ae3-bf93-891667241ba9">
+                    <propertyInstance
+                      Id="203dde09-1aa8-43e9-b42f-7884ec8218d4"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bcfe3876-832a-410c-99a3-0f1cce82118c"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9564310d-d424-4938-84f5-2ce1649d908c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c6b091ba-971a-43b5-980a-04f2b61e361b"
+                  name="hashA"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1095b267-5ccb-44e4-9899-c8010afaeb1e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash.Hash_Distance_Function Type%3DIPerceptualHashDistanceFunction Member%3D(Name%3DGetHashDistance OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)]) ParameterIdentifier%3DhashA"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="70bfe0c6-64e3-49e0-b632-43a68d2235aa"
+                      LastKnownName="BitArray"
+                      LastKnownLocation="Package4_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9e409ea9-2a18-4124-98bc-0923b0203c63"
+                  name="hashB"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5beff039-98d0-4f99-a570-9d338e10dad3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash.Hash_Distance_Function Type%3DIPerceptualHashDistanceFunction Member%3D(Name%3DGetHashDistance OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)]) ParameterIdentifier%3DhashB"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="70bfe0c6-64e3-49e0-b632-43a68d2235aa"
+                      LastKnownName="BitArray"
+                      LastKnownLocation="Package4_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2495c5d8-adb3-4722-a570-634ec46d3fda"
+            name="GetHashDistance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0fad9dd0-cc40-49e1-9094-f73aba15e792"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash.Hash_Distance_Function Type%3DIPerceptualHashDistanceFunction Member%3D(Name%3DGetHashDistance OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DUInt64)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DUInt64)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ed82093a-6e6f-431a-9599-2936f1716a91"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1bcfe9b2-64f1-4273-93f4-0f55b545407a">
+                    <propertyInstance
+                      Id="9b5d9836-2ba6-4c26-8f6b-fa1f6826e8d2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4fa2b09-cd18-4172-87e7-d7cfead957db">
+                    <propertyInstance
+                      Id="af503075-b813-4469-a987-d788ea433c6c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe69489c-d4d9-46ff-891d-8c3ad4c1878f">
+                    <propertyInstance
+                      Id="f13df4e4-f7d0-4d49-86a3-a03673703983"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="79fed277-6b13-4f5b-853b-8badbe3fec33">
+                    <propertyInstance
+                      Id="292f4587-a275-46b0-847d-1fdbf39c5cf3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28317e00-88fb-48fc-8c6f-cb17e83b67b6">
+                    <propertyInstance
+                      Id="9c2ab7c7-5cd8-4103-93f1-12bf649bde16"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="02c59116-f7d9-4cb1-ba39-f1aebd09c65b">
+                    <propertyInstance
+                      Id="575ad4a5-470d-49b6-a534-05d790f0a26b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2f81b35e-b0fb-418a-925e-d3fa8b2472c4"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9564310d-d424-4938-84f5-2ce1649d908c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="05f00cac-74e8-443a-a9b3-787e10980c99"
+                  name="hashA"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="0d28a451-ed19-431f-bf9a-20940155058b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash.Hash_Distance_Function Type%3DIPerceptualHashDistanceFunction Member%3D(Name%3DGetHashDistance OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DUInt64)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DUInt64)]) ParameterIdentifier%3DhashA"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f36a4ea5-5227-404e-b88f-1729d8afb30a"
+                      LastKnownName="UInt64"
+                      LastKnownLocation="Package2_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7c7b65dc-430d-42d5-aed4-f0118b816351"
+                  name="hashB"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d868d74b-e207-4d12-8d94-69f6c00cf4fe"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash.Hash_Distance_Function Type%3DIPerceptualHashDistanceFunction Member%3D(Name%3DGetHashDistance OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DUInt64)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DUInt64)]) ParameterIdentifier%3DhashB"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f36a4ea5-5227-404e-b88f-1729d8afb30a"
+                      LastKnownName="UInt64"
+                      LastKnownLocation="Package2_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

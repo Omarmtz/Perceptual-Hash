@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ad47cd42-6bfc-4bf9-9ce6-d99e88ee229f}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>LocalSearchEngineModeling</Name>
+    <RootNamespace>LocalSearchEngineModeling</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="ClassDiagrams\DataAccess.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ClassDiagrams\DataAccess.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ClassDiagrams\DataAccess.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="ClassDiagrams\FileManagerProcessor.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ClassDiagrams\FileManagerProcessor.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ClassDiagrams\FileManagerProcessor.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="ClassDiagrams\ImageManagerProcessor.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ClassDiagrams\ImageManagerProcessor.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ClassDiagrams\ImageManagerProcessor.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="ClassDiagrams\ImageProcessing.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ClassDiagrams\ImageProcessing.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ClassDiagrams\ImageProcessing.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="ClassDiagrams\PerceptualHash.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ClassDiagrams\PerceptualHash.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ClassDiagrams\PerceptualHash.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\Package1_2045.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_2048.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_2051.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_2045.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_2048.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_2051.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_2045.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_2048.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_2045.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_2048.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package5_2045.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package5_2048.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package6_2045.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package6_2048.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package7_2045.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2045.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2048.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2051.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2052.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SequenceDiagrams\GenerateFilesHash.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SequenceDiagrams\GenerateFilesHash.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SequenceDiagrams\GenerateFilesHash.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="SequenceDiagrams\PerceptualHashCalculation.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SequenceDiagrams\PerceptualHashCalculation.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SequenceDiagrams\PerceptualHashCalculation.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="SequenceDiagrams\ScanFilesInDirectory.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SequenceDiagrams\ScanFilesInDirectory.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SequenceDiagrams\ScanFilesInDirectory.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="SequenceDiagrams\SearchSimilarImages.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SequenceDiagrams\SearchSimilarImages.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SequenceDiagrams\SearchSimilarImages.sequencediagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\LocalSearchEngineModeling.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Folder Include="ClassDiagrams" />
+    <Folder Include="LayerDiagrams" />
+    <Folder Include="SequenceDiagrams" />
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="LayerDiagrams\LocalSearchLayer.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="LayerDiagrams\LocalSearchLayer.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>LayerDiagrams\LocalSearchLayer.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="LayerDiagrams\LocalSearchLayer.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>LayerDiagrams\LocalSearchLayer.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FileDataAccess\DataAccess.csproj">
+      <Name>DataAccess</Name>
+      <Project>{f55955fb-2714-4d97-929e-37506919b770}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ImageFilesProcessor\ImageManagerProcessor.csproj">
+      <Name>ImageManagerProcessor</Name>
+      <Project>{5b1c8dfe-c186-48fd-a2fc-41f45d283e1f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ImageProcessing\ImageProcessing.csproj">
+      <Name>ImageProcessing</Name>
+      <Project>{3364787b-dc78-44f5-ad82-8b26c30be50e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\LocalSearchEngine\FileManagerProcessor.csproj">
+      <Name>FileManagerProcessor</Name>
+      <Project>{1af9d41f-c857-4c9c-b283-5a24700257f3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\PHash\PerceptualHash.csproj">
+      <Name>PerceptualHash</Name>
+      <Project>{8a2a4552-d880-4d6b-8a8a-21b57a1ef811}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SearchEngineGUI\SearchEngineGUI.csproj">
+      <Name>SearchEngineGUI</Name>
+      <Project>{42ae5d62-6373-4a56-9bf7-99559a884606}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 9.5" name="FileManagerProcessor">
+  <logicalClassDesignerModelMoniker Id="a6fed7b2-3f30-4388-81b5-16a060ee1455" />
+  <nestedChildShapes>
+    <classShape Id="81fde3fb-50c5-425f-96fb-f2305dddcfa8" absoluteBounds="0.5, 3.875, 5.25, 5.3518979903062185" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="dc7dba91-9afb-4dcc-9f0d-e6bc0baf2411" LastKnownName="FileAgent" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="295ee011-7e62-44ec-877d-dd2572a0edb0" absoluteBounds="0.51499999999999968, 4.390335639317831, 5.2200000000000006, 1.6425780728459358" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="e1050378-3e28-4308-bd48-a878fe0d8a54" absoluteBounds="0.51499999999999968, 6.0429137121637666, 5.2200000000000006, 3.0839842781424527" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7f484180-210d-4ede-a2ef-980a1c3137be" absoluteBounds="0.5, 2.25, 6.125, 1.508148109515508" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="1ff958f4-d37e-4d5d-b42c-c487a6c4b6fb" LastKnownName="ImageFileExtractor" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="d624d9b4-36ab-48a4-ab87-ebfcfea09ff8" absoluteBounds="0.515, 2.7653356393178306, 6.0950000000000006, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="3d3ef9b6-cfb4-40ba-8315-fb2403e1dd4e" absoluteBounds="0.515, 2.9765075068672497, 6.0950000000000006, 0.6816406026482581" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

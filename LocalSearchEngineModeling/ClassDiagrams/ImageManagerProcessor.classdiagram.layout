@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ImageManagerProcessor">
+  <logicalClassDesignerModelMoniker Id="4e2a0cce-751d-454b-adbf-8f225f68a7b5" />
+  <nestedChildShapes>
+    <interfaceShape Id="ab982d5a-8f92-4de9-a332-57f7d1b074b0" absoluteBounds="0.5, 1.5, 1.5, 1.2505034391085306" hideQualifiedName="false" increaseHeight="0.18800345897674564" customColor="207, 223, 191">
+      <interfaceMoniker Id="30e12adb-214f-4fd1-bdfe-8886e7057a2f" LastKnownName="IMediaObjectsHasher" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="a92c867f-1796-4171-8822-13728538799f" absoluteBounds="0.515, 2.0780034589767458, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="a9478d99-4fb6-4546-91a6-3c5a5fdc4be3" absoluteBounds="0.515, 2.289175326526165, 1.4700000000000002, 0.36132811258236563" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </interfaceShape>
+    <classShape Id="15a23f3c-2530-4c0c-89dd-11f88e283eac" absoluteBounds="2.375, 1.5, 1.5, 2.7893980697790783" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="bc728793-c369-4c98-b9b3-3175a78b0ce0" LastKnownName="MediaObjectsHasher" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="e05beaae-2bcd-424c-8300-7fd8c7756b9c" absoluteBounds="2.39, 2.0153356393178306, 1.4700000000000002, 1.0019530927141505" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="3c227c00-2d13-4ec5-bfb0-21d3416981db" absoluteBounds="2.39, 3.0272887320319812, 1.4700000000000002, 1.1621093377470972" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <realizationConnector edgePoints="[(2.375 : 2.12525171955427); (2 : 2.12525171955427)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" showAsLollipop="false">
+      <interfaceRealizationMoniker Id="5ec35097-a3eb-4e25-973a-6022f93e4c7a" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="15a23f3c-2530-4c0c-89dd-11f88e283eac" />
+        <interfaceShapeMoniker Id="ab982d5a-8f92-4de9-a332-57f7d1b074b0" />
+      </nodes>
+    </realizationConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

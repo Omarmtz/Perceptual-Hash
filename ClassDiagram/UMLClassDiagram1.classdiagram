@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="8a78e5ab-bfb1-4932-9ff0-c637b2917725" name="UMLClassDiagram1" linkedPackageId="4b303cd0-67cc-4940-95b5-a1b5b13bb871" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="437e8836-ef17-4076-8c64-1c327f9f3c14">
+      <profileInstance Id="26641c82-24f0-43e9-84e0-0a4923f0e4aa" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="5aafb592-f048-4783-8d1f-02652d0d6091">
+      <profileInstance Id="ef69b6e5-05c3-43ed-9b24-312260a68803" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="41138263-ef38-41d5-988a-c0a65558d5c4" name="LocalSearchEngine" visibility="Private">
+        <referencesInternal>
+          <reference Id="553a2c21-9b9d-4564-9331-ff0cff3bba4d" handle="viewcode://./CodeSchema_Namespace?Namespace%3DLocalSearchEngine" tag="ViewCode">
+            <elementDefinition Id="85a72aaa-0f24-46d1-8faa-1fb24095d819" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="ad0ef0e8-155c-434e-8530-426d95323029" />
+        <profileInstances>
+          <packageHasProfileInstances Id="5f2acadd-0e46-4ccb-a25c-ecdcb2ade37f">
+            <profileInstance Id="616b0414-8bfd-4afb-85b3-2884b65b8880" name="CSharpProfile">
+              <elementDefinition Id="2d7307c2-f14a-475b-81d5-0854688a8ece" />
+            </profileInstance>
+            <elementDefinition Id="0fafaf2c-3872-4a23-8ec6-d1bfd4b8bd93" />
+          </packageHasProfileInstances>
+        </profileInstances>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="d83ca5d6-ab25-41e4-83d8-281c4e9f1395" name="FileDataAccess" visibility="Private">
+        <referencesInternal>
+          <reference Id="d7de9f8e-99c4-4fe2-bb08-c784eea37feb" handle="viewcode://./CodeSchema_Namespace?Namespace%3DFileDataAccess" tag="ViewCode">
+            <elementDefinition Id="5b5d5c51-8147-4de1-8ffe-00bc4b1dac3b" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="e4276b0e-4c0d-4d28-920b-d237c36a3c47" />
+        <profileInstances>
+          <packageHasProfileInstances Id="31fad9c0-54f8-4b84-bc07-db5c99abba1b">
+            <profileInstance Id="b6320a69-b9b9-4754-9bb2-14fc137ee8af" name="CSharpProfile">
+              <elementDefinition Id="938f0767-7fe9-421d-98b8-cf2480408f6d" />
+            </profileInstance>
+            <elementDefinition Id="ad626089-0978-4757-9c24-9417ebcad8de" />
+          </packageHasProfileInstances>
+        </profileInstances>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="93b77c44-ef0f-44a1-9e96-23e1f98d1203" name="ImageProcessingUtils" visibility="Private">
+        <referencesInternal>
+          <reference Id="99d3fee8-41fb-4152-a660-329b7d3c46a6" handle="viewcode://./CodeSchema_Namespace?Namespace%3DImageProcessing.ImageProcessingUtils" tag="ViewCode">
+            <elementDefinition Id="90ac7257-114f-4cef-8ac2-6683343e7e64" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="33b79e0f-47d9-473f-9240-411ace55f421" />
+        <profileInstances>
+          <packageHasProfileInstances Id="06a3ed63-7114-4d5a-a10a-9269bbf1f922">
+            <profileInstance Id="306e84ea-5b1a-475d-97dc-5bc1a8531d42" name="CSharpProfile">
+              <elementDefinition Id="31e799fa-3b6e-4f2f-9fd0-b905d3d0135a" />
+            </profileInstance>
+            <elementDefinition Id="f8e0f537-d5f6-40f6-b67a-4b4265287a87" />
+          </packageHasProfileInstances>
+        </profileInstances>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="0455fe4a-fc84-4649-aaf6-c9d72749e38a" name="FileManager" visibility="Private">
+        <referencesInternal>
+          <reference Id="0f68e8fe-9421-41a5-9235-7e9cdebd6bae" handle="viewcode://./CodeSchema_Namespace?Namespace%3DLocalSearchEngine.FileManager" tag="ViewCode">
+            <elementDefinition Id="9bdd3b49-1e1b-4518-a14f-c49ac6b79316" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="77327922-cc17-4fd4-8400-c32c3b82e03a" />
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="79aeea50-7367-4e02-ab7f-6bb0894b2268" name="PHash" visibility="Private">
+        <referencesInternal>
+          <reference Id="766a9c6a-9fb8-4b10-8eef-f8f0fc8b36ad" handle="viewcode://./CodeSchema_Namespace?Namespace%3DPHash" tag="ViewCode">
+            <elementDefinition Id="beb6dad2-7040-47ae-a590-ba8b12d22d78" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="0d13ca32-ef56-4fb4-8f37-1ddcb9a588e4" />
+        <profileInstances>
+          <packageHasProfileInstances Id="c208c30b-8e19-428c-bc0b-d44e5bf6f83a">
+            <profileInstance Id="35722467-7e68-4edf-bbc0-0deded92f494" name="CSharpProfile">
+              <elementDefinition Id="6bc23e99-aee6-4fef-a8a1-95c6267a1c98" />
+            </profileInstance>
+            <elementDefinition Id="1ea70552-57c6-49a3-953a-7516beb3efcb" />
+          </packageHasProfileInstances>
+        </profileInstances>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="aad64d57-79e7-4273-8ced-1d67be525610" name="Hash_Distance_Function" visibility="Private">
+        <referencesInternal>
+          <reference Id="29bb5a16-ba73-4b67-abeb-27ce79cb527c" handle="viewcode://./CodeSchema_Namespace?Namespace%3DPHash.Hash_Distance_Function" tag="ViewCode">
+            <elementDefinition Id="58197bba-5b24-497e-88b3-91379208c36e" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="142d277a-8513-4cda-8b12-317d4ef33a71" />
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="528c0343-6c70-41a9-b040-f281f4939dd4" name="Database" visibility="Private">
+        <referencesInternal>
+          <reference Id="47b7d29d-bf7d-4ca9-9f40-f32469eb9cba" handle="viewcode://./CodeSchema_Namespace?Namespace%3DFileDataAccess.Database" tag="ViewCode">
+            <elementDefinition Id="0ec3606a-4b7e-4a4d-83e8-7c64af825c99" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="2465cd98-fe96-40ff-a93a-2e0e96db8fd0" />
+        <profileInstances>
+          <packageHasProfileInstances Id="f80474f2-e5dd-43f5-b52e-dfe086ee4e96">
+            <profileInstance Id="dcbd3321-089c-4ea3-8821-73e1de7c27ae" name="CSharpProfile">
+              <elementDefinition Id="fe8cc86a-dec4-4fa1-b57f-f770cbe937cf" />
+            </profileInstance>
+            <elementDefinition Id="a4293f53-8eab-4d49-92d8-420bdffe3507" />
+          </packageHasProfileInstances>
+        </profileInstances>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="4443181a-99ef-4257-8279-cf912ea483b7" name="ImageFilesProcessor" visibility="Private">
+        <referencesInternal>
+          <reference Id="8ef684e7-1caa-4058-a2e2-f35d0cad8282" handle="viewcode://./CodeSchema_Namespace?Namespace%3DImageFilesProcessor" tag="ViewCode">
+            <elementDefinition Id="2d1cf30d-e343-4a40-9f2b-796fc2809a49" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="2c9cb700-188e-41df-80c7-dcac9b54923f" />
+        <profileInstances>
+          <packageHasProfileInstances Id="ce9821f6-0433-4126-91b0-319570acd626">
+            <profileInstance Id="11dfc231-fad1-4648-821d-447d0bf499d9" name="CSharpProfile">
+              <elementDefinition Id="79908548-80d3-412a-95d3-895ec5fc9dbd" />
+            </profileInstance>
+            <elementDefinition Id="29bf52f3-7bbc-415f-9eaf-2d83ba4acf36" />
+          </packageHasProfileInstances>
+        </profileInstances>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="8ee07af8-b925-4982-b60a-22c6a3f5509f" name="ImageProcessing" visibility="Private">
+        <referencesInternal>
+          <reference Id="2996ef87-5565-453d-9d38-eb072e19df95" handle="viewcode://./CodeSchema_Namespace?Namespace%3DImageProcessing" tag="ViewCode">
+            <elementDefinition Id="add5b474-85cc-4084-8ae0-29e0a3336b70" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="7477caac-263f-48f8-b674-55067b4b93b7" />
+        <profileInstances>
+          <packageHasProfileInstances Id="f9dc4b50-067f-4476-b702-b6791c8a8307">
+            <profileInstance Id="7f4b53cf-ba37-47e4-9fa1-4540edd3f4d7" name="CSharpProfile">
+              <elementDefinition Id="aa562084-1ff3-4946-b1cf-5f5b4364e919" />
+            </profileInstance>
+            <elementDefinition Id="6d585e58-a83f-4436-98c6-6816a18723e6" />
+          </packageHasProfileInstances>
+        </profileInstances>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="9b904473-9d34-4cfa-9222-1597a4b70f55" name="Filters" visibility="Private">
+        <referencesInternal>
+          <reference Id="ac2820d0-8f48-41a5-b6e7-54bc34ce55d6" handle="viewcode://./CodeSchema_Namespace?Namespace%3DImageProcessing.Filters" tag="ViewCode">
+            <elementDefinition Id="60b1add7-7a60-4c27-9448-45795fefe3c7" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="0b12922f-74bd-4a94-992c-cf264aefb028" />
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="4b303cd0-67cc-4940-95b5-a1b5b13bb871" name="ClassDiagram">
+    <elementDefinition Id="14d485a4-f1b2-4e6d-9770-5ec129aa21e6" />
+  </package>
+</logicalClassDesignerModel>

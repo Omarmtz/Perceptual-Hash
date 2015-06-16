@@ -1,0 +1,2189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="a6fed7b2-3f30-4388-81b5-16a060ee1455" name="FileManagerProcessor" linkedPackageId="23f0ada4-152f-4158-9be9-cb87f6a146c6" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="1fb506c8-8604-41b5-8ba1-97d62cb79917">
+      <profileInstance Id="0126cd66-202b-467e-a427-3306473b5712" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="36d42ed1-7942-477b-9058-add6bc138e00">
+      <profileInstance Id="4671d864-ba28-4264-87ae-1d4c4409d9c9" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="8c4c59d5-d4f4-44e1-a3b0-d37ce364f420">
+      <profileInstance Id="054e9f2e-f788-4313-a57f-2f4d58e1c948" name="CSharpProfile">
+        <elementDefinition Id="b6cc256c-a472-46f0-b767-432e75e83cc1" />
+      </profileInstance>
+      <elementDefinition Id="938c11bd-6d11-4a2c-b934-b15a5e05bf91" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <referencedType Id="f3722c33-bde1-45ed-810d-6d5afcfdd3cd" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="fc20467e-1320-40ba-8afc-3ce83ec9648d" name="DocumentFile" isAbstract="false" isLeaf="false" cachedFullName="LocalSearchEngineModeling::FileDataAccess::Database::DocumentFile">
+        <elementDefinition Id="33fb8d72-69f8-45a3-af76-dc619c9c224f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="dc7dba91-9afb-4dcc-9f0d-e6bc0baf2411" name="FileAgent" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="d38486cd-9ff7-4fa8-9090-df8bf44bd9dc" handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent" tag="ViewCode">
+            <elementDefinition Id="287e57d4-cf30-4cb7-9c05-10832bd763ff" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="9c9f1123-a0d1-48ab-8261-1318e4295eb2" name="class" profile="CSharpProfile">
+            <elementDefinition Id="cc5508ba-e089-4e01-ab2b-0c6274cbe995" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="6881e447-f81b-4e5c-9fe5-685510d590f9">
+                <propertyInstance Id="0d3fedf8-3a9c-4597-b5fc-415d215f21f6" name="ClrAttributes">
+                  <elementDefinition Id="b805d5d2-9241-4249-943e-8ce6d5ee7f68" />
+                </propertyInstance>
+                <elementDefinition Id="18fb3b5d-519c-4036-93c9-309a322ef147" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="ecf18ea1-cd7f-4d58-b52c-711fbf2a8e47">
+                <propertyInstance Id="b125659d-47de-4539-82b1-c000a040060c" name="IsPartial" value="false">
+                  <elementDefinition Id="9ef15442-460c-4d1c-a4c8-7ce5f879001c" />
+                </propertyInstance>
+                <elementDefinition Id="39286e2b-7577-4002-bd27-d3e69d8512bd" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="366c7d5a-db4d-4475-955c-beddb1db0955">
+                <propertyInstance Id="4e004cb8-c858-4b20-9486-918521e675aa" name="IsStatic" value="False">
+                  <elementDefinition Id="167a9c47-fc46-4bcf-814c-62b1b0dab90d" />
+                </propertyInstance>
+                <elementDefinition Id="786938d9-eba9-42d9-9fef-ed30afadb47d" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="30539829-b6b2-4f01-b2fa-84a832ddb9dc">
+                <propertyInstance Id="da25dab6-919d-43d3-b2c7-e942cf2b92e7" name="IsUnsafe" value="false">
+                  <elementDefinition Id="9a68d203-c90f-4c85-b2a0-096a94896c05" />
+                </propertyInstance>
+                <elementDefinition Id="6a4cfc72-1558-47aa-82cf-1af01fff4a16" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="ba0ffecb-b64e-48e6-b0c4-22e3439fdd0e">
+                <propertyInstance Id="08bd1fed-3bac-45be-9160-004cf8291d46" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="fc9eb5d9-9a50-47d1-8200-fc612158301a" />
+                </propertyInstance>
+                <elementDefinition Id="41486988-0078-44e2-8aee-105eb6dfbdfe" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="44e64477-4c80-402a-9d1b-aba90a177fcc" />
+        <ownedAttributesInternal>
+          <property Id="a7721c04-7812-4d87-a4d5-40449f1b1934" name="GetSupportedFiles" isLeaf="false" isStatic="true" isReadOnly="true" isOrdered="true" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="a2650aa9-08ef-4bfd-9f46-bbbae0a57e9f" handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3DGetSupportedFiles" tag="ViewCode">
+                <elementDefinition Id="0072e1df-e9f8-42b6-a7ca-f1ba073bb362" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="362bd8ef-8fcb-411a-b8ed-f7c7c1159751" name="property" profile="CSharpProfile">
+                <elementDefinition Id="05870cd4-8193-4cfc-824e-664b414a9708" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b974fef8-269d-4fbf-8d2d-6aad9b6fd41f">
+                    <propertyInstance Id="249849cd-bb3d-4639-8f0b-b9f0db92222c" name="ClrAttributes">
+                      <elementDefinition Id="6a0e6008-4bee-48f8-9d94-d19dafb17aee" />
+                    </propertyInstance>
+                    <elementDefinition Id="061076f6-9d56-424d-acb7-974c6563bd0d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b4029a7e-692f-48b0-b7f7-6fb7ffb18424">
+                    <propertyInstance Id="2af3730f-2f24-4122-b305-97a057eaa3d5" name="Get" value="public">
+                      <elementDefinition Id="43dea4fd-acd7-4923-9d3e-fabe2e005d0e" />
+                    </propertyInstance>
+                    <elementDefinition Id="8f103323-5eee-46a7-9bb0-5217827563d5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="68de35b9-9708-440b-8fd7-bd2320f34178">
+                    <propertyInstance Id="4fc1f334-947f-44da-93f1-28023aa113ea" name="HasBody" value="false">
+                      <elementDefinition Id="f17873be-1e73-40ff-b3ef-1d9369a3da62" />
+                    </propertyInstance>
+                    <elementDefinition Id="80c9457e-111b-411b-a630-7e495d7572db" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8c19a726-85e2-4e96-8f6b-b8256c276d9c">
+                    <propertyInstance Id="183bb0b3-26e2-4b1f-babd-8061ba8fb39b" name="IsUnsafe" value="false">
+                      <elementDefinition Id="fbfdbe22-39ad-4d5b-912d-37f45ff233c6" />
+                    </propertyInstance>
+                    <elementDefinition Id="24f14b34-9f3c-4d75-aa60-ed3e4027153d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="da524ca3-f377-493e-a078-d8582105defa">
+                    <propertyInstance Id="248ae43b-3822-4818-b96f-8f4840bc9776" name="Inheritance" value="none">
+                      <elementDefinition Id="4f805ba3-66c1-4751-af04-85d155ba5482" />
+                    </propertyInstance>
+                    <elementDefinition Id="79a96e44-a978-468f-97ae-c68930cfe871" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="777d06fb-cefa-4b0b-98e4-035806157966">
+                    <propertyInstance Id="7895ec23-6b7d-4f4a-b5ee-ecaf3efacca8" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="f57e4404-5243-43fb-b2b5-e5ded0a51d4c" />
+                    </propertyInstance>
+                    <elementDefinition Id="ba7ab27c-1829-4ab1-9ffc-d61b7510d444" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="89a8347a-211d-4a6e-9ac6-2400a50ed41c">
+                    <propertyInstance Id="3d647870-82c1-4ff6-8e00-85e4e0daf140" name="Set" value="none">
+                      <elementDefinition Id="4c9d95e6-742b-4741-a19a-a7c33ca778df" />
+                    </propertyInstance>
+                    <elementDefinition Id="186b7024-1edc-4605-93f2-059358160e83" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString Id="6a2f3654-ab6b-4c95-b4f9-b9f7e316ee92" name="Lower" value="*">
+                <elementDefinition Id="621473f0-8f5f-47d0-9201-20f74d6cae20" />
+              </literalString>
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString Id="11801fc1-936d-4685-ad7c-cbe55bba70de" name="Upper" value="*">
+                <elementDefinition Id="5909312f-a72b-4361-a839-fb1282bb7df5" />
+              </literalString>
+            </upperValueInternal>
+            <elementDefinition Id="90f865b4-c61a-4f7d-9383-353816ecc7f6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f3722c33-bde1-45ed-810d-6d5afcfdd3cd" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="19b47a77-cb30-43fa-9407-cff9c5e0f355" name="GetSupportedFilesFilter" isLeaf="false" isStatic="true" isReadOnly="true" isOrdered="true" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="f62091a4-ee91-47ee-9add-9233edbb2797" handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3DGetSupportedFilesFilter" tag="ViewCode">
+                <elementDefinition Id="88a3c1ae-8a83-4f59-b688-cdf78f293c74" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="9250151e-66b3-4638-8694-cab49861e506" name="property" profile="CSharpProfile">
+                <elementDefinition Id="d417a4b4-0e94-4716-945a-bff971793a84" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="86891f1f-e02e-4ead-9e08-c5d70674e9e2">
+                    <propertyInstance Id="5348165f-2fe4-42ce-963e-9d4a70fe0af6" name="ClrAttributes">
+                      <elementDefinition Id="1ae63865-f5d2-4ef7-9736-18815559d456" />
+                    </propertyInstance>
+                    <elementDefinition Id="003d7b73-fc79-434c-a005-2802ec6ad334" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e64d8944-f343-49e7-b551-cd9784fb9183">
+                    <propertyInstance Id="1fa81fa0-5901-45fc-898b-c3cd581b5fdd" name="Get" value="public">
+                      <elementDefinition Id="6304d632-6d8a-4764-9f9a-8594465dea21" />
+                    </propertyInstance>
+                    <elementDefinition Id="67622447-78d3-4475-abd6-fabb74973e93" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9e9239e4-bd92-4626-996f-2c6fb3d24065">
+                    <propertyInstance Id="259085b7-6105-4db9-ae44-4de674eb23e9" name="HasBody" value="false">
+                      <elementDefinition Id="c022a55d-c2b1-4a28-a9f6-375d33985e04" />
+                    </propertyInstance>
+                    <elementDefinition Id="106febd0-4253-4105-bdbf-39fa3bf47f78" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0e41794b-abe2-412f-981f-eaebca88a122">
+                    <propertyInstance Id="34ace59a-e8ac-4860-93a7-4bea192639ba" name="IsUnsafe" value="false">
+                      <elementDefinition Id="0c1a4d26-0f45-4b5e-832f-b17881deb127" />
+                    </propertyInstance>
+                    <elementDefinition Id="54cf6566-b62f-498a-a9ed-f681a6a34a11" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7adcbd7b-956d-42aa-a4eb-9433ec54eec9">
+                    <propertyInstance Id="61794907-1381-49c8-aba7-89524556470b" name="Inheritance" value="none">
+                      <elementDefinition Id="d5270394-818e-4e1c-b8a3-9cc2808d7dff" />
+                    </propertyInstance>
+                    <elementDefinition Id="4cf3a2bc-03fe-4d31-b259-7fa2dbd553c9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="635b986c-3fc7-453b-9809-05588adf1100">
+                    <propertyInstance Id="d7a40415-fb40-47cc-a1b6-2ed98360cdd3" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="de24d7bf-2799-4bfd-8394-627f5c9669c9" />
+                    </propertyInstance>
+                    <elementDefinition Id="b7b35b65-8d8f-42b5-b0b2-473edcaf1290" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a93bae36-ca66-4fdc-917a-0e77c0f15aef">
+                    <propertyInstance Id="5c924396-3aca-47d4-a67f-b886d3aef3bd" name="Set" value="none">
+                      <elementDefinition Id="834f3a83-0292-4f7e-95bf-a6f4e648e0ce" />
+                    </propertyInstance>
+                    <elementDefinition Id="3f981a8b-291e-4d52-862e-31f79a630576" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString Id="04064a1b-ed5b-41a3-9b76-522c79af5d3b" name="Lower" value="*">
+                <elementDefinition Id="28782b84-bcc6-48d7-ad67-15cc9c73e364" />
+              </literalString>
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString Id="28c688f4-f615-4de8-9bb0-17d2107a431f" name="Upper" value="*">
+                <elementDefinition Id="4c8448a0-50f8-4e61-994a-d110d8f27c59" />
+              </literalString>
+            </upperValueInternal>
+            <elementDefinition Id="be48237f-6821-4b32-9106-2e7d9fee3209" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f3722c33-bde1-45ed-810d-6d5afcfdd3cd" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="0387c76e-cb5e-46d7-8707-d28dd705d99f" name="ExtensionImagesContentFile" isLeaf="false" isStatic="true" isReadOnly="false" isOrdered="true" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="f1a65204-997d-4c34-b825-2cb7861ec25a" handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3DExtensionImagesContentFile" tag="ViewCode">
+                <elementDefinition Id="543d21ef-50f1-46ad-9ad3-a19648da252c" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="1e7a4ccc-dd30-46b2-bfa5-7152e2046c45" name="field" profile="CSharpProfile">
+                <elementDefinition Id="6b6d72ae-24e6-4d03-9731-61c1332614de" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c0dd54ef-0ca0-4537-9eb6-34ab452d7329">
+                    <propertyInstance Id="c65e64db-2551-4ec0-8c71-e2639d299d6a" name="ClrAttributes">
+                      <elementDefinition Id="d224b40e-4992-48ab-9eba-3681f2f0f7ae" />
+                    </propertyInstance>
+                    <elementDefinition Id="8c9d5ab9-3287-4089-be71-a84a4d52d7db" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1776b4c1-a8be-4e2c-ada8-d3b9e52add60">
+                    <propertyInstance Id="29e0b089-0680-4aea-a5b6-a251a5c03338" name="IsConst" value="false">
+                      <elementDefinition Id="0226693a-de63-49cf-a919-3cd2d7a20670" />
+                    </propertyInstance>
+                    <elementDefinition Id="81d099bb-4f68-4328-8aa6-414e53d12731" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="433b85cd-3dbe-4ccd-b155-3048389e77de">
+                    <propertyInstance Id="95d935ac-26b8-4d40-90d1-c36518e368cb" name="IsNullable" value="false">
+                      <elementDefinition Id="68d78700-a050-4d74-a47c-07ef9e96b0a8" />
+                    </propertyInstance>
+                    <elementDefinition Id="7f32c305-2360-458b-8e86-656dc45d53b5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3baab9fe-2574-407b-b6f1-e89a8e23e9b1">
+                    <propertyInstance Id="d483b54a-1c81-457c-bdfa-7606a81feed9" name="IsVolatile" value="false">
+                      <elementDefinition Id="994c3498-13f3-429f-bc81-2d25e1f5e63c" />
+                    </propertyInstance>
+                    <elementDefinition Id="ae3b483c-cfa8-49d1-bab6-81d483c7896d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b013f2af-5803-46fb-8a15-b384619a2c0c">
+                    <propertyInstance Id="758cb204-e4f9-41fb-9ee1-069127d8ed92" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="47936a03-2b22-49b1-8d83-40f29318eede" />
+                    </propertyInstance>
+                    <elementDefinition Id="d3002ffb-a1fe-4085-84ec-d169a3ba78bc" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString Id="4421d7ad-1651-4f96-b387-728b96b411d8" name="Lower" value="*">
+                <elementDefinition Id="e743e0fe-0927-4213-8a3a-57629236606b" />
+              </literalString>
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString Id="a01414ae-eb09-4fc6-8808-df4c1a69bf71" name="Upper" value="*">
+                <elementDefinition Id="e747ac9d-256f-4e6d-9a56-9c2e32acf617" />
+              </literalString>
+            </upperValueInternal>
+            <elementDefinition Id="0a06ea1d-210b-4378-be7d-03b358ba78e7" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f3722c33-bde1-45ed-810d-6d5afcfdd3cd" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="f226b681-c185-4ad9-9858-ec2418cf3b8b" name="ExtensionImagesFile" isLeaf="false" isStatic="true" isReadOnly="false" isOrdered="true" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="fe3edce9-bc10-486a-b24a-0e7e5239b0e1" handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3DExtensionImagesFile" tag="ViewCode">
+                <elementDefinition Id="133ecd30-da6b-45a2-9dc6-88324ad5a674" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="28f29eaf-2237-4886-87b0-4de71f97cd4d" name="field" profile="CSharpProfile">
+                <elementDefinition Id="487c5165-cbd3-4e9e-a0f0-619e3370b79c" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a549cfd8-7bf6-4d12-b011-28673d68e3e6">
+                    <propertyInstance Id="86b5b452-1279-454b-a09c-49fb1924c113" name="ClrAttributes">
+                      <elementDefinition Id="12ce4c4a-efb9-4fae-8fb7-9cc971230a12" />
+                    </propertyInstance>
+                    <elementDefinition Id="efcb7473-9d7b-4497-99cf-669b3541a77d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="501a934d-a329-418e-b70e-210bd04ca75a">
+                    <propertyInstance Id="6d2c93a4-d405-475a-835f-ea4d6ad79e6c" name="IsConst" value="false">
+                      <elementDefinition Id="85f137e3-8aa6-4619-b4c9-1bdfeb5c5da6" />
+                    </propertyInstance>
+                    <elementDefinition Id="cef5c6c4-66cd-4e04-9250-01c80b69cab4" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4656621b-2e55-4e12-9903-366c118529d7">
+                    <propertyInstance Id="fc578dab-1c0e-4d3e-8583-3795cd0d2cb8" name="IsNullable" value="false">
+                      <elementDefinition Id="c485c975-3774-4f6f-ab32-ff23fcf737e9" />
+                    </propertyInstance>
+                    <elementDefinition Id="915f2f8d-3285-4b5d-8693-e6788cb6f2fe" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a39e8874-e03a-44d0-9f14-f5d29f2cddc2">
+                    <propertyInstance Id="cf3b3bdb-a1da-4698-8e5f-401c89f1335f" name="IsVolatile" value="false">
+                      <elementDefinition Id="8c1276ba-1e16-475f-81e6-6c9ffe371642" />
+                    </propertyInstance>
+                    <elementDefinition Id="fcc0799a-23d0-46ee-b33d-f7f3c4925630" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="28d0b56e-24c0-4e63-894d-db95dcd0646c">
+                    <propertyInstance Id="6cb053d8-0a3e-43c4-9b9b-4363c17ca057" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="8bd96408-b4e0-4c65-abaa-95739d9207af" />
+                    </propertyInstance>
+                    <elementDefinition Id="55d88b91-2cab-483a-a7ac-e1d8689cafb2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString Id="edadf396-933b-41e6-91e2-1f2bbf594a10" name="Lower" value="*">
+                <elementDefinition Id="d7161149-f226-4085-b929-73a862e85db5" />
+              </literalString>
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString Id="38af01f6-7515-4399-95ec-ce2c7826d41d" name="Upper" value="*">
+                <elementDefinition Id="3a519231-0888-4298-971f-8bba7cb804de" />
+              </literalString>
+            </upperValueInternal>
+            <elementDefinition Id="b3c839c3-b952-4df1-b70a-27aad75adef0" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f3722c33-bde1-45ed-810d-6d5afcfdd3cd" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="d6dd7097-ce23-42ba-871b-c0eb3b50402c" name="ExtensionOnlyTextFile" isLeaf="false" isStatic="true" isReadOnly="false" isOrdered="true" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="f0904239-a153-4e7b-a76e-6a9f60f48fa3" handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3DExtensionOnlyTextFile" tag="ViewCode">
+                <elementDefinition Id="c580fed5-1ee2-423b-b4f2-fdb2a6817b43" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="a2375500-f605-4c5f-8393-93c38e3ba7a7" name="field" profile="CSharpProfile">
+                <elementDefinition Id="d52b4bcc-2848-403e-a7e3-55b676b9d8ed" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="bfe57417-eb79-4370-af93-f90d1c539f85">
+                    <propertyInstance Id="62300cf4-839c-436f-acbb-104323c13401" name="ClrAttributes">
+                      <elementDefinition Id="447efca5-99a7-4d31-8812-591c655b91af" />
+                    </propertyInstance>
+                    <elementDefinition Id="bc0b8282-aa5e-4913-a88b-c5810cab4d71" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9abf1c37-7ebf-4cb1-9d0f-b48b78f25bd4">
+                    <propertyInstance Id="3f3c9656-1e19-4a09-9ed8-cab0d6fce942" name="IsConst" value="false">
+                      <elementDefinition Id="4e388f4a-ae91-40fe-a25f-a9b29526dba3" />
+                    </propertyInstance>
+                    <elementDefinition Id="ebfeb143-72db-44f4-91d5-92cdf992f229" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e2f12de2-c2b0-4254-bd72-f48f958c1121">
+                    <propertyInstance Id="1ab19371-4c4a-4c8a-8453-6a865a5293f9" name="IsNullable" value="false">
+                      <elementDefinition Id="ca42d981-2400-4698-8218-76c8f5b36833" />
+                    </propertyInstance>
+                    <elementDefinition Id="da724502-ab21-4195-a970-afbe3da7758d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="451a9637-014b-4cb8-9ed0-d8c2e454e2c8">
+                    <propertyInstance Id="04ece657-f98e-49a8-bc98-4a12bf4f7922" name="IsVolatile" value="false">
+                      <elementDefinition Id="1277d0a5-a8b4-4771-8488-921cd435b690" />
+                    </propertyInstance>
+                    <elementDefinition Id="b6a97d23-0bc8-4b3f-a083-a7d43f7d5365" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="62aee265-4247-4a40-bc00-3ec17d8866d0">
+                    <propertyInstance Id="b8a1128d-d557-485d-ba06-35fd46537bc4" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="04a77c22-5502-4056-93b6-b5d83c0751d9" />
+                    </propertyInstance>
+                    <elementDefinition Id="f250f23a-2b71-4738-a069-7023259fecce" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString Id="920c0af0-d441-443c-a530-b9480cfc1595" name="Lower" value="*">
+                <elementDefinition Id="b89d46a4-ac8b-48e3-ad1c-7b3fb95fe902" />
+              </literalString>
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString Id="a39dc1ec-802a-44d9-a054-4546e4c45c6d" name="Upper" value="*">
+                <elementDefinition Id="15cf32eb-22bf-4b75-8336-34d9cc62d96d" />
+              </literalString>
+            </upperValueInternal>
+            <elementDefinition Id="67875dae-3d90-4c61-b14c-1d4bb53cac5f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f3722c33-bde1-45ed-810d-6d5afcfdd3cd" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="68223001-45a6-432d-b586-c352e448394f" name="PageDataBaseSize" visibility="Private" isLeaf="false" isStatic="true" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="efbb7d17-aa87-4d11-aa0a-b14763dbab07" handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3DPageDataBaseSize" tag="ViewCode">
+                <elementDefinition Id="03e3ff01-56e2-444c-8038-2bdf51904a13" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="056edb78-b625-473c-962e-75366358f615" name="field" profile="CSharpProfile">
+                <elementDefinition Id="fc67ec99-dc0a-4ca1-8ef7-e97eb47d2631" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1b7fa9ba-5397-49de-b530-40130bdf56d5">
+                    <propertyInstance Id="446c16f2-b6e4-4868-a22b-676eeea86d4b" name="ClrAttributes">
+                      <elementDefinition Id="b74340ff-81ce-443d-9bfa-ff847458a90e" />
+                    </propertyInstance>
+                    <elementDefinition Id="06d3ade0-bca3-4496-8101-46d35359716a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b37bda33-f9a8-4b9e-9a75-60617c75bddb">
+                    <propertyInstance Id="7fb5dca8-a2f1-4d7a-9f47-d4c1a7c8d4f6" name="IsConst" value="false">
+                      <elementDefinition Id="77fea09a-8f57-4c1d-b74c-c723b446b845" />
+                    </propertyInstance>
+                    <elementDefinition Id="7b11160a-9351-4aef-a6bc-315ae33a41dd" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8701e52d-15ea-43ab-a490-94c9603b6133">
+                    <propertyInstance Id="613873e3-2561-4625-9e68-7d48e1529b82" name="IsNullable" value="false">
+                      <elementDefinition Id="06c96628-f1bd-4fec-b858-f3e336b71a11" />
+                    </propertyInstance>
+                    <elementDefinition Id="a20aeea8-9829-420f-82bf-a89d9e64ade6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8386d899-a2f1-4927-96c6-1904ae31ac36">
+                    <propertyInstance Id="c492a1d7-5227-4cbb-a050-1510430ba60c" name="IsVolatile" value="false">
+                      <elementDefinition Id="5ba7a82a-c021-4cd4-b55b-2ab2fd13eb7a" />
+                    </propertyInstance>
+                    <elementDefinition Id="478138bc-1fa2-4313-b920-1019bc236e98" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="33e2b167-d824-4afa-be41-3e91bb1cbdf9">
+                    <propertyInstance Id="fdd96053-7dbe-4d51-a754-bcadd0be8c04" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="7a2df104-1286-4d23-8ac2-19a82b55d13a" />
+                    </propertyInstance>
+                    <elementDefinition Id="86175738-f2cb-43e2-8ec5-90fe32a5ed79" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="5a8e9c55-2bf6-4267-9225-61bc94fa7714" />
+          </property>
+          <property Id="c2db259f-1ec2-43ed-abf1-187b0f9194ec" name="TempFolder" isLeaf="false" isStatic="true" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="f8b6c9a1-611b-4d09-9de4-5a531053b6ae" handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3DTempFolder" tag="ViewCode">
+                <elementDefinition Id="9689e4a1-57c2-4c63-8232-73e8c553631a" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="93b1d11a-db09-4053-b30d-f07d009e92ac" name="field" profile="CSharpProfile">
+                <elementDefinition Id="f7be56fe-12c9-46a7-a4b6-5912a2d59094" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="96575dd0-fe0f-44ca-9309-8377a6c2e32a">
+                    <propertyInstance Id="5ebdaa7d-ce71-4eb0-b023-02507aeab239" name="ClrAttributes">
+                      <elementDefinition Id="6e279780-2225-4f77-ad8d-7fa1ddb1725c" />
+                    </propertyInstance>
+                    <elementDefinition Id="26e21444-5d0a-41cc-8869-a07eb888efed" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f6a43937-b4a5-4933-bd75-533a5bf34126">
+                    <propertyInstance Id="69c2e438-ba57-424b-b413-701d3c9ca87d" name="IsConst" value="false">
+                      <elementDefinition Id="614de25f-ee4e-4ba8-a6a7-710f453d675d" />
+                    </propertyInstance>
+                    <elementDefinition Id="40b42e4e-20d8-486d-9237-9ddb2fe08bb0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6c671ed6-edfb-40cc-b86a-6b3d1f9251ea">
+                    <propertyInstance Id="58f34157-54fc-4a6c-a70b-378550006316" name="IsNullable" value="false">
+                      <elementDefinition Id="e76d0e1b-2490-41a3-9e61-0e7af65f173e" />
+                    </propertyInstance>
+                    <elementDefinition Id="b1457cb3-def4-4c99-9458-4b855a46adfe" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="13eaef5d-f107-4085-bd59-76c1c606224c">
+                    <propertyInstance Id="82824de3-cd76-4be9-af16-c2fe67984b25" name="IsVolatile" value="false">
+                      <elementDefinition Id="fb0c7e1b-3f08-41e6-ba4d-dbdaaddbe98e" />
+                    </propertyInstance>
+                    <elementDefinition Id="12283530-8e9f-44b0-92a4-5f0a1d42b43b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e29d33ab-4dc7-4f9a-881a-36900e83f4cc">
+                    <propertyInstance Id="3ee8fefd-5e71-4837-8300-97013e23a357" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="ea8eae7b-d4ba-461f-b99e-414e64d4739f" />
+                    </propertyInstance>
+                    <elementDefinition Id="1b27e36c-7a67-4b9a-bb7c-cdfda68ecb70" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="f24cd929-c103-422e-afd7-e396d8505615" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f3722c33-bde1-45ed-810d-6d5afcfdd3cd" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="17147e41-a49e-453b-bc10-23d9cefd1092" name="WatchFileSystemTask" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="144809d6-78e3-40b5-b930-46c7771b4d35" handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3DWatchFileSystemTask" tag="ViewCode">
+                <elementDefinition Id="8030a4ff-a590-42cd-8c96-eca9bfa5fd16" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="c9efba5c-f444-429b-a51d-ef79196d2c8d" name="field" profile="CSharpProfile">
+                <elementDefinition Id="6b6a5dc4-1c70-48da-bab0-519cfbf4c6ad" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6817a948-405f-4311-bbfb-1548bf41f2e5">
+                    <propertyInstance Id="b439128f-316f-4cc5-ba8f-c7ae6709cd5b" name="ClrAttributes">
+                      <elementDefinition Id="d39abe26-dcfb-4bde-84ea-bf6181b7042c" />
+                    </propertyInstance>
+                    <elementDefinition Id="668469b9-6288-4fbe-bd49-e8cf32241189" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="20f287c2-cadc-4780-bc30-f0eaa518af7f">
+                    <propertyInstance Id="10e2002d-56a5-42a5-8184-a46a979dbe0a" name="IsConst" value="false">
+                      <elementDefinition Id="6023fcf4-e70e-42d2-b29b-246736ddb215" />
+                    </propertyInstance>
+                    <elementDefinition Id="e842d3c2-bf1f-4f23-a35c-b90fcbeff701" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7fe66883-c7f8-43d1-a6ca-9b5f240abe7e">
+                    <propertyInstance Id="7282b686-4327-4a2d-b4df-24a3f5a18c03" name="IsNullable" value="false">
+                      <elementDefinition Id="7e800100-1948-4e37-8685-0b4671eb7f74" />
+                    </propertyInstance>
+                    <elementDefinition Id="3e9d0884-1b38-460a-b253-0babb13a884e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e4d32681-9d9a-412e-8203-42200112effe">
+                    <propertyInstance Id="b225114c-b3ee-4ddd-ac79-31dd2a76938f" name="IsVolatile" value="false">
+                      <elementDefinition Id="9a59f3ef-bdb1-46c8-b62c-8dc13da19bb6" />
+                    </propertyInstance>
+                    <elementDefinition Id="33d64c7b-cc1c-403c-843b-e056a8024d73" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9060cdf3-645f-4541-bae2-cc9b6dddc0f4">
+                    <propertyInstance Id="7ad21ba9-fe88-464d-bc8e-911fa54805c6" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="d90d5770-c163-4af4-9497-67b34af15cf6" />
+                    </propertyInstance>
+                    <elementDefinition Id="823c0c07-284d-4f31-a7e4-e26d48db9952" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="cdd99675-1aea-400d-9d03-96b56fab4d61" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f151e928-f8a5-4fcd-979c-351844b23982" LastKnownName="Task" />
+            </type_NamedElement>
+          </property>
+          <property Id="f3bc3206-67bf-487d-a456-accd4cb95cff" name="_directory" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="3cb78eda-f0b8-4d3a-ac93-58cd368defb7" handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D_directory" tag="ViewCode">
+                <elementDefinition Id="64eff018-afa7-439a-b4f9-af460b455d8f" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="f16bb8e2-0aa9-4bae-813a-97e41c6c6224" name="field" profile="CSharpProfile">
+                <elementDefinition Id="bf50a611-34ee-4d2d-a4cb-39f3a67e0b79" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2a3d24ea-c9e9-4f79-8749-6886470f6055">
+                    <propertyInstance Id="441095e1-0c08-4b7b-b00e-66ca99d1b120" name="ClrAttributes">
+                      <elementDefinition Id="78ef7091-a2d9-480f-8a55-a80314f0a87e" />
+                    </propertyInstance>
+                    <elementDefinition Id="3f0160a3-0fe7-4532-bc6c-84369ad8fd8b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="071ea62a-0b94-4147-86c3-5b57cbfb54a5">
+                    <propertyInstance Id="e313bdb5-0c46-4470-b133-677b3d4944ae" name="IsConst" value="false">
+                      <elementDefinition Id="8f8a1830-dd78-4100-8c06-b145308f5c1f" />
+                    </propertyInstance>
+                    <elementDefinition Id="687d8ced-33a3-42eb-a8c5-ceae06258df1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cc031e0f-2e9e-4df9-ab3e-10af1db1e42f">
+                    <propertyInstance Id="6178df55-0f0f-4b4a-8730-d1c3bc35721a" name="IsNullable" value="false">
+                      <elementDefinition Id="d2532fdc-d5a9-4b52-a5fb-6d69afe7ac19" />
+                    </propertyInstance>
+                    <elementDefinition Id="3742adfa-8259-44a2-9a4c-12292d6a16b1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="99e31ead-5b90-4fc3-9033-281962221679">
+                    <propertyInstance Id="c0d06e26-80fb-40d1-80a7-32d95eff4f0b" name="IsVolatile" value="false">
+                      <elementDefinition Id="526b81ae-fa24-4895-a323-0da8e83d5dc0" />
+                    </propertyInstance>
+                    <elementDefinition Id="e5974f4b-da08-4618-a90c-f31ef98d8149" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="dbd26dd3-8cb6-4600-82f8-7d4b5561fba4">
+                    <propertyInstance Id="5bbed96f-d4de-4827-aea5-51652361770a" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="7d98a330-7c8d-47a7-944d-41304304a7ac" />
+                    </propertyInstance>
+                    <elementDefinition Id="799dd30a-4f65-440d-b1e9-98767771a5b2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="c01b003d-0148-4d2e-87c2-e6fc293684dc" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f3722c33-bde1-45ed-810d-6d5afcfdd3cd" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="b608664d-50ae-45e1-b9bd-740088882e12" name="FileAgent" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="1144ff01-5559-4ea7-a70e-01da4b220f9f" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])" tag="ViewCode">
+                <elementDefinition Id="b2686be6-a306-416c-85eb-ddbbadd98091" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="c43d9388-2cc9-44fa-8fb8-6e43822f117a" name="method" profile="CSharpProfile">
+                <elementDefinition Id="3a036f9a-f330-4541-afb1-47ae87f27b9f" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="603ed2ae-0b66-4669-9e53-be81381da44b">
+                    <propertyInstance Id="3726234a-9c1f-45e3-932d-ee89042333a5" name="ClrAttributes">
+                      <elementDefinition Id="00e53d0a-c5db-47dc-8cda-27640b6b7e3a" />
+                    </propertyInstance>
+                    <elementDefinition Id="6cc2ae80-5fba-4f60-90fc-3f5cea2d5358" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7bb5a933-28a7-4018-b2b5-9475a1c6e4dd">
+                    <propertyInstance Id="690c2890-57fa-47ee-a64b-9afbf3cfb912" name="IsPartial" value="false">
+                      <elementDefinition Id="7eb74c94-36c4-475f-ad8a-8a61ec6b1aa1" />
+                    </propertyInstance>
+                    <elementDefinition Id="20eafa63-482a-4ddd-8bdb-dd09323b070c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f2410355-9bd4-454e-b70b-ebe40919c308">
+                    <propertyInstance Id="8d4b8d57-3c55-4cc5-b7b7-9d9fdb6a270b" name="IsUnsafe" value="false">
+                      <elementDefinition Id="40fbee76-4b4e-4baa-aaaf-c3cb0aa8289f" />
+                    </propertyInstance>
+                    <elementDefinition Id="5f826ae6-1034-49a1-92a3-64b064c046d7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e65793ec-0589-4afa-8d43-1e07bb3c8576">
+                    <propertyInstance Id="da16fd8c-f56b-4e07-a1cc-1547ed985a52" name="Inheritance" value="none">
+                      <elementDefinition Id="8e7f2919-3677-4565-b185-e5fda85cbcc5" />
+                    </propertyInstance>
+                    <elementDefinition Id="91088dff-69c1-43cf-86b4-d22809f25cc0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="dfae8f1f-0f90-4309-8aa6-b02f82975fa9">
+                    <propertyInstance Id="b15eacb9-6773-4d30-9969-50a8e5681e80" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="76d4c6d1-3fc8-4862-a47c-51145f912967" />
+                    </propertyInstance>
+                    <elementDefinition Id="b6b81457-6faa-49e3-a9ce-6fa11a127230" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a7a524f1-796a-4c60-aed9-69df0d498cce">
+                    <propertyInstance Id="5b9723e6-089b-474b-9245-ac2d6dd3fd9c" name="params" value="false">
+                      <elementDefinition Id="eb7816f7-8d6e-4d29-8c8b-17c8c4e8b2e5" />
+                    </propertyInstance>
+                    <elementDefinition Id="22259004-01b4-4d91-b211-b65b7255b09a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="ae5a6004-d814-467c-a4c0-39bcc9f5e2dd" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3f231eeb-2962-4d51-9a73-f5a2468619de" name="initialDirectory" direction="In">
+                  <referencesInternal>
+                    <reference Id="f4dd6218-ec5d-45d0-97a0-8ceee9b23e6d" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DinitialDirectory" tag="ViewCode">
+                      <elementDefinition Id="bd97b8d9-8886-41d7-9ad0-deded73a8935" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="5efea22e-3714-44d1-ac8e-eac85accdbb8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f3722c33-bde1-45ed-810d-6d5afcfdd3cd" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="bfd2a7ef-dcb7-4bc4-b0f3-694459f983f1" name="AttachImageFile" visibility="Private" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="28592fec-6140-474a-96fa-99c4a141274d" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DAttachImageFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FFileDataAccess%2Fbin%2FDebug%2FFileDataAccess.exe&quot; Namespace%3DFileDataAccess.Database Type%3DDocumentFile)])" tag="ViewCode">
+                <elementDefinition Id="3c6bda1b-eaf2-4b38-9132-b41c82d06a4d" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="088c488e-ab70-4063-a857-36ee4ce0d2a4" name="method" profile="CSharpProfile">
+                <elementDefinition Id="08a6966d-be9a-4dbd-9a1c-59284ebd8d17" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="db2866be-5b37-4cc3-a49e-3f43254b352d">
+                    <propertyInstance Id="1f1bb400-c59e-4afb-89fc-9afc447e9ba2" name="ClrAttributes">
+                      <elementDefinition Id="0bcedf55-d72b-4d3e-bb9b-7f2afa637206" />
+                    </propertyInstance>
+                    <elementDefinition Id="959ad304-a60b-41fa-a1a7-b104edba9024" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8afcf00a-a7a8-459d-a30b-f8b825ceb7e9">
+                    <propertyInstance Id="93a0b9c8-a525-475c-bb83-5a8467d24df3" name="IsPartial" value="false">
+                      <elementDefinition Id="68d3f3af-878e-472f-a1f6-9ec531cae0c5" />
+                    </propertyInstance>
+                    <elementDefinition Id="ed391bd9-fea0-4e2e-a79b-82588d90408d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e6c33607-1c2e-4162-8174-752b25e5f648">
+                    <propertyInstance Id="7f959108-ae16-4468-9e47-76f107ca2dee" name="IsUnsafe" value="false">
+                      <elementDefinition Id="5d05cd03-5a66-497a-af9c-3cf275876c7f" />
+                    </propertyInstance>
+                    <elementDefinition Id="d0e4dbcd-fd44-4b07-9597-33f0d21b0a67" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b158f70c-0929-45a0-a171-16008657167d">
+                    <propertyInstance Id="f12b203c-8130-40e1-af13-5008bd17b504" name="Inheritance" value="none">
+                      <elementDefinition Id="86cfaf3d-c584-4db5-bc3e-66e49e5beb8b" />
+                    </propertyInstance>
+                    <elementDefinition Id="d24e1383-ab40-4a3c-88a6-bfa362810b2a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9f804192-f32d-48a3-b30d-51bd42bc8159">
+                    <propertyInstance Id="e3bad51f-961a-4f0f-a60f-c9963a24b9f6" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="81b2b0e7-499a-466e-b2a9-7b572c1af141" />
+                    </propertyInstance>
+                    <elementDefinition Id="631eca94-c6b5-4070-b821-42fc8ce57311" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="603190b6-4bcd-4d14-b587-1cf9e2c996f1">
+                    <propertyInstance Id="26306efd-a5ba-4003-b41b-88cfaeef1332" name="params" value="false">
+                      <elementDefinition Id="0fb6a49f-5716-418e-843b-56a4d40a42a5" />
+                    </propertyInstance>
+                    <elementDefinition Id="19ed2fd1-8966-4a7b-91e2-7c3b79796989" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="c7333264-814f-4d35-8229-3c1fca6b3198" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b601a417-97b4-4fa2-a45a-e66dcb9f9d8b" direction="Return">
+                  <elementDefinition Id="151745d2-b86e-4b8a-a21d-7c886c7205b2" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="bc21f2f0-2f77-4061-800c-ad5e9cde8250" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a79ed603-0d73-4099-a678-d58a5172402b" name="file" direction="In">
+                  <referencesInternal>
+                    <reference Id="c206ce5b-b656-483f-8f26-7e54d1147b8c" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DAttachImageFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FFileDataAccess%2Fbin%2FDebug%2FFileDataAccess.exe&quot; Namespace%3DFileDataAccess.Database Type%3DDocumentFile)]) ParameterIdentifier%3Dfile" tag="ViewCode">
+                      <elementDefinition Id="1929dbe1-13c2-4aea-b8d8-3d3c87b35968" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="bbf71450-25f9-4f80-ada1-34907330b349" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="fc20467e-1320-40ba-8afc-3ce83ec9648d" LastKnownName="DocumentFile" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="0895c651-104d-4111-a4aa-3283d41f8419" name="DeleteTemporalImage" visibility="Private" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="e2ccd321-aa57-4546-8200-348b0e3306b6" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DDeleteTemporalImage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])" tag="ViewCode">
+                <elementDefinition Id="3a7b5213-7302-411a-a4cb-d7f6117b90ff" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="6f354d6c-9d3d-4526-a864-272e8817a346" name="method" profile="CSharpProfile">
+                <elementDefinition Id="0f8fdf54-76e3-4d59-b789-254424492a2e" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6becda37-7edd-4b34-86e5-37c256b94f28">
+                    <propertyInstance Id="002092dc-7b9f-4f3f-8083-27d9c33efd78" name="ClrAttributes">
+                      <elementDefinition Id="0e403c79-4077-4a50-8942-0724161a1be0" />
+                    </propertyInstance>
+                    <elementDefinition Id="9b5e6c1d-9a6e-45c4-8977-86ce8d338a29" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c7091d70-0755-4698-a075-65ab7ea07acc">
+                    <propertyInstance Id="54620447-041c-4489-bde5-4b87ebc4dc9d" name="IsPartial" value="false">
+                      <elementDefinition Id="cac9f30e-bc0f-4265-8160-40836d332b4c" />
+                    </propertyInstance>
+                    <elementDefinition Id="2480e58a-898c-404e-841d-7e4aabd2f96a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="af433518-6bae-40c0-a7fd-b65ca8db2289">
+                    <propertyInstance Id="3a56810c-f5c8-42de-a540-a8a2b4088434" name="IsUnsafe" value="false">
+                      <elementDefinition Id="ad0c3b5a-9d8f-4193-bd7b-a911a409e47b" />
+                    </propertyInstance>
+                    <elementDefinition Id="a429b2e9-8ac8-4654-a232-8ec4000c713d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cd7e9300-77c2-4d29-967c-6c36c522f36d">
+                    <propertyInstance Id="62cfa1b3-852d-494a-b5c8-3bff515a48cc" name="Inheritance" value="none">
+                      <elementDefinition Id="151e597b-970d-4049-b23d-5dc089286dc8" />
+                    </propertyInstance>
+                    <elementDefinition Id="de2c41f2-ce2f-464d-a1cd-8f662e69ff8b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4b47fbdf-0d37-4b38-aad6-a847bbd81327">
+                    <propertyInstance Id="c107bfa0-e174-4898-a4a3-96044badc88e" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="570839b5-0e38-45b9-b0d5-9523775d364b" />
+                    </propertyInstance>
+                    <elementDefinition Id="b3fe1b13-1064-49dd-be04-31d31b5d33c9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="74ce2a73-cfcf-4f27-9006-1d36f1311829">
+                    <propertyInstance Id="9724ecca-f49a-44f2-bb2b-cb6dfde0db18" name="params" value="false">
+                      <elementDefinition Id="469f8c42-5885-46a0-8b79-3c6e8ebcb118" />
+                    </propertyInstance>
+                    <elementDefinition Id="2814307f-2517-4084-ad37-db08ed9a3372" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="0511ddf1-f83b-4eb7-8308-fc1a3fa14345" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f19ff54c-584b-42ef-842b-cef574171488" name="file" direction="In">
+                  <referencesInternal>
+                    <reference Id="c3e69f97-3a39-4235-b58f-40b2ffc7d1c0" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DDeleteTemporalImage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dfile" tag="ViewCode">
+                      <elementDefinition Id="d63f1922-e0f1-4317-9c48-921ba0919987" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="9c6a3353-b0ea-48aa-b99f-c1abbcc110cd" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f3722c33-bde1-45ed-810d-6d5afcfdd3cd" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="88883275-957d-47e5-a18c-49602a5dd967" name="GetDocumentFullPathName" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="d849a860-0e10-4eba-b230-49273984241e" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DGetDocumentFullPathName OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FFileDataAccess%2Fbin%2FDebug%2FFileDataAccess.exe&quot; Namespace%3DFileDataAccess.Database Type%3DDocumentFile)])" tag="ViewCode">
+                <elementDefinition Id="85c33536-c083-49f3-872d-a357ade90531" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="4b4ce3b4-2ab8-4570-a745-c826547eb3a7" name="method" profile="CSharpProfile">
+                <elementDefinition Id="43b5c44c-f953-4783-a827-4370965aeb07" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5236349e-9f3f-4bc6-ad75-4d80ad172cc9">
+                    <propertyInstance Id="b74bb136-19a2-4123-953a-3e059ee621ed" name="ClrAttributes">
+                      <elementDefinition Id="a44fc7fc-0564-4e10-9341-d41bf25deb9f" />
+                    </propertyInstance>
+                    <elementDefinition Id="634d6f0f-3760-4e23-95db-2f02d3e2c24b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6c1cece9-7261-4157-a197-ab377068e5ed">
+                    <propertyInstance Id="e0b62cca-4a73-42d9-89ac-f9c2fdf6dd9a" name="IsPartial" value="false">
+                      <elementDefinition Id="36f2d862-4e65-44b8-9590-5ee3475b280c" />
+                    </propertyInstance>
+                    <elementDefinition Id="3a0f6863-efb7-4f27-af38-2273061ffa77" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="bc45a531-ed49-42f1-b832-82b75b6a38e0">
+                    <propertyInstance Id="3d10f76a-4429-4050-9890-69e9f699364e" name="IsUnsafe" value="false">
+                      <elementDefinition Id="a136d275-0b9e-489f-8e2f-83b80bee36b9" />
+                    </propertyInstance>
+                    <elementDefinition Id="b4083edc-d649-492d-bbc8-a2c911d0e09f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="443a1c66-2ecd-4208-b15f-e2a3353de1cc">
+                    <propertyInstance Id="0c03d7e8-b982-499d-b096-63e534532cba" name="Inheritance" value="none">
+                      <elementDefinition Id="9a571057-9535-45b9-9637-8b68ab6bec3b" />
+                    </propertyInstance>
+                    <elementDefinition Id="1a6d21fc-9f8b-4d43-bfcc-699fb8c2ac83" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="51db76c5-f351-4cd1-81bc-1156bf331c67">
+                    <propertyInstance Id="539b96e5-c73d-4046-97fc-8c6a55c31ed7" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="316b6b33-d380-4a9d-8994-02f27726a910" />
+                    </propertyInstance>
+                    <elementDefinition Id="1cb6780a-4206-4ef2-a972-6bd9291729db" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1ec8d807-2424-4676-b9f6-c4ba67bd627b">
+                    <propertyInstance Id="e68084a1-5bbf-40f9-93ff-aa5bd14f9a8e" name="params" value="false">
+                      <elementDefinition Id="34e9bcf4-d50c-45b0-86cc-b62aea28b552" />
+                    </propertyInstance>
+                    <elementDefinition Id="e63ca921-df3f-4826-afbf-45cf65f063a3" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="8287eb52-eb90-4d91-b4d4-9a220e5055b7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ea458b50-ff3f-4d52-b7b8-39c13d0c980b" direction="Return">
+                  <elementDefinition Id="05138b48-3fe2-47f9-b69e-b80c9e811276" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f3722c33-bde1-45ed-810d-6d5afcfdd3cd" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4766d475-d0a0-4999-9c4f-02b6d50833d3" name="file" direction="In">
+                  <referencesInternal>
+                    <reference Id="a9273466-40d9-4fd4-a0ea-4facec81b538" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DGetDocumentFullPathName OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FFileDataAccess%2Fbin%2FDebug%2FFileDataAccess.exe&quot; Namespace%3DFileDataAccess.Database Type%3DDocumentFile)]) ParameterIdentifier%3Dfile" tag="ViewCode">
+                      <elementDefinition Id="3a68312f-6bf7-4690-868b-5ffec03a4bfd" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="46cf4aea-9fc8-4027-9645-69ade2b9c5a8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="fc20467e-1320-40ba-8afc-3ce83ec9648d" LastKnownName="DocumentFile" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="10f11b45-c9de-4664-80c7-9958565de533" name="GetFilesFromDirectory" visibility="Private" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="b7541872-a61b-4706-89e5-b78827c5f869" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DGetFilesFromDirectory OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))])" tag="ViewCode">
+                <elementDefinition Id="76bee74d-a8b9-4780-8bba-a383e5aff4b2" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="b7c3adff-5e25-4573-a8a1-9bedabc8419e" name="method" profile="CSharpProfile">
+                <elementDefinition Id="b53d066c-ec49-446f-9cbd-79890f40aca7" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fa943453-ce65-4e62-a7b2-afbfd7c2495d">
+                    <propertyInstance Id="f90ab5f0-9b4a-49fd-ad16-1b501a5df736" name="ClrAttributes">
+                      <elementDefinition Id="cd5a3226-7cf4-4f1c-865a-a592436bfff5" />
+                    </propertyInstance>
+                    <elementDefinition Id="7650eec0-97fc-4655-aa69-ba197eb3685f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3d64c824-2f0d-481e-9061-dfa0f36863ea">
+                    <propertyInstance Id="37ba2d04-53b3-4896-8ef8-92d0c87b8a03" name="IsPartial" value="false">
+                      <elementDefinition Id="967c9d89-d0ca-460e-a00f-43c779c92c49" />
+                    </propertyInstance>
+                    <elementDefinition Id="914b2d75-19b2-412f-8739-0b7b725fe6ed" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b1aa5cb5-8bb8-4a75-bc57-f303dca4d186">
+                    <propertyInstance Id="4a3835e3-368c-4888-b65d-d7f0683f0057" name="IsUnsafe" value="false">
+                      <elementDefinition Id="6d3bd5ce-881e-4625-a134-579c86eac023" />
+                    </propertyInstance>
+                    <elementDefinition Id="8e7071ad-55b3-45eb-bb56-6eecc2f53d80" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="382d4673-5946-471c-8b1f-40544d1655b2">
+                    <propertyInstance Id="9d0ac75f-ee83-45a6-853e-8d931db0b166" name="Inheritance" value="none">
+                      <elementDefinition Id="801b62ab-f21f-41f6-8eef-a0f600512825" />
+                    </propertyInstance>
+                    <elementDefinition Id="8c8a6619-c9a9-41e3-a017-725c76de8cb6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cdcd621c-dc24-4661-8933-64eae4d292e8">
+                    <propertyInstance Id="0ee1f395-bbf2-4749-99d6-cc9c7f047f4d" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="b623e989-611e-46df-a129-f25c70a9601c" />
+                    </propertyInstance>
+                    <elementDefinition Id="5a0f1a2b-0d58-43c4-90a0-df16ebd63c52" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e0bb35c9-662c-4a4b-8faa-d83f7b11f4ff">
+                    <propertyInstance Id="68f9276e-fcdb-410e-8c0d-45b3a4e2b7bb" name="params" value="false">
+                      <elementDefinition Id="52bbde8c-f398-4d57-9bd4-900f45f7c986" />
+                    </propertyInstance>
+                    <elementDefinition Id="a8d90153-b989-4e93-b9a9-71c76bb2239b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="8d543125-e771-43af-8741-e96d3356679a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="70a1dab2-6514-4030-9e60-aebd682fc606" direction="Return">
+                  <elementDefinition Id="697e4c1a-baf2-41e3-acb9-f6804af8f939" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="78d2d618-108d-49b9-8ffe-bdd2f0ee0156" LastKnownName="List&lt;String‎&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0d68ad66-7f3b-4ff6-9324-af17ae65d042" name="path" direction="In">
+                  <referencesInternal>
+                    <reference Id="8d3a3441-a775-4bf4-b72e-e910c41642cf" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DGetFilesFromDirectory OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))]) ParameterIdentifier%3Dpath" tag="ViewCode">
+                      <elementDefinition Id="33c5430d-e05a-4f16-9d00-e21bcd1f9538" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="7854b32d-43ae-45ef-9ddf-bfaa67da0d7d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f3722c33-bde1-45ed-810d-6d5afcfdd3cd" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="88ea0a75-dcb2-4096-8b9d-c695d7464acf" name="filePattern" direction="In" isOrdered="true">
+                  <referencesInternal>
+                    <reference Id="b21f0943-9efd-4e0e-b9fa-8715f0bff2fc" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DGetFilesFromDirectory OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))]) ParameterIdentifier%3DfilePattern" tag="ViewCode">
+                      <elementDefinition Id="d970b39f-448d-46c3-9d1c-2f3f6aba4e92" />
+                    </reference>
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString Id="b0acc281-aa43-4ef1-865b-d3bd57a401b5" name="Lower" value="*">
+                      <elementDefinition Id="26d9f9ee-0072-4bc3-80ce-39d0346f45ed" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="3a4cd04a-6369-4e72-bbd4-57857f73ade0" name="Upper" value="*">
+                      <elementDefinition Id="a28546a8-b270-4615-a52c-a2455d8b067f" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="5423a848-42ab-4a89-a2cd-c9afdfce2cc7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f3722c33-bde1-45ed-810d-6d5afcfdd3cd" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="7c89a4e0-eded-4ef2-99a3-f4bba71d51e8" name="IndexFile" visibility="Private" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="ef9c8ea1-def1-4c37-b6a9-667a67e18163" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DIndexFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.IO Type%3DFileInfo)])" tag="ViewCode">
+                <elementDefinition Id="96c19d9f-5183-44f4-bfca-4ec9d9334600" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="8619e2a2-c0e1-4b2c-baf7-b3f63b398a93" name="method" profile="CSharpProfile">
+                <elementDefinition Id="344e6415-cef2-4c9c-b37f-d6b5bf9e1134" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9bdeaea3-f776-4b2e-8b08-6b9ad2a7711b">
+                    <propertyInstance Id="a5838f66-2fec-4de1-8160-60fa1b245775" name="ClrAttributes">
+                      <elementDefinition Id="fb9e7775-b7cd-4ad6-a872-21180ab7adf1" />
+                    </propertyInstance>
+                    <elementDefinition Id="ffd9d015-bad7-43a6-a1cc-3b7d2390d1b1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3ffe4170-49e6-4f45-9f03-abc7277982cf">
+                    <propertyInstance Id="0ef468a6-51ae-4909-9c9a-20b4d817ca6f" name="IsPartial" value="false">
+                      <elementDefinition Id="045e961c-a654-40d6-a353-d901bfcf2d22" />
+                    </propertyInstance>
+                    <elementDefinition Id="a2202d20-9411-47a2-9861-6592dc0caf2b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="63715083-ba66-4107-825a-6f0b8065e647">
+                    <propertyInstance Id="858b3351-4d27-445a-8eb9-a25b7e11c3b7" name="IsUnsafe" value="false">
+                      <elementDefinition Id="13cc135e-b09b-4447-bebe-9cb086fd7814" />
+                    </propertyInstance>
+                    <elementDefinition Id="427c9d5c-10d2-43f4-9976-b70d5674f0f2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="927cd056-cf60-49a5-b002-dd856718562c">
+                    <propertyInstance Id="7131daf1-2057-4f71-9bb2-3dcc57119ec1" name="Inheritance" value="none">
+                      <elementDefinition Id="bdaf0401-6f7e-4903-a085-47566d60bc56" />
+                    </propertyInstance>
+                    <elementDefinition Id="6bb7346d-4985-4657-8c61-2c4b64a6fa41" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e75e2b40-9519-491c-b931-a69bd53e34b1">
+                    <propertyInstance Id="167057ab-4216-433c-b182-6bc7a00e9d8a" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="680bc75f-a121-43ab-b4b4-e958b42e4acd" />
+                    </propertyInstance>
+                    <elementDefinition Id="da824139-0186-425d-a444-76b514fc2905" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2287b795-932f-4b28-9f3f-b80e0e89c7c2">
+                    <propertyInstance Id="b312abf3-0162-4ec5-ae58-1a3ae32d06c4" name="params" value="false">
+                      <elementDefinition Id="f0a47b49-c67e-4f51-ba6d-a5d0c7ef1fde" />
+                    </propertyInstance>
+                    <elementDefinition Id="b59e8091-2d9a-40ec-b712-772d5e1731e1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="e9532d33-f34b-4d14-91be-659c05c875fb" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9142214d-ffa9-480f-ba04-b1c3f071450f" name="info" direction="In">
+                  <referencesInternal>
+                    <reference Id="896f6c69-9cd4-44dd-9b4a-c03481e0a520" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DIndexFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.IO Type%3DFileInfo)]) ParameterIdentifier%3Dinfo" tag="ViewCode">
+                      <elementDefinition Id="efc5ea6f-6b60-40f1-b191-006a159ce49b" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="51423a87-e9db-4f01-bf78-ee6611c38461" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="193c134d-bd97-4c31-8438-90f2c6bcca59" LastKnownName="FileInfo" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="ffe3d7b7-999d-4588-87df-baaff0cdbc24" name="OnFileChanged" visibility="Private" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="003027f9-2d8a-4dae-a03e-15a1222329bf" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DOnFileChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.IO Type%3DFileSystemEventArgs)])" tag="ViewCode">
+                <elementDefinition Id="9e8b0c31-2f54-4ac0-b67c-233b94f0defb" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="4487b098-f8d7-42ab-87c1-f6c82ddc4629" name="method" profile="CSharpProfile">
+                <elementDefinition Id="c7bdee01-cc0c-40f7-b7f8-baa42c7948aa" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7d03d040-101a-4bc0-b729-075019d42154">
+                    <propertyInstance Id="b0db87b9-ca37-4df8-b5c5-8ed2af4f50c4" name="ClrAttributes">
+                      <elementDefinition Id="fb691986-5d76-4c2a-8ad2-61ed0dc22b4a" />
+                    </propertyInstance>
+                    <elementDefinition Id="d5f4a0f7-7263-4960-8774-478462b83f2f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="97cc3872-5748-4aac-b03e-d852f175956e">
+                    <propertyInstance Id="5a0a6d3b-b9b7-45c1-893c-29ab385afeb9" name="IsPartial" value="false">
+                      <elementDefinition Id="5ca850af-f55e-4623-b43c-76277fb080d5" />
+                    </propertyInstance>
+                    <elementDefinition Id="52f6c041-a1f2-4be5-964d-d8c954f525b2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="95e21e76-25c3-4eed-bb7a-fbbc966a8643">
+                    <propertyInstance Id="213a8cd2-d46b-46e3-971d-49905cdc1fbb" name="IsUnsafe" value="false">
+                      <elementDefinition Id="5ae09683-a825-4dff-9cb5-dfc18b66227e" />
+                    </propertyInstance>
+                    <elementDefinition Id="df076edb-6154-42ff-b7a3-077cdad951c4" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="dd8ee4c5-aa75-49aa-ad19-ad32735c6a56">
+                    <propertyInstance Id="b41d09bb-9cf9-4874-95f3-c3159e8c1dad" name="Inheritance" value="none">
+                      <elementDefinition Id="7a625f29-4255-420e-920f-d1c502e9d444" />
+                    </propertyInstance>
+                    <elementDefinition Id="435771fa-0e0e-43c7-a45c-d3055ce1c101" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="88480ca2-3c7e-41ef-ac08-743c50297591">
+                    <propertyInstance Id="5a40f506-fb07-42c0-9c52-30a766a0efcf" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="087d3481-04b8-48c0-8161-0428254f21ca" />
+                    </propertyInstance>
+                    <elementDefinition Id="35cacec9-707f-4f40-900a-b325c0af709c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4d20992c-7d49-4235-84c9-364cde539c30">
+                    <propertyInstance Id="f20bb3f5-b6fa-4271-9c54-9c95f0b99636" name="params" value="false">
+                      <elementDefinition Id="d8386fa4-5937-4ba0-bb4c-7b2e6a4ecb71" />
+                    </propertyInstance>
+                    <elementDefinition Id="893ecd29-f556-4728-990e-c339a10954c8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="4aea123c-5499-4a42-996e-83bc5785749c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f95c531b-9eb2-4563-a305-d778bff09791" name="sender" direction="In">
+                  <referencesInternal>
+                    <reference Id="4e2d9830-4150-4fa8-a0f1-738f9d294eee" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DOnFileChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.IO Type%3DFileSystemEventArgs)]) ParameterIdentifier%3Dsender" tag="ViewCode">
+                      <elementDefinition Id="14c27bb2-02ed-4473-a5af-b9af217079cd" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="c545cd86-004c-4401-8492-238e21313b10" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="2cb4d185-dddd-4500-9a5f-c520314fbe24" LastKnownName="Object" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f0573d1f-57e7-4ea1-beb2-30d1fdb98514" name="e" direction="In">
+                  <referencesInternal>
+                    <reference Id="c34bbdd8-e382-44b8-a7e2-6f51529707c3" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DOnFileChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.IO Type%3DFileSystemEventArgs)]) ParameterIdentifier%3De" tag="ViewCode">
+                      <elementDefinition Id="2edce411-548c-4fe7-932b-b3d4e5872b9c" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="545f09da-5e1e-4e66-94da-c6d112233a26" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f677d51b-0441-4175-a309-97a52ac3a0dc" LastKnownName="FileSystemEventArgs" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="343e64a5-5168-4fdb-b1e8-e4ce653809f4" name="OnFileCreated" visibility="Private" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="d857a4f9-d8cc-47c5-9d17-4e3cf3458118" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DOnFileCreated OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.IO Type%3DFileSystemEventArgs)])" tag="ViewCode">
+                <elementDefinition Id="fffbc467-1f63-4d27-a89b-4e4c6be6ecf7" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="fc689c17-463e-4636-b5b7-19654917e9b6" name="method" profile="CSharpProfile">
+                <elementDefinition Id="04806451-b6fd-4adc-957e-5950822a375d" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a347fb4d-ba0e-43b5-b5ac-42231e9519d9">
+                    <propertyInstance Id="0222565a-b5a1-47a0-a706-abfeaa5d1821" name="ClrAttributes">
+                      <elementDefinition Id="1ebf96ab-bc0b-4b34-bb9d-a0bbe6bb214c" />
+                    </propertyInstance>
+                    <elementDefinition Id="f8f56cd3-4887-46af-8c06-d7094168806f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="505146d4-db1a-4bfe-844a-0cf26d3ecd26">
+                    <propertyInstance Id="224ea1c3-805f-438f-b40e-0666a915b007" name="IsPartial" value="false">
+                      <elementDefinition Id="6b382366-e1d5-4d14-ab7c-77466c35d311" />
+                    </propertyInstance>
+                    <elementDefinition Id="e76cfbbf-e8a5-4710-b7bf-d2817700f83e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b368eda4-1ab1-401e-ab11-4dc2c6ca4143">
+                    <propertyInstance Id="66763c16-6031-4448-8d0c-0974ac50eebd" name="IsUnsafe" value="false">
+                      <elementDefinition Id="bb029af7-1ae5-48a8-bdcc-fe17d6822c2a" />
+                    </propertyInstance>
+                    <elementDefinition Id="82d61e57-5f95-445d-b834-b0797517a38f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="365c165b-866e-4e9f-bc1b-27e3c472b942">
+                    <propertyInstance Id="63f620fb-aa48-4dff-a852-a84fade0137c" name="Inheritance" value="none">
+                      <elementDefinition Id="4e8df4f9-c989-4226-947f-07e731290d96" />
+                    </propertyInstance>
+                    <elementDefinition Id="f3002d0e-a9bc-4e8a-845f-ac62b7d58d6d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="af591de5-0de6-4e95-be76-cc4bf4dc0df2">
+                    <propertyInstance Id="a3b71872-48e2-470b-aeb7-c4f8af729e5d" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="9e682ee2-10f1-4f9d-b194-e7d802f87d22" />
+                    </propertyInstance>
+                    <elementDefinition Id="372a5733-daf2-4469-add9-b7d6889edc82" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="57679719-d3dd-4957-b4d5-832b6451e2a1">
+                    <propertyInstance Id="64b29ce2-2d59-425c-af53-cac2f4ad5091" name="params" value="false">
+                      <elementDefinition Id="378f7c36-7b77-494d-9102-63b9177bc96f" />
+                    </propertyInstance>
+                    <elementDefinition Id="79d3970c-1962-47d2-9f69-d87043092636" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="3a6e9d73-1d76-4a7b-8c2e-29ad0990fbfe" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5fa0db6a-b379-4774-964a-17488a40df25" name="sender" direction="In">
+                  <referencesInternal>
+                    <reference Id="79708183-61b3-4568-9938-56961d9d86ea" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DOnFileCreated OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.IO Type%3DFileSystemEventArgs)]) ParameterIdentifier%3Dsender" tag="ViewCode">
+                      <elementDefinition Id="a4cb5410-6e35-474a-9092-acfbb27740a8" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="2a97e176-0f65-4454-889b-2f498d8db291" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="2cb4d185-dddd-4500-9a5f-c520314fbe24" LastKnownName="Object" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="25aec374-83d0-43d1-914b-bfbeaa1d3e45" name="e" direction="In">
+                  <referencesInternal>
+                    <reference Id="b6f302fb-66ec-4b46-bf74-1a866347cfe4" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DOnFileCreated OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.IO Type%3DFileSystemEventArgs)]) ParameterIdentifier%3De" tag="ViewCode">
+                      <elementDefinition Id="ec0b11a6-239b-4738-a8b0-5f31c604bb02" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="5d5767dd-a7e4-4546-aacf-a74271bd94df" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f677d51b-0441-4175-a309-97a52ac3a0dc" LastKnownName="FileSystemEventArgs" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="3625e346-4224-4594-915d-1b186373fedc" name="OnFileDeleted" visibility="Private" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="66facf16-b1b1-4ac2-9154-9488526556ca" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DOnFileDeleted OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.IO Type%3DFileSystemEventArgs)])" tag="ViewCode">
+                <elementDefinition Id="eb47d8c3-c4df-41ff-b069-fbed341dc2b5" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="416343ed-1a79-4bfb-860e-bddcc3467e72" name="method" profile="CSharpProfile">
+                <elementDefinition Id="28051011-3622-4827-9880-c436861edff4" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a0078299-b350-480a-8404-a9a896455048">
+                    <propertyInstance Id="1c2d9d43-2fbc-40b4-aeb9-1e8ff4add956" name="ClrAttributes">
+                      <elementDefinition Id="7287fcea-0fbc-4837-b82e-c5decb6d5d2c" />
+                    </propertyInstance>
+                    <elementDefinition Id="a9291434-e471-46d7-ab66-415d465d8a12" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="93681578-8b17-4143-b648-5e585c51fe3a">
+                    <propertyInstance Id="debffe6e-8764-42ee-aa33-420be13bd3f6" name="IsPartial" value="false">
+                      <elementDefinition Id="6dc8723e-e61d-4269-a659-f63f1498b9ed" />
+                    </propertyInstance>
+                    <elementDefinition Id="2b647f3e-c8a9-432e-8450-4c674e0ef89b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="13f5b4cf-a4da-42bf-93bd-a01e619b25b4">
+                    <propertyInstance Id="f8542166-132f-4bec-9a19-6c3ed0df795b" name="IsUnsafe" value="false">
+                      <elementDefinition Id="0eefa525-e4fb-429c-bc75-6b7f7d99007c" />
+                    </propertyInstance>
+                    <elementDefinition Id="d25ad74c-771e-4d00-8976-660d6627ae57" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="103eb75f-c142-4b89-859f-da31b33d0c3f">
+                    <propertyInstance Id="c7c73638-5b98-4800-8703-43fe6053ea17" name="Inheritance" value="none">
+                      <elementDefinition Id="6b9b5fe6-45be-49b7-96a1-85f9241b3092" />
+                    </propertyInstance>
+                    <elementDefinition Id="5ea7789e-db4b-401d-b401-e8c9c98600bf" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="309c2989-1cf3-4663-959a-e0265821d8f7">
+                    <propertyInstance Id="0ea2aedc-57b9-481f-aa3f-b557407c952e" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="ce3b0bf1-8896-4df7-9a7d-d96a6f176b40" />
+                    </propertyInstance>
+                    <elementDefinition Id="dcc7fcf0-235a-4a93-a21e-49f8199c23d9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c490c4ae-c8b1-447f-9981-0f4e48668b1d">
+                    <propertyInstance Id="2a216762-8098-4aef-bddc-059d569c15d9" name="params" value="false">
+                      <elementDefinition Id="902d9a30-2112-415d-9012-425380cf3169" />
+                    </propertyInstance>
+                    <elementDefinition Id="582f62f8-eced-4a6d-bad6-ec1c74aff403" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="6cbc9e37-ab18-4b09-9254-f46e66934a0a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ef555853-7c12-4911-a153-c28966dc974c" name="sender" direction="In">
+                  <referencesInternal>
+                    <reference Id="142c2ec0-d1c4-4286-ae4b-d604afb19665" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DOnFileDeleted OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.IO Type%3DFileSystemEventArgs)]) ParameterIdentifier%3Dsender" tag="ViewCode">
+                      <elementDefinition Id="855fc327-9d1d-4753-9835-a3ed7d39b356" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="ed863dc1-37dd-4979-adb4-75e740226f26" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="2cb4d185-dddd-4500-9a5f-c520314fbe24" LastKnownName="Object" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6eae7df6-cb4d-4e55-be90-ce90a20ae893" name="e" direction="In">
+                  <referencesInternal>
+                    <reference Id="3dd933c8-5bc6-4d89-b51e-5b0368b0a1af" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DOnFileDeleted OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.IO Type%3DFileSystemEventArgs)]) ParameterIdentifier%3De" tag="ViewCode">
+                      <elementDefinition Id="a83dabc7-dfdc-4834-aee3-def0d905b320" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="849062ff-610f-412d-acdd-72b3165df989" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f677d51b-0441-4175-a309-97a52ac3a0dc" LastKnownName="FileSystemEventArgs" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="599c1852-bf5e-416d-8185-558991acfdfd" name="OnFileRenamed" visibility="Private" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="1fa3aafe-ff26-4082-a884-718fcbb4cd1c" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DOnFileRenamed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.IO Type%3DRenamedEventArgs)])" tag="ViewCode">
+                <elementDefinition Id="b71d7cca-9faa-492d-bf6c-1203ab995f91" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="a6980f9a-b597-48ee-9b44-5cd86fdfc83c" name="method" profile="CSharpProfile">
+                <elementDefinition Id="98d9687c-a942-45ec-b0e5-bd21bcd4eb87" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d59cd417-35b8-43b6-97e9-279ca1010de7">
+                    <propertyInstance Id="d04cbdf0-0ec8-4b89-afe8-35992d7536b8" name="ClrAttributes">
+                      <elementDefinition Id="94ee9562-7ed6-4332-aab1-961721c11ac7" />
+                    </propertyInstance>
+                    <elementDefinition Id="cf92b126-cd06-43f9-8d0a-f720d81693c5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d337ea08-f71f-4d68-ba01-0f42d9ba7245">
+                    <propertyInstance Id="ef3267ab-4fa4-42ab-93f3-4829c8b9ef97" name="IsPartial" value="false">
+                      <elementDefinition Id="9573f131-b824-4e7c-aa2a-4d93e10c723e" />
+                    </propertyInstance>
+                    <elementDefinition Id="cfc3d482-7713-46b7-ae38-203acef03526" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="83c1faf6-e47b-481f-b16e-6294e6afb86e">
+                    <propertyInstance Id="8019ae35-14d6-46b1-b3e1-780611c4c1ec" name="IsUnsafe" value="false">
+                      <elementDefinition Id="70b80463-fd1e-4121-b0a6-2a3a9506f652" />
+                    </propertyInstance>
+                    <elementDefinition Id="e096c973-aafb-4426-8b10-fdb582f0f253" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c4bee7dc-82d2-48bb-957f-45b566e0e07d">
+                    <propertyInstance Id="9d52847d-572c-42a0-b527-2c5f9a48d437" name="Inheritance" value="none">
+                      <elementDefinition Id="be6f9d8b-9590-4fcf-8e99-3cfd987c2cbd" />
+                    </propertyInstance>
+                    <elementDefinition Id="7706b001-c9a8-4b7d-bb76-2a7789a1ba22" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1c070711-6ad8-4961-a373-365d601d748a">
+                    <propertyInstance Id="892fe44a-da79-469b-ae44-5cecf2bc07f5" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="f65ff979-e29b-4da8-a597-dca78adb2055" />
+                    </propertyInstance>
+                    <elementDefinition Id="7da87890-cfed-4c82-9547-c449339e2c2b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cef74f20-afc0-45ab-b31b-5ea09f6766b0">
+                    <propertyInstance Id="3632ce60-bc37-4324-ada1-cfa75cc6587e" name="params" value="false">
+                      <elementDefinition Id="3e4d90d1-5937-406b-a41f-87b9440e54bf" />
+                    </propertyInstance>
+                    <elementDefinition Id="09d28349-45a8-48ce-bc40-6f2c946e2524" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="b1bca09f-dd59-4fda-8373-6456cb69d156" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c96d1647-157b-4ea1-bbef-a181ee5d97a0" name="sender" direction="In">
+                  <referencesInternal>
+                    <reference Id="b0618299-249a-4bdb-8dbf-668aeb332922" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DOnFileRenamed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.IO Type%3DRenamedEventArgs)]) ParameterIdentifier%3Dsender" tag="ViewCode">
+                      <elementDefinition Id="b966e919-872d-4deb-aef4-306ae966acb1" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="14b67f86-0d78-4691-b524-4b66d5acbe08" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="2cb4d185-dddd-4500-9a5f-c520314fbe24" LastKnownName="Object" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="222cbb96-e52e-4c73-8260-847a9e06b8b8" name="e" direction="In">
+                  <referencesInternal>
+                    <reference Id="048b2817-ae4b-477f-b4a5-f9787b5b8e4a" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DOnFileRenamed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.IO Type%3DRenamedEventArgs)]) ParameterIdentifier%3De" tag="ViewCode">
+                      <elementDefinition Id="711e8db4-e693-4d56-9619-229227538d81" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="f988bd15-42ea-44e2-a8b2-f69d5e7d32d4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="dd7e0ddb-3a91-4581-b61d-704c46636a4a" LastKnownName="RenamedEventArgs" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="1372f924-355c-4e0a-ad2b-ac184b0289e0" name="ProcessIndexation" visibility="Private" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="13415e45-cf21-48c6-acb6-e9d2a9114e0e" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DProcessIndexation OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DAction GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.IO Type%3DFileInfo)]))])" tag="ViewCode">
+                <elementDefinition Id="cbacb15d-37e4-43c4-8a47-368399ef1816" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="a21fb935-a9e7-40d8-99fd-8baf9b7e6148" name="method" profile="CSharpProfile">
+                <elementDefinition Id="4ea11787-160f-4adb-ba61-4040cffc1fdc" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="17640cf6-ec50-4dee-86a7-6c19d7f043f4">
+                    <propertyInstance Id="6b24a124-72fd-46ea-9a3e-3c22bb63320d" name="ClrAttributes">
+                      <elementDefinition Id="9fe6c34f-67c3-4953-a988-5e6294129acf" />
+                    </propertyInstance>
+                    <elementDefinition Id="210af0b3-b1da-4a87-8cf9-1aebc1adc835" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2bedbd0b-bf8c-458f-81b7-f6b3bcf083c6">
+                    <propertyInstance Id="47c3f09f-be99-4002-9d55-f992ca8c5c86" name="IsPartial" value="false">
+                      <elementDefinition Id="7935c93d-c457-4c69-865a-ef437f48e92f" />
+                    </propertyInstance>
+                    <elementDefinition Id="32bb2f40-8fe1-4cd9-acce-2da349a49485" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="02c4f6dc-9baa-4385-9b8b-34eec4b023be">
+                    <propertyInstance Id="dc0617a1-d8ce-45e1-be9e-40686050d32a" name="IsUnsafe" value="false">
+                      <elementDefinition Id="c2db2af5-893b-4118-9fd0-8e7f8e51884a" />
+                    </propertyInstance>
+                    <elementDefinition Id="be8ac542-cd0c-4891-819d-2d1d04ed983d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cda4fe45-94e2-432e-a61d-77fa6473ec66">
+                    <propertyInstance Id="8715cdf7-e90d-4dc5-8f70-6d7318176800" name="Inheritance" value="none">
+                      <elementDefinition Id="b2f6a85e-de9d-4ec9-8195-60b7572475e7" />
+                    </propertyInstance>
+                    <elementDefinition Id="8138b702-1c14-4261-a48a-ba8153b91559" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ca20dce0-08e3-42b4-b909-970cc1cfcb22">
+                    <propertyInstance Id="6859f868-fcf3-435d-8a83-d1cc6840e234" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="2836e5b5-0276-4c63-8e7d-09eb509d499a" />
+                    </propertyInstance>
+                    <elementDefinition Id="114d7e76-8462-4434-ab4a-e3d0894bb1d9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b9875a38-827a-40da-b273-8dabb39815b9">
+                    <propertyInstance Id="fec6e252-51e7-41e2-901d-8a63aac09b00" name="params" value="false">
+                      <elementDefinition Id="fc373042-feef-40f1-a2ed-ca644ef382ce" />
+                    </propertyInstance>
+                    <elementDefinition Id="65412aa9-af14-481c-867c-e77a822b7d1d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="025b5d24-d0f5-4655-b463-27f3c314363c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e6fb2c32-f5dc-4d46-85c5-a1e65001a6f5" name="path" direction="In">
+                  <referencesInternal>
+                    <reference Id="e19c3882-9efb-419a-9022-92dd313aa49a" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DProcessIndexation OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DAction GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.IO Type%3DFileInfo)]))]) ParameterIdentifier%3Dpath" tag="ViewCode">
+                      <elementDefinition Id="4bae85fb-a6d7-4180-8d51-eb060a13cdd8" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="88656b13-743a-4ead-9598-9de1a77114b5" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f3722c33-bde1-45ed-810d-6d5afcfdd3cd" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b7015bc3-a5f6-4129-b425-0df07c0f5da1" name="filePattern" direction="In" isOrdered="true">
+                  <referencesInternal>
+                    <reference Id="2e891b55-29ca-4ebd-af47-503ccb9a05cf" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DProcessIndexation OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DAction GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.IO Type%3DFileInfo)]))]) ParameterIdentifier%3DfilePattern" tag="ViewCode">
+                      <elementDefinition Id="ce11cac3-0bab-4533-b08b-12ba0d67d456" />
+                    </reference>
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString Id="d436fe93-7938-43d1-a763-a016bf21871b" name="Lower" value="*">
+                      <elementDefinition Id="386b8573-7258-4966-a3e3-1eef7af258b6" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="802eb61f-26e9-4265-a3ba-db681e3da4e5" name="Upper" value="*">
+                      <elementDefinition Id="d5a633f7-cf3e-47f9-af66-4ca40b2c31bf" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="3d74bb1f-61ae-4423-be1b-b3ccbb7b483a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f3722c33-bde1-45ed-810d-6d5afcfdd3cd" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9e72b40d-a3d5-4582-9c25-07fc06fc441b" name="indexationFunction" direction="In">
+                  <referencesInternal>
+                    <reference Id="87a76918-d317-413d-bed1-d203e93cec92" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DProcessIndexation OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DAction GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.IO Type%3DFileInfo)]))]) ParameterIdentifier%3DindexationFunction" tag="ViewCode">
+                      <elementDefinition Id="08bd58c3-bc24-4676-8c86-492f09725224" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="a06dddf3-d458-4977-97a0-d90c15dffd9c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="dbf1cc93-ec57-4f99-b166-13648ea5cddb" LastKnownName="Action&lt;FileInfo‎&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="9b83e227-1f5a-4f39-a34f-00743b73d53a" name="RunWatcher" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="7fc70efc-52ef-4482-afca-4446082a2d50" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DRunWatcher OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])" tag="ViewCode">
+                <elementDefinition Id="c74d3a97-1050-4e92-805e-9ece595c639e" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="3638a57f-2563-4a6c-a503-a3d2f041d0c7" name="method" profile="CSharpProfile">
+                <elementDefinition Id="9a1eb838-f217-4be8-ab6c-f0595c63f276" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7225e835-e404-4aba-b504-d7c4e88488cd">
+                    <propertyInstance Id="45197a83-425b-498e-ad90-f8b8df8d1a3d" name="ClrAttributes">
+                      <elementDefinition Id="bb90cd3d-60b7-4afc-9551-7f73f9f4c781" />
+                    </propertyInstance>
+                    <elementDefinition Id="5dc20ab4-7724-4626-85cd-6045f4f7f94d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8a50704c-2f52-4a19-9e6d-dc2597559c39">
+                    <propertyInstance Id="6ffd00b8-46fd-4b61-b5ef-b28b7bc1e971" name="IsPartial" value="false">
+                      <elementDefinition Id="aadeebdb-3724-4028-b9a3-4ce1220f34e6" />
+                    </propertyInstance>
+                    <elementDefinition Id="14159dd5-9124-4566-ba79-267d4e03d22f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="03e583fa-4e81-4fe9-a39d-d0856140cade">
+                    <propertyInstance Id="a2cb552e-903d-4d2f-b2f3-47df8f5d8b26" name="IsUnsafe" value="false">
+                      <elementDefinition Id="f73007e7-5eda-46d8-82b7-c070465b4538" />
+                    </propertyInstance>
+                    <elementDefinition Id="844cd571-7c8d-4dc3-9ac6-5586ae8e35b1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="39cdba4b-47d2-452c-a48a-0eb731e21f8c">
+                    <propertyInstance Id="e80908c6-fc0d-494c-bb4d-1a4cc1ac65b3" name="Inheritance" value="none">
+                      <elementDefinition Id="30ad895b-cd6a-428b-98a8-d8aab1706d8c" />
+                    </propertyInstance>
+                    <elementDefinition Id="f1a6f039-a2a1-4605-857f-372787d59667" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1e1804e1-26cf-4b36-9047-d6be2483530a">
+                    <propertyInstance Id="68e90b7a-d30d-495a-8e04-c7af920f4011" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="2ee8de27-42f0-4476-9007-158633c8750e" />
+                    </propertyInstance>
+                    <elementDefinition Id="8c34a859-1224-419c-b31a-527dc107695a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c14dfe5e-f588-443c-9719-33484836158b">
+                    <propertyInstance Id="39ad24f8-eb43-4a46-bb77-329c107f2311" name="params" value="false">
+                      <elementDefinition Id="a98d87da-1a2b-45d4-830b-3aa1d02ddb8e" />
+                    </propertyInstance>
+                    <elementDefinition Id="55eb647b-728a-4549-94bb-f8749b308f00" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="802215d8-e933-4eb0-8578-21bad850c62c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="da7021c3-4505-4efb-bb9c-26eceb2645e9" name="directory" direction="In">
+                  <referencesInternal>
+                    <reference Id="f09f472b-9aa9-4b66-afd9-73d65034a464" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DRunWatcher OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Ddirectory" tag="ViewCode">
+                      <elementDefinition Id="05235a16-4b74-4b4a-b259-492b0ea90a17" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="d52a96fe-17cd-4aca-bd0b-a10ce96ec01e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f3722c33-bde1-45ed-810d-6d5afcfdd3cd" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="bf97e19f-701e-4c66-93b2-bd1d09645161" name="SetInitialDirectory" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="c645fec2-7402-4c29-a966-2e33aa833256" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DSetInitialDirectory OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])" tag="ViewCode">
+                <elementDefinition Id="e7826700-0bfb-4e81-b3e8-803c42f0dbae" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="fa7ccc1c-4664-4991-a933-f1b35c45d257" name="method" profile="CSharpProfile">
+                <elementDefinition Id="01cb0806-889f-4053-96f2-a865bcc78cf5" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e45e3966-3ec8-4f8c-b6f1-08ef283e1e01">
+                    <propertyInstance Id="8618b937-d700-4247-80f6-0fa444197db9" name="ClrAttributes">
+                      <elementDefinition Id="c65ff8d3-7a39-4f0c-aee6-08f36b7cc975" />
+                    </propertyInstance>
+                    <elementDefinition Id="3886cf96-74c4-47b5-893b-472ee6cae754" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="82ee14e6-1ea6-45f2-94ce-ee0f412b5fa4">
+                    <propertyInstance Id="5f6469af-ae0b-4c3d-9b8a-10b110068a13" name="IsPartial" value="false">
+                      <elementDefinition Id="efcc8d8a-b917-459a-bf3e-b8c93c9f62a4" />
+                    </propertyInstance>
+                    <elementDefinition Id="7afd23b3-80db-44c8-96a1-f40fb915dcec" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9e7e9791-0547-43a1-96f9-6caae78db836">
+                    <propertyInstance Id="90ffe6d8-468f-47b9-b56c-64eeb2ca4bf6" name="IsUnsafe" value="false">
+                      <elementDefinition Id="62ea9a8e-1e30-45ae-83fb-89ca038053f4" />
+                    </propertyInstance>
+                    <elementDefinition Id="a7bd8839-a8cb-4d50-a097-684a9e7ba5dc" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0833c3c7-32a6-443a-b0d0-9adc5bcb70fc">
+                    <propertyInstance Id="9ec4a974-e751-42ee-bab4-86332273cfb0" name="Inheritance" value="none">
+                      <elementDefinition Id="1812307f-cb55-4a1e-baf3-418e6c2d7e63" />
+                    </propertyInstance>
+                    <elementDefinition Id="556e199c-6da6-4948-8760-7ebddd965e98" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0c0cd776-608d-487a-bbd6-4ed5e81ece31">
+                    <propertyInstance Id="9f4674b3-97f3-4d7b-90eb-a488fdd75166" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="7bb08b71-470d-4682-9ac5-6722853d3db6" />
+                    </propertyInstance>
+                    <elementDefinition Id="8a31bc58-3f58-4bbf-b2e3-3ec16a4c8b37" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="86f07265-ab0d-4570-8ada-3b125db6a3f2">
+                    <propertyInstance Id="68713262-654d-457b-99f1-75ea5781e0a5" name="params" value="false">
+                      <elementDefinition Id="b894b1e3-379f-472e-91d2-25e86be1fe38" />
+                    </propertyInstance>
+                    <elementDefinition Id="5b403486-6680-4ba3-a9a9-ce803aff347d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="0de3cd98-ee5a-4975-b25b-9044222eec29" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="22932118-2cb1-4129-a31f-d88f7dc64bc7" name="initialDirectory" direction="In">
+                  <referencesInternal>
+                    <reference Id="fb733974-6960-4339-9e17-862e0ddd7f9a" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DSetInitialDirectory OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DinitialDirectory" tag="ViewCode">
+                      <elementDefinition Id="87667755-3219-4de9-970f-ce762660f210" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="73adaba9-5ab0-477a-9be5-eaae8020342a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f3722c33-bde1-45ed-810d-6d5afcfdd3cd" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="01a019bb-0a8d-43f3-9830-16f60a74e3f0" name="TryIndexFile" visibility="Private" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="60347319-fd31-4404-b8b1-fbefab38ad01" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DTryIndexFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.IO Type%3DFileInfo)])" tag="ViewCode">
+                <elementDefinition Id="3b14c37b-1b53-476a-92a3-8584f1cab100" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="f0888d8d-2f09-4b3b-a0dc-becc66742277" name="method" profile="CSharpProfile">
+                <elementDefinition Id="1ed7d422-6462-4f5d-93ad-43065d246455" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0403c683-35f4-4dee-b9c2-80ccba368a3a">
+                    <propertyInstance Id="6a9bbbc2-9bf7-4756-a7af-bae9669be5f0" name="ClrAttributes">
+                      <elementDefinition Id="3a4437dd-051a-40c9-be79-80dfe00f5ea5" />
+                    </propertyInstance>
+                    <elementDefinition Id="18bdda9b-048d-4e4c-b50d-8a35eb3d304e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0b1860d6-d2b7-47f7-8904-6bc442d27b39">
+                    <propertyInstance Id="67d853d1-29c5-4e67-92b5-60aa9c620595" name="IsPartial" value="false">
+                      <elementDefinition Id="b4c1dfc8-43c6-46e7-89bc-2e9f298bfd09" />
+                    </propertyInstance>
+                    <elementDefinition Id="aba043af-920a-4418-86da-b9acf326a97c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="aec999c3-8f3c-46b4-bb94-9c20eb02eaff">
+                    <propertyInstance Id="f5743e3f-8379-44ed-b92a-324957f8f898" name="IsUnsafe" value="false">
+                      <elementDefinition Id="f599fcdb-8a97-405a-a30f-ca1dc8ba3512" />
+                    </propertyInstance>
+                    <elementDefinition Id="4df24c52-f78c-4ab4-b43d-9319f72d0119" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="54904ea9-5984-4dfe-b2a8-c83b99aedffe">
+                    <propertyInstance Id="9f254b7d-a68d-44a3-8107-edfd965a7360" name="Inheritance" value="none">
+                      <elementDefinition Id="a79463a5-8ed2-4504-8094-20e998892c87" />
+                    </propertyInstance>
+                    <elementDefinition Id="bf76f29f-919d-4750-9d6a-49f571654dd9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d967f46f-5786-445c-acf8-269d8275220d">
+                    <propertyInstance Id="f5738543-d766-4b0f-995c-971ed7e88b8a" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="37946d55-7210-4982-a8e0-e5688857bf3e" />
+                    </propertyInstance>
+                    <elementDefinition Id="53bd590c-8975-4ec8-9683-7e450449441b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="14dd951e-c1ae-456f-99f5-c29fca288f6a">
+                    <propertyInstance Id="304faac6-e9e2-441b-b905-4fcd9b189549" name="params" value="false">
+                      <elementDefinition Id="be2f801b-acdb-40d8-9a84-2c843ff9a2ec" />
+                    </propertyInstance>
+                    <elementDefinition Id="d0df5abd-30d6-466b-a71f-a1f929733378" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="c04b7eff-f853-461a-b871-c4da3855c602" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a0ee39df-fbae-41f4-bb78-bda839629042" name="info" direction="In">
+                  <referencesInternal>
+                    <reference Id="ff532e85-66b8-4b1b-bea0-b3bca5470f39" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D(Name%3DTryIndexFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.IO Type%3DFileInfo)]) ParameterIdentifier%3Dinfo" tag="ViewCode">
+                      <elementDefinition Id="e31d55c2-39b4-482c-bf52-1ea419b11718" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="1602f073-a2f3-4c6d-97e7-2f7281f4f68e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="193c134d-bd97-4c31-8438-90f2c6bcca59" LastKnownName="FileInfo" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="99573340-1791-41cd-8cac-75eeb1474cf8" name="FileAgent" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="df898075-a402-4db8-aab9-e55792c01fe5" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3D.ctor" tag="ViewCode">
+                <elementDefinition Id="cc8ab665-92b3-4238-8cdf-811df1e8a545" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="8ed4dfc7-f289-4cb9-84ee-10c6d3c4177b" name="method" profile="CSharpProfile">
+                <elementDefinition Id="24c0e393-decf-4651-a022-a7c114cb4d0f" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="df2506b4-862a-4d77-ad94-b900763654f5">
+                    <propertyInstance Id="4ff0e347-0eb4-4a81-992c-4e93b6a05315" name="ClrAttributes">
+                      <elementDefinition Id="5815215a-a5cf-499f-b895-95782edbf515" />
+                    </propertyInstance>
+                    <elementDefinition Id="4995321c-6dc5-405e-a99d-1ed076d28a35" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0885e43a-8e47-4fc1-854c-4376cb6b7795">
+                    <propertyInstance Id="22df0f78-b2cc-4273-97f3-0fd68b6cd02b" name="IsPartial" value="false">
+                      <elementDefinition Id="8f78588d-1cfa-447e-9434-fdc5e34cfde3" />
+                    </propertyInstance>
+                    <elementDefinition Id="e8f2b793-e9ef-4d90-ba0a-8597e595c0f4" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="de8855f0-14cc-49dd-9fb6-889e969ee0f0">
+                    <propertyInstance Id="94d98456-9d50-4b1c-9a86-0a8ee6c6939f" name="IsUnsafe" value="false">
+                      <elementDefinition Id="59990a49-a184-4a0c-b259-e9b3a1ecb13c" />
+                    </propertyInstance>
+                    <elementDefinition Id="4e5ebb3f-b48a-4c63-ab22-19ea6767ee67" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b7add769-281d-43b6-b505-6eaccc89547b">
+                    <propertyInstance Id="a631d405-55c8-402d-a225-dd21a5fd52de" name="Inheritance" value="none">
+                      <elementDefinition Id="66dd161e-e80c-4d78-bbc9-61c7a504b461" />
+                    </propertyInstance>
+                    <elementDefinition Id="150e26d6-7f60-4130-b0a6-80c39beaabff" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fb462119-1a15-4eab-ace9-f68fb257cbc5">
+                    <propertyInstance Id="0d7d50dd-71be-4a97-bf5f-5a1b64313d42" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="1d612721-60f5-4b4c-af5d-d6c4aa3d79e7" />
+                    </propertyInstance>
+                    <elementDefinition Id="39ebd43f-b2fb-478f-93b1-089b7b5b05dc" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="77184205-5404-4f0f-a6f9-6865ca2aecd4">
+                    <propertyInstance Id="732903a7-6aaf-41f0-8a7c-9087439f3d04" name="params" value="false">
+                      <elementDefinition Id="1798dc22-8096-4a6a-b910-bebdf2cfb8d8" />
+                    </propertyInstance>
+                    <elementDefinition Id="f429ae51-e2ef-4738-af87-5051e9bd4346" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="0e025d7b-98d0-4b1d-88de-54f5a55afb18" />
+          </operation>
+          <operation Id="cfd78fd5-be5b-4004-8384-f62e6c377ac6" name="InitializeIndexation" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="9ea25025-894d-4986-a780-7bf256128dcf" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3DInitializeIndexation" tag="ViewCode">
+                <elementDefinition Id="66905d71-8146-4362-bf06-4096d08ec2f7" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="67224081-1a4d-43ec-a578-2b06c587f103" name="method" profile="CSharpProfile">
+                <elementDefinition Id="d348198a-e3e5-403d-8ab2-34d20640c667" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4195a67c-5978-4f5a-9116-e4d01bc69454">
+                    <propertyInstance Id="46b71c0b-3b08-4963-a571-c063aa77424f" name="ClrAttributes">
+                      <elementDefinition Id="8e5e42eb-dfc7-40aa-860d-4a64541906fd" />
+                    </propertyInstance>
+                    <elementDefinition Id="af0c4573-e1b0-45cb-9b3c-28b2714b641e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0bbc0ec0-dd04-439a-8f1b-7e3860a3c3b2">
+                    <propertyInstance Id="dd8c2aa8-4383-4203-b804-59fdf6016473" name="IsPartial" value="false">
+                      <elementDefinition Id="2ab7ffb5-1316-408d-bad9-ea9f4cb35794" />
+                    </propertyInstance>
+                    <elementDefinition Id="062d2dba-c993-499d-8669-5a6c8b4aac68" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c82e5f8b-c755-461d-b271-ce9d95ba1a4e">
+                    <propertyInstance Id="02748b1c-1787-46ed-b39b-37f5db906cbb" name="IsUnsafe" value="false">
+                      <elementDefinition Id="f8b681c8-89e3-4391-bea3-bc7bd3d06adc" />
+                    </propertyInstance>
+                    <elementDefinition Id="870bb93a-1186-4d0c-92d3-6572cf49640b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a28bc59a-1af3-420b-9c6c-040e6dd17ff3">
+                    <propertyInstance Id="1021c1dd-edee-4bfe-a140-49c5ac09a71e" name="Inheritance" value="none">
+                      <elementDefinition Id="385cba9c-be68-4646-a48c-01b0f24ce0af" />
+                    </propertyInstance>
+                    <elementDefinition Id="c5ac6aba-4778-4582-9ddf-c2503650a4bd" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b13894f9-b6a6-43f3-b642-ef7e2d5b7dd0">
+                    <propertyInstance Id="77a422e3-2a04-42be-84c7-20775c84aa87" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="7305dcc5-c5e1-4f9f-9ac9-2bebd05db033" />
+                    </propertyInstance>
+                    <elementDefinition Id="3e03b3fd-a23a-4e60-99af-ddadb4f922f9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="09e8c09d-e8d6-45c8-be51-d610db2a5b37">
+                    <propertyInstance Id="06e0f9ff-4af6-491a-9939-3984b962a244" name="params" value="false">
+                      <elementDefinition Id="af055f13-ca35-4d5c-ab8a-32bf7646b27a" />
+                    </propertyInstance>
+                    <elementDefinition Id="5d55cf71-538a-4a11-9c29-7796a469a52f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="c4fe35ae-ef96-484e-9b29-81d441a0af11" />
+          </operation>
+          <operation Id="6072f8ac-747f-41b2-9679-c1a5d9bd1d81" name="UpdateDataBaseIndexation" visibility="Private" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="23b3b3d7-1f05-4850-99de-87d7385e43cf" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3DUpdateDataBaseIndexation" tag="ViewCode">
+                <elementDefinition Id="3b4a0d28-34a9-483d-ab9c-7451b6b9f7ae" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="057bb145-6907-46b8-a1bd-4974747b5626" name="method" profile="CSharpProfile">
+                <elementDefinition Id="f657b584-53d0-47a5-b683-2ccb2b364ef0" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b8ec8773-73d3-4bd6-8548-aa530efde015">
+                    <propertyInstance Id="d1768360-2777-40ea-abc7-12a3b53490f5" name="ClrAttributes">
+                      <elementDefinition Id="3086bd8e-644d-421d-8606-79140c491928" />
+                    </propertyInstance>
+                    <elementDefinition Id="4cc12ea9-2d1b-4295-8499-7d1b0afe5d29" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="805e0370-3862-4d66-baad-3549c67d48c5">
+                    <propertyInstance Id="fa5cad8a-4791-48d7-b5dd-788d58f01721" name="IsPartial" value="false">
+                      <elementDefinition Id="7ee7b1bb-a866-4e48-9647-362a5fff51e4" />
+                    </propertyInstance>
+                    <elementDefinition Id="1d153aef-ea22-4d6f-b6de-2590472ee4f3" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="64c34e5f-453b-415e-88dd-14de48da0af4">
+                    <propertyInstance Id="78a4f95f-2fbd-47cc-b481-aaeb678dc044" name="IsUnsafe" value="false">
+                      <elementDefinition Id="22da26fb-5827-4daf-a82a-ff8ed1845c9b" />
+                    </propertyInstance>
+                    <elementDefinition Id="422cf009-0ea1-4244-9ff7-35c0ee6e6840" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="798ee6b9-0ef4-46a2-ab24-54a37f37e7ed">
+                    <propertyInstance Id="69fe7a2d-5f89-4266-ae81-ef7c2f336a8d" name="Inheritance" value="none">
+                      <elementDefinition Id="4239c3dc-99b8-4e85-a9f6-55bf3ddad158" />
+                    </propertyInstance>
+                    <elementDefinition Id="44da45d8-7131-4575-8a15-cccdf2e22edb" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b5a90b5b-68ce-4721-960a-25a260510553">
+                    <propertyInstance Id="e8b24917-0f80-42d9-93d4-b6fd4d435e59" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="a2d56bdd-f91f-4ad2-909f-0026122c4900" />
+                    </propertyInstance>
+                    <elementDefinition Id="8c36fb42-a4e8-4053-af18-a225c3bf69ba" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7c7ffb66-7732-49ad-862c-cff2b095f96a">
+                    <propertyInstance Id="31d4ae52-77a0-4546-a3d8-577292467ebd" name="params" value="false">
+                      <elementDefinition Id="cd7d2d71-4016-4c82-b5f8-237fa1540979" />
+                    </propertyInstance>
+                    <elementDefinition Id="9abe3d15-2bad-456d-894a-3f2a48552e39" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="81695e15-ef4a-488e-8501-833028a3e163" />
+          </operation>
+          <operation Id="35fe253c-2a71-44a9-8e2c-c22ea6c8e236" name="UpdateIndexation" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="075b8355-6504-47ea-be32-1c43e2ef4d98" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DFileAgent Member%3DUpdateIndexation" tag="ViewCode">
+                <elementDefinition Id="59196043-8692-47a9-8e9e-e5869197e736" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="822d9baf-cb52-447b-aff2-d5bb23b2c404" name="method" profile="CSharpProfile">
+                <elementDefinition Id="3fb4895a-5d87-409b-b25b-7bdc336f9ac3" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="251ee199-a94b-4e31-93fc-f5fd3c052480">
+                    <propertyInstance Id="a7239b19-a7a9-455b-9e40-2d9812ba99ea" name="ClrAttributes">
+                      <elementDefinition Id="e6c5614a-0e99-4d85-9f2a-dfb44c67700c" />
+                    </propertyInstance>
+                    <elementDefinition Id="4da485cd-dcae-44ea-ace5-17aeaa0bc5d7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6f753427-bf3d-4618-8f77-f0f232e20fb8">
+                    <propertyInstance Id="2641b9eb-8a6f-4d76-967f-51052037d6f6" name="IsPartial" value="false">
+                      <elementDefinition Id="5418f98b-7240-4c09-b994-602553160c25" />
+                    </propertyInstance>
+                    <elementDefinition Id="ed15b91a-951d-4307-ab42-a333b2e7b589" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9b8c27f9-4ff9-4054-bbc2-9a53f163f127">
+                    <propertyInstance Id="8c4a463e-98b1-4aae-9e62-be2a06854288" name="IsUnsafe" value="false">
+                      <elementDefinition Id="a8202706-3c86-4194-9acc-1d4c58d87892" />
+                    </propertyInstance>
+                    <elementDefinition Id="1e890b34-4b69-4924-ab3c-ea45b1ac5887" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="42bffc24-9501-4098-a385-9b87cdacbd7d">
+                    <propertyInstance Id="712bdfa3-bbf9-40c8-88bf-c3ae06089ce8" name="Inheritance" value="none">
+                      <elementDefinition Id="17c0bb10-3a73-4634-89d9-9df73c0ae373" />
+                    </propertyInstance>
+                    <elementDefinition Id="c7906470-71fc-488b-9889-34483ac98e13" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="562a119a-cf06-4e19-90ea-b7c5c36861fd">
+                    <propertyInstance Id="eba46c95-653a-4a79-9e86-41b3653ea31e" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="2849a9be-b6f8-41bf-8024-db16b5bb7893" />
+                    </propertyInstance>
+                    <elementDefinition Id="2a47bc50-bb3a-40f5-a9d1-8b2e67cec8ce" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="38474af3-4dfc-4368-9bfd-75cd3c122c48">
+                    <propertyInstance Id="93e85faf-ee94-4ce6-b404-ddbbf568daa0" name="params" value="false">
+                      <elementDefinition Id="6e927a5f-ed1f-49c2-a4a8-c274c690f106" />
+                    </propertyInstance>
+                    <elementDefinition Id="96a6c6bb-055a-49b8-84b0-9597180420ce" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="071ecdcd-8793-476c-8b89-e9c2e1e797c1" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="f151e928-f8a5-4fcd-979c-351844b23982" name="Task" isAbstract="false" isLeaf="false" cachedFullName="LocalSearchEngineModeling::System::Threading::Tasks::Task">
+        <elementDefinition Id="9533a12d-eed9-4eaf-9540-a5e77b566a89" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="bc21f2f0-2f77-4061-800c-ad5e9cde8250" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="78d2d618-108d-49b9-8ffe-bdd2f0ee0156" name="List&lt;String‎&gt;" isAbstract="false" isLeaf="false" cachedFullName="LocalSearchEngineModeling::System::Collections::Generic::List&lt;String‎&gt;">
+        <elementDefinition Id="93e1db51-e408-44c1-884a-338bcc01c7d0" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="193c134d-bd97-4c31-8438-90f2c6bcca59" name="FileInfo" isAbstract="false" isLeaf="false" cachedFullName="LocalSearchEngineModeling::System::IO::FileInfo">
+        <elementDefinition Id="6445d100-d453-458c-9db2-ac228d5d3185" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2cb4d185-dddd-4500-9a5f-c520314fbe24" name="Object" isAbstract="false" isLeaf="false" cachedFullName="LocalSearchEngineModeling::System::Object">
+        <elementDefinition Id="8beb471b-4d23-4fe0-adea-644d65de0a77" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f677d51b-0441-4175-a309-97a52ac3a0dc" name="FileSystemEventArgs" isAbstract="false" isLeaf="false" cachedFullName="LocalSearchEngineModeling::System::IO::FileSystemEventArgs">
+        <elementDefinition Id="91367f6b-2da1-442e-962e-6835e2155314" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="dd7e0ddb-3a91-4581-b61d-704c46636a4a" name="RenamedEventArgs" isAbstract="false" isLeaf="false" cachedFullName="LocalSearchEngineModeling::System::IO::RenamedEventArgs">
+        <elementDefinition Id="36f8f1f9-5ca6-4853-aaec-28926a236a3f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="dbf1cc93-ec57-4f99-b166-13648ea5cddb" name="Action&lt;FileInfo‎&gt;" isAbstract="false" isLeaf="false" cachedFullName="LocalSearchEngineModeling::System::Action&lt;FileInfo‎&gt;">
+        <elementDefinition Id="00cfad95-a2cb-4ad5-aad9-3e075d5fd63c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1ff958f4-d37e-4d5d-b42c-c487a6c4b6fb" name="ImageFileExtractor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="6006b31b-68ed-4710-955e-f63f23069aa6" handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DImageFileExtractor" tag="ViewCode">
+            <elementDefinition Id="2f810f51-4b7e-4699-88c6-27518eafe032" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="ba520148-16bd-40b4-872c-8a4a1f1770b8" name="class" profile="CSharpProfile">
+            <elementDefinition Id="197170a8-cf48-4d8c-991d-f69381914c87" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="290ab88c-173a-4918-827a-2881fcf05751">
+                <propertyInstance Id="ca206669-ac75-4330-8288-90a24d1e2c8a" name="ClrAttributes">
+                  <elementDefinition Id="fa471566-776d-4711-adbe-d7349e9aba53" />
+                </propertyInstance>
+                <elementDefinition Id="315f7146-55bf-467a-a437-a108e522ed0a" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="80f3c340-84e6-4cc7-a9d4-54ed61a06392">
+                <propertyInstance Id="6b9a562a-7e1e-4c7b-8181-cecbd74e1b44" name="IsPartial" value="false">
+                  <elementDefinition Id="9ef478a3-cd09-4d3e-bc4a-5517fc3c508d" />
+                </propertyInstance>
+                <elementDefinition Id="447d9c9b-acf2-4a8c-bea6-08c53885c1aa" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="0775fac5-ded4-4a1f-8eeb-65707ad33807">
+                <propertyInstance Id="4393b261-f523-4641-a838-3200377cb4d9" name="IsStatic" value="False">
+                  <elementDefinition Id="0975efec-de1b-4755-8811-603acc05e9ad" />
+                </propertyInstance>
+                <elementDefinition Id="c3dfd931-7cff-44e4-97ef-c934312d7dcd" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="86d3a514-8866-4a30-b771-e7a32c0632a2">
+                <propertyInstance Id="f5983a3d-ff0e-43a4-9c7e-9d481585926d" name="IsUnsafe" value="false">
+                  <elementDefinition Id="48eadfba-eb4d-4780-821d-6e32327fe2ff" />
+                </propertyInstance>
+                <elementDefinition Id="4a2383e1-4b5f-4a0e-8bae-bdebf10ed6cd" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="9d54b342-53c5-4ee3-af60-513c2a5a2b83">
+                <propertyInstance Id="32b74552-83e6-4e8f-acb3-4e49e03ab8b2" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="f147f2e6-3d3b-4d77-ba34-8eb8e67a7114" />
+                </propertyInstance>
+                <elementDefinition Id="4b701605-4559-42cf-84d6-60ca4ea068b1" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="8e93f2df-9fbb-4512-8327-bed9b180acad" />
+        <ownedOperationsInternal>
+          <operation Id="6c441aaa-a30c-496f-808c-b650e01a95a4" name="ExtractImagesFromFile" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="c59723a6-2af7-4a10-af3c-f8093462d969" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DImageFileExtractor Member%3D(Name%3DExtractImagesFromFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))])" tag="ViewCode">
+                <elementDefinition Id="5fd3d2ff-61d3-4edf-bcf0-53aa0415746c" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="e03846d0-0db6-4f17-8958-7991cc134708" name="method" profile="CSharpProfile">
+                <elementDefinition Id="c0bc3dde-f4d4-40a3-ae02-ec10d27721bc" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c292ec57-bda5-49be-aa4a-25b040fac10a">
+                    <propertyInstance Id="38e0b4d5-032b-404f-862c-40353d2525cf" name="ClrAttributes">
+                      <elementDefinition Id="9aa72a73-68cb-4e01-a56f-04d9c2053e1f" />
+                    </propertyInstance>
+                    <elementDefinition Id="49e8478c-8064-4f50-b7c4-fa843d40b724" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d2eda418-6e16-48e0-9538-1382f8b14807">
+                    <propertyInstance Id="19979888-4cc4-4c6c-8479-9d424ae68ee5" name="IsPartial" value="false">
+                      <elementDefinition Id="37677b72-aa02-4917-8610-5938fca1219d" />
+                    </propertyInstance>
+                    <elementDefinition Id="09bb0a89-eb6c-4550-bb46-13a320fbf053" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d65a5c5b-e957-4af4-8148-bdc571b8dec1">
+                    <propertyInstance Id="7bbc210d-a250-4e4f-8abb-342cac509707" name="IsUnsafe" value="false">
+                      <elementDefinition Id="dc4f2cb5-8ecb-4d45-9163-9f81424582f4" />
+                    </propertyInstance>
+                    <elementDefinition Id="7d6a3a12-09a9-47b2-84c7-fae7cb86b6a5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4e72962d-940f-47e4-85d8-daaca1f8c73b">
+                    <propertyInstance Id="10b57a3b-202c-41fc-b5c0-9b2c4d5c837e" name="Inheritance" value="none">
+                      <elementDefinition Id="904b215b-ea83-431e-a3a2-2d35fd32a02c" />
+                    </propertyInstance>
+                    <elementDefinition Id="07972bc9-696e-4951-b8a3-acae3d3f71a3" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ba963ea7-e95c-474a-9328-1e122a62fe4f">
+                    <propertyInstance Id="6dc7a941-ba9a-4945-8be1-a5f4b79e3cac" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="3fd0ee05-2d06-4c79-ba9e-f84960c6ce64" />
+                    </propertyInstance>
+                    <elementDefinition Id="8632e631-f624-4326-8348-66e9d8da86aa" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7cea3fe7-6ba5-4b9e-86c3-41686fb67771">
+                    <propertyInstance Id="1cd3b190-333d-4925-b24a-c2508468990c" name="params" value="false">
+                      <elementDefinition Id="95beccc7-7969-445f-9b8c-665f9734fe12" />
+                    </propertyInstance>
+                    <elementDefinition Id="722194af-7cb7-4194-ab23-9ffedf8dca61" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="1c55f600-376d-4aa9-ac64-3f296c13d4fb" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="aac15387-9604-4ea5-b1a3-d3418d2e9136" direction="Return">
+                  <elementDefinition Id="4d738821-d7ff-42a9-ab6b-514adcaddbf9" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="08127f8c-f665-458e-a735-d741c6e7e76e" LastKnownName="List&lt;DocumentImage‎&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="091d0f19-3bcb-4717-813c-8559f651fe97" name="path" direction="In">
+                  <referencesInternal>
+                    <reference Id="83bff2e0-e6d8-4ff8-8c0d-48c0a0cdc275" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DImageFileExtractor Member%3D(Name%3DExtractImagesFromFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))]) ParameterIdentifier%3Dpath" tag="ViewCode">
+                      <elementDefinition Id="a9cf2c13-bebd-4201-9685-bce5e46b4d27" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="89bc2c3e-e760-4183-ba38-8965b61e159e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f3722c33-bde1-45ed-810d-6d5afcfdd3cd" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="50af1afb-fcc9-46e9-b783-c7ec97a2fac0" name="destinationDirectory" direction="In">
+                  <referencesInternal>
+                    <reference Id="41c1d702-94db-4032-a93b-945d0bbde800" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DImageFileExtractor Member%3D(Name%3DExtractImagesFromFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))]) ParameterIdentifier%3DdestinationDirectory" tag="ViewCode">
+                      <elementDefinition Id="2bc0bdad-ef7a-45d3-abd6-f0386c8abac7" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="57d1f0f2-bd94-4025-b629-d0158f68ad1f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f3722c33-bde1-45ed-810d-6d5afcfdd3cd" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6d814159-432c-4a87-9493-901559e52439" name="extensions" direction="In" isOrdered="true">
+                  <referencesInternal>
+                    <reference Id="b6b7e3c4-dcf4-46c0-aaba-26d5407b6539" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DImageFileExtractor Member%3D(Name%3DExtractImagesFromFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))]) ParameterIdentifier%3Dextensions" tag="ViewCode">
+                      <elementDefinition Id="b1cdca93-4524-409f-9c89-e79ac41c189a" />
+                    </reference>
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString Id="23dd926c-268c-4ba1-bbd4-1128abb96672" name="Lower" value="*">
+                      <elementDefinition Id="08368fc7-5609-43fb-ad60-8306e85c5d82" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="8314db67-73c4-4be9-8261-1aa7ee54c509" name="Upper" value="*">
+                      <elementDefinition Id="6f810d19-a7a7-4c8e-acff-b165f9b577bc" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="1b690985-e1f5-4f0a-bb91-c0bba9ba5191" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f3722c33-bde1-45ed-810d-6d5afcfdd3cd" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="407f35f2-66ea-4a27-9b08-d4cbbfae58af" name="GetImageInformation" visibility="Private" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="50307ded-2091-4277-a818-d7d40e96d198" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DImageFileExtractor Member%3D(Name%3DGetImageInformation OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])" tag="ViewCode">
+                <elementDefinition Id="d7c021d9-4e8c-4e20-a12d-d8755350186b" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="9ab8b31a-d822-4804-a0ba-902841c9945b" name="method" profile="CSharpProfile">
+                <elementDefinition Id="c1f758b2-8fe7-4f58-9fde-b93ad6c2fbe2" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d843a98c-cc68-4be8-8bf4-bcfb73339196">
+                    <propertyInstance Id="db53341d-5e31-48db-b243-f3451f6cc7af" name="ClrAttributes">
+                      <elementDefinition Id="9e86701a-5263-4d24-a7bc-005fcc4bd917" />
+                    </propertyInstance>
+                    <elementDefinition Id="eb00f433-7b83-4b9b-a790-9aadce53ccd2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="69a147e3-b725-4fd2-8a23-fc19a712cb33">
+                    <propertyInstance Id="ee7443db-4c2f-4277-a099-d2ec4e0270be" name="IsPartial" value="false">
+                      <elementDefinition Id="51ca21de-9041-4527-8441-e533ae0113a3" />
+                    </propertyInstance>
+                    <elementDefinition Id="d121585f-d1ec-4f50-9a24-2828a15160be" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="96ba50b7-6c76-4b12-b1bb-40e6306afd61">
+                    <propertyInstance Id="17fe45dc-a392-4730-bd0f-19af2abd4463" name="IsUnsafe" value="false">
+                      <elementDefinition Id="b0d558cd-7c07-49e9-8ac5-917d614e6b8b" />
+                    </propertyInstance>
+                    <elementDefinition Id="769edaf1-8ae1-492f-9796-818d9d94a0df" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d68bb7de-a5e7-41f9-9abb-3c4917405875">
+                    <propertyInstance Id="b2792aed-f4b1-4a75-a36f-93622005decb" name="Inheritance" value="none">
+                      <elementDefinition Id="632fcdac-32f3-4297-b2aa-565027fef5fa" />
+                    </propertyInstance>
+                    <elementDefinition Id="bac028a3-a56b-4d0e-a4a1-aeabca4f9dab" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c06c423b-08c2-4976-8d2f-0a3c3dc5e8e2">
+                    <propertyInstance Id="1bf55380-babc-4d05-83e4-92038b2fa2d4" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="c98b857c-77a6-4b11-b47f-c7cd032d2e7f" />
+                    </propertyInstance>
+                    <elementDefinition Id="caf939c8-9d76-4b0e-a45a-8bc114345ecf" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9310396c-6b50-49c7-a086-47da545ed50e">
+                    <propertyInstance Id="61ada3f7-de2d-46a6-aa59-adea993e2e27" name="params" value="false">
+                      <elementDefinition Id="1326adf2-19b1-43cc-844b-e6e184d38461" />
+                    </propertyInstance>
+                    <elementDefinition Id="1ff453ab-bf6a-4fb0-850d-3ef6952831b6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="980c5efd-9adf-43c8-9289-bfb4ea2c41d4" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="bda27d52-0b0b-4744-bf45-deb893136c76" direction="Return">
+                  <elementDefinition Id="e7d0091e-e0c7-4685-9489-60a9e3b9ffeb" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="078caf44-37b9-4bc1-9ebc-c9611e43d724" LastKnownName="DocumentImage" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="fadabcdb-ba12-404b-bf9b-143fa3a870e3" name="filePath" direction="In">
+                  <referencesInternal>
+                    <reference Id="a7ce6b45-5cf3-4bd9-b90e-dba4def7b015" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DImageFileExtractor Member%3D(Name%3DGetImageInformation OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DfilePath" tag="ViewCode">
+                      <elementDefinition Id="f0452bf3-fa15-49af-9498-06f8e36c3a0d" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="44835087-2c08-46db-8170-85cfd7f9178c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f3722c33-bde1-45ed-810d-6d5afcfdd3cd" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="fb913a7f-a086-4dce-bb75-29b4c80fa08c" name="ImageFileExtractor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="ef88a64e-225e-4b0a-8dd5-05d51ee4b2bf" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FLocalSearchEngine%2Fbin%2FDebug%2FLocalSearchEngine.exe&quot; Namespace%3DLocalSearchEngine.FileManager Type%3DImageFileExtractor Member%3D.ctor" tag="ViewCode">
+                <elementDefinition Id="c76ca730-36e4-4b52-a007-2a196b08c0d6" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="8ce6da8b-af42-4dba-848e-6b2f73ea9797" name="method" profile="CSharpProfile">
+                <elementDefinition Id="4d7701cd-a0d3-45fb-9087-4ff765365582" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d217c979-f080-4828-9266-84166f20e02a">
+                    <propertyInstance Id="fd7be09c-c36a-4279-a4e9-3a1590f06976" name="ClrAttributes">
+                      <elementDefinition Id="79b77a47-38c7-41de-a5aa-2581e89b7056" />
+                    </propertyInstance>
+                    <elementDefinition Id="f08fcfb4-7805-4993-9ee7-ae89e6dfb728" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cef98989-9325-494e-bf38-1fb9afff1aa7">
+                    <propertyInstance Id="f142ec94-073b-466d-8511-7bf51bae1d59" name="IsPartial" value="false">
+                      <elementDefinition Id="5dd13148-c1ab-4a16-81ac-598e40068b97" />
+                    </propertyInstance>
+                    <elementDefinition Id="5fcee657-33a8-40c1-b419-c72f50a73c70" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d2b6c4dc-70e4-4c95-afc4-80b0f1240732">
+                    <propertyInstance Id="adeda619-48e6-4043-bb18-c95fb6c0b1cf" name="IsUnsafe" value="false">
+                      <elementDefinition Id="492902a2-2a96-4f9e-b12a-b3eb89f20b19" />
+                    </propertyInstance>
+                    <elementDefinition Id="67a3f061-b7d4-4fd0-86b7-c5eab2e49ad6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2d75e38f-d057-4fff-8059-54e723627846">
+                    <propertyInstance Id="bd755943-6c5c-41a2-b960-faeee1e84452" name="Inheritance" value="none">
+                      <elementDefinition Id="1ea21450-329c-462d-bd30-015b90558230" />
+                    </propertyInstance>
+                    <elementDefinition Id="706b39c8-5e64-4212-9186-a8a5c7798aa4" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="079c6d02-8132-4f85-b4d4-74bc8992c996">
+                    <propertyInstance Id="80338c68-d283-4472-9b92-eeb60059b0a2" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="9995dfbc-6fd3-4c96-84b2-17e88299b356" />
+                    </propertyInstance>
+                    <elementDefinition Id="e6a28d9f-e2a6-41fe-82ca-1ab9a3a83075" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cdbca2d1-864e-4f77-a906-9093b51dd816">
+                    <propertyInstance Id="3f0fb0b8-beca-4228-8261-b10bbf6d3e29" name="params" value="false">
+                      <elementDefinition Id="7d493ad6-74cc-4967-b71c-f1fcff5e4bc4" />
+                    </propertyInstance>
+                    <elementDefinition Id="92f140af-c419-4cd5-93ca-19146b4a35a0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="6ee4baed-f5e3-423f-a1c0-79f155281fb0" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="08127f8c-f665-458e-a735-d741c6e7e76e" name="List&lt;DocumentImage‎&gt;" isAbstract="false" isLeaf="false" cachedFullName="LocalSearchEngineModeling::System::Collections::Generic::List&lt;DocumentImage‎&gt;">
+        <elementDefinition Id="2c025376-27e0-4760-9839-c5a527b7a978" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="078caf44-37b9-4bc1-9ebc-c9611e43d724" name="DocumentImage" isAbstract="false" isLeaf="false" cachedFullName="LocalSearchEngineModeling::FileDataAccess::Database::DocumentImage">
+        <elementDefinition Id="3d434aa0-0bce-4fa5-b3f0-7b794369784a" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="23f0ada4-152f-4158-9be9-cb87f6a146c6" name="LocalSearchEngineModeling">
+    <elementDefinition Id="b61c8710-aaec-4415-8dc5-5f072da9933c" />
+  </package>
+</logicalClassDesignerModel>

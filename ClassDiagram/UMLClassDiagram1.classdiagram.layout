@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLClassDiagram1">
+  <logicalClassDesignerModelMoniker Id="8a78e5ab-bfb1-4932-9ff0-c637b2917725" />
+  <nestedChildShapes>
+    <packageShape Id="00428e46-b123-4ae2-94c7-f4fdc762fae1" absoluteBounds="2.5, 0.5, 1.5, 1" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="41138263-ef38-41d5-988a-c0a65558d5c4" LastKnownName="LocalSearchEngine" />
+    </packageShape>
+    <packageShape Id="91a5ec85-6cfd-4af8-b754-db4cb03aeaf2" absoluteBounds="4.5, 0.5, 1.5, 1" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="d83ca5d6-ab25-41e4-83d8-281c4e9f1395" LastKnownName="FileDataAccess" />
+    </packageShape>
+    <packageShape Id="e6475b92-68f6-4594-9aba-cc00d3b6e328" absoluteBounds="0.5, 2.125, 1.5, 1" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="93b77c44-ef0f-44a1-9e96-23e1f98d1203" LastKnownName="ImageProcessingUtils" />
+    </packageShape>
+    <packageShape Id="e671fee7-bd3e-467b-ba91-66a9d66fb405" absoluteBounds="0.5, 3.625, 1.5, 1" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="0455fe4a-fc84-4649-aaf6-c9d72749e38a" LastKnownName="FileManager" />
+    </packageShape>
+    <packageShape Id="f470cedf-b63b-458d-b624-63409996b973" absoluteBounds="2.5, 2.125, 1.5, 1" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="79aeea50-7367-4e02-ab7f-6bb0894b2268" LastKnownName="PHash" />
+    </packageShape>
+    <packageShape Id="84511da2-0adc-44c9-a6a6-c7b103c6c7ae" absoluteBounds="2.5, 3.625, 1.5, 1" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="aad64d57-79e7-4273-8ced-1d67be525610" LastKnownName="Hash_Distance_Function" />
+    </packageShape>
+    <packageShape Id="45be67a8-6797-40a9-b57a-58b283d16474" absoluteBounds="0.5, 5.125, 1.5, 1" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="528c0343-6c70-41a9-b040-f281f4939dd4" LastKnownName="Database" />
+    </packageShape>
+    <packageShape Id="91c7a066-e2e1-4190-a0c8-1f6b7a8edb1c" absoluteBounds="2.5, 5.125, 1.5, 1" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="4443181a-99ef-4257-8279-cf912ea483b7" LastKnownName="ImageFilesProcessor" />
+    </packageShape>
+    <packageShape Id="58089e4a-64f6-4a75-a691-99b0e40162e9" absoluteBounds="4.5, 2.125, 1.5, 1" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="8ee07af8-b925-4982-b60a-22c6a3f5509f" LastKnownName="ImageProcessing" />
+    </packageShape>
+    <packageShape Id="16d7d0b4-5aaa-492b-9fcc-285f29f1c95d" absoluteBounds="4.5, 3.625, 1.5, 1" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="9b904473-9d34-4cfa-9222-1597a4b70f55" LastKnownName="Filters" />
+    </packageShape>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

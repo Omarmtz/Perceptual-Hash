@@ -1,0 +1,2418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="cd7622a5-6c87-4944-a4ee-39fd01a050a9"
+  name="PHash"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="8c9302d5-e6b0-497f-be51-0b1075ed6cff"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DPHash"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="57aae2f2-33cc-427b-acfd-75ebf2905d36"
+        name="PerceptualDctHashFunction"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="0534fd7f-f253-4f8c-b52f-c725585b2707"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DPerceptualDctHashFunction"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="37b45505-7309-46bd-9b3c-c8cebf54fdab"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="881c1a5e-518d-45c4-9d42-3b9dad0b2c75">
+                <propertyInstance
+                  Id="c858674d-97cd-4ad2-a83d-d676f412041e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="64c2dcbd-1af0-4798-9d00-dcba37196718">
+                <propertyInstance
+                  Id="df722a57-1e43-44ae-a948-ab13f60139f1"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4600a73e-e7f9-4871-9785-74b279a80392">
+                <propertyInstance
+                  Id="689162c4-fafe-4784-aea5-8e70c679575d"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a8f3a500-8923-456a-84e5-352a4b31741d">
+                <propertyInstance
+                  Id="e2ebabb8-0ef3-4f00-861f-7493ff2d7003"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="12a1d440-672f-455d-9842-8756cca1b4e0">
+                <propertyInstance
+                  Id="17747bc1-87c2-44fa-aa16-8e97bb2552f8"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="8dcfdf6c-c8e4-4a50-9019-e58a4f4b1d0b">
+            <interfaceMoniker
+              Id="a6704c8a-59fc-4e0d-b004-846d20e5577f"
+              LastKnownName="IPerceptualImageHashFunction"
+              LastKnownLocation="Package1_2048.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="8d6b9885-6be5-48ec-a5e3-96c502862cf5"
+            name="GetHash"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d03af0a8-095d-448b-97fa-8f520e732718"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DPerceptualDctHashFunction Member%3D(Name%3DGetHash OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="45fc17d3-06f1-4596-b71f-30bbf0cab445"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5dd7f32b-6411-4d43-a55a-d1ec1f793d89">
+                    <propertyInstance
+                      Id="be5911d5-da20-49f6-9d0a-3fd57d78f23f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d2c2b9d3-e4b7-4264-8c3d-f51959ed547f">
+                    <propertyInstance
+                      Id="5ccbac6b-8e1e-4eb9-9cd6-fd1cbe6944e9"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="57e00037-15f2-48b0-8214-1a5ddb9d5b02">
+                    <propertyInstance
+                      Id="9934f31d-5018-4433-bfb8-293739f8c282"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5fe14fc-6581-4de4-94df-029a99e71149">
+                    <propertyInstance
+                      Id="c6a52c64-c2b1-42c2-a1b7-28dcddfe700e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1408bc3a-1305-4244-9c79-b9385d92cb2d">
+                    <propertyInstance
+                      Id="27b4eda6-84b2-43fa-8212-b31800e968cb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be20e991-ee77-4272-8b15-fbc15ff310b4">
+                    <propertyInstance
+                      Id="6a924e8b-6583-48f8-bd02-f3e67819457c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="68e9289f-b035-4245-943a-b0f6ffa66d25"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="70bfe0c6-64e3-49e0-b632-43a68d2235aa"
+                      LastKnownName="BitArray"
+                      LastKnownLocation="Package4_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="faf69edf-73c0-42fb-bcd3-a79a4656ceaa"
+                  name="imageFile"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d9d8a63f-8f9b-4973-bc0b-9235aac3caa9"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DPerceptualDctHashFunction Member%3D(Name%3DGetHash OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DimageFile"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="LocalSearchEngineModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c95e368d-f780-4c5d-a528-d25b12c2b6e2"
+            name="GetHash"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="58705643-d4d3-4897-a463-f3ed6a2572c5"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DPerceptualDctHashFunction Member%3D(Name%3DGetHash OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.IO Type%3DStream)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e654af3b-0c71-462f-839e-d867c0ae83bd"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="daff8a4d-95e8-43b9-a997-8ea224540d9a">
+                    <propertyInstance
+                      Id="5c4a129d-9a28-4387-ab46-096a584cdd37"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f395c70d-8aa4-4aed-91ec-a3e5479d6460">
+                    <propertyInstance
+                      Id="55baca4e-19d2-403d-9fa0-6ddd6b4ffd79"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5e4fd96-3aa6-4797-be74-5a3eeff1e3fe">
+                    <propertyInstance
+                      Id="64cc841c-7822-4719-ab41-d7f7644d3693"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="70d00762-eb09-47a9-a90f-9bc318b622dc">
+                    <propertyInstance
+                      Id="d503cf7f-d3b5-4511-8837-9b1e8bfa73e6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9532d32d-4bab-4874-a133-fda3b43194fb">
+                    <propertyInstance
+                      Id="73243880-8a77-4302-9c2d-85ea861fb8c7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="928c2d6f-4de9-416a-a8e3-918b52f09c76">
+                    <propertyInstance
+                      Id="b7996df0-480d-4b35-8870-77c468f203f9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fd44ac88-af00-4420-a8e2-15e641ce1df9"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="70bfe0c6-64e3-49e0-b632-43a68d2235aa"
+                      LastKnownName="BitArray"
+                      LastKnownLocation="Package4_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="284d8dc9-6fd5-4723-9fe7-3f3e0d49160c"
+                  name="imageFile"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="015975e9-8dc2-4afc-80db-5228cea1e908"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DPerceptualDctHashFunction Member%3D(Name%3DGetHash OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.IO Type%3DStream)]) ParameterIdentifier%3DimageFile"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="382c560b-10dd-4d31-85b4-769c9bfd21cd"
+                      LastKnownName="Stream"
+                      LastKnownLocation="Package3_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="528bdce8-3f31-4baa-8dd4-23414f6fffd7"
+            name="GetHash"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f778683b-391e-4f4e-bc5e-23c145e5e207"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DPerceptualDctHashFunction Member%3D(Name%3DGetHash OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6a8a262c-3dac-470e-8019-c5419da699b6"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d96f503-55d6-48f6-96bf-dce59a9470e5">
+                    <propertyInstance
+                      Id="0df9d6d8-800a-408c-86e7-571170d4f31c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="daa0d293-d3a1-4f6d-b6f3-3b474c56e8b3">
+                    <propertyInstance
+                      Id="3981b3f8-7d11-4401-9d89-a112e0f5ed80"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0d59e723-011c-445f-8c63-c3f259495db7">
+                    <propertyInstance
+                      Id="53672ca3-1646-44f1-8d4c-ff5dcc54c8c2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d9dcc08a-3486-459e-b306-d6863d42b333">
+                    <propertyInstance
+                      Id="104cf590-c4a1-4318-9177-a9efaaf1a55a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9563f4f1-da3e-4bac-99f7-0955864d6261">
+                    <propertyInstance
+                      Id="0a3468fd-28a6-4364-9db4-fb44f8fd274b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3f931228-7a39-45a1-887d-af603ba9c647">
+                    <propertyInstance
+                      Id="9a096ab1-2b06-4e4d-98d6-e6747a4e0015"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="92c4aded-c8fd-4eaf-8ba6-ec869fdbb87f"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="70bfe0c6-64e3-49e0-b632-43a68d2235aa"
+                      LastKnownName="BitArray"
+                      LastKnownLocation="Package4_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="42380a34-f36c-44bb-a20c-07320df9afb7"
+                  name="imageFile"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d317ec54-5535-45cb-818f-dfd1e9aa82b3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DPerceptualDctHashFunction Member%3D(Name%3DGetHash OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)]) ParameterIdentifier%3DimageFile"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="59235654-487a-4777-89ff-723e0e972de0"
+                      LastKnownName="Bitmap"
+                      LastKnownLocation="Package2_2051.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9d8f5865-16da-426d-a362-0a63e78c82b7"
+            name="CreateDigest"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f6abbfb9-02c7-4534-b4f6-a6e148923426"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DPerceptualDctHashFunction Member%3D(Name%3DCreateDigest OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D2 ParentType%3DDouble))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="eec00331-2b72-4cce-ba37-d53e96579862"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28412fdb-38aa-48b5-8eda-14ae4a1abbe9">
+                    <propertyInstance
+                      Id="6ab9a511-d433-4aa3-9c37-eb50bc00abae"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="47e7bf36-4282-43d1-b61a-65666d4549ba">
+                    <propertyInstance
+                      Id="bfe84567-e648-4f69-8365-34b46a867d49"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dfdf85aa-d181-41f7-93c9-e6b79a13425e">
+                    <propertyInstance
+                      Id="60957eb2-c192-4610-8cc9-e9e113eed195"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ad30a89-fd00-4cd7-8a6c-c05a3640644e">
+                    <propertyInstance
+                      Id="5ca44920-cfa5-46a1-aecd-5e9b9356be91"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="48166aa9-f929-4e0e-a070-d9d2a65cd0af">
+                    <propertyInstance
+                      Id="e4364531-d62a-442b-a56d-c50ea4f8ad0a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8fc2d036-1a06-4f92-9ddc-779a700823b8">
+                    <propertyInstance
+                      Id="7c884862-ba04-4881-ab9e-05e4cf6d450e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="92f9fd97-0b28-47bb-99df-8b98bb6112df"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="70bfe0c6-64e3-49e0-b632-43a68d2235aa"
+                      LastKnownName="BitArray"
+                      LastKnownLocation="Package4_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cf80b279-93c7-403a-9659-809d0f5b7b95"
+                  name="dctMatrix"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="0bd936cf-106b-4094-aff2-973917890762"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DPerceptualDctHashFunction Member%3D(Name%3DCreateDigest OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D2 ParentType%3DDouble))]) ParameterIdentifier%3DdctMatrix"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="49c0c2b5-b966-452d-a8cf-fdca9c200a98"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e765a180-1ccf-4b6a-b06e-0e6ac05398d6"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="210fc7ac-8a38-405d-ad20-da18ebff8053"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package2_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9e9181b4-faa1-46f3-83cc-9c6123c8c150"
+            name="GetFirst8X8BlockMean"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2ce6d816-87c7-44b8-855c-4c54f240ab26"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DPerceptualDctHashFunction Member%3D(Name%3DGetFirst8X8BlockMean OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D2 ParentType%3DDouble) ParamKind%3DRef)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="50566f0b-ea66-475c-82e8-afc11598acb9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="62512f3c-3571-40e7-95c6-ce30c14a2cc3">
+                    <propertyInstance
+                      Id="3518ccd0-d56f-4cfe-8ede-d51d9b789815"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b253f1fb-bd7f-4053-af38-b21221c07e0a">
+                    <propertyInstance
+                      Id="12b39115-e507-4602-8488-f90d3d74a087"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09c38b6d-da59-47c0-b156-c85d2111b542">
+                    <propertyInstance
+                      Id="a2d6689e-865e-40f4-85de-400425402730"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd7c79ef-2108-41fb-83d2-906276066e7d">
+                    <propertyInstance
+                      Id="c735508f-c47e-42e3-aa1a-12f1852c0efd"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="993fa7be-a29b-4f28-9b27-fa40744f97be">
+                    <propertyInstance
+                      Id="c587428d-8dee-4895-a491-ca3548e5e7aa"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ba0746a-d138-425c-a2ec-04073f20c7d2">
+                    <propertyInstance
+                      Id="ede39893-df4f-41a7-825f-f459909fcf53"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3887b3de-b33e-4dae-b5df-0113ea8c1df1"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="210fc7ac-8a38-405d-ad20-da18ebff8053"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package2_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0a81d8c7-d454-47fd-8e42-22c887fbec83"
+                  name="matrix"
+                  direction="InOut"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="cffd88ac-9a17-4c95-939a-43d8bef1b2dd"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DPerceptualDctHashFunction Member%3D(Name%3DGetFirst8X8BlockMean OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DDouble ArrayRank%3D2 ParentType%3DDouble) ParamKind%3DRef)]) ParameterIdentifier%3Dmatrix"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b92fa477-d20c-4973-9bab-8177725fefdd"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b259b18e-4596-48ad-92e5-6bc35c219ab6"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="210fc7ac-8a38-405d-ad20-da18ebff8053"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package2_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="fd070763-64e8-4569-af39-0d75fa640da4"
+            name="PerceptualDctHashFunction"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="61f80652-e181-49b7-b1f3-f51ba9610883"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DPerceptualDctHashFunction Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a40c0d13-c1cd-4942-995b-b26588ddc32f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="428ba8f1-06ef-4751-bbe6-5c6a7e95d5b3">
+                    <propertyInstance
+                      Id="76aed934-c89d-4419-abb9-e05262a0c9e6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe9574bd-130f-4eb0-9b47-571f5e4a1652">
+                    <propertyInstance
+                      Id="21e893fb-433e-4645-b178-99f468451344"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cc85038e-9444-4e04-a21f-2baedb118dc7">
+                    <propertyInstance
+                      Id="53ac6c54-afe5-4359-9dfc-3638f7614d9b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f8fea70d-961a-4643-b3e6-93e777aad6e7">
+                    <propertyInstance
+                      Id="836faa99-2148-491b-ac5a-b787fa2ee529"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="54056f9e-2a50-439b-824d-e099b2179a7f">
+                    <propertyInstance
+                      Id="6d306ecb-4b61-4955-911a-0e2b0d3f871c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4f857ff-7809-4b07-bb22-4d58c9e7f2a7">
+                    <propertyInstance
+                      Id="1065b0b3-2cd5-4319-92e9-7f5db8f977cc"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="bd046d01-7797-4648-a26c-c7cc8acd319f"
+        LastKnownName="Hash_Distance_Function"
+        LastKnownLocation="Package2_2048.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9f6b206b-77ed-4189-9fb3-ff7c10bb78c3"
+        name="ImagePerceptualHash"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="4dd653a9-de11-4f1d-84e6-b815bc7190e0"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DImagePerceptualHash"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="23b9a4d0-d3af-49a8-8705-77fe04240786"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d52ae41a-66be-458e-bece-ecc61d5c301a">
+                <propertyInstance
+                  Id="b29ca52d-7a23-4f26-a442-780fc803faa0"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="65fc7e9a-26d2-4f00-856f-6b8dc884a81c">
+                <propertyInstance
+                  Id="f713dc80-ddd0-4d3d-8cd7-4696d0ceba03"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c7a9e5ef-0436-40da-bb2b-862f34765a22">
+                <propertyInstance
+                  Id="158b9c6b-1252-4d91-a9a3-71a248eb5f95"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a2fa047b-6981-4a8b-a5fb-cff77c8efce6">
+                <propertyInstance
+                  Id="edb70286-36c7-40c2-984a-fa1f174caa71"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="522867a1-9fd5-4450-a354-ffd4607a77a3">
+                <propertyInstance
+                  Id="2cf0ef02-ba4c-4ba2-9559-24ddbb0add81"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="722ab4ee-7009-4cb8-8af2-c5717241764d"
+            isSubstitutable="false">
+            <classMoniker
+              Id="90974445-729e-4c38-b42b-149c564dea27"
+              LastKnownName="PerceptualHashing"
+              LastKnownLocation="Package1_2048.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="38f14a7e-a6bf-4372-be90-27360aedcfc7"
+            name="ImageSize"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="cb9a1121-43a3-41ca-823f-13838145aa51"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DImagePerceptualHash Member%3DImageSize"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="91e022b1-70a4-4f5b-a4d2-e6ef241158dc"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="345eaf26-3978-4c55-955e-64f8f3646f2d">
+                    <propertyInstance
+                      Id="00b34542-9612-4011-ac9d-418462614f18"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7fa6a925-f302-4f37-ac2c-487cea8600c2">
+                    <propertyInstance
+                      Id="1682e820-0122-46ee-bb98-669b72b8e918"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6fc6f0a5-091f-4e71-b6f1-4fce4696255e">
+                    <propertyInstance
+                      Id="b9a066f7-b9c6-433b-8d30-6b8e14a8350f"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0cb1ee0f-4ec9-4442-8339-708de948d755">
+                    <propertyInstance
+                      Id="e838d2b3-d950-49f5-b166-5dfdefcd5202"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bdd1d04c-d39e-461b-bb7f-ceccff1ff448">
+                    <propertyInstance
+                      Id="45b0f083-0226-4cfe-afa8-028433ae21fe"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="f589260c-3b88-4162-bb05-8f4d53fc6e4a"
+            name="GetSimilarity"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c4bbfd23-e7cf-4087-bfbb-bf10c8517a72"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DImagePerceptualHash Member%3D(Name%3DGetSimilarity OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D3 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f58b1e38-b2a6-4f64-9671-8fbe4e7aa694"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="05aabce1-de39-4fea-bc65-dd7ca8d44a9e">
+                    <propertyInstance
+                      Id="3f404a81-a988-4f15-ba41-69e286ec0f84"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="407b24a8-4fc6-41a4-ac68-d19c0b8114d2">
+                    <propertyInstance
+                      Id="4f6d7afe-2fa5-43c4-b4a0-3edd5170fc19"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ffb5c02-14bd-4521-b43c-b95cbbe7451b">
+                    <propertyInstance
+                      Id="a6fa10c2-ff58-4fd4-8b78-b64274f5967c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5a98c205-e36c-41bc-8aab-083688d511ce">
+                    <propertyInstance
+                      Id="04408a00-53c7-4216-a2d6-d99599fa3323"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ebefe1b3-ff89-4a56-9094-bf3d78224cb1">
+                    <propertyInstance
+                      Id="b47fce00-2999-47f5-a956-dc6cc91e605f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0442de4c-aa9e-42d8-b77c-d63aa923bfa1">
+                    <propertyInstance
+                      Id="4fdac5d0-bfef-473b-a051-d92a1702ac9d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8ff6aa76-76b9-4c1d-8611-6759b7f90900"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9564310d-d424-4938-84f5-2ce1649d908c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="88f7dff8-769f-4184-8be5-0c7837ff82b7"
+                  name="mediaObjectA"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="73423872-3272-44e2-aca0-43726a4265ca"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DImagePerceptualHash Member%3D(Name%3DGetSimilarity OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D3 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]))]) ParameterIdentifier%3DmediaObjectA"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="59235654-487a-4777-89ff-723e0e972de0"
+                      LastKnownName="Bitmap"
+                      LastKnownLocation="Package2_2051.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="80a8ffeb-0215-4066-ba58-8319c547010f"
+                  name="mediaObjectB"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8bb08b59-82e6-4d7e-9364-d9aab941e0cd"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DImagePerceptualHash Member%3D(Name%3DGetSimilarity OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D3 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]))]) ParameterIdentifier%3DmediaObjectB"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="59235654-487a-4777-89ff-723e0e972de0"
+                      LastKnownName="Bitmap"
+                      LastKnownLocation="Package2_2051.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="99d4501f-a193-49d6-b06e-a42296f1d10d"
+                  name="hashFunc"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="33e70be9-e7a9-4909-8f48-c18a76a7a6ac"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DImagePerceptualHash Member%3D(Name%3DGetSimilarity OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D3 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]))]) ParameterIdentifier%3DhashFunc"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f59927c4-fc65-4bc9-986c-e63fd386426e"
+                      LastKnownName="Func&lt;Bitmap‎, BitArray‎&gt;"
+                      LastKnownLocation="Package2_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6e8b4548-b57c-4e2e-9085-c33c0fd1c0f3"
+                  name="compareHashFunc"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3d76fe08-f932-439c-90d7-295dbad46043"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DImagePerceptualHash Member%3D(Name%3DGetSimilarity OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D3 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]))]) ParameterIdentifier%3DcompareHashFunc"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="96c4209d-639e-45e0-9038-8b05150c8d3b"
+                      LastKnownName="Func&lt;BitArray‎, BitArray‎, Single‎&gt;"
+                      LastKnownLocation="Package2_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="55ace86f-1a58-45e6-a7a4-ad7e63951242"
+            name="GetDigest"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="21ed6687-0de9-4a24-ab3d-fbd7259f36b2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DImagePerceptualHash Member%3D(Name%3DGetDigest OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d7acfd8f-f750-4d7a-83be-53c822975e60"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa911337-cfa8-4aa0-91fa-95e127012b43">
+                    <propertyInstance
+                      Id="7bdc4dfe-4d11-4a41-8a22-156e726ee63b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9bd36543-55a3-4866-bc93-93adfbe0097f">
+                    <propertyInstance
+                      Id="731f8dff-ca27-4566-a47a-ad4542a2ac1e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="db36fbac-7b6a-4536-8df5-221903ce3669">
+                    <propertyInstance
+                      Id="8d042d48-4b4c-42ae-b1a4-c77cf4c50310"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4eee21ce-c397-4ff0-abf5-17edd01bd3f0">
+                    <propertyInstance
+                      Id="c5db529d-8aff-4717-b248-3ba51d0a4053"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e6184b07-c88f-4b33-a9f6-a04891acef48">
+                    <propertyInstance
+                      Id="66af969a-c4d7-44d7-b231-66a68e6ede94"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1abb39ef-68cd-4edb-9581-d28ba89483c8">
+                    <propertyInstance
+                      Id="5e3ebc90-2d26-4337-a7f3-46eed5d70b9d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1269fb3e-64c9-4162-836a-360558d181de"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="70bfe0c6-64e3-49e0-b632-43a68d2235aa"
+                      LastKnownName="BitArray"
+                      LastKnownLocation="Package4_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="43d6f386-3262-4b37-bb68-801d07f3ddec"
+                  name="mediaObject"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f40711c5-b3ef-4f17-a11f-35c8b73f999a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DImagePerceptualHash Member%3D(Name%3DGetDigest OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)]))]) ParameterIdentifier%3DmediaObject"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="59235654-487a-4777-89ff-723e0e972de0"
+                      LastKnownName="Bitmap"
+                      LastKnownLocation="Package2_2051.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="32832645-9f45-4463-93b7-fb0e59f2b52e"
+                  name="hashFunc"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f168429f-2dd5-4fa8-8efc-a1290b43d977"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DImagePerceptualHash Member%3D(Name%3DGetDigest OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)]))]) ParameterIdentifier%3DhashFunc"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f59927c4-fc65-4bc9-986c-e63fd386426e"
+                      LastKnownName="Func&lt;Bitmap‎, BitArray‎&gt;"
+                      LastKnownLocation="Package2_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e560b288-2e97-4e54-8719-abfc0f1b6517"
+            name="PreProcessImage"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="01d2af93-fcef-45fc-967a-b8c81edd35df"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DImagePerceptualHash Member%3D(Name%3DPreProcessImage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="65932305-85ee-44b9-9525-3fd49fab695d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4cadbf96-4e09-4564-a6f5-a69f65c7a820">
+                    <propertyInstance
+                      Id="57c96129-ac1a-46a2-b6e3-012773fc7483"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f7250f9-8168-4ecb-ac05-538d29e1ec4e">
+                    <propertyInstance
+                      Id="b17ab5af-2547-47bc-b6aa-4e5418a39808"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c230b362-62d3-4e1b-b6c4-0190549bc777">
+                    <propertyInstance
+                      Id="d27724b4-27d2-4011-8dc3-85c8ba1d3eba"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af4344dc-b879-4bf2-b958-5103379c9bce">
+                    <propertyInstance
+                      Id="24b1b728-85b9-438d-885a-8e7477a175a9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ec2803d1-47be-4988-b80f-6203429937fb">
+                    <propertyInstance
+                      Id="89e03f79-1baa-43a7-a59a-1daf9030c358"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5781de4b-8620-495b-978f-d8e9d92daf80">
+                    <propertyInstance
+                      Id="32304404-4144-44c5-b576-658ac02aeba4"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a4494173-29ff-4e18-a582-033f069db1cb"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="59235654-487a-4777-89ff-723e0e972de0"
+                      LastKnownName="Bitmap"
+                      LastKnownLocation="Package2_2051.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6e388bb5-d442-4e22-a51b-c9ce02ef48fe"
+                  name="mediaObjectA"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="312f855d-2af6-497a-880b-545466dee6e7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DImagePerceptualHash Member%3D(Name%3DPreProcessImage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)]) ParameterIdentifier%3DmediaObjectA"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="59235654-487a-4777-89ff-723e0e972de0"
+                      LastKnownName="Bitmap"
+                      LastKnownLocation="Package2_2051.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="03866411-a5ae-4203-bc3f-1152a1e8ab91"
+            name="ImagePerceptualHash"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d1765603-5950-494a-9e7f-a69518ccb72b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DImagePerceptualHash Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f4a42c16-b797-4ab8-be09-910101628afa"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dd3850eb-0d4c-4874-bf45-02121926b38b">
+                    <propertyInstance
+                      Id="123f090e-45e5-42bb-821f-fbaadd71e32d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4e91833c-050e-4921-9f39-7bfcc2086fae">
+                    <propertyInstance
+                      Id="08f906e2-17d0-44f3-bf98-a039f5fb9497"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="41326e52-41ff-48bc-baeb-2dc3e8937288">
+                    <propertyInstance
+                      Id="63103fb7-6435-42ba-9cfa-f283b4f5ab6d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be581ae3-9f90-4147-9ca5-cb03dd17251d">
+                    <propertyInstance
+                      Id="77c92230-0dd0-4553-8168-38bc22b1ad34"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5391be12-f811-4440-8ee7-e864f7c84829">
+                    <propertyInstance
+                      Id="e41f18a6-9d7f-4f80-85cc-880d68449970"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e58ca42-730c-42c8-956b-f4a9bf63dbab">
+                    <propertyInstance
+                      Id="09369c93-5357-469d-8818-520cb8e147a7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="90974445-729e-4c38-b42b-149c564dea27"
+        name="PerceptualHashing"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="f459d107-fa33-4bf6-a633-3f97f4f28853"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DPerceptualHashing"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c6034d6e-d067-4f2c-b33d-102a23dd4a0c"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1469a2a6-7ee3-4a81-a509-892e9936dbe2">
+                <propertyInstance
+                  Id="9c89324c-238b-45c9-953c-1c8d53971d17"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="89fb1c08-0b07-4bfd-9e6c-2a6b293e4084">
+                <propertyInstance
+                  Id="83e2bfbf-6d8e-4e62-b13f-84b74e100356"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="39212294-9a17-42a2-9139-aa99b87ca47e">
+                <propertyInstance
+                  Id="ec14af66-71d9-48e2-a153-30f4e7cf14d8"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="46281b8a-16c6-404a-aebe-1156298de6fa">
+                <propertyInstance
+                  Id="c1c68db6-bec8-4a59-86e2-597829655956"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d64d39ed-bc1d-4c82-8757-fc135878fb8c">
+                <propertyInstance
+                  Id="a7ea2d6a-4138-4a34-b406-4513870457df"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="c3e44b97-9a94-4f12-a31a-6e36f323369c">
+            <interfaceMoniker
+              Id="405f362b-3bce-450d-99f3-1f06786e459c"
+              LastKnownName="IPerceptualHashing&lt;Bitmap‎&gt;"
+              LastKnownLocation="Package1_2048.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="b71ff59f-22cf-446e-9ba9-99c4d03e83f6"
+            name="GetSimilarity"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e1dd4775-aba0-49e1-a51f-d9f3ee9da582"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DPerceptualHashing Member%3D(Name%3DGetSimilarity OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D3 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1f5eac37-f772-4c9b-adef-69c1941958f6"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e4284c08-c8bf-42e6-85f0-0b040c8093b7">
+                    <propertyInstance
+                      Id="3cdff9f7-3d43-48c9-8473-bd4b3334253d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7732b510-a3a0-460e-91f2-9f1317cfe529">
+                    <propertyInstance
+                      Id="57def366-e287-499e-b02d-a1522735d2c7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5531398d-c992-4df2-92ab-a57d82404acf">
+                    <propertyInstance
+                      Id="8c7dd86c-f263-4093-8fe2-57c85f8aadef"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9200d33d-5dd3-45f2-81d0-756715ccef8f">
+                    <propertyInstance
+                      Id="ff341ce4-781f-4451-bce9-2d7111fd928c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6ec7c6ba-1569-43c9-b7cc-d98002a4b6d1">
+                    <propertyInstance
+                      Id="717315c0-a90e-4e7c-8be8-ad7b05b848d7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5da52f89-6fd6-409d-b729-48ce139086fd">
+                    <propertyInstance
+                      Id="5b2a6f57-d96f-467d-bf75-03d49c5d1188"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fd409c58-eb21-49a4-b452-0712c509638d"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9564310d-d424-4938-84f5-2ce1649d908c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9257078d-1758-4aea-b096-2f40836ab323"
+                  name="mediaObjectA"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b5f66f5e-b5b1-4778-a681-f29dcd0b460d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DPerceptualHashing Member%3D(Name%3DGetSimilarity OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D3 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]))]) ParameterIdentifier%3DmediaObjectA"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="59235654-487a-4777-89ff-723e0e972de0"
+                      LastKnownName="Bitmap"
+                      LastKnownLocation="Package2_2051.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="25b8f890-722f-4a6e-905f-d0ecb64c46b7"
+                  name="mediaObjectB"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="35397db3-046a-4c68-a197-e334fe751108"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DPerceptualHashing Member%3D(Name%3DGetSimilarity OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D3 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]))]) ParameterIdentifier%3DmediaObjectB"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="59235654-487a-4777-89ff-723e0e972de0"
+                      LastKnownName="Bitmap"
+                      LastKnownLocation="Package2_2051.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4aa4440d-095c-4e77-9d93-af2ad1cebf2e"
+                  name="hashFunc"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="407fa085-3914-4785-99c4-8c7bda4d2411"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DPerceptualHashing Member%3D(Name%3DGetSimilarity OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D3 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]))]) ParameterIdentifier%3DhashFunc"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f59927c4-fc65-4bc9-986c-e63fd386426e"
+                      LastKnownName="Func&lt;Bitmap‎, BitArray‎&gt;"
+                      LastKnownLocation="Package2_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="63298edc-90f8-427a-9c0b-db4248cbdbb1"
+                  name="compareHashFunc"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="70eca88c-88cf-40ad-b74b-548c561b5467"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DPerceptualHashing Member%3D(Name%3DGetSimilarity OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D3 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]))]) ParameterIdentifier%3DcompareHashFunc"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="96c4209d-639e-45e0-9038-8b05150c8d3b"
+                      LastKnownName="Func&lt;BitArray‎, BitArray‎, Single‎&gt;"
+                      LastKnownLocation="Package2_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3383e242-c171-4129-ac1e-0a05ef94069f"
+            name="GetDigest"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="267ab9c4-93f8-4465-b108-bce941fd66e4"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DPerceptualHashing Member%3D(Name%3DGetDigest OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f0e551c9-d231-467a-afa1-1d876ad11bc0"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ff777f3-0b4f-4db0-8037-40e25b905351">
+                    <propertyInstance
+                      Id="b346ed96-d138-4a79-bccd-105a354211bb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8abc69fa-9cbc-4b73-b298-f501607c7eea">
+                    <propertyInstance
+                      Id="98a7e71e-17fc-4ea5-b0fb-5797ebea4ebf"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6fd8a0a8-7c46-49c8-938e-2430b92f8652">
+                    <propertyInstance
+                      Id="f36a464e-559f-4832-ad2c-78fb7fc391c2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="55cc5d17-c3c6-4644-8e81-e55d3e52add7">
+                    <propertyInstance
+                      Id="52570eca-e099-4465-b3bf-642e0c5bc946"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ad3fb1c3-12aa-47d8-af4f-8a5d7df3f5ff">
+                    <propertyInstance
+                      Id="99b0a19c-7b56-40e3-a6e1-76178de5b498"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="64afd0a6-f7c4-4186-bf35-01ca00647d1d">
+                    <propertyInstance
+                      Id="4b2ff5de-1dbd-4146-aed9-9cda9319660f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="15aa3742-a6f8-4a0b-8eae-349f827cb93a"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="70bfe0c6-64e3-49e0-b632-43a68d2235aa"
+                      LastKnownName="BitArray"
+                      LastKnownLocation="Package4_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d0c5a049-1dad-4b28-a723-64830adc5742"
+                  name="mediaObject"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="cd620a9d-9f03-4a97-b5f1-1496cd433b7c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DPerceptualHashing Member%3D(Name%3DGetDigest OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)]))]) ParameterIdentifier%3DmediaObject"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="59235654-487a-4777-89ff-723e0e972de0"
+                      LastKnownName="Bitmap"
+                      LastKnownLocation="Package2_2051.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f7c9d30a-b1af-45e7-83cd-0b813d8f8992"
+                  name="hashFunc"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5987ad77-f53b-409a-af23-854b524c6604"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DPerceptualHashing Member%3D(Name%3DGetDigest OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)]))]) ParameterIdentifier%3DhashFunc"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f59927c4-fc65-4bc9-986c-e63fd386426e"
+                      LastKnownName="Func&lt;Bitmap‎, BitArray‎&gt;"
+                      LastKnownLocation="Package2_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="36ea113d-953f-44a0-b804-ec7d40dbd109"
+            name="PerceptualHashing"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3f0720b3-10a4-4175-8e53-6fd3e6309908"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DPerceptualHashing Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="21ae2789-3de5-41fc-8ecc-88d801894299"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="457b8f16-e597-498b-a231-6800a5dfbc3e">
+                    <propertyInstance
+                      Id="c9865f64-4565-4940-8382-6d44bf31239a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="029cd3a5-4bbf-4e23-a264-eff415bd258d">
+                    <propertyInstance
+                      Id="22f23c39-55c8-4b6f-8a4f-53d66e202cdb"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="363055fb-7711-49ff-bd4c-a8fc8ade3fa2">
+                    <propertyInstance
+                      Id="153c6d62-2404-4abe-aff3-7f077fa0e25a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="84956ac8-8dd0-4706-8fb8-d8c5fa6fd448">
+                    <propertyInstance
+                      Id="8cca171e-422c-4722-ab30-61835447fb0f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="23dc52ac-78d3-493a-a91a-a2a69d9a872c">
+                    <propertyInstance
+                      Id="8b4243a4-8d6b-41b7-a5a0-292e9f07e605"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="027c1b68-2596-432e-b429-ae354147f6e6">
+                    <propertyInstance
+                      Id="f596c7da-00cf-4a9d-80aa-16197c1d559b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="bfe84669-7e80-4a6a-9bd9-ed2eeedd8aae"
+        name="IPerceptualHashing"
+        visibility="Private"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="f91168b8-0a7d-4227-850b-235e2eacd31c"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f5e49ed9-feb3-4730-bbf2-000a3e9a57b4"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ddc542d1-d8a9-4df4-9df7-4f031283b006">
+                <propertyInstance
+                  Id="ba1a3bd9-86b1-4af1-96f0-65fc91efb62e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="aaedfdc3-aaab-45c8-9654-e7ec3d044c77">
+                <propertyInstance
+                  Id="0e784674-245a-4df8-b161-d31f559f19b2"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e233cb24-7dca-4bbf-8070-4bd6a0c789f5">
+                <propertyInstance
+                  Id="4e07480e-477a-47c3-945a-9541b1be0f0a"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8a612a7b-1534-463d-b512-7f0705d8e9d1">
+                <propertyInstance
+                  Id="728587c5-ee90-4b2e-9f77-6bbafd00ac04"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="026bf763-1f0b-444c-a765-555611a40027"
+            parameters=""
+            name="RedefinableTemplateSignature1"
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="3e564452-5040-4a11-8cb2-9c6a3a791e03">
+                <referencesInternal>
+                  <reference
+                    Id="d32f99bb-ffd8-4596-a491-1f7e32b5969c"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) ParameterIdentifier%3D0"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="5636bb10-7962-4ed4-992f-e4413d1e16e4"
+                    name="T"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+        <ownedOperations>
+          <operation
+            Id="2c85fc1e-45bb-4a28-b614-a65e43eafc97"
+            name="GetSimilarity"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="027afa93-8e16-4ff5-bbae-b0b681e89bc7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) Member%3D(Name%3DGetSimilarity OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D3 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b88fae5b-8ff1-4b2a-b422-9071227ea301"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01cdb84a-7ba5-45c5-889e-c32a87705226">
+                    <propertyInstance
+                      Id="c513e846-ea7f-4bc1-b06d-d4c9c4841f17"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="94bc7f17-bc9b-4717-8029-37817d18ac3d">
+                    <propertyInstance
+                      Id="a8bf4a33-4012-46db-950c-428f7a88107c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="81df4a2d-1094-4ec3-ac19-bb7f8ccde977">
+                    <propertyInstance
+                      Id="81c6f169-9229-4e60-9825-9014b4deadb0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff52c641-f8e3-49f6-be6e-220efdc08b72">
+                    <propertyInstance
+                      Id="10a1fe11-1912-45dd-921b-c9e9fd86b481"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="838e8bc7-e3b0-412d-97a5-3fb768b82678">
+                    <propertyInstance
+                      Id="29e378df-3e84-417e-a3dd-f0e367f39be3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bfa881d2-f012-4d6a-85a9-1e163da08174">
+                    <propertyInstance
+                      Id="a46d424e-9551-4e64-b45f-64fdfefce7b1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fb5caeb4-e7ea-4c22-9e09-5561d75588d6"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9564310d-d424-4938-84f5-2ce1649d908c"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="feff393e-117e-473f-a6cf-767c89284e1e"
+                  name="mediaObjectA"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="07739212-4c28-48bb-905c-1a200bc354dd"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) Member%3D(Name%3DGetSimilarity OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D3 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]))]) ParameterIdentifier%3DmediaObjectA"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5636bb10-7962-4ed4-992f-e4413d1e16e4"
+                      LastKnownName="T"
+                      LastKnownLocation="Package1_2048.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1cd5c019-e42e-476e-a219-d872e9080dd7"
+                  name="mediaObjectB"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6980b39e-5ff6-41ad-906c-049b6beba769"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) Member%3D(Name%3DGetSimilarity OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D3 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]))]) ParameterIdentifier%3DmediaObjectB"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5636bb10-7962-4ed4-992f-e4413d1e16e4"
+                      LastKnownName="T"
+                      LastKnownLocation="Package1_2048.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2cbb3284-45e3-4368-90ce-80916795ac2e"
+                  name="hashFunc"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f1942676-2356-46f9-84b6-273e80eb6e9e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) Member%3D(Name%3DGetSimilarity OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D3 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]))]) ParameterIdentifier%3DhashFunc"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="aec3dce7-79ae-4222-96bd-7ff8d85a627f"
+                      LastKnownName="Func&lt;T‎, BitArray‎&gt;"
+                      LastKnownLocation="Package2_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cbf3c189-9a1c-4b83-a4f5-0275d0daf2f9"
+                  name="compareHashFunc"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="07ba4074-acbf-44dd-9723-5fc4e8454abf"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) Member%3D(Name%3DGetSimilarity OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D3 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]))]) ParameterIdentifier%3DcompareHashFunc"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="96c4209d-639e-45e0-9038-8b05150c8d3b"
+                      LastKnownName="Func&lt;BitArray‎, BitArray‎, Single‎&gt;"
+                      LastKnownLocation="Package2_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d3ba9ecb-0e16-4a86-b90d-5f5645aef237"
+            name="GetDigest"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="25d68e71-39a0-4305-9a2b-25bef7ce186a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) Member%3D(Name%3DGetDigest OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b3b797f4-44da-44a7-b9d0-35146f312115"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="94f3205a-7fdf-4999-a298-64ff9cc0cf90">
+                    <propertyInstance
+                      Id="cce83b42-8472-4889-ace3-35107e7da8ea"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa330d9e-abc6-41f0-89b9-e9dc9f551c54">
+                    <propertyInstance
+                      Id="634bce58-8af3-469e-bf50-343f67aba88a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="23ace79e-baf2-455e-832c-2435f7280b0e">
+                    <propertyInstance
+                      Id="9b580d79-2744-4786-85bf-4e6fba0e0781"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f324a791-8bce-46dc-94e9-907efcb99260">
+                    <propertyInstance
+                      Id="f014a716-3bf1-424d-9641-f7edbcb4b71b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bac12447-b650-41d2-b2c8-36c46fa31dae">
+                    <propertyInstance
+                      Id="9a28ac07-2b4c-4a1e-b664-1d7773639a49"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6686b9b3-a82c-484e-9da4-8d2ebf46a503">
+                    <propertyInstance
+                      Id="b07ebe50-395b-44ba-89fd-eae2aa63eb5d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0dbc6d1b-7f8a-4ad7-b398-d13ec9fcda66"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="70bfe0c6-64e3-49e0-b632-43a68d2235aa"
+                      LastKnownName="BitArray"
+                      LastKnownLocation="Package4_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d940fb3e-1e48-48bf-9c24-62c02578e308"
+                  name="mediaObject"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1b987ac7-c537-454f-8a8a-104d6e2a5a06"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) Member%3D(Name%3DGetDigest OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)]))]) ParameterIdentifier%3DmediaObject"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5636bb10-7962-4ed4-992f-e4413d1e16e4"
+                      LastKnownName="T"
+                      LastKnownLocation="Package1_2048.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dce92f5c-2a8f-424b-aa52-72559df67fef"
+                  name="hashFunc"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="96163035-5cac-4bb2-acb5-bbdf1f58a222"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) Member%3D(Name%3DGetDigest OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3D(Name%3DIPerceptualHashing GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections Type%3DBitArray)]))]) ParameterIdentifier%3DhashFunc"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="aec3dce7-79ae-4222-96bd-7ff8d85a627f"
+                      LastKnownName="Func&lt;T‎, BitArray‎&gt;"
+                      LastKnownLocation="Package2_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="a6704c8a-59fc-4e0d-b004-846d20e5577f"
+        name="IPerceptualImageHashFunction"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="ec11836c-4f6f-4cb6-b7fe-8e304b4a5ee8"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DIPerceptualImageHashFunction"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="7a3dc06f-7d23-4e72-ae7f-64c8077d6dc5"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5fd61408-1edf-41f9-a8e4-a6b716866dcb">
+                <propertyInstance
+                  Id="d8b9f1a3-62be-4ec1-ad61-cff067bf0b19"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bedbba22-e98d-40bf-b009-ff12d027841a">
+                <propertyInstance
+                  Id="cd75302f-24b4-4a64-ab79-81c01651b3c1"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eb3bbca3-c942-4061-ac17-c93fa506c086">
+                <propertyInstance
+                  Id="6daa8b8c-483f-42e1-93bc-c724b4d3992a"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="91ae60be-b4f2-438a-aef4-836d5dd4cda1">
+                <propertyInstance
+                  Id="2c077897-08ac-4676-bff3-d014b3fab14c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="34248296-b439-4d65-90ba-e8529b3c8f9f"
+            name="GetHash"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c2131cf9-0967-4af4-9a59-3f51f12903f7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DIPerceptualImageHashFunction Member%3D(Name%3DGetHash OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="29d7e475-ba3d-4b0e-b423-f2250a9e14d2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="07d7b435-73db-4df5-8ef5-de3ed03f503f">
+                    <propertyInstance
+                      Id="d02e9106-1b14-4a14-9c70-09fb3230628b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="908513ed-355e-4ada-a7dc-b290208a5a85">
+                    <propertyInstance
+                      Id="f647f070-90f1-4387-869f-8ff5313e6976"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e2c4d74-ebc1-4e6e-af21-951ff00c6927">
+                    <propertyInstance
+                      Id="e9734e4c-bfc6-48bb-a8d0-465480a938b1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6e74064f-0167-4898-95c7-cac338a5ee83">
+                    <propertyInstance
+                      Id="5bba48f5-6f4e-47fa-9c65-bf35c6a34149"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a241f0fb-08b3-4132-ab30-e755330892f7">
+                    <propertyInstance
+                      Id="4c8cd5a0-941b-4305-ab4f-73303015be10"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="92562fa1-26dd-4521-9b33-158adb7a0f83">
+                    <propertyInstance
+                      Id="21be4819-0def-40f7-a76e-ad9876b4cec4"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="108a97cc-ffa1-4f56-b818-bae36d0d5b3e"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="70bfe0c6-64e3-49e0-b632-43a68d2235aa"
+                      LastKnownName="BitArray"
+                      LastKnownLocation="Package4_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fabf326f-c51c-4507-aa1f-5632bf0d57ba"
+                  name="imageFile"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="53f76027-b0f7-4594-a51e-837cbd471259"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DIPerceptualImageHashFunction Member%3D(Name%3DGetHash OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DimageFile"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="LocalSearchEngineModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="57f8750c-e2ca-47b3-8c65-48f78fd5942d"
+            name="GetHash"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="780e5b67-17c0-455c-a35f-819ea0989d7c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DIPerceptualImageHashFunction Member%3D(Name%3DGetHash OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.IO Type%3DStream)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="21434e5a-a00c-4bcb-a0ea-ff12d30349e1"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="029fab95-5e41-4e45-b813-8eb87e203afa">
+                    <propertyInstance
+                      Id="314bafee-2c6a-4ba1-a68d-078ca78c8431"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b98762cf-562c-46f4-b4f7-49003ed6ca6f">
+                    <propertyInstance
+                      Id="91ff20ea-ab20-4682-aa5e-d5549606a341"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eeff0080-8357-4d6b-a3f6-146126ca2d51">
+                    <propertyInstance
+                      Id="145b2229-86cd-4c2e-a1c0-025475550fee"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2f8f9c7d-2ce3-46ca-91ca-eb9fc6ce2e39">
+                    <propertyInstance
+                      Id="8a7a2a3e-ae78-40a1-8c9a-0c821135a665"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="32ca8ec2-65a9-469d-bbdb-3da25979fa4d">
+                    <propertyInstance
+                      Id="ecec5465-3210-4f27-a5d5-72472447c5c4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="92cbbbc4-29c7-4c3b-891b-a52b7b046a3f">
+                    <propertyInstance
+                      Id="db00ae89-38b6-453b-a84c-1ee09b486de9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3681f96c-cfaa-4e4e-b6e9-b726d866536c"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="70bfe0c6-64e3-49e0-b632-43a68d2235aa"
+                      LastKnownName="BitArray"
+                      LastKnownLocation="Package4_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0cbd9049-3f9f-4690-ae32-74b31de1e340"
+                  name="imageFile"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7d765077-05ad-404d-8e8f-4dfa48d5ba72"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DIPerceptualImageHashFunction Member%3D(Name%3DGetHash OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.IO Type%3DStream)]) ParameterIdentifier%3DimageFile"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="382c560b-10dd-4d31-85b4-769c9bfd21cd"
+                      LastKnownName="Stream"
+                      LastKnownLocation="Package3_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="eb34abf7-bafc-4f9c-855b-22e8df131b37"
+            name="GetHash"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7566482a-8e70-4932-9f8f-3037b78a70d5"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DIPerceptualImageHashFunction Member%3D(Name%3DGetHash OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5419de08-78bf-4787-954f-16bf9630aee3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e23e942-f414-4e52-8703-99a7e9ce46dc">
+                    <propertyInstance
+                      Id="d68b82ab-de8c-42d9-a065-c1c69e65d46f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9bbb91c1-4d1b-4ea7-8bbb-6be49e1132ab">
+                    <propertyInstance
+                      Id="b7e463df-7763-4e8b-9372-96bb3ad8891b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7c279757-90ba-4511-a43f-4778d9754ad2">
+                    <propertyInstance
+                      Id="2528b3dc-cb04-4ab8-8d9d-5de0559d47c0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5024157d-1acd-4cae-8056-d72d9ee28bc9">
+                    <propertyInstance
+                      Id="061dfb27-f9f1-4e4b-ad78-79586a91191c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10eb779e-5998-4b03-a076-c3005e15718a">
+                    <propertyInstance
+                      Id="7ffc335b-3e75-45c5-947f-36278634e7ec"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a19d488-02f7-4101-af7e-3c2a673fcfad">
+                    <propertyInstance
+                      Id="fc250662-904e-4ca5-a82c-38e970aaee9c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f9054116-20ae-4334-889e-724c398ba0a2"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="70bfe0c6-64e3-49e0-b632-43a68d2235aa"
+                      LastKnownName="BitArray"
+                      LastKnownLocation="Package4_2045.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="04322ff4-7c82-4969-bd7a-3915bf60027c"
+                  name="imageFile"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d3644cca-c8b6-4e93-af66-ae0f77a02116"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FUser%2FDocuments%2FVisual Studio 2013%2FProjects%2FLocalSearchEngine%2FPHash%2Fbin%2FDebug%2FPHash.exe&quot; Namespace%3DPHash Type%3DIPerceptualImageHashFunction Member%3D(Name%3DGetHash OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DBitmap)]) ParameterIdentifier%3DimageFile"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="59235654-487a-4777-89ff-723e0e972de0"
+                      LastKnownName="Bitmap"
+                      LastKnownLocation="Package2_2051.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="405f362b-3bce-450d-99f3-1f06786e459c"
+        name="IPerceptualHashing&lt;Bitmap‎&gt;"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="76f528f8-f444-467f-86bf-1328d2562b21"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4792835a-c1ef-4f3d-9401-847425a2e993">
+                <propertyInstance
+                  Id="8bd2dcf8-7c28-4a52-99da-9ed3256f011c"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="adf0f01f-2b96-41fd-a6b6-ca3f2cb54699">
+                <propertyInstance
+                  Id="5910a274-2bb9-4b49-a12b-62222d2ef8ec"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c3a404ee-afd1-4007-89b4-af97a70129d9">
+                <propertyInstance
+                  Id="909f9513-3553-4a7e-8fef-a85b425b6407"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9de4c752-ba93-49d8-9c60-f961843c02d1">
+                <propertyInstance
+                  Id="0ff67ff3-bfa7-405d-a14c-35bb97bc199d"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <signatures>
+          <templateBinding
+            Id="5e774b2b-5a31-4073-838d-604e5a95798f">
+            <redefinableTemplateSignatureMoniker
+              Id="026bf763-1f0b-444c-a765-555611a40027"
+              LastKnownLocation="Package1_2048.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="b5b1b9d4-f1bd-4f10-a385-439a81bdca7f">
+                  <actuals>
+                    <classMoniker
+                      Id="59235654-487a-4777-89ff-723e0e972de0"
+                      LastKnownName="Bitmap"
+                      LastKnownLocation="Package2_2051.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="3e564452-5040-4a11-8cb2-9c6a3a791e03"
+                      LastKnownLocation="Package1_2048.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
