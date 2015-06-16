@@ -42,14 +42,14 @@ namespace PHash
             //var dctMatrix = ImageProcessing.ImageProcessingUtils.DctImageTransform.GetDctForwardTransform(imageFile);
             var dctMatrix = ImageProcessing.ImageProcessingUtils.DctImageTransform.GetFastDctForwardTransform(imageFile);
 
-            return CreateDigest(dctMatrix);
+            return CreateSign(dctMatrix);
         }
         /// <summary>
-        /// Create Digest from an 32x32 DCT Image Matrix
+        /// Create Sign from an 32x32 DCT Image Matrix
         /// </summary>
         /// <param name="dctMatrix">Discrete Cosine Transformed 32x32 Matrix</param>
         /// <returns></returns>
-        private static BitArray CreateDigest(double[,] dctMatrix)
+        private static BitArray CreateSign(double[,] dctMatrix)
         {
             if (dctMatrix.GetLength(0) < 8 || dctMatrix.GetLength(1) < 8)
             {

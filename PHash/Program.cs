@@ -7,7 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using PHash.Hashing_Function;
 using PHash.Hash_Distance_Function;
 
 namespace PHash
@@ -19,12 +19,15 @@ namespace PHash
             var phash = new ImagePerceptualHash();
             var dtcFunction = new PerceptualDctHashFunction();
             var normalizedHammingDistance = new NormalizedHammingDistance();
+            var blockmean = new BlockMeanHashFunction();
             float distance;
 
-            Bitmap a = new Bitmap(Image.FromFile(@"E:\DCIM\.thumbnails\1417064109701.jpg"));
-            Bitmap b = new Bitmap(Image.FromFile(@"E:\2.png"));
+            Bitmap a = new Bitmap(Image.FromFile(@"E:\2.jpg"));
+            Bitmap b = new Bitmap(Image.FromFile(@"E:\1.jpg"));
 
-            var array =phash.GetDigest(a, dtcFunction.GetHash);
+
+
+            var array = phash.GetDigest(a, blockmean.GetHash);
             string text = string.Empty;
 
             foreach (var VARIABLE in array)

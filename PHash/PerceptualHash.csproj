@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Hash Distance Function\NormalizedHammingDistance.cs" />
     <Compile Include="Hash Distance Function\IPerceptualHashDistanceFunction.cs" />
+    <Compile Include="Hashing Function\BlockMeanHashFunction.cs" />
     <Compile Include="Hashing Function\PerceptualDctHashFunction.cs" />
     <Compile Include="Hashing Function\IPerceptualImageHashFunction.cs" />
     <Compile Include="Image Perceptual Hashing\ImagePerceptualHash.cs" />
