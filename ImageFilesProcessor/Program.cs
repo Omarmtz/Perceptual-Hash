@@ -15,7 +15,7 @@ namespace ImageFilesProcessor
             var imageHasher = new MediaObjectsHasher();
             var watch = Stopwatch.StartNew();
             imageHasher.ScanDatabaseSystem();
-            var results=imageHasher.GetImageSimilarities(@"E:\DCIM\PerfectlyClear_Camera\PC_20141101_225708.jpg", 85);
+            var results=imageHasher.GetImageSimilarities(@"E:\DCIM\PerfectlyClear_Camera\PC_20141101_225708.jpg", 85,MediaObjectsHasher.HashMethod.BlockMeanMethod4Overlapped);
             //imageHasher.GetImageSimilarities(@"E:\TestFolder\brookklyn.jpg", 1);
             watch.Stop();
             

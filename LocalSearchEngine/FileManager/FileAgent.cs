@@ -111,6 +111,7 @@ namespace LocalSearchEngine.FileManager
         /// </summary>
         public void InitializeIndexation()
         {
+            DataBaseManager.ClearDataBase();
             //Process Indexation
             ProcessIndexation(this._directory, GetSupportedFilesFilter, IndexFile);
             WatchFileSystemTask = Task.Factory.StartNew(() => RunWatcher(_directory)

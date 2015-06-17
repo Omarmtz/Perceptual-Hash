@@ -36,11 +36,11 @@
             this.directoryManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.selectWorkDirectoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rescanDirectoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.scanDirectoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.resultImageList = new System.Windows.Forms.ImageList(this.components);
             this.listView1 = new System.Windows.Forms.ListView();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
-            this.scanDirectoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -48,9 +48,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 27);
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 24);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(357, 326);
+            this.pictureBox1.Size = new System.Drawing.Size(357, 415);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -107,6 +108,13 @@
             this.rescanDirectoryToolStripMenuItem.Text = "Rescan Directory";
             this.rescanDirectoryToolStripMenuItem.Click += new System.EventHandler(this.rescanDirectoryToolStripMenuItem_Click);
             // 
+            // scanDirectoryToolStripMenuItem
+            // 
+            this.scanDirectoryToolStripMenuItem.Name = "scanDirectoryToolStripMenuItem";
+            this.scanDirectoryToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.scanDirectoryToolStripMenuItem.Text = "Scan Directory";
+            this.scanDirectoryToolStripMenuItem.Click += new System.EventHandler(this.scanDirectoryToolStripMenuItem_Click);
+            // 
             // resultImageList
             // 
             this.resultImageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth24Bit;
@@ -115,24 +123,26 @@
             // 
             // listView1
             // 
+            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.LargeImageList = this.resultImageList;
-            this.listView1.Location = new System.Drawing.Point(375, 27);
+            this.listView1.Location = new System.Drawing.Point(357, 24);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(764, 398);
+            this.listView1.Size = new System.Drawing.Size(794, 415);
             this.listView1.TabIndex = 2;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.DoubleClick += new System.EventHandler(this.listView1_DoubleClick);
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(105, 359);
+            this.numericUpDown1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.numericUpDown1.Location = new System.Drawing.Point(357, 419);
             this.numericUpDown1.Minimum = new decimal(new int[] {
             70,
             0,
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(98, 20);
+            this.numericUpDown1.Size = new System.Drawing.Size(794, 20);
             this.numericUpDown1.TabIndex = 3;
             this.numericUpDown1.Tag = "";
             this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -145,18 +155,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 361);
+            this.label1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label1.Location = new System.Drawing.Point(357, 406);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Image Similarity %";
-            // 
-            // scanDirectoryToolStripMenuItem
-            // 
-            this.scanDirectoryToolStripMenuItem.Name = "scanDirectoryToolStripMenuItem";
-            this.scanDirectoryToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
-            this.scanDirectoryToolStripMenuItem.Text = "Scan Directory";
-            this.scanDirectoryToolStripMenuItem.Click += new System.EventHandler(this.scanDirectoryToolStripMenuItem_Click);
             // 
             // Form1
             // 

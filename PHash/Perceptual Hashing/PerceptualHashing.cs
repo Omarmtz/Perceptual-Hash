@@ -39,6 +39,6 @@ namespace PHash
         /// Returns a N length BitArray representing resulting hash for each image  
         /// </param>
         /// <returns>N length BitArray Hash</returns>
-        public abstract BitArray GetDigest(Bitmap mediaObject, Func<Bitmap, BitArray> hashFunc);
+        public abstract BitArray GetHash(Bitmap mediaObject, Func<Bitmap, BitArray> hashFunc);
     }
 }

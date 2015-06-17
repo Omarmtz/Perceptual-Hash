@@ -37,7 +37,7 @@ namespace PHash
         /// Returns a N length BitArray representing resulting hash for each MediaObject T  
         /// </param>
         /// <returns>N length BitArray Hash</returns>
-        BitArray GetDigest(T mediaObject, Func<T, BitArray> hashFunc);
+        BitArray GetHash(T mediaObject, Func<T, BitArray> hashFunc);
 
     }
 }

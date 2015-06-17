@@ -46,7 +46,7 @@ namespace PHash
         /// Returns a N length BitArray representing resulting hash for each image  
         /// </param>
         /// <returns>N length BitArray Hash</returns>
-        public override BitArray GetDigest(Bitmap mediaObject, Func<Bitmap, BitArray> hashFunc)
+        public override BitArray GetHash(Bitmap mediaObject, Func<Bitmap, BitArray> hashFunc)
         {
             var tmp = PreProcessImage(mediaObject);
 

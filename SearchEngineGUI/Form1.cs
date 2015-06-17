@@ -53,7 +53,7 @@ namespace SearchEngineGUI
 
             pictureBox1.Image = Image.FromFile(files.First());
 
-            var results = _imageHasher.GetImageSimilarities(files.First(), (int)this.numericUpDown1.Value);
+            var results = _imageHasher.GetImageSimilarities(files.First(), (int)this.numericUpDown1.Value,MediaObjectsHasher.HashMethod.BlockMeanMethod4Overlapped);
             
             resultImageList.Images.Clear();
 

@@ -1,14 +1,35 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using ImageProcessing.Filters;
+using ImageProcessing.ImageProcessingUtils;
 
-namespace PHash.Hashing_Function
+namespace PHash
 {
-    public class BlockMeanHashFunction:IPerceptualImageHashFunction
+    public class BlockMeanHashFunction : IPerceptualImageHashFunction
     {
+        public enum MethodType
+        {
+            Method1UnOverlapped,
+            Method2Overlapped,
+            Method3UnOverlapped,
+            Method4Overlapped,
+        }
+
+        public BlockMeanHashFunction(MethodType methodType)
+        {
+            this._selectedMethod = methodType;
+        }
+
+        private MethodType _selectedMethod;
+
+        public void ChangeMethod(MethodType method)
+        {
+            this._selectedMethod = method;
+        }
+
         public BitArray GetHash(string imageFile)
         {
             throw new NotImplementedException();
@@ -19,23 +40,109 @@ namespace PHash.Hashing_Function
             throw new NotImplementedException();
         }
 
-        public BitArray GetHash(System.Drawing.Bitmap imageFile)
+        public BitArray GetHash(Bitmap imageFile)
         {
-            var refMatrix = ImageProcessing.ImageProcessingUtils.BitmapToMatrix.ConvertBitmapToMatrix(imageFile);
-            return CreateSign(refMatrix);
+            switch (_selectedMethod)
+            {
+                case MethodType.Method1UnOverlapped:
+                        return CreateSignMethod1(imageFile);
+                case MethodType.Method2Overlapped:
+                        return CreateSignMethod2(imageFile);
+                case MethodType.Method3UnOverlapped:
+                        return CreateSignMethod3(imageFile);
+                case MethodType.Method4Overlapped:
+                        return CreateSignMethod4(imageFile);
+            }
+            return null;
         }
 
-        private BitArray CreateSign(double[,] matrixReference)
+        private BitArray CreateSignMethod4(Bitmap imageFile)
         {
-            if (matrixReference == null) throw new ArgumentNullException("matrixReference");
+            var hashList = new List<BitArray>();
+            for (int i = 0; i <= 345; i += 15)
+            {
+                hashList.Add(
+                    CreateSignMethod2(
+                    BasicFilters.RotateBitmap(imageFile, i)));
+            }
+
+            var resultHash = new BitArray(hashList.Sum(e => e.Length));
+
+            int index = 0;
+            foreach (var bitArray in hashList)
+            {
+                for (int i = 0; i < bitArray.Length; i++)
+                {
+                    resultHash[index] = bitArray[i];
+                    index++;
+                }
+            }
+            return resultHash;
+        }
+
+        private BitArray CreateSignMethod3(Bitmap imageFile)
+        {
+            var hashList = new List<BitArray>();
+            for (int i = 0; i <= 345; i += 15)
+            {
+                hashList.Add(
+                    CreateSignMethod1(
+                    BasicFilters.RotateBitmap(imageFile, i)));
+            }
+
+            var resultHash = new BitArray(hashList.Sum(e => e.Length));
+
+            int index = 0;
+            foreach (var bitArray in hashList)
+            {
+                for (int i = 0; i < bitArray.Length; i++)
+                {
+                    resultHash[index] = bitArray[i];
+                    index++;
+                }
+            }
+            return resultHash;
+        }
+
+        private BitArray CreateSignMethod2(Bitmap imageFile)
+        {
+            if (imageFile == null) throw new ArgumentNullException("imageFile");
+            var matrixReference = BitmapToMatrix.ConvertBitmapToMatrix(imageFile);
 
             IList<double> meanBlockList;
-            
-            var generatedBlocks = GenerateUnOverlappedBlocks(matrixReference, 64);
-            
-            var totalBlocksMean = GetBlocksMean(generatedBlocks,out meanBlockList);
 
-            var resultHash = new BitArray(64);
+            var generatedBlocks = GetOverlappedBlocks(matrixReference, matrixReference.GetLength(0) / 4);
+
+            var totalBlocksMean = GetBlocksMean(generatedBlocks, out meanBlockList);
+
+            //Make Hash Byte convertible by addign requiered bits to form the last byte
+            var length = meanBlockList.Count;
+            while (length%8 != 0)
+            {
+                length++;
+            }
+
+            var resultHash = new BitArray(length);
+
+            for (int i = 0; i < meanBlockList.Count; i++)
+            {
+                resultHash[i] = meanBlockList[i] >= totalBlocksMean;
+            }
+
+            return resultHash;
+        }
+        private BitArray CreateSignMethod1(Bitmap imageFile)
+        {
+            if (imageFile == null) throw new ArgumentNullException("imageFile");
+            var matrixReference = BitmapToMatrix.ConvertBitmapToMatrix(imageFile);
+
+            IList<double> meanBlockList;
+
+            var generatedBlocks = GenerateUnoverlappedBlocks(matrixReference, matrixReference.GetLength(0) / 8);
+
+            var totalBlocksMean = GetBlocksMean(generatedBlocks, out meanBlockList);
+
+            var resultHash = new BitArray(meanBlockList.Count);
 
             for (int i = 0; i < meanBlockList.Count; i++)
             {
@@ -46,7 +153,7 @@ namespace PHash.Hashing_Function
         }
 
         #region Block Methods
-        private static IList<double[,]> GenerateUnOverlappedBlocks(double[,] matrixReference, int numBlocks)
+        private static IList<double[,]> GenerateUnoverlappedBlocks(double[,] matrixReference, int blockSize)
         {
             if (matrixReference == null) throw new ArgumentNullException("matrixReference");
 
@@ -55,23 +162,47 @@ namespace PHash.Hashing_Function
                 throw new Exception("Non Square matrix are not allowed in Unoverlapped Block Mean Generation");
             }
 
-            var blockLength = (numBlocks/matrixReference.GetLength(0))*2;
+            var blockList = new List<double[,]>();
 
-            var blockList =new List<double[,]>();
-
-            for (var i = 0; i < matrixReference.GetLength(0); i += blockLength)
+            for (var i = 0; i <= matrixReference.GetLength(0)-blockSize; i += blockSize)
             {
-                for (var j = 0; j < matrixReference.GetLength(1); j += blockLength)
+                for (var j = 0; j <= matrixReference.GetLength(1) - blockSize; j += blockSize)
                 {
-                    var block = GenerateBlock(matrixReference, blockLength, i, j);
+                    var block = GenerateBlock(matrixReference, blockSize, i, j);
                     blockList.Add(block);
                 }
             }
-            
+
             return blockList;
         }
 
-        private static double[,] GenerateBlock(double[,] matrixReference,int blockLength,int i, int j)
+        private static IList<double[,]> GetOverlappedBlocks(double[,] matrixReference, int blockSize)
+        {
+            if (matrixReference.GetLength(0) % 2 != 0 || matrixReference.GetLength(0) != matrixReference.GetLength(1))
+            {
+                throw new Exception("Matrix must be Squared");
+            }
+
+            if (matrixReference.GetLength(0) % blockSize != 0)
+            {
+                throw new Exception("blockSize must fit in Matrix");
+            }
+
+            var blockList = new List<double[,]>();
+            var halfSize = (blockSize / 2);
+            for (var i = 0; i < matrixReference.GetLength(0) - halfSize; i += halfSize)
+            {
+                for (var j = 0; j < matrixReference.GetLength(1) - halfSize; j += halfSize)
+                {
+                    var block = GenerateBlock(matrixReference, blockSize, i, j);
+                    blockList.Add(block);
+                }
+            }
+
+            return blockList;
+        }
+
+        private static double[,] GenerateBlock(double[,] matrixReference, int blockLength, int i, int j)
         {
             var block = new double[blockLength, blockLength];
 

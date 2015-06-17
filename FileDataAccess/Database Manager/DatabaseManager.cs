@@ -11,6 +11,21 @@ namespace FileDataAccess
     /// </summary>
     public static class DataBaseManager
     {
+        public static void ClearDataBase()
+        {
+            try
+            {
+                using (var context = new FileDataBaseContainer())
+                {
+                    context.Database.ExecuteSqlCommand("DELETE FROM DocumentFiles WHERE ID != '"+Guid.Empty+"'");
+                }
+            }
+            catch (Exception)
+            {
+                //TODO LOG EXCEPTION DETAILS 
+            }
+
+        }
         /// <summary>
         /// Gets the specific file document from a GUID
         /// </summary>
@@ -95,7 +110,11 @@ namespace FileDataAccess
                 using (var context = new FileDataBaseContainer())
                 {
                     var result = context.DocumentImages.First(e => e.Id == image.Id);
-                    result.PFingerPrint = image.PFingerPrint;
+                    result.DctHash = image.DctHash;
+                    result.BlockMeanHashM1 = image.BlockMeanHashM1;
+                    result.BlockMeanHashM2 = image.BlockMeanHashM2;
+                    result.BlockMeanHashM3 = image.BlockMeanHashM3;
+                    result.BlockMeanHashM4 = image.BlockMeanHashM4;
                     context.SaveChanges();
                 }
             }
@@ -216,7 +235,7 @@ namespace FileDataAccess
             {
                 using (var context = new FileDataBaseContainer())
                 {
-                    return (from p in context.DocumentImages where p.PFingerPrint == null select p).Count();
+                    return (from p in context.DocumentImages where p.DctHash == null select p).Count();
                 }
             }
             catch (Exception e)
@@ -249,7 +268,7 @@ namespace FileDataAccess
                 using (var context = new FileDataBaseContainer())
                 {
                     return (from p in context.DocumentImages
-                            where p.PFingerPrint == null
+                            where p.DctHash == null
                             select p).Take(batchSize).ToList();
                 }
             }

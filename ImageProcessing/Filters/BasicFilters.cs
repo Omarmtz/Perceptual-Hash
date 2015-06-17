@@ -45,5 +45,18 @@ namespace ImageProcessing.Filters
             // apply the filter
             return filter.Apply(referenceBitmap);
         }
+        /// <summary>
+        /// Process image rotation filter using nearest neighbor algorithm, which does not assume any interpolation.
+        /// </summary>
+        /// <param name="referenceBitmap">Reference Image Bitmap</param>
+        /// <param name="degress">Degrees to rotate</param>
+        /// <returns></returns>
+        public static Bitmap RotateBitmap(Bitmap referenceBitmap, int degress)
+        {
+            // create filter - rotate for 30 degrees keeping original image size
+            var filter = new RotateNearestNeighbor(degress, true);
+            // apply the filter
+            return filter.Apply(referenceBitmap);
+        }
     }
 }

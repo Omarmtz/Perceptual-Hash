@@ -33,7 +33,11 @@
     <Property Name="Width" Type="int" Nullable="false" />
     <Property Name="Height" Type="int" Nullable="false" />
     <Property Name="PixelFormat" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="PFingerPrint" Type="varbinary(max)" Nullable="true" />
+    <Property Name="DctHash" Type="varbinary(max)" Nullable="true" />
+    <Property Name="BlockMeanHashM1" Type="varbinary(max)" Nullable="true" />
+    <Property Name="BlockMeanHashM2" Type="varbinary(max)" Nullable="true" />
+    <Property Name="BlockMeanHashM3" Type="varbinary(max)" Nullable="true" />
+    <Property Name="BlockMeanHashM4" Type="varbinary(max)" Nullable="true" />
     <Property Name="FileId" Type="uniqueidentifier" Nullable="false" />
     <Property Name="IsWithinFile" Type="bit" Nullable="false" />
     <Property Name="TempKeyName" Type="nvarchar(max)" Nullable="true" />
@@ -85,7 +89,11 @@
           <Property Name="Width" Type="Int32" Nullable="false" />
           <Property Name="Height" Type="Int32" Nullable="false" />
           <Property Name="PixelFormat" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="PFingerPrint" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="DctHash" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="BlockMeanHashM1" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="BlockMeanHashM2" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="BlockMeanHashM3" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="BlockMeanHashM4" Type="Binary" MaxLength="Max" FixedLength="false" />
           <Property Name="FileId" Type="Guid" Nullable="false" />
           <Property Name="IsWithinFile" Type="Boolean" Nullable="false" />
           <Property Name="TempKeyName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
@@ -131,7 +139,11 @@
           <ScalarProperty Name="Width" ColumnName="Width" />
           <ScalarProperty Name="Height" ColumnName="Height" />
           <ScalarProperty Name="PixelFormat" ColumnName="PixelFormat" />
-          <ScalarProperty Name="PFingerPrint" ColumnName="PFingerPrint" />
+          <ScalarProperty Name="DctHash" ColumnName="DctHash" />
+          <ScalarProperty Name="BlockMeanHashM1" ColumnName="BlockMeanHashM1" />
+          <ScalarProperty Name="BlockMeanHashM2" ColumnName="BlockMeanHashM2" />
+          <ScalarProperty Name="BlockMeanHashM3" ColumnName="BlockMeanHashM3" />
+          <ScalarProperty Name="BlockMeanHashM4" ColumnName="BlockMeanHashM4" />
           <ScalarProperty Name="FileId" ColumnName="FileId" />
           <ScalarProperty Name="IsWithinFile" ColumnName="IsWithinFile" />
           <ScalarProperty Name="TempKeyName" ColumnName="TempKeyName" />

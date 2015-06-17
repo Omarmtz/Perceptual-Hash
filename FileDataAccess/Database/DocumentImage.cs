@@ -18,7 +18,11 @@ namespace FileDataAccess.Database
         public int Width { get; set; }
         public int Height { get; set; }
         public string PixelFormat { get; set; }
-        public byte[] PFingerPrint { get; set; }
+        public byte[] DctHash { get; set; }
+        public byte[] BlockMeanHashM1 { get; set; }
+        public byte[] BlockMeanHashM2 { get; set; }
+        public byte[] BlockMeanHashM3 { get; set; }
+        public byte[] BlockMeanHashM4 { get; set; }
         public System.Guid FileId { get; set; }
         public bool IsWithinFile { get; set; }
         public string TempKeyName { get; set; }
