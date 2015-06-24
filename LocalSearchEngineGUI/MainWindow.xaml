@@ -1,0 +1,69 @@
+﻿<mui:ModernWindow x:Class="LocalSearchEngineGUI.MainWindow"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+                  Title="Local Search Engine" 
+                  Width="1024"
+                  Height="768"
+                  Style="{StaticResource BlankWindow}" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+
+
+
+    <DockPanel  HorizontalAlignment="Left" Width="auto" Height="auto">
+        <WrapPanel DockPanel.Dock="Left" Width="256">
+
+            <Button Name="ButtonLoadImage" HorizontalAlignment="Left" Width="128">Cargar</Button>
+            <Button Name="ButtonSearch"  HorizontalAlignment="Right" Width="128">Buscar</Button>
+            <Line></Line>
+            <!--<Separator Height="5" Width="256"/>-->
+            <Image Name="ImagePictureBox" AllowDrop="True" Source="Resources/Images/defaultImage.jpg" Width="256" Height="192" Stretch="Fill"/>
+            <!--<Separator Height="5" Width="256" />-->
+            <Button Name="ButtonConfigurationSearch" Content="Configuracion de busqueda" Width="256" />
+
+            <Border Name="BorderInfo" CornerRadius="6" BorderBrush="Gray" BorderThickness="2" DockPanel.Dock="Top" Height="465">
+                <StackPanel Margin="8">
+
+                    <Label Content="Nombre Archivo" HorizontalContentAlignment="Center" Width="256"/>
+                    <TextBox Name="TxtFileName" HorizontalContentAlignment="Center" IsReadOnly="True"/>
+
+                    <Label Content="Tamaño" HorizontalContentAlignment="Center" Width="256"/>
+                    <TextBox Name="TxtFileSize" HorizontalContentAlignment="Center" IsReadOnly="True"/>
+
+                    <Label Content="Fecha de modificacion" HorizontalContentAlignment="Center" Width="256"/>
+                    <TextBox Name="TxtChangeDate" HorizontalContentAlignment="Center" IsReadOnly="True"/>
+
+                    <Label Content="Dimensiones" HorizontalContentAlignment="Center" Width="256"/>
+                    <TextBox Name="TxtFileDimensions" HorizontalContentAlignment="Center" IsReadOnly="True"/>
+
+                    <Label Content="Firma Imagen" HorizontalContentAlignment="Center" Width="256"/>
+                    <TextBox Name="TxtFileSign" HorizontalContentAlignment="Center" IsReadOnly="True"/>
+
+                </StackPanel>
+            </Border>
+
+        </WrapPanel>
+        <WrapPanel DockPanel.Dock="Right" Width="760" >
+            <ScrollViewer>
+                <ListView Name="ResultView" Width="759">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Image  Source="{Binding FilePath}" Stretch="Fill" Margin="0,0,5,0" Width="190" Height="190"/>
+                                <StackPanel Orientation="Vertical">
+                                    <TextBlock>Nombre</TextBlock>
+                                    <TextBlock Text="{Binding FileName}" FontWeight="Bold" />
+                                    <TextBlock>Direccion</TextBlock>
+                                    <TextBlock Text="{Binding FilePath}" FontWeight="Thin" TextDecorations="Underline" Foreground="Blue" Cursor="Hand" />
+                                    <TextBlock>Firma</TextBlock>
+                                    <TextBlock Text="{Binding FileSign}" FontWeight="Bold" />
+                                    <TextBlock>Proximidad</TextBlock>
+                                    <TextBlock Text="{Binding FileHashValue}" FontWeight="Bold" />
+                                </StackPanel>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollViewer>
+        </WrapPanel>
+    </DockPanel>
+</mui:ModernWindow>
