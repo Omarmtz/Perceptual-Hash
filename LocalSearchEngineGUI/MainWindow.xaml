@@ -12,11 +12,13 @@
     <DockPanel  HorizontalAlignment="Left" Width="auto" Height="auto">
         <WrapPanel DockPanel.Dock="Left" Width="256">
 
-            <Button Name="ButtonLoadImage" HorizontalAlignment="Left" Width="128">Cargar</Button>
-            <Button Name="ButtonSearch"  HorizontalAlignment="Right" Width="128">Buscar</Button>
+            <Button Name="ButtonLoadImage" HorizontalAlignment="Left" Width="128" Click="ButtonLoadImage_OnClick">Cargar</Button>
+            <Button Name="ButtonSearch"  HorizontalAlignment="Right" Width="128" Click="ButtonSearch_OnClick">Buscar</Button>
             <Line></Line>
             <!--<Separator Height="5" Width="256"/>-->
-            <Image Name="ImagePictureBox" AllowDrop="True" Source="Resources/Images/defaultImage.jpg" Width="256" Height="192" Stretch="Fill"/>
+            <Image Name="ImagePictureBox" AllowDrop="True" Source="Resources/Images/defaultImage.jpg" Width="256" Height="192" Stretch="Fill" DragEnter="ImagePictureBox_OnDragEnter">
+
+            </Image>
             <!--<Separator Height="5" Width="256" />-->
             <Button Name="ButtonConfigurationSearch" Content="Configuracion de busqueda" Width="256" />
 
@@ -43,27 +45,32 @@
 
         </WrapPanel>
         <WrapPanel DockPanel.Dock="Right" Width="760" >
-            <ScrollViewer>
-                <ListView Name="ResultView" Width="759">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <StackPanel Orientation="Horizontal">
-                                <Image  Source="{Binding FilePath}" Stretch="Fill" Margin="0,0,5,0" Width="190" Height="190"/>
-                                <StackPanel Orientation="Vertical">
-                                    <TextBlock>Nombre</TextBlock>
-                                    <TextBlock Text="{Binding FileName}" FontWeight="Bold" />
-                                    <TextBlock>Direccion</TextBlock>
-                                    <TextBlock Text="{Binding FilePath}" FontWeight="Thin" TextDecorations="Underline" Foreground="Blue" Cursor="Hand" />
-                                    <TextBlock>Firma</TextBlock>
-                                    <TextBlock Text="{Binding FileSign}" FontWeight="Bold" />
-                                    <TextBlock>Proximidad</TextBlock>
-                                    <TextBlock Text="{Binding FileHashValue}" FontWeight="Bold" />
-                                </StackPanel>
+
+            <ListView Name="ResultView" Width="759" MouseDoubleClick="ResultView_OnMouseDoubleClick">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Image  Source="{Binding FilePath}" Stretch="UniformToFill" Margin="0,0,5,0" Width="190" Height="190"/>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock>Nombre</TextBlock>
+                                <TextBlock Text="{Binding FileName}" FontWeight="Bold" />
+                                <TextBlock>Direccion</TextBlock>
+                                <TextBlock Text="{Binding FilePath}" FontWeight="Thin" TextDecorations="Underline" Foreground="LightSkyBlue" Cursor="Hand" MouseDown="UIElement_OnMouseDown" />
+                                <TextBlock>Firma</TextBlock>
+                                <TextBlock Text="{Binding FileSign}" FontWeight="Bold" />
+                                <TextBlock>Proximidad</TextBlock>
+                                <TextBlock FontWeight="Bold" >
+                                    <TextBlock.Inlines>
+                                        <Run FontWeight="Bold" Text="{Binding FileSimilarity}" />
+                                        <Run FontStyle="Italic" Text="%" />
+                                    </TextBlock.Inlines>
+                                </TextBlock>
                             </StackPanel>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-            </ScrollViewer>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
         </WrapPanel>
     </DockPanel>
 </mui:ModernWindow>

@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using FileDataAccess;
 using FileDataAccess.Database;
+using ImageFilesProcessor.Classes;
 using PHash;
 using PHash.Hash_Distance_Function;
 
@@ -90,11 +91,11 @@ namespace ImageFilesProcessor
         /// <param name="file"></param>
         /// <param name="percentage"></param>
         /// <returns></returns>
-        public IList<string> GetImageSimilarities(string file, int percentage,HashMethod method)
+        public IList<ImageInfo> GetImageSimilarities(string file, int percentage, HashMethod method)
         {
             var result1 = GetImageHash(file,method);
 
-            var resultList = new List<string>();
+            var resultList = new List<ImageInfo>();
 
             var totalIndexed = DataBaseManager.GetTotalCountImages();
 
@@ -112,18 +113,25 @@ namespace ImageFilesProcessor
                     var similarity = _normalizedHammingDistance.GetHashDistance(new BitArray(GetHashType(image,method)), result1);
                     if (similarity > (percentage / (float)100))
                     {
-                        var fileName = GetDocumentFullPathName(DataBaseManager.GetFile(image.FileId));
-                        if (!resultList.Contains(fileName))
+                        var resultFile = DataBaseManager.GetFile(image.FileId);
+                        var imageInfo = new ImageInfo()
                         {
-                            resultList.Add(fileName);    
-                        }
+                            FileName = resultFile.Name,
+                            FileSimilarity = similarity*100,
+                            FilePath = GetDocumentFullPathName(resultFile),
+                            FileSign = String.Format("0x{0:X}", BitConverter.ToString(GetHashType(image, method))),
+                        };
                         
+                        if (!resultList.Contains(imageInfo))
+                        {
+                            resultList.Add(imageInfo);    
+                        }
                     }
                 }
                 );
             }
             
-            return resultList;
+            return resultList.OrderByDescending(e => e.FileSimilarity).ToList();
         }
         /// <summary>
         /// Gets the full path of a document

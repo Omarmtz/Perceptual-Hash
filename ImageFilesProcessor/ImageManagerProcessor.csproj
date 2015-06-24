@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\ImageInfo.cs" />
     <Compile Include="Image File Manager\IMediaObjectsHasher.cs" />
     <Compile Include="Image File Manager\MediaObjectsHasher.cs" />
     <Compile Include="Program.cs" />

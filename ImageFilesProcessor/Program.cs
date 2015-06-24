@@ -21,7 +21,7 @@ namespace ImageFilesProcessor
             
             foreach (var archivo in results)
             {
-                Process.Start(archivo);
+                Process.Start(archivo.FilePath);
             }
 
             
