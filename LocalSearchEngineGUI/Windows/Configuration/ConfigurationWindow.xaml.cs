@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System.IO;
+using System.Threading;
 using FirstFloor.ModernUI.Windows.Controls;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using ImageFilesProcessor;
+using Path = System.IO.Path;
 
 namespace LocalSearchEngineGUI.Windows.Configuration
 {
@@ -116,6 +118,8 @@ namespace LocalSearchEngineGUI.Windows.Configuration
             Properties.Settings.Default.SearchMethod = MediaObjectsHasher.HashMethod.DctMethod.ToString();
 
             Properties.Settings.Default.Save();
+
+            Directory.Delete(System.IO.Path.Combine(Path.GetTempPath(), "ImageSearchingTempFiles"),true);
 
             var message = new ModernDialog();
             message.Owner = this;
