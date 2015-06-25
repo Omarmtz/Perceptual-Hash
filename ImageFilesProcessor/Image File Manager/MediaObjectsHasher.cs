@@ -120,6 +120,9 @@ namespace ImageFilesProcessor
                             FileSimilarity = similarity*100,
                             FilePath = GetDocumentFullPathName(resultFile),
                             FileSign = String.Format("0x{0:X}", BitConverter.ToString(GetHashType(image, method))),
+                            ImagePath = (image.IsWithinFile) ? Path.Combine(
+                            AppDomain.CurrentDomain.BaseDirectory,"Resources","Images","documentImage.png")
+                            : GetDocumentFullPathName(resultFile)
                         };
                         
                         if (!resultList.Contains(imageInfo))

@@ -1,27 +1,22 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using System.IO;
-using FirstFloor.ModernUI.Windows.Controls;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using FirstFloor.ModernUI.Windows.Controls;
 using ImageFilesProcessor;
 using ImageFilesProcessor.Classes;
 using LocalSearchEngine.FileManager;
+using LocalSearchEngineGUI.Windows.Configuration;
 using Microsoft.Win32;
 using Image = System.Drawing.Image;
 
-namespace LocalSearchEngineGUI
+namespace LocalSearchEngineGUI.Windows.Main
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -30,16 +25,55 @@ namespace LocalSearchEngineGUI
     {
         private String _workingFolder;
         private FileAgent _fileAgent;
-        private readonly MediaObjectsHasher _imageHasher;
+        private MediaObjectsHasher _imageHasher;
         private string _fileSelected;
 
         public static string[] ExtensionImagesContentFile = { ".docx", ".odt", ".pptx" };
         public MainWindow()
         {
             InitializeComponent();
-
             _imageHasher = new MediaObjectsHasher();
             _fileAgent = new FileAgent();
+        }
+
+        public void ProcessIndexation()
+        {
+            if (!String.IsNullOrEmpty(Properties.Settings.Default.WorkingDirectory))
+            {
+                _fileAgent.SetInitialDirectory(Properties.Settings.Default.WorkingDirectory);
+                var task = Task.Factory.StartNew(_fileAgent.InitializeIndexation);
+                
+                var modern = new ModernDialog();
+                modern.Owner = this;
+                modern.Title = "Indexando";
+                modern.Content = "Proceso de indexacion automatica espere...";
+
+                foreach (var button in modern.Buttons)
+                {
+                    button.Visibility = Visibility.Hidden;
+                }
+
+                task.GetAwaiter().OnCompleted(() => IndexationHashStart(modern));
+                modern.ShowDialog();
+            }
+        }
+
+        private void IndexationHashStart(ModernDialog modern)
+        {
+            modern.Close();
+            var hashValues = new ModernDialog();
+            hashValues.Owner = this;
+            hashValues.Title = "Calculando Valores Hash";
+            hashValues.Content = "Proceso de generacion firmas hash espere...";
+
+            foreach (var button in hashValues.Buttons)
+            {
+                button.Visibility = Visibility.Hidden;
+            }
+
+            var hashTask=Task.Factory.StartNew(_imageHasher.ScanDatabaseSystem);
+            hashTask.GetAwaiter().OnCompleted(hashValues.Close);
+            hashValues.ShowDialog();
         }
 
         private void UIElement_OnMouseDown(object sender, MouseButtonEventArgs e)
@@ -102,9 +136,9 @@ namespace LocalSearchEngineGUI
         {
             TxtFileName.Text = fileInfo.FullName;
             TxtChangeDate.Text = fileInfo.LastWriteTime.ToShortDateString();
-            TxtFileSize.Text = String.Format("{0} Kb", (fileInfo.Length/1024));
-            TxtFileSign.Text = String.Format("x{0}",0000000);
+            TxtFileSize.Text = String.Format("{0} Kb", (fileInfo.Length / 1024));
             
+
             using (var fs = new FileStream(fileInfo.FullName, FileMode.Open, FileAccess.Read))
             {
                 using (var img = Image.FromStream(fs, true, false))
@@ -112,14 +146,22 @@ namespace LocalSearchEngineGUI
                     TxtFileDimensions.Text = String.Format("Ancho {0} Largo {1}", img.Width, img.Height);
                 }
             }
-            
 
         }
 
         private void ButtonSearch_OnClick(object sender, RoutedEventArgs e)
         {
-            //TODO ONLY TEST PERCENTAGE
-            ResultView.ItemsSource = _imageHasher.GetImageSimilarities(_fileSelected, 90, MediaObjectsHasher.HashMethod.DctMethod);
+            var method =(MediaObjectsHasher.HashMethod)Enum.Parse(typeof(MediaObjectsHasher.HashMethod), Properties.Settings.Default.SearchMethod);
+
+            ResultView.ItemsSource = _imageHasher.GetImageSimilarities(_fileSelected, Properties.Settings.Default.Similarity, method);
         }
+
+        private void ButtonConfigurationSearch_OnClick(object sender, RoutedEventArgs e)
+        {
+            var configWindow = new ConfigurationWindow();
+            configWindow.Owner = this;
+            configWindow.ShowDialog();
+        }
+
     }
 }

@@ -184,9 +184,5 @@
       <Name>PerceptualHash</Name>
       <Project>{8a2a4552-d880-4d6b-8a8a-21b57a1ef811}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\SearchEngineGUI\SearchEngineGUI.csproj">
-      <Name>SearchEngineGUI</Name>
-      <Project>{42ae5d62-6373-4a56-9bf7-99559a884606}</Project>
-    </ProjectReference>
   </ItemGroup>
 </Project>

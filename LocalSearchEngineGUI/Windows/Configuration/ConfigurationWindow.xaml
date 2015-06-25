@@ -1,0 +1,39 @@
+﻿<mui:ModernWindow x:Class="LocalSearchEngineGUI.Windows.Configuration.ConfigurationWindow"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                  xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                  xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+                  mc:Ignorable="d" d:DesignWidth="300"
+                  Title="Configuracion de sistema"
+                  ResizeMode="NoResize"
+                  Style="{StaticResource BlankWindow}" Height="410">
+
+    <StackPanel Orientation="Vertical">
+
+        <Border CornerRadius="6" BorderBrush="Gray" BorderThickness="2" Height="130" Margin="5">
+            <StackPanel Orientation="Vertical">
+                <Label FontWeight="Bold">Metodos de busqueda</Label>
+                <RadioButton Name="RadioButtonDct" Checked="RadioButtonDct_OnChecked">Discrete Cosine Transform (DCT)</RadioButton>
+                <RadioButton Name="RadioButtonBlck1" Checked="RadioButtonBlck1_OnChecked">BlockMean Metodo 1 (bloques no sobrepuestos)</RadioButton>
+                <RadioButton Name="RadioButtonBlck2" Checked="RadioButtonBlck2_OnChecked">BlockMean Metodo 2 (bloques sobrepuestos)</RadioButton>
+                <RadioButton Name="RadioButtonBlck3" Checked="RadioButtonBlck3_OnChecked">BlockMean Metodo 3 (bloques no sobrepuestos Rotacion habilitada)</RadioButton>
+                <RadioButton Name="RadioButtonBlck4" Checked="RadioButtonBlck4_OnChecked">BlockMean Metodo 4 (bloques sobrepuestos Rotacion habilitada)</RadioButton>
+            </StackPanel>
+        </Border>
+        <Border CornerRadius="6" BorderBrush="Gray" BorderThickness="2" Height="85" Margin="5">
+            <StackPanel Orientation="Vertical">
+                <Label FontWeight="Bold">Similitud</Label>
+                <Slider Name="SliderSimilarity" Minimum="70" Maximum="100" Ticks="50" SmallChange="1" ValueChanged="RangeBase_OnValueChanged"/>
+                <Label FontWeight="Bold">Valor</Label>
+                <Label Name="LabelSliderValue"></Label>
+            </StackPanel>
+        </Border>
+        <StackPanel Orientation="Vertical">
+            <Button Name="ButtonRestart" Content="Reiniciar Sistema" Margin="5" Click="ButtonRestart_OnClick"></Button>
+            <Button Name="ButtonSave" Content="Guardar" Margin="5" Click="ButtonSave_OnClick"></Button>
+            <Button Name="ButtonCancel" Content="Cancelar" Click="ButtonCancel_OnClick" Margin="5"></Button>
+        </StackPanel>
+    </StackPanel>
+
+</mui:ModernWindow>
