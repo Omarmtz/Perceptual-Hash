@@ -37,7 +37,7 @@ namespace LocalSearchEngineGUI.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("DctMethod")]
+        [global::System.Configuration.DefaultSettingValueAttribute("BlockMeanMethod4Overlapped")]
         public string SearchMethod {
             get {
                 return ((string)(this["SearchMethod"]));
@@ -61,7 +61,7 @@ namespace LocalSearchEngineGUI.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("90")]
+        [global::System.Configuration.DefaultSettingValueAttribute("85")]
         public int Similarity {
             get {
                 return ((int)(this["Similarity"]));

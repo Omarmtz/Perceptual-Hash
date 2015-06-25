@@ -114,8 +114,8 @@ namespace LocalSearchEngineGUI.Windows.Configuration
         {
             Properties.Settings.Default.WorkingDirectory = String.Empty;
             Properties.Settings.Default.FirstTimeRun = true;
-            Properties.Settings.Default.Similarity = 90;
-            Properties.Settings.Default.SearchMethod = MediaObjectsHasher.HashMethod.DctMethod.ToString();
+            Properties.Settings.Default.Similarity = 85;
+            Properties.Settings.Default.SearchMethod = MediaObjectsHasher.HashMethod.BlockMeanMethod4Overlapped.ToString();
 
             Properties.Settings.Default.Save();
 
