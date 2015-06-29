@@ -8,6 +8,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media.Imaging;
+using System.Windows.Threading;
 using FirstFloor.ModernUI.Windows.Controls;
 using ImageFilesProcessor;
 using ImageFilesProcessor.Classes;
@@ -28,6 +29,8 @@ namespace LocalSearchEngineGUI.Windows.Main
         private MediaObjectsHasher _imageHasher;
         private string _fileSelected;
 
+        private ModernDialog hashValues;
+
         public static string[] ExtensionImagesContentFile = { ".docx", ".odt", ".pptx" };
         public MainWindow()
         {
@@ -42,7 +45,7 @@ namespace LocalSearchEngineGUI.Windows.Main
             {
                 _fileAgent.SetInitialDirectory(Properties.Settings.Default.WorkingDirectory);
                 var task = Task.Factory.StartNew(_fileAgent.InitializeIndexation);
-                
+
                 var modern = new ModernDialog();
                 modern.Owner = this;
                 modern.Title = "Indexando";
@@ -61,19 +64,33 @@ namespace LocalSearchEngineGUI.Windows.Main
         private void IndexationHashStart(ModernDialog modern)
         {
             modern.Close();
-            var hashValues = new ModernDialog();
+
+            hashValues = new ModernDialog();
             hashValues.Owner = this;
+
             hashValues.Title = "Calculando Valores Hash";
-            hashValues.Content = "Proceso de generacion firmas hash espere...";
 
             foreach (var button in hashValues.Buttons)
             {
                 button.Visibility = Visibility.Hidden;
             }
 
-            var hashTask=Task.Factory.StartNew(_imageHasher.ScanDatabaseSystem);
+            var hashTask = Task.Factory.StartNew(() => _imageHasher.ScanDatabaseSystem(new Progress<Tuple<int, int>>(ReportProgress)));
             hashTask.GetAwaiter().OnCompleted(hashValues.Close);
             hashValues.ShowDialog();
+        }
+
+        private void ReportProgress(Tuple<int, int> reportProgress)
+        {
+            Dispatcher.Invoke(() =>
+            {
+                if (reportProgress.Item1 % 10 == 0)
+                {
+                    hashValues.Content = String.Format("{0:0.00}% COMPLETADO \n{1} DE {2} FIRMAS", (reportProgress.Item1 / (float)reportProgress.Item2) * 100,
+                    reportProgress.Item1,
+                    reportProgress.Item2);
+                }   
+            }, DispatcherPriority.Normal);
         }
 
         private void UIElement_OnMouseDown(object sender, MouseButtonEventArgs e)
@@ -137,7 +154,7 @@ namespace LocalSearchEngineGUI.Windows.Main
             TxtFileName.Text = fileInfo.FullName;
             TxtChangeDate.Text = fileInfo.LastWriteTime.ToShortDateString();
             TxtFileSize.Text = String.Format("{0} Kb", (fileInfo.Length / 1024));
-            
+
 
             using (var fs = new FileStream(fileInfo.FullName, FileMode.Open, FileAccess.Read))
             {
@@ -151,7 +168,7 @@ namespace LocalSearchEngineGUI.Windows.Main
 
         private void ButtonSearch_OnClick(object sender, RoutedEventArgs e)
         {
-            var method =(MediaObjectsHasher.HashMethod)Enum.Parse(typeof(MediaObjectsHasher.HashMethod), Properties.Settings.Default.SearchMethod);
+            var method = (MediaObjectsHasher.HashMethod)Enum.Parse(typeof(MediaObjectsHasher.HashMethod), Properties.Settings.Default.SearchMethod);
 
             ResultView.ItemsSource = _imageHasher.GetImageSimilarities(_fileSelected, Properties.Settings.Default.Similarity, method);
         }

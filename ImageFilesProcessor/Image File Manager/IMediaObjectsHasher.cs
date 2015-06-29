@@ -1,7 +1,9 @@
-﻿namespace ImageFilesProcessor
+﻿using System;
+
+namespace ImageFilesProcessor
 {
     interface IMediaObjectsHasher
     {
-        void ScanDatabaseSystem();
+        void ScanDatabaseSystem(IProgress<Tuple<int, int>> onProgressChanged);
     }
 }

@@ -49,39 +49,50 @@ namespace ImageFilesProcessor
         /// <summary>
         /// 
         /// </summary>
-        public void ScanDatabaseSystem()
+        public void ScanDatabaseSystem(IProgress<Tuple<int,int>> onProgressChanged)
         {
             var totalIndexed = DataBaseManager.GetTotalImagesWithoutPHash();
+
+            var progress = 0;
 
             var pagesCount = (totalIndexed / PageDataBaseSize) + 1;
 
             for (int i = 0; i < pagesCount; i++)
             {
                 var results = DataBaseManager.GetImagesWithoutPHash(PageDataBaseSize);
-
-                results.ForEach((documentImage) =>
+                //results.AsParallel().ForAll
+                //results.Foreach
+                results.AsParallel().ForAll((documentImage) =>
                 {
-                    BitArray pHash;
-
-
-                    foreach (var method in Enum.GetValues(typeof(HashMethod)))
+                    try
                     {
-                        var hashFunction = (HashMethod) Enum.Parse(typeof (HashMethod), method.ToString());
-                        
-                        if (documentImage.IsWithinFile)
-                        {
-                            pHash = GetImageHash(Path.Combine(TempFolder, documentImage.TempKeyName),hashFunction );
-                        }
-                        else
-                        {
-                            var file = DataBaseManager.GetFile(documentImage.FileId);
-                            pHash = GetImageHash(GetDocumentFullPathName(file),hashFunction);
-                        }
-                        AttachHashToDocumentImage(documentImage,pHash,hashFunction);
-                    }
+                        BitArray pHash;
 
-                    DataBaseManager.UpdateDocumentImage(documentImage);
-                    Console.WriteLine("Image {0} Hashed", documentImage.Id);
+                        foreach (var method in Enum.GetValues(typeof(HashMethod)))
+                        {
+                            var hashFunction = (HashMethod)Enum.Parse(typeof(HashMethod), method.ToString());
+
+                            if (documentImage.IsWithinFile)
+                            {
+                                pHash = GetImageHash(Path.Combine(TempFolder, documentImage.TempKeyName), hashFunction);
+                            }
+                            else
+                            {
+                                var file = DataBaseManager.GetFile(documentImage.FileId);
+                                pHash = GetImageHash(GetDocumentFullPathName(file), hashFunction);
+                            }
+                            AttachHashToDocumentImage(documentImage, pHash, hashFunction);
+                        }
+
+                        DataBaseManager.UpdateDocumentImage(documentImage);
+                        onProgressChanged.Report(new Tuple<int, int>(progress++, totalIndexed));
+                        //Console.WriteLine("Image {0} Hashed", documentImage.Id);
+                    }
+                    catch (Exception e)
+                    {
+                        var a = e.Message;
+                    }
+                   
                 });
             }
         }
@@ -110,6 +121,8 @@ namespace ImageFilesProcessor
 
                 results.AsParallel().ForAll(image =>
                 {
+                    if (GetHashType(image,method)==null)return;
+
                     var similarity = _normalizedHammingDistance.GetHashDistance(new BitArray(GetHashType(image,method)), result1);
                     if (similarity > (percentage / (float)100))
                     {
@@ -194,6 +207,8 @@ namespace ImageFilesProcessor
         /// <returns></returns>
         public byte[] ConvertToBitArray(BitArray bits)
         {
+            if(bits == null) return null;
+            
             if(bits.Length%8 != 0) throw new Exception("bits length must be 8 multiple");
             var newBytes = new byte[bits.Length/8];
             bits.CopyTo(newBytes, 0);
